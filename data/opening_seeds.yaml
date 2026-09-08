@@ -1,0 +1,35 @@
+# Authored opening scaffolds, NOT observed games or a validated opening book.
+# Every prefix is a seed; repetitions across lines measure scaffold coverage only.
+source: authored_opening_scaffolds_v1
+frequency_semantics: authored_line_occurrences_not_human_frequency
+lines:
+  - id: double_rook_pawn
+    family: mutual_rook_pawn
+    moves: 2g2f 8c8d 2f2e 8d8e 7g7f 3c3d 6i7h 4a3b 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d2f 8f8b 8h7g 2b3c 3i4h 7a6b 7i6h 3a4b 4i5h 6a5b 5i6i 5a4a 6i7i 4a3a 9g9f 1c1d 1g1f 9c9d 5g5f 5c5d 4g4f 6c6d 3g3f 7c7d 3f3e 7d7e
+  - id: double_rook_transposed
+    family: mutual_rook_pawn
+    moves: 7g7f 3c3d 2g2f 8c8d 2f2e 8d8e 6i7h 4a3b 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f
+  - id: bishop_exchange
+    family: bishop_exchange
+    moves: 7g7f 3c3d 2g2f 8c8d 2f2e 8d8e 8h2b+ 3a2b 7i7h 2b3c 7h7g 7a6b 3i4h 7c7d 4g4f
+  - id: yagura_scaffold
+    family: closed_bishop
+    moves: 7g7f 8c8d 7i6h 3c3d 6g6f 7a6b 5g5f 5c5d 6h7g 6b5c 2g2f 4a3b 4i5h 3a4b 5i6h 6a5b 6i7h 5a4a 6h7i 4a3a 2f2e 5c4d
+  - id: fourth_file
+    family: static_vs_fourth_file
+    moves: 7g7f 3c3d 2g2f 4c4d 2f2e 3a3b 3i4h 8b4b 5i6h 5a6b 6h7h 6b7b 5g5f 7b8b 4i5h 7a7b 5h5g 3b4c 9g9f 9c9d 7i6h 6c6d 5g4f 4c5d
+  - id: third_file
+    family: sente_third_file
+    moves: 7g7f 8c8d 7f7e 8d8e 2h7h 3c3d 6g6f 5a6b 7i6h
+  - id: central_rook
+    family: central_rook
+    moves: 7g7f 3c3d 5g5f 8c8d 5f5e 5a4b 2h5h 4b3b 5i6h 7a6b 6h7h 4a5b 3i4h 6c6d 4h5g 6b6c 5g5f 4c4d 7i6h 3a4b 6g6f 4b4c 5f6e
+  - id: early_bishop_exchange
+    family: early_bishop_exchange
+    moves: 7g7f 3c3d 8h2b+ 3a2b 2g2f 8c8d 2f2e 2b3c 7i6h 7a6b 6h7g 8d8e
+  - id: pawn_contact
+    family: third_file_pawn_contact
+    moves: 7g7f 3c3d 7f7e 8c8d 7e7d 7c7d 2h7h
+  - id: gote_third_file
+    family: gote_third_file
+    moves: 7g7f 3c3d 2g2f 3d3e 2f2e 8b3b 5i6h 5a6b 6h7h 6b7b 3i4h 7b8b

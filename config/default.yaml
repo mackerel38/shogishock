@@ -1,0 +1,22 @@
+engine:
+  path: engines/yaneuraou/yaneuraou
+  eval_dir: eval
+  threads: 2
+  hash_mb: 256
+  options:
+    USI_OwnBook: false
+    PvInterval: 0
+search:
+  shallow_nodes: 10000
+  pass_nodes: 10000
+deep_nodes: [100000, 1000000]
+cache:
+  path: data/engine_cache.sqlite3
+research:
+  seed_path: data/opening_seeds.yaml
+  output_dir: reports/pass_pilot
+  min_ply: 0
+  max_ply: 40
+  review_per_side: 30
+  obvious_blunder_loss_cp: 1000
+  large_material_loss: 700

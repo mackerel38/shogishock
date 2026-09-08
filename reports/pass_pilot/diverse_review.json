@@ -1,0 +1,74 @@
+{
+  "sente": {
+    "pass_sensitivity": [
+      "40bdb67bcc64cf5a0b21_2f2b",
+      "98a0e8226d03eff3b7e9_7h8g",
+      "35c88eb3f097c3c7ab1d_7h8g",
+      "b6858e7055fcda5ca48c_2f2c+",
+      "f758c9bc8481766ae09c_8h4d",
+      "5ecc3699847f6446b58a_8h4d",
+      "a77ad58c704df8bb27bf_7h8g",
+      "d0834f35ae11166e4b82_B-7c",
+      "578e317ec373ff76a4a0_2f2b+",
+      "325b9d2ae59765773c55_2f2b+",
+      "a084f948b62bfcd39a5e_7h8g",
+      "9e51a92b8144e1886041_7h8g",
+      "115a544d62482e7fce03_7h8g",
+      "6750f9efa4521bf1ede5_B-7a",
+      "b515385b597d34f89fb7_8h4d"
+    ],
+    "pass_relative_median": [
+      "98a0e8226d03eff3b7e9_7h8g",
+      "f758c9bc8481766ae09c_8h4d",
+      "5ecc3699847f6446b58a_8h4d",
+      "35c88eb3f097c3c7ab1d_7h8g",
+      "d0834f35ae11166e4b82_B-7c",
+      "a77ad58c704df8bb27bf_7h8g",
+      "578e317ec373ff76a4a0_2f2b+",
+      "b515385b597d34f89fb7_8h4d",
+      "6750f9efa4521bf1ede5_B-7a",
+      "115a544d62482e7fce03_7h8g",
+      "9e51a92b8144e1886041_7h8g",
+      "9091c9833d140d64dee8_8h4d",
+      "83336ab0c3e169772c41_7g3c+",
+      "a084f948b62bfcd39a5e_7h8g",
+      "8cb056fe961217db0c8b_7h8g"
+    ]
+  },
+  "gote": {
+    "pass_sensitivity": [
+      "f226b449d7d9ed0294b5_8b8h+",
+      "797fc76fa417f2cbf217_8b8h",
+      "57864678991f70b59f21_2b6f",
+      "dbb04b7d0c97e44943ce_8f7f",
+      "0a33fbe73571830519e4_2b6f",
+      "9edd932b71d39a2d826f_8b8g",
+      "07924d1d4c68f08126ec_3b2c",
+      "b1d901d7811d5a04a762_3b2c",
+      "c9b7cab8d29ea50821fa_B-3i",
+      "6b53e8b6fe9c6243f093_B-3i",
+      "255349a2e81545baec3e_8b8h+",
+      "93c924ff98e41ae2d018_3c1e",
+      "b3619536d37f5f23537b_3c1e",
+      "cf0fcaa060ddee8d14b5_3b2c",
+      "5a9d6438623a24161f82_3b2c"
+    ],
+    "pass_relative_median": [
+      "57864678991f70b59f21_2b6f",
+      "0a33fbe73571830519e4_2b6f",
+      "dbb04b7d0c97e44943ce_8f7f",
+      "c9b7cab8d29ea50821fa_B-3i",
+      "b1d901d7811d5a04a762_3b2c",
+      "07924d1d4c68f08126ec_3b2c",
+      "6b53e8b6fe9c6243f093_B-3i",
+      "5a9d6438623a24161f82_3b2c",
+      "6727ec9ef2e1f27596b8_2b6f",
+      "b3619536d37f5f23537b_3c1e",
+      "f583822f806f4bd72a6d_2b6f",
+      "cf0fcaa060ddee8d14b5_3b2c",
+      "028875f50afd5760de0b_2b6f",
+      "c355982175abcb5433b1_3b2c",
+      "6462157c55e061654f99_3b2c"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "cache_schema": 5,
+  "config": {
+    "engine": {
+      "path": "engines/yaneuraou/yaneuraou",
+      "eval_dir": "eval",
+      "threads": 1,
+      "hash_mb": 16,
+      "options": {
+        "USI_OwnBook": false,
+        "PvInterval": 0
+      }
+    },
+    "search": {
+      "shallow_nodes": 10000,
+      "pass_nodes": 10000
+    },
+    "deep_nodes": [
+      100000,
+      1000000
+    ],
+    "cache": {
+      "path": "data/engine_cache.sqlite3"
+    },
+    "research": {
+      "workers": 8,
+      "seed_path": "data/opening_seeds.yaml",
+      "output_dir": "reports/pass_pilot",
+      "min_ply": 0,
+      "max_ply": 40,
+      "review_per_side": 30,
+      "obvious_blunder_loss_cp": 1000,
+      "large_material_loss": 700
+    }
+  },
+  "seed_sha256": "34b9ac1ee35e343fcb28f0d94d732d1ba35e952bc4174da80d12ee70fc9212a0",
+  "engine_sha256": "10a220dd34fc4def0a9862d37f0bb0bd2faec219514b630b908c3c6388babeea",
+  "eval_sha256": {
+    "/home/mackerel38/shogishock/assets/eval/nn.bin": "768068f0d534a0603a5d38bcd143de6bbca820d5f1c95a14d40863e5b7892d76"
+  },
+  "complete": true,
+  "expected_candidates": 6314,
+  "actual_candidates": 6314,
+  "elapsed_seconds_this_invocation": 535.832216876006
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shogishock"
+version = "0.1.0"
+description = "Reproducible engine infrastructure for shogi surprise research"
+requires-python = ">=3.10"
+dependencies = ["python-shogi>=1.1.1", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+surprise = "surprise.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["surprise*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
