@@ -1,0 +1,95 @@
+{
+  "scope": "paired game clusters, descriptive reused-test intervals; player dependence remains",
+  "splits": {
+    "time": {
+      "capture_any": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.07491244904090066,
+          -0.04752723619083805
+        ]
+      },
+      "captures_candidate": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.21709363042312999,
+          -0.1496288393485555
+        ]
+      },
+      "recapture": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.4641924748280492,
+          -0.3550104795987438
+        ]
+      },
+      "material_recovery": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.31864963782039707,
+          -0.2099954262614564
+        ]
+      }
+    },
+    "player": {
+      "capture_any": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.0907203769411561,
+          -0.01918947564098203
+        ]
+      },
+      "captures_candidate": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.21054986289293398,
+          -0.10681212986723605
+        ]
+      },
+      "recapture": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.32375898114304474,
+          -0.158002806031909
+        ]
+      },
+      "material_recovery": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.26911209326648033,
+          -0.010971850129500568
+        ]
+      }
+    },
+    "game": {
+      "capture_any": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.0742928088855497,
+          -0.03982885690876159
+        ]
+      },
+      "captures_candidate": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.23710067923563688,
+          -0.16630995612069435
+        ]
+      },
+      "recapture": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.4778892813806548,
+          -0.30099808592350386
+        ]
+      },
+      "material_recovery": {
+        "valid_draws": 300,
+        "delta_brier_interval95": [
+          -0.38671836620693983,
+          -0.23187679700157052
+        ]
+      }
+    }
+  }
+}

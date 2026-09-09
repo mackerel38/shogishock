@@ -1,0 +1,18 @@
+{
+  "sha256": {
+    "surprise/calibration_review.py": "b98dfa99e7a304b619f34efe3d59a05711039664af9b91213c9a255ef28447f2",
+    "surprise/human_policy.py": "da53f85d9133acfb168b0db7e514d10f8bd5db2e954cf7a1044bc898f5ac3191",
+    "surprise/obvious.py": "290bdc28ed8eb9bcf11160fa84a93fc8961df22d36e6829cdf65cf8ad29c3f26",
+    "surprise/response_cache.py": "80d50033eab589e3542539c0596e9f1fe77730b3f43620123187f58d326b2fef",
+    "surprise/kif_export.py": "c33f6ad7bbe4f8469cd8dac9a9440beb703a28c0d66b7af0c4f2600d15091ff4",
+    "surprise/human_response.py": "96cb1aa2ff4434d4bb841bd9f42b596eb336ffe8b81a1f0c7e67c8747a275c3f",
+    "reports/response_calibration/metrics.json": "b13e1d17732476c50494a7738ecdd1ca0977e61235fed37dc47a367dbaf323e3",
+    "reports/response_calibration/decision.json": "37be12496bac03074fdee462ca5319e6b6fe2eb5fccbd52fa70d0efdc04708a1",
+    "reports/response_set_review/review_manifest.json": "ab850178138395fa55e0976d7e2196c14c824f09618269e204a645edffa8e766",
+    "reports/human_e2e/candidates.json": "9144076518fea7988c6f4a5903e40c23ab171a80c65eff89c02bedb08000667c",
+    "reports/human_e2e/human_responses.json": "8ba498d1b85d0e1c5c038261ad5c5cf24672548999416005eb610eac0628cc68"
+  },
+  "new_engine_calls": 0,
+  "old_legal_responses_reweighted": 116,
+  "gui_visual_review": "required; not performed"
+}

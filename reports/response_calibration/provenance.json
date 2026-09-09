@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "surprise/response_calibration.py": "bd4d25bb6521b0da5727b25666db047fb17411cd44c4e27e0dc2f06a88ebdd50",
+    "reports/response_calibration/PLAN.md": "4576af5bdad4fe41a1c7e06941bdadd64e42de8ef344f574e446a3f8e66c5a5f",
+    "config/human_pilot.yaml": "e2b8344b00ea7c0714be5e7ffe7852693f9680158cc9d3512a95554db364ae59",
+    "data/human_raw/human_pilot/splits_v2.json": "40d3a11e642cedff3d0f0451f628780979773092c298dca613e68ed48eb2d11d",
+    "data/human_raw/human_pilot/policy_examples.json": "490a24a25e6b4b74def70ca827cef21d40c4eea0b137d9f66db769234b07b126"
+  },
+  "engine_calls": 0,
+  "new_games": 0,
+  "source_checkpoint": "c37ae1c925bad3c6c87a68375866ca7f6766a1fb"
+}

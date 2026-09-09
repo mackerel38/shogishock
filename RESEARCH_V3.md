@@ -1,5 +1,10 @@
 # 研究checkpoint v3 — 2026-09-09
 
+> 最新の小サイクルは [response-set calibration](reports/response_calibration/analysis.md)。
+> 集合校正は改善したが取り返し・回収の過小評価が残る。actual 0 / diagnostic 1 / control 2。
+> [レビューHTML](reports/response_calibration/review.html)と新KIFを人間レビュー待ち。大量scanへ進まない。
+> 以下は前回checkpointとして保持。
+
 ## 現在の判断
 
 **大量scan・deep拡大・Vast.aiへ進まない。**

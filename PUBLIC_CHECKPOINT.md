@@ -1,5 +1,15 @@
 # Public research checkpoint — 2026-09-09
 
+## Latest response-set calibration cycle
+
+Read [response calibration analysis](reports/response_calibration/analysis.md) first.
+Calibration improved on reused held-out tests, but recapture/material recovery remain underpredicted.
+△3二銀 is still a diagnostic false positive. Actual 0 / diagnostic 1 / controls 2; all cases abstain.
+Review [HTML](reports/response_calibration/review.html), [JSON](reports/response_calibration/review.json),
+and three classified KIFs under `exports/response_calibration/`.
+No new games or engine calls. **STOP after push; human review and explicit continuation required.**
+Previous checkpoint details below are retained as history. No new raw/SQLite data is published.
+
 Repository: https://github.com/mackerel38/shogishock (**public**).
 
 ## Current stage

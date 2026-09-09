@@ -1,0 +1,698 @@
+# ShogiShock branching KIF
+手合割：平手
+先手：ShogiShock / 8e41531c4f23213c9b17_7g7f
+後手：Research variation
+棋戦：Response calibration review — abstain
+手数----指手---------
+   1 ２六歩(27)
+   2 ３四歩(33)
+   3 ２五歩(26)
+   4 ３三角(22)
+   5 ７六歩(77)
+* [control; NOT an accepted surprise]
+* 通常の▲7六歩を基準局面のcontrolとして指定する。
+* parent_eval=60 candidate_eval=105 (positive=sente)
+* reach=0.09640522875816994 exact_support=16 low_support=False
+* abstain=true; calibration=exploratory_only; needs_human_review=true
+* true human P_good unvalidated: [0,1]; not a model-coverage interval
+* obvious_reply_neutralizes=False
+* MODEL ONLY: P_good={'50': 0.017326378613291588, '100': 0.17158826358120582, '200': 0.7008882466938807, '300': 0.7247242825359019}
+* MODEL ONLY: E_human=313.82; human_gap=267.82; coverage=1.000000
+* parent_engine_best_pv: 7g7f 3a2b 8h3c+ 2b3c 7i8h 7a6b 8h7g 8c8d
+   6 ４四歩(43)
+* response_sets: 
+* Human Policy old=0.534856 new=0.529300
+* cached 10k engine_eval=237; obvious=False
+* good replies: {'50': False, '100': False, '200': True, '300': True}
+* features: {'move': '4c4d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ６八玉(59)
+   8 ４二銀(31)
+   9 ７八銀(79)
+変化：6手
+   6 ４二銀(31)
+* response_sets: 
+* Human Policy old=0.155881 new=0.154262
+* cached 10k engine_eval=102; obvious=False
+* good replies: {'50': False, '100': True, '200': True, '300': True}
+* features: {'move': '3a4b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* [engine PV after candidate; previous 10k]
+   7 ３三角成(88)
+   8 ３三銀(42)
+   9 ８八銀(79)
+  10 ３二金(41)
+変化：10手
+  10 ８四歩(83)
+  11 ７七銀(88)
+  12 ４二玉(51)
+  13 ６八玉(59)
+変化：6手
+   6 ２二飛(82)
+* response_sets: 
+* Human Policy old=0.097102 new=0.096093
+* cached 10k engine_eval=364; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b2b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ６八玉(59)
+   8 ９四歩(93)
+   9 ９六歩(97)
+  10 ６二玉(51)
+  11 ７八玉(68)
+変化：6手
+   6 ８四歩(83)
+* response_sets: 
+* Human Policy old=0.016228 new=0.016059
+* cached 10k engine_eval=471; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8c8d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ８八銀(79)
+  10 ２二銀(31)
+  11 ６八玉(59)
+  12 ８五歩(84)
+変化：6手
+   6 ８八角成(33)
+* response_sets: capture_any, high_value_capture, promotion
+* Human Policy old=0.005212 new=0.014042
+* cached 10k engine_eval=392; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c8h+', 'victim_piece_type': 6, 'victim_value': 800, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': True, 'candidate_was_just_exposed': None}
+   7 ８八銀(79)
+   8 ２二銀(31)
+   9 ７七銀(88)
+  10 ３二金(41)
+  11 ４八銀(39)
+  12 ３三銀(22)
+  13 ３六歩(37)
+変化：6手
+   6 ６二銀(71)
+* response_sets: 
+* Human Policy old=0.013480 new=0.013340
+* cached 10k engine_eval=500; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '7a6b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ２二歩打
+  13 ２八飛(24)
+  14 ３二金(41)
+  15 ８八銀(79)
+  16 ４二銀(31)
+  17 ７七銀(88)
+  18 ９四歩(93)
+  19 ６八玉(59)
+  20 ９五歩(94)
+変化：6手
+   6 ５四歩(53)
+* response_sets: 
+* Human Policy old=0.011901 new=0.011777
+* cached 10k engine_eval=453; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '5c5d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ５三角打
+  10 ２二飛(82)
+  11 ８六角成(53)
+  12 ４二銀(31)
+  13 ７七馬(86)
+  14 ６二玉(51)
+  15 ８八銀(79)
+変化：6手
+   6 ７二銀(71)
+* response_sets: 
+* Human Policy old=0.010462 new=0.010353
+* cached 10k engine_eval=557; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '7a7b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ４四角打
+変化：6手
+   6 １四歩(13)
+* response_sets: 
+* Human Policy old=0.010364 new=0.010256
+* cached 10k engine_eval=414; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '1c1d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ６八玉(59)
+  10 ３二金(41)
+  11 ８八銀(79)
+  12 ８四歩(83)
+  13 ７七銀(88)
+  14 ８五歩(84)
+  15 ４八銀(39)
+変化：6手
+   6 ７四歩(73)
+* response_sets: 
+* Human Policy old=0.009851 new=0.009749
+* cached 10k engine_eval=338; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': True}
+* features: {'move': '7c7d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ２四歩(25)
+   8 ２四歩(23)
+   9 ３三角成(88)
+  10 ３三桂(21)
+  11 ５五角打
+  12 ２二銀(31)
+  13 ２四飛(28)
+変化：6手
+   6 ９四歩(93)
+* response_sets: 
+* Human Policy old=0.009851 new=0.009749
+* cached 10k engine_eval=401; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '9c9d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ８八銀(79)
+  10 ９五歩(94)
+  11 ７七銀(88)
+  12 ４二銀(31)
+変化：6手
+   6 ３二銀(31)
+* response_sets: 
+* Human Policy old=0.009551 new=0.009452
+* cached 10k engine_eval=46; obvious=False
+* good replies: {'50': True, '100': True, '200': True, '300': True}
+* features: {'move': '3a3b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ６八玉(59)
+   8 ８四歩(83)
+   9 ７八金(69)
+  10 ６二銀(71)
+変化：6手
+   6 ６二玉(51)
+* response_sets: 
+* Human Policy old=0.009405 new=0.009308
+* cached 10k engine_eval=522; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '5a6b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ２四歩(25)
+   8 ２四歩(23)
+   9 ３三角成(88)
+  10 ３三桂(21)
+  11 ２三角打
+  12 ３二金(41)
+  13 ３四角成(23)
+  14 ２二銀(31)
+変化：6手
+   6 ２四歩(23)
+* response_sets: 
+* Human Policy old=0.009225 new=0.009129
+* cached 10k engine_eval=1834; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '2c2d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ２四歩(25)
+   8 ８八角成(33)
+   9 ８八銀(79)
+  10 ４四角打
+  11 ４六歩(47)
+  12 ２二飛(82)
+  13 ２三歩成(24)
+  14 ２三飛(22)
+  15 ２三飛成(28)
+  16 ８八角成(44)
+  17 ２一龍(23)
+  18 ９九馬(88)
+変化：6手
+   6 ６四歩(63)
+* response_sets: 
+* Human Policy old=0.008770 new=0.008678
+* cached 10k engine_eval=530; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '6c6d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ６三角打
+  10 ４二銀(31)
+  11 ８八銀(79)
+  12 ４五角打
+  13 ４五角成(63)
+  14 ４五桂(33)
+  15 ６八玉(59)
+  16 ４四角打
+変化：6手
+   6 ３二金(41)
+* response_sets: 
+* Human Policy old=0.008748 new=0.008657
+* cached 10k engine_eval=328; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': True}
+* features: {'move': '4a3b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三金(32)
+   9 ８八銀(79)
+  10 ２二飛(82)
+  11 ７七銀(88)
+  12 ４二銀(31)
+  13 ３八銀(39)
+  14 ２四歩(23)
+  15 ２四歩(25)
+  16 ２四金(33)
+変化：6手
+   6 ４二玉(51)
+* response_sets: 
+* Human Policy old=0.008381 new=0.008293
+* cached 10k engine_eval=470; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '5a4b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ７八金(69)
+  10 ２二銀(31)
+  11 ８八銀(79)
+  12 ５二金(61)
+  13 ７七銀(88)
+  14 ８四歩(83)
+  15 ２四歩(25)
+  16 ２四歩(23)
+  17 ２四飛(28)
+変化：6手
+   6 ２二銀(31)
+* response_sets: 
+* Human Policy old=0.007957 new=0.007874
+* cached 10k engine_eval=74; obvious=False
+* good replies: {'50': True, '100': True, '200': True, '300': True}
+* features: {'move': '3a2b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三銀(22)
+   9 ８八銀(79)
+  10 ４二玉(51)
+  11 ７七銀(88)
+  12 ８四歩(83)
+  13 ６八玉(59)
+  14 ６二銀(71)
+変化：6手
+   6 ５二金(61)
+* response_sets: 
+* Human Policy old=0.007040 new=0.006967
+* cached 10k engine_eval=418; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '6a5b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ８八銀(79)
+  10 ８四歩(83)
+  11 ７七銀(88)
+  12 ３二金(41)
+  13 ６八玉(59)
+  14 ６二銀(71)
+  15 ２四歩(25)
+  16 ２四歩(23)
+  17 ２四飛(28)
+  18 ２二銀(31)
+  19 ２八飛(24)
+変化：6手
+   6 ３五歩(34)
+* response_sets: 
+* Human Policy old=0.006321 new=0.006256
+* cached 10k engine_eval=404; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3d3e', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ６八玉(59)
+   8 ９四歩(93)
+   9 ５八金(49)
+  10 ２二飛(82)
+  11 ９六歩(97)
+  12 ６二玉(51)
+  13 ７八玉(68)
+  14 ７二玉(62)
+変化：6手
+   6 ５二玉(51)
+* response_sets: 
+* Human Policy old=0.004851 new=0.004800
+* cached 10k engine_eval=424; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '5a5b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ８八銀(79)
+  10 ８四歩(83)
+  11 ６八玉(59)
+  12 ３二金(41)
+  13 ７七銀(88)
+  14 ７四歩(73)
+  15 ３八銀(39)
+  16 ２二銀(31)
+変化：6手
+   6 ５二金(41)
+* response_sets: 
+* Human Policy old=0.004364 new=0.004318
+* cached 10k engine_eval=932; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '4a5b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ２二歩打
+  13 ２三歩打
+  14 ３五角打
+  15 ２八飛(24)
+  16 ２三歩(22)
+変化：6手
+   6 ３二飛(82)
+* response_sets: 
+* Human Policy old=0.003344 new=0.003309
+* cached 10k engine_eval=347; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b3b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ９六歩(97)
+   8 ９四歩(93)
+   9 ３三角成(88)
+  10 ３三桂(21)
+  11 ６八玉(59)
+変化：6手
+   6 ５二飛(82)
+* response_sets: 
+* Human Policy old=0.002888 new=0.002858
+* cached 10k engine_eval=347; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b5b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ８八銀(79)
+  10 ２二飛(52)
+  11 ６八玉(59)
+  12 ６二玉(51)
+  13 ９六歩(97)
+  14 ４二銀(31)
+  15 ７八玉(68)
+  16 ４四歩(43)
+  17 ７七銀(88)
+  18 ３二金(41)
+変化：6手
+   6 ４二金(41)
+* response_sets: 
+* Human Policy old=0.002770 new=0.002741
+* cached 10k engine_eval=255; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': True}
+* features: {'move': '4a4b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三金(42)
+   9 ８八銀(79)
+  10 ９四歩(93)
+  11 ５八玉(59)
+変化：6手
+   6 ４二飛(82)
+* response_sets: 
+* Human Policy old=0.002718 new=0.002689
+* cached 10k engine_eval=337; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': True}
+* features: {'move': '8b4b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ６八玉(59)
+   8 ９四歩(93)
+   9 ３三角成(88)
+  10 ３三桂(21)
+  11 ９六歩(97)
+変化：6手
+   6 ７二金(61)
+* response_sets: 
+* Human Policy old=0.002599 new=0.002572
+* cached 10k engine_eval=706; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '6a7b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ２二歩打
+  13 ６八玉(59)
+  14 ４四角打
+  15 ７七角打
+  16 ３二金(41)
+変化：6手
+   6 ８八角(33)
+* response_sets: capture_any, high_value_capture
+* Human Policy old=0.000980 new=0.002418
+* cached 10k engine_eval=470; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c8h', 'victim_piece_type': 6, 'victim_value': 800, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': True, 'candidate_was_just_exposed': None}
+   7 ８八銀(79)
+   8 ３二金(41)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ２二銀(31)
+  13 ２八飛(24)
+  14 ８四歩(83)
+  15 ７七銀(88)
+  16 ５二玉(51)
+変化：6手
+   6 ６二金(61)
+* response_sets: 
+* Human Policy old=0.002314 new=0.002290
+* cached 10k engine_eval=616; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '6a6b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ２四歩(25)
+   8 ２四歩(23)
+   9 ３三角成(88)
+  10 ３三桂(21)
+  11 ２四飛(28)
+  12 ２二歩打
+  13 ５八玉(59)
+  14 ３二金(41)
+  15 ３四飛(24)
+  16 ４二銀(31)
+  17 ２四飛(34)
+  18 ４四歩(43)
+  19 ７八銀(79)
+  20 ６四歩(63)
+  21 ２八飛(24)
+変化：6手
+   6 ４二角(33)
+* response_sets: 
+* Human Policy old=0.002213 new=0.002190
+* cached 10k engine_eval=1502; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c4b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 １一角成(88)
+   8 ３三角(42)
+   9 ３三馬(11)
+  10 ３三桂(21)
+  11 ８八角打
+  12 ３二金(41)
+  13 ２四歩(25)
+  14 ２四歩(23)
+  15 ２四飛(28)
+  16 ２三歩打
+  17 ３四飛(24)
+  18 ２二銀(31)
+  19 ５八玉(59)
+変化：6手
+   6 ２四角(33)
+* response_sets: 
+* Human Policy old=0.002126 new=0.002104
+* cached 10k engine_eval=3932; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c2d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ２四歩(25)
+   8 ２四歩(23)
+   9 １一角成(88)
+  10 ２二飛(82)
+  11 ２二馬(11)
+  12 ２二銀(31)
+  13 １二角打
+  14 ８四歩(83)
+  15 ２一角成(12)
+  16 ３三角打
+  17 ８八銀(79)
+変化：6手
+   6 ４四角(33)
+* response_sets: 
+* Human Policy old=0.002069 new=0.002048
+* cached 10k engine_eval=672; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c4d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ４四角(88)
+   8 ４四歩(43)
+   9 ４三角打
+  10 ３二金(41)
+  11 ６五角成(43)
+  12 ２二銀(31)
+変化：6手
+   6 ５五角(33)
+* response_sets: 
+* Human Policy old=0.002013 new=0.001992
+* cached 10k engine_eval=3591; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c5e', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ５五角(88)
+   8 １二飛(82)
+   9 ８八角打
+  10 ６二玉(51)
+  11 １一角成(55)
+  12 １一飛(12)
+  13 １一角成(88)
+  14 ４四角打
+  15 ２一馬(11)
+  16 ９九角成(44)
+変化：6手
+   6 １五角(33)
+* response_sets: 
+* Human Policy old=0.001956 new=0.001935
+* cached 10k engine_eval=1535; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c1e', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 １一角成(88)
+   8 ３三角(15)
+   9 ３三馬(11)
+  10 ３三桂(21)
+  11 ７八金(69)
+  12 ２二銀(31)
+  13 ８八銀(79)
+  14 ９四歩(93)
+変化：6手
+   6 ６六角(33)
+* response_sets: 
+* Human Policy old=0.001956 new=0.001935
+* cached 10k engine_eval=3547; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c6f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ６六角(88)
+   8 ２二飛(82)
+   9 ６五角打
+  10 ５二玉(51)
+  11 ８三角成(65)
+  12 ３二金(41)
+  13 ５八玉(59)
+  14 １二飛(22)
+  15 ２四歩(25)
+  16 ２四歩(23)
+変化：6手
+   6 ７七角(33)
+* response_sets: 
+* Human Policy old=0.001956 new=0.001935
+* cached 10k engine_eval=3111; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c7g', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ７七角(88)
+   8 ２二飛(82)
+   9 ５五角打
+  10 ３二金(41)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２二角成(55)
+  14 ２二銀(31)
+  15 ２四飛(28)
+変化：6手
+   6 ２二角(33)
+* response_sets: 
+* Human Policy old=0.001928 new=0.001908
+* cached 10k engine_eval=507; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c2b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ５八玉(59)
+   8 １四歩(13)
+   9 ７八金(69)
+  10 ７二銀(71)
+変化：6手
+   6 ７二飛(82)
+* response_sets: 
+* Human Policy old=0.001408 new=0.001394
+* cached 10k engine_eval=504; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b7b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ６五角打
+  10 ４四角打
+  11 ８八銀(79)
+変化：6手
+   6 ６二飛(82)
+* response_sets: 
+* Human Policy old=0.001010 new=0.000999
+* cached 10k engine_eval=528; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b6b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ４八銀(39)
+  10 ２二銀(31)
+  11 ６八玉(59)
+  12 ５二玉(51)
+  13 ４六歩(47)
+  14 ３二金(41)
+変化：6手
+   6 ９二飛(82)
+* response_sets: 
+* Human Policy old=0.001010 new=0.000999
+* cached 10k engine_eval=356; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b9b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ９六歩(97)
+   8 ２二銀(31)
+   9 ６八玉(59)
+  10 ４二玉(51)
+  11 ３八銀(39)
+  12 ９四歩(93)
+  13 ５八金(49)
+  14 ７二銀(71)
+  15 ４六歩(47)
+変化：6手
+   6 １二飛(82)
+* response_sets: 
+* Human Policy old=0.000896 new=0.000886
+* cached 10k engine_eval=501; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '8b1b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ６五角打
+  10 ３二銀(31)
+  11 ８三角成(65)
+  12 ７四角打
+  13 ７四馬(83)
+  14 ７四歩(73)
+  15 ４六歩(47)
+変化：6手
+   6 １二香(11)
+* response_sets: 
+* Human Policy old=0.000806 new=0.000798
+* cached 10k engine_eval=615; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '1a1b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 2, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ６八玉(59)
+  10 ２二銀(31)
+変化：6手
+   6 ７七角成(33)
+* response_sets: promotion
+* Human Policy old=0.000607 new=0.000656
+* cached 10k engine_eval=3111; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '3c7g+', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 6, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ７七角(88)
+   8 ２二飛(82)
+   9 ５五角打
+  10 ３二金(41)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２二角成(55)
+  14 ２二銀(31)
+  15 ２四飛(28)
+変化：6手
+   6 ９二香(91)
+* response_sets: 
+* Human Policy old=0.000635 new=0.000629
+* cached 10k engine_eval=536; obvious=False
+* good replies: {'50': False, '100': False, '200': False, '300': False}
+* features: {'move': '9a9b', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 2, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+   7 ３三角成(88)
+   8 ３三桂(21)
+   9 ８八銀(79)
+  10 ３二金(41)
+  11 ７七銀(88)
+  12 ４二銀(31)
+まで

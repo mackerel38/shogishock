@@ -1,0 +1,7 @@
+{
+  "exploratory_reweight_allowed": true,
+  "large_scan_allowed": false,
+  "actual_candidate_count": 0,
+  "independent_final_evaluation": false,
+  "reason": "reused tests; low support and response-set calibration uncertainty require abstention"
+}

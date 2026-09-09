@@ -1,8 +1,12 @@
 # Research paused — 2026-09-08
 
-> Current bounded cycle, 2026-09-09: `reports/response_calibration/PLAN.md`.
-> Response-set calibration only; reused held-out tests are exploratory, not independent confirmation.
-> No new acquisition/engine scan. After classified review artifacts are pushed, STOP for human review.
+> Current completed cycle, 2026-09-09: `reports/response_calibration/analysis.md`.
+> Response-set calibration improved but remains inadequate for P_good candidate promotion.
+> Time capture mass: 8.06% → 19.15% (observed 21.58%); recapture/recovery remain underpredicted.
+> Fixed △3二銀 capture mass: 3.03% → 60.80%, still a diagnostic, never actual candidate.
+> Review: `reports/response_calibration/review.html`, `review.json`, `exports/response_calibration/`.
+> Actual 0 / diagnostic 1 / controls 2. No acquisition or engine calls. Reused tests are exploratory.
+> After final checkpoint push: STOP. Await human visual review and explicit continuation.
 
 > Checkpoint policy: commit+push at meaningful milestones and before long work. See `CHECKPOINTING.md`.
 > Current public handoff and data exclusions: `PUBLIC_CHECKPOINT.md`. Preserve all local collaborator changes.

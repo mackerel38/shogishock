@@ -11,7 +11,8 @@ REMOTE='https://github.com/mackerel38/shogishock.git'
 DOCS=['.gitignore','pyproject.toml','Dockerfile','README.md','HANDOFF.md','PAUSE.md','RESEARCH.md',
       'RESEARCH_V2.md','RESEARCH_V3.md','SHOGIHOME.md','BACKUP.md','CHECKPOINTING.md','PUBLIC_CHECKPOINT.md']
 REPORTS={
- 'reports/response_calibration':['PLAN.md'],
+ 'reports/response_calibration':['PLAN.md','analysis.md','metrics.json','decision.json',
+    'provenance.json','review_provenance.json','bootstrap.json','victim_slices.json','review.json','review.html'],
  'reports/pass_pilot':['analysis.md','checkpoint.json','manifest.json','summary.json'],
  'reports/reach_pilot':['analysis.md','SOURCES.md','pilot_summary.json','pilot_diagnostics.json',
     'diagnostic_manifest.json','confirmation_selection.json','reach_summary.json','planning_summary.json','report_sente.html','report_gote.html'],
@@ -43,6 +44,8 @@ def main(target):
     paths += [p.relative_to(ROOT) for p in (ROOT/'exports/human_e2e').glob('*.kif')]
     paths += [p.relative_to(ROOT) for p in (ROOT/'exports/human_e2e').glob('*.json')]
     for classification in ('actual_candidate','diagnostic_counterexample','control'):
+        paths += [p.relative_to(ROOT) for p in (ROOT/'reports/response_calibration'/classification).glob('manifest.json')]
+        paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_calibration'/classification).glob('*.kif')]
         paths += [p.relative_to(ROOT) for p in (ROOT/'reports/response_set_review'/classification).glob('manifest.json')]
         paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_set_review'/classification).glob('*.kif')]
         paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_set_review'/classification).glob('*.json')]
