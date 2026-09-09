@@ -1,0 +1,14 @@
+source_release: BOOK-700T-Shock
+archive: assets/books/700T/700T-shock-book.zip
+audit_output: reports/terashock_seed_audit
+primary_max_ply: 12
+conditional_extension_max_ply: 16
+audit_only_max_ply: 20
+parent_book_abs_eval_low_priority_cp: 300
+parent_engine_favorable_cp: 300
+human_annotations: reports/human_pilot/reach_positions.json
+require_parent_engine_recheck: true
+require_human_support_for_e2e: true
+use_book_counts_as_human_frequency: false
+symmetry_expansion: false
+redistribution_approved: false

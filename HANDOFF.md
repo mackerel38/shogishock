@@ -56,3 +56,15 @@ Use the `Dockerfile` or `scripts/setup.sh`. Choose x86_64 CPUs with SSE4.2, stab
 `./scripts/setup.sh` completed dependency installation, reused the existing build, created the evaluation link, and ran the setup checks. `surprise engine-test`, `surprise benchmark`, and `pytest` are the required follow-up checks.
 
 Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`, and `bsdtar`; the source build is not pinned to a release tag because upstream current source was requested. MultiPV is exposed and parsed; a later scan worker should implement per-move evaluation fallback when a deployment reports only one PV. Graceful batch checkpoint orchestration belongs to the later scanner, while the engine cache itself is incremental and resumable.
+
+## ShogiHome export handoff
+
+- Export module: `surprise.kif_export`
+- CLI: `.venv/bin/surprise export-shogihome --input reports/pass_pilot --output exports/shogihome --limit 10`
+- Single candidate: add `--candidate-id <candidate_id>`
+- Output: UTF-8 branching `.kif` plus a same-stem `.json` warning sidecar
+- Internal model: `VariationNode` tree; candidate, engine PV, and optional audit/obvious/confirm/deep responses are merged by USI move
+- Existing ranking, score, report, and pilot files are read-only inputs
+- ShogiHome: `tools/shogihome/ShogiHome-1.29.0.AppImage`, official Linux AppImage, SHA-256 `4b79e2ae833a07d7439ba58decbac4ec1b2a7098b117b4f5debdd71a6d6474ba`
+- Version check: `ShogiHome-1.29.0.AppImage --appimage-version` returned `Version: effcebc`
+- GUI visual QA: the binary is installed and executable, but GUI playback was not automated because no display session was available

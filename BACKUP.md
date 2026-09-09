@@ -1,5 +1,8 @@
 # GitHub checkpoint — 2026-09-08
 
+> Current public checkpoint: see `PUBLIC_CHECKPOINT.md` and `CHECKPOINTING.md` (2026-09-09).
+> The repository is now PUBLIC. The text below describes the historical release backup, not permission to upload new raw data.
+
 Repository: https://github.com/mackerel38/shogishock (private)
 
 Release: https://github.com/mackerel38/shogishock/releases/tag/checkpoint-20260908

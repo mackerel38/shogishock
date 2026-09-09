@@ -1,0 +1,122 @@
+{
+  "candidate_id": "dbb04b7d0c97e44943ce_8f7f",
+  "nodes": 10000,
+  "responses": [
+    {
+      "move": "2f7f",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "recapture",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 3112,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "2b8h+",
+        "pv": [
+          "2b8h+",
+          "7i8h",
+          "1c1d",
+          "5i5h",
+          "3a4b",
+          "1g1f",
+          "P*2h",
+          "3i2h"
+        ],
+        "depth": 12,
+        "nodes": 10007,
+        "time_ms": 51,
+        "raw_info": [
+          "info depth 12 seldepth 17 multipv 1 score cp -3112 nodes 10007 nps 196215 hashfull 5 time 51 pv 2b8h+ 7i8h 1c1d 5i5h 3a4b 1g1f P*2h 3i2h"
+        ],
+        "reported_best_move": "2b8h+"
+      },
+      "engine_eval": 3112,
+      "gap_from_optimal_estimate": 3,
+      "gap_from_root_estimate": 3,
+      "is_good_50": true,
+      "is_good_100": true,
+      "is_good_200": true,
+      "is_good_300": true
+    }
+  ],
+  "root": {
+    "score": {
+      "score_type": "cp",
+      "score_cp": 3115,
+      "mate_distance": null,
+      "perspective": "sente",
+      "bound": "exact"
+    },
+    "best_move": "2f7f",
+    "pv": [
+      "2f7f",
+      "2b8h+",
+      "7i8h",
+      "B*4d",
+      "5i5h",
+      "P*8b",
+      "1g1f",
+      "5a5b",
+      "8h7g"
+    ],
+    "depth": 13,
+    "nodes": 10008,
+    "time_ms": 104,
+    "raw_info": [
+      "info depth 13 seldepth 15 multipv 1 score cp 3115 nodes 10008 nps 96230 hashfull 5 time 104 pv 2f7f 2b8h+ 7i8h B*4d 5i5h P*8b 1g1f 5a5b 8h7g"
+    ],
+    "reported_best_move": "2f7f"
+  },
+  "reference_eval": 3115,
+  "root_eval": 3115,
+  "numeric_comparable": true,
+  "reference_scope": "best of root estimate and explicitly evaluated replies; provisional",
+  "root_reference_delta": 0,
+  "legal_reply_count": 60,
+  "evaluated_reply_count": 1,
+  "all_legal_replies_evaluated": false,
+  "good_reply_count_50": 1,
+  "good_reply_fraction_50": null,
+  "good_reply_fraction_bounds_50": [
+    0.016666666666666666,
+    1.0
+  ],
+  "good_reply_count_100": 1,
+  "good_reply_fraction_100": null,
+  "good_reply_fraction_bounds_100": [
+    0.016666666666666666,
+    1.0
+  ],
+  "good_reply_count_200": 1,
+  "good_reply_fraction_200": null,
+  "good_reply_fraction_bounds_200": [
+    0.016666666666666666,
+    1.0
+  ],
+  "good_reply_count_300": 1,
+  "good_reply_fraction_300": null,
+  "good_reply_fraction_bounds_300": [
+    0.016666666666666666,
+    1.0
+  ],
+  "complete": true,
+  "obvious_reply_exists": true,
+  "candidate_piece_capturable": true,
+  "obvious_reply_neutralizes": true,
+  "obvious_reply_eval": 3112,
+  "obvious_reply_move": "2f7f",
+  "obvious_reply_gap_from_optimal": 3,
+  "obvious_reply_is_good_50": true,
+  "obvious_reply_is_good_100": true,
+  "obvious_reply_is_good_200": true,
+  "obvious_reply_is_good_300": true
+}

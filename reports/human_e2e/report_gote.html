@@ -1,0 +1,150 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gote Surprise / 小規模Human Policy実験</title><style>
+:root{color-scheme:light;--ink:#172b35;--muted:#50636c;--accent:#007e80;--paper:#f3f5f4}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 system-ui,sans-serif}
+main{max-width:1360px;margin:auto;padding:26px}header{border-top:5px solid var(--accent);padding:18px 0}h1{font-size:34px;line-height:1.2;margin:12px 0}h2{font-size:21px}a{color:#007077}p{max-width:1000px}.muted{color:var(--muted)}
+.stats,.controls,.boards,.plots{display:flex;gap:16px;flex-wrap:wrap}.stats div{background:white;padding:14px 24px;border-radius:8px}.stats strong{display:block;font-size:27px}.controls{position:sticky;top:0;background:#f3f5f4ed;padding:14px 0;z-index:2;align-items:center}select,input,button{padding:8px;border:1px solid #9aaeb2;border-radius:5px;background:white;color:var(--ink)}button{cursor:pointer}label{display:flex;gap:8px;align-items:center}
+.plot{flex:1;min-width:300px;background:white;border:1px solid #d6dfdf;padding:12px;border-radius:10px}.plot svg{width:100%;height:auto}.plot circle:hover{r:6;fill:#be4520}.card{background:white;padding:22px;margin:20px 0;border:1px solid #d6dfdf;border-radius:10px;scroll-margin-top:95px}.card:target{border:3px solid var(--accent)}.boards figure{margin:0;flex:1;max-width:350px;min-width:235px}.boards svg{width:100%}.boards figcaption{font-weight:600}.metrics{flex:1;min-width:285px}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}td,th{padding:4px 9px;text-align:left;border-bottom:1px solid #edf0ef}td:last-child{text-align:right}.tag{font-size:12px;padding:3px 8px;background:#e8f1f1;border-radius:10px;display:inline-block;margin-right:6px}code{overflow-wrap:anywhere;white-space:pre-wrap}details{margin-top:14px}summary{cursor:pointer;color:#006e70}.notice{background:#fff2d8;padding:12px 18px;border-left:4px solid #cb953a}.pv{display:grid;grid-template-columns:110px 1fr;gap:6px}footer{margin:30px 0}.selected{outline:2px solid #b65024}@media(max-width:650px){main{padding:12px}h1{font-size:26px}.controls{position:static}.boards figure{max-width:100%}.card{padding:12px}}
+</style><main><h1>Gote Surprise / 小規模Human Policy実験</h1>
+<nav><a href="report_sente.html">先手</a> · <a href="report_gote.html">後手</a> · <a href="analysis.md">研究判断</a> · <a href="../human_policy_v2/calibration.html">予測校正</a></nav>
+<p class="notice">正＝先手有利。全て10kの探索推定値。P_good / human_gapは未検証の反実仮想Human Policyによる試算で、実測勝率ではありません。明白な取りへ低すぎる確率を置く反例を確認したため、大量scanには使用しません。</p>
+<article class="card" id="5c46af1026197c8aeb70_1a1b"><h2>1a1b / rare_quiet</h2><p><a href="../../exports/human_e2e/gote_5c46af1026197c8aeb70_1a1b.kif">ShogiHome KIF</a></p><div class="boards"><figure><figcaption>候補前</figcaption><div data-sfen="lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4"></div></figure><figure><figcaption>候補後</figcaption><div data-sfen="lnsgkgsn1/1r5bl/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL b - 5"></div></figure></div>
+<table><tr><th>parent engine eval</th><td>136</td></tr><tr><th>parent book eval（別の評価源）</th><td>59</td></tr><tr><th>candidate engine eval</th><td>513</td></tr><tr><th>candidate eval loss</th><td>377</td></tr><tr><th>reach sample</th><td>75/612 = 12.255%; 108 players</td></tr><tr><th>ply / candidate capture / check</th><td>3 / False / False</td></tr><tr><th>policy exact support</th><td>0</td></tr><tr><th>covered probability</th><td>1.0</td></tr><tr><th>V_optimal（応手別探索の最良推定値）</th><td>548</td></tr><tr><th>E_human</th><td>-137.31</td></tr><tr><th>human_eval_delta</th><td>-685.31</td></tr><tr><th>human_gap</th><td>685.31</td></tr><tr><th>obvious reply neutralizes</th><td>False</td></tr><tr><th>pass sensitivity（補助値）</th><td>216</td></tr><tr><th>P_good 50cp [lower, upper]</th><td>[0.0586, 0.0586]</td></tr><tr><th>P_good 100cp [lower, upper]</th><td>[0.0941, 0.0941]</td></tr><tr><th>P_good 200cp [lower, upper]</th><td>[0.4656, 0.4656]</td></tr><tr><th>P_good 300cp [lower, upper]</th><td>[0.5211, 0.5211]</td></tr></table>
+<p>保留理由: human_policy_ood_and_response_set_calibration_unverified</p><p>履歴: <code>2g2f 3c3d 7g7f</code><br>candidate PV: <code>5i5h 4a3b 2f2e 2b8h+ 7i8h 3a2b 8h7g 2b3c 6i7h 7a7b 3i3h</code></p>
+<details><summary>全合法応手とHuman Policy確率・PV</summary><table><tr><th>応手</th><th>確率</th><th>評価</th><th>good 100cp</th><th>signal / PV</th></tr>
+<tr><td>2f2e</td><td>5.8557%</td><td>548</td><td>True</td><td><br>4a3b 2e2d 2c2d 2h2d 6c6d 2d2h P*2c 8h2b+ 3a2b B*6c 5a4b</td></tr>
+<tr><td>3i4h</td><td>5.5500%</td><td>367</td><td>False</td><td><br>8c8d 2f2e 4a3b 5i5h 8d8e 2e2d 2c2d 2h2d 8e8f 8g8f</td></tr>
+<tr><td>7i6h</td><td>5.5279%</td><td>-3072</td><td>False</td><td><br>2b8h+ 6i7i 8h9i 4i5h 5a5b 6h7g 3a3b 4g4f 8c8d</td></tr>
+<tr><td>5g5f</td><td>5.2586%</td><td>211</td><td>False</td><td><br>2b8h+ 7i8h B*5g 8h7g</td></tr>
+<tr><td>3i3h</td><td>4.7981%</td><td>418</td><td>False</td><td><br>4c4d 3g3f 8c8d 2f2e 2b3c 3h3g 8d8e 8h7g 3a4b</td></tr>
+<tr><td>3g3f</td><td>4.7500%</td><td>372</td><td>False</td><td><br>8c8d 2f2e 8d8e 6i7h 8e8f 8g8f 8b8f 5i6h 4a3b 2e2d 2c2d 2h2d</td></tr>
+<tr><td>6g6f</td><td>4.6836%</td><td>223</td><td>False</td><td><br>8b6b 2f2e 2b3c 7i7h 6c6d 7h6g 7a7b</td></tr>
+<tr><td>1g1f</td><td>4.5952%</td><td>384</td><td>False</td><td><br>4c4d 2f2e 2b3c 3g3f 8c8d 5i6h 4a3b</td></tr>
+<tr><td>7i7h</td><td>4.2674%</td><td>-3087</td><td>False</td><td><br>2b8h+ 8i7g 8b4b 4i5h 8h9i 1g1f</td></tr>
+<tr><td>9g9f</td><td>4.1750%</td><td>393</td><td>False</td><td><br>4c4d 3g3f 4a3b 2f2e</td></tr>
+<tr><td>5i4h</td><td>4.1113%</td><td>232</td><td>False</td><td><br>4c4d 2f2e 2b3c 4h5h 3a3b 3g3f 7a6b</td></tr>
+<tr><td>4g4f</td><td>3.9318%</td><td>393</td><td>False</td><td><br>4c4d 7i7h 9c9d 9g9f</td></tr>
+<tr><td>8h7g</td><td>3.7469%</td><td>235</td><td>False</td><td><br>2b7g+ 8i7g 3a2b 5i5h 2b3c 2f2e 4a3b</td></tr>
+<tr><td>5i6h</td><td>3.5584%</td><td>467</td><td>True</td><td><br>4c4d 2f2e 2b3c 3g3f 3a4b 4i5h 4b4c 3i4h 8b2b</td></tr>
+<tr><td>8g8f</td><td>3.5337%</td><td>80</td><td>False</td><td><br>8c8d 2f2e 4a3b 2e2d 2c2d 2h2d</td></tr>
+<tr><td>6i7h</td><td>3.4031%</td><td>363</td><td>False</td><td><br>4c4d 3i4h 9c9d 2f2e</td></tr>
+<tr><td>7f7e</td><td>2.6270%</td><td>144</td><td>False</td><td><br>4c4d 2h7h 2b3c 5i5h 3a3b</td></tr>
+<tr><td>4i5h</td><td>2.6070%</td><td>372</td><td>False</td><td><br>8c8d 2f2e 8d8e 2e2d 2c2d 2h2d 8e8f 8g8f 4a3b 8h7g</td></tr>
+<tr><td>8h2b+</td><td>2.5836%</td><td>308</td><td>False</td><td><br>3a2b 5i6h 2b3c 7i8h 8c8d 8h7g 4a3b 3i3h</td></tr>
+<tr><td>5i5h</td><td>2.1210%</td><td>375</td><td>False</td><td><br>4c4d 4i4h 2b3c 3g3f 3a3b 2f2e 3b4c 7i7h 4a3b 2i3g</td></tr>
+<tr><td>6i5h</td><td>1.9657%</td><td>237</td><td>False</td><td><br>8c8d 2f2e 4a3b 5h6h 8d8e 8h7g 2b7g+ 6h7g 3a2b</td></tr>
+<tr><td>8i7g</td><td>1.5531%</td><td>-91</td><td>False</td><td><br>8b7b 2f2e 2b3c 7i7h</td></tr>
+<tr><td>4i3h</td><td>1.4350%</td><td>316</td><td>False</td><td><br>4c4d 5i5h 3a3b 2f2e 2b3c 3i4h 3b4c 3g3f 1c1d</td></tr>
+<tr><td>2h6h</td><td>1.2489%</td><td>115</td><td>False</td><td><br>4a3b 6h2h 8c8d 6i7h</td></tr>
+<tr><td>2h7h</td><td>1.2268%</td><td>185</td><td>False</td><td><br>8c8d 2f2e 4a3b 7h2h 8d8e 2e2d 2c2d 2h2d 8e8f</td></tr>
+<tr><td>6i6h</td><td>1.2138%</td><td>353</td><td>False</td><td><br>8c8d 2f2e 5a4b 8h2b+ 3a2b 2e2d 2c2d 2h2d</td></tr>
+<tr><td>2h5h</td><td>1.1825%</td><td>124</td><td>False</td><td><br>4a3b 5h2h 8c8d 2f2e 8d8e</td></tr>
+<tr><td>4i4h</td><td>1.0811%</td><td>342</td><td>False</td><td><br>4c4d 7i7h 3a4b 3g3f 4b4c 5i6h 9c9d 6h7i 9d9e 3i3h 2b3c</td></tr>
+<tr><td>8h6f</td><td>1.0711%</td><td>-325</td><td>False</td><td><br>2b6f 6g6f B*6g</td></tr>
+<tr><td>8h5e</td><td>0.9606%</td><td>-2846</td><td>False</td><td><br>2b5e 2h8h B*2g 3i3h 2g5d+ 6i7h 5e8h+ 7i8h 5a5b 8h7g 1c1d B*1a</td></tr>
+<tr><td>8h3c</td><td>0.8942%</td><td>-2975</td><td>False</td><td><br>2b3c 2h9h B*4e 6i7h 4e2g+ 5i4h 2g2f 9g9f 2f2g 1g1f</td></tr>
+<tr><td>8h4d</td><td>0.8942%</td><td>-3165</td><td>False</td><td><br>2b4d 7i8h B*9e 8h7g 4d7g+ 8i7g 9e7g+ 6i6h 7g9i 5i4h 9i8h B*6f 8h6f 6g6f 5a5b 1g1f</td></tr>
+<tr><td>2h3h</td><td>0.6739%</td><td>185</td><td>False</td><td><br>8c8d 2f2e 4a3b 3h2h 8d8e 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f</td></tr>
+<tr><td>2h4h</td><td>0.5412%</td><td>84</td><td>False</td><td><br>8c8d 4h2h 4a3b 2f2e 8d8e 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f</td></tr>
+<tr><td>8h3c+</td><td>0.4753%</td><td>-2755</td><td>False</td><td><br>2b3c 2h9h B*4e 7i6h 4e2g+ 5i5h 2g2f 9g9f 2f4d 8i7g 4d7g 6h7g 3c7g+ B*1e S*4b</td></tr>
+<tr><td>2h2g</td><td>0.4528%</td><td>-544</td><td>False</td><td><br>2b8h+ 7i8h B*4e 3i3h 4e6g+ 6i7i 6g5g B*7g 5g3e 2f2e</td></tr>
+<tr><td>8h2b</td><td>0.4470%</td><td>320</td><td>False</td><td><br>3a2b 5i6h 4a3b 7i8h 8c8d 8h7g 2b3c 3g3f</td></tr>
+<tr><td>2h1h</td><td>0.4306%</td><td>2</td><td>False</td><td><br>2b8h+ 7i8h B*2g 1h2h 2g4e+ 5i5h 3a2b 8h7g 2b3c 2f2e</td></tr>
+<tr><td>1i1h</td><td>0.3055%</td><td>96</td><td>False</td><td><br>8c8d 2f2e 4a3b 2e2d 2c2d 2h2d 8d8e 2d2h</td></tr>
+<tr><td>9i9h</td><td>0.2613%</td><td>150</td><td>False</td><td><br>8c8d 2f2e 8d8e 2e2d 2c2d 2h2d 8e8f</td></tr>
+</table></details></article>
+<article class="card" id="5c46af1026197c8aeb70_3a3b"><h2>3a3b / high_cost</h2><p><a href="../../exports/human_e2e/gote_5c46af1026197c8aeb70_3a3b.kif">ShogiHome KIF</a></p><div class="boards"><figure><figcaption>候補前</figcaption><div data-sfen="lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4"></div></figure><figure><figcaption>候補後</figcaption><div data-sfen="lnsgkg1nl/1r4sb1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL b - 5"></div></figure></div>
+<table><tr><th>parent engine eval</th><td>136</td></tr><tr><th>parent book eval（別の評価源）</th><td>59</td></tr><tr><th>candidate engine eval</th><td>3808</td></tr><tr><th>candidate eval loss</th><td>3672</td></tr><tr><th>reach sample</th><td>75/612 = 12.255%; 108 players</td></tr><tr><th>ply / candidate capture / check</th><td>3 / False / False</td></tr><tr><th>policy exact support</th><td>1</td></tr><tr><th>covered probability</th><td>1.0</td></tr><tr><th>V_optimal（応手別探索の最良推定値）</th><td>3691</td></tr><tr><th>E_human</th><td>-359.54</td></tr><tr><th>human_eval_delta</th><td>-4050.54</td></tr><tr><th>human_gap</th><td>4050.54</td></tr><tr><th>obvious reply neutralizes</th><td>True</td></tr><tr><th>pass sensitivity（補助値）</th><td>3873</td></tr><tr><th>P_good 50cp [lower, upper]</th><td>[0.0303, 0.0303]</td></tr><tr><th>P_good 100cp [lower, upper]</th><td>[0.0303, 0.0303]</td></tr><tr><th>P_good 200cp [lower, upper]</th><td>[0.0303, 0.0303]</td></tr><tr><th>P_good 300cp [lower, upper]</th><td>[0.0303, 0.0303]</td></tr></table>
+<p>保留理由: obvious_reply_neutralizes, human_policy_ood_and_response_set_calibration_unverified</p><p>履歴: <code>2g2f 3c3d 7g7f</code><br>candidate PV: <code>8h2b+ 8b4b 2b1a 7a6b 5i5h 6c6d 1a2b</code></p>
+<details><summary>全合法応手とHuman Policy確率・PV</summary><table><tr><th>応手</th><th>確率</th><th>評価</th><th>good 100cp</th><th>signal / PV</th></tr>
+<tr><td>2f2e</td><td>5.8557%</td><td>106</td><td>False</td><td><br>2b3c 6i7h 7a6b 5i6i 8c8d 7i6h</td></tr>
+<tr><td>3i4h</td><td>5.5500%</td><td>156</td><td>False</td><td><br>3b3c 3g3f 8c8d 7i7h 8d8e 8h7g 4a3b 2i3g</td></tr>
+<tr><td>7i6h</td><td>5.5279%</td><td>-3581</td><td>False</td><td><br>2b8h+ 6i7i 8h9i 5i4h 5a5b 8i7g B*9h 4i5h 9h8g+</td></tr>
+<tr><td>5g5f</td><td>5.2586%</td><td>-15</td><td>False</td><td><br>2b3c 3i4h 8c8d 4h5g 8d8e 2f2e</td></tr>
+<tr><td>3i3h</td><td>4.7981%</td><td>117</td><td>False</td><td><br>2b3c 3g3f 8c8d 8h3c+ 3b3c 7i8h 4a3b 8h7g 5a4a 3h3g 7a6b 3g4f 7c7d</td></tr>
+<tr><td>3g3f</td><td>4.7500%</td><td>90</td><td>False</td><td><br>2b3c 3i3h 8c8d 8h3c+ 3b3c 7i8h 8d8e</td></tr>
+<tr><td>6g6f</td><td>4.6836%</td><td>-76</td><td>False</td><td><br>6c6d 2f2e 2b3c 5g5f 8b6b 4i5h 7a7b 3i4h 9c9d</td></tr>
+<tr><td>1g1f</td><td>4.5952%</td><td>88</td><td>False</td><td><br>2b3c 5i6h 8c8d 8h3c+ 3b3c 7i8h 8d8e</td></tr>
+<tr><td>7i7h</td><td>4.2674%</td><td>-3567</td><td>False</td><td><br>2b8h+ 8i7g 5a5b 5i6h 8h9i 4g4f 8c8d 1g1f</td></tr>
+<tr><td>9g9f</td><td>4.1750%</td><td>33</td><td>False</td><td><br>2b3c 6i7h 8c8d 8h3c+ 3b3c 7i8h 8d8e</td></tr>
+<tr><td>5i4h</td><td>4.1113%</td><td>-116</td><td>False</td><td><br>2b3c 3i3h 8c8d 6i7h 5a4b</td></tr>
+<tr><td>4g4f</td><td>3.9318%</td><td>78</td><td>False</td><td><br>3b3c 3i3h 4a3b 3h4g 8c8d 4g5f 8d8e 6i7h 8e8f 8g8f 8b8f</td></tr>
+<tr><td>8h7g</td><td>3.7469%</td><td>-281</td><td>False</td><td><br>2b7g+ 8i7g 3b3c 6i7h 7c7d 7i6h 7a6b 5i5h 5a4b 3i3h</td></tr>
+<tr><td>5i6h</td><td>3.5584%</td><td>97</td><td>False</td><td><br>2b3c 4i5h 8c8d 8h3c+ 3b3c 7i8h 7c7d 3i4h</td></tr>
+<tr><td>8g8f</td><td>3.5337%</td><td>-323</td><td>False</td><td><br>2b3c 8h7g</td></tr>
+<tr><td>6i7h</td><td>3.4031%</td><td>125</td><td>False</td><td><br>2b3c 7i6h 9c9d 5i6i 9d9e 2f2e 7a7b 4i5h</td></tr>
+<tr><td>7f7e</td><td>2.6270%</td><td>-272</td><td>False</td><td><br>2b3c 8h3c+ 3b3c 7i8h 7a6b 2f2e 5a4b</td></tr>
+<tr><td>4i5h</td><td>2.6070%</td><td>38</td><td>False</td><td><br>2b3c 8h3c+ 3b3c 7i8h 8c8d 6i7h</td></tr>
+<tr><td>8h2b+</td><td>2.5836%</td><td>3681</td><td>True</td><td>material_recovery_proxy<br>8c8d 2b1a 6a5b 7i8h 8d8e 1a2b 8e8f 8g8f 8b8f</td></tr>
+<tr><td>5i5h</td><td>2.1210%</td><td>56</td><td>False</td><td><br>3b3c 3i4h 8c8d 3g3f 4a3b 4h3g 8d8e 8h7g 1c1d 7i8h 5a4a</td></tr>
+<tr><td>6i5h</td><td>1.9657%</td><td>-210</td><td>False</td><td><br>2b3c 8h3c+ 3b3c 7i8h 8c8d 8h7g 8d8e 5h6h 5a5b</td></tr>
+<tr><td>8i7g</td><td>1.5531%</td><td>-384</td><td>False</td><td><br>8c8d 3i3h 8d8e 6i7h 7a6b</td></tr>
+<tr><td>4i3h</td><td>1.4350%</td><td>-80</td><td>False</td><td><br>2b3c 5i5h 8c8d 8h3c+ 3b3c 7i8h 4a3b 6i7h 5a4b</td></tr>
+<tr><td>2h6h</td><td>1.2489%</td><td>-220</td><td>False</td><td><br>2b3c 3g3f 8c8d 6h3h 8d8e 3f3e 3d3e 3h3e 8e8f 8g8f</td></tr>
+<tr><td>2h7h</td><td>1.2268%</td><td>-222</td><td>False</td><td><br>2b3c 5i5h 8c8d 8h3c+ 3b3c</td></tr>
+<tr><td>6i6h</td><td>1.2138%</td><td>-24</td><td>False</td><td><br>2b3c 5i6i 7a6b 8h3c+ 3b3c 7i8h 8c8d 8h7g 8d8e</td></tr>
+<tr><td>2h5h</td><td>1.1825%</td><td>-254</td><td>False</td><td><br>2b3c 6i7h 8c8d 3g3f 8d8e 5i6i 8e8f 8g8f 8b8f</td></tr>
+<tr><td>4i4h</td><td>1.0811%</td><td>63</td><td>False</td><td><br>3b3c 3g3f 8c8d 2f2e 4a3b 8h7g 5a4a</td></tr>
+<tr><td>8h6f</td><td>1.0711%</td><td>-114</td><td>False</td><td><br>2b6f 6g6f B*4d 2h6h 3b3c 5i5h 8b2b 3i2h 4d2f</td></tr>
+<tr><td>8h5e</td><td>0.9606%</td><td>-3006</td><td>False</td><td><br>2b5e 2h8h 2c2d 6i7h 2d2e 2f2e B*2g 2e2d 5e8h+ 7i8h</td></tr>
+<tr><td>8h3c</td><td>0.8942%</td><td>-3074</td><td>False</td><td><br>2b3c 2h9h 8c8d 9g9f 8d8e 5i5h 8e8f 8g8f</td></tr>
+<tr><td>8h4d</td><td>0.8942%</td><td>-3225</td><td>False</td><td><br>2b4d 2h9h B*5e 7i6h 5e9i+ 9h9i 4d9i+ B*6f 9i6f 6g6f 9c9d</td></tr>
+<tr><td>2h3h</td><td>0.6739%</td><td>-115</td><td>False</td><td><br>2b8h+ 7i8h 3b3c 3g3f 5a5b 5i6h 8c8d 8h7g</td></tr>
+<tr><td>2h4h</td><td>0.5412%</td><td>-105</td><td>False</td><td><br>2b3c 5i6h 8c8d 3g3f 8d8e 4g4f 8e8f 8g8f 8b8f</td></tr>
+<tr><td>8h3c+</td><td>0.4753%</td><td>-3094</td><td>False</td><td><br>2b3c 2h9h 8c8d 7i7h 5a5b 5i5h</td></tr>
+<tr><td>2h2g</td><td>0.4528%</td><td>-368</td><td>False</td><td><br>2b8h+ 7i8h B*4e 2g2h 4e6g+ 6i7h 6g6f B*7g 6f3c 7g3c+ 3b3c 4i5h 8b6b</td></tr>
+<tr><td>8h2b</td><td>0.4470%</td><td>3691</td><td>True</td><td>material_recovery_proxy<br>6a5b 2b1a+ 4a3a 7i8h 2a3c 2f2e 5a6a 5i5h 1c1d</td></tr>
+<tr><td>2h1h</td><td>0.4306%</td><td>-236</td><td>False</td><td><br>2b3c 5i6h 8c8d 3g3f 8d8e 1h3h 8e8f</td></tr>
+<tr><td>1i1h</td><td>0.3055%</td><td>-225</td><td>False</td><td><br>2b3c 5i6h 7c7d 4i5h 8c8d 8h7g 3c7g+ 6h7g 3b3c</td></tr>
+<tr><td>9i9h</td><td>0.2613%</td><td>-277</td><td>False</td><td><br>2b3c 5i6h 8c8d 8h7g 3c7g+ 6h7g 3b3c 7i8h</td></tr>
+</table></details></article>
+<article class="card" id="fa2a3aee31df970cb704_2b3c"><h2>2b3c / low_cost</h2><p><a href="../../exports/human_e2e/gote_fa2a3aee31df970cb704_2b3c.kif">ShogiHome KIF</a></p><div class="boards"><figure><figcaption>候補前</figcaption><div data-sfen="lnsgkgsnl/1r5b1/pppppp1pp/6p2/7P1/9/PPPPPPP1P/1B5R1/LNSGKGSNL w - 4"></div></figure><figure><figcaption>候補後</figcaption><div data-sfen="lnsgkgsnl/1r7/ppppppbpp/6p2/7P1/9/PPPPPPP1P/1B5R1/LNSGKGSNL b - 5"></div></figure></div>
+<table><tr><th>parent engine eval</th><td>94</td></tr><tr><th>parent book eval（別の評価源）</th><td>32</td></tr><tr><th>candidate engine eval</th><td>60</td></tr><tr><th>candidate eval loss</th><td>0</td></tr><tr><th>reach sample</th><td>70/612 = 11.438%; 102 players</td></tr><tr><th>ply / candidate capture / check</th><td>3 / False / False</td></tr><tr><th>policy exact support</th><td>35</td></tr><tr><th>covered probability</th><td>0.9999999999999999</td></tr><tr><th>V_optimal（応手別探索の最良推定値）</th><td>105</td></tr><tr><th>E_human</th><td>24.21</td></tr><tr><th>human_eval_delta</th><td>-80.79</td></tr><tr><th>human_gap</th><td>80.79</td></tr><tr><th>obvious reply neutralizes</th><td>False</td></tr><tr><th>pass sensitivity（補助値）</th><td>205</td></tr><tr><th>P_good 50cp [lower, upper]</th><td>[0.3863, 0.3863]</td></tr><tr><th>P_good 100cp [lower, upper]</th><td>[0.5595, 0.5595]</td></tr><tr><th>P_good 200cp [lower, upper]</th><td>[0.9332, 0.9332]</td></tr><tr><th>P_good 300cp [lower, upper]</th><td>[0.9732, 0.9732]</td></tr></table>
+<p>保留理由: human_policy_ood_and_response_set_calibration_unverified</p><p>履歴: <code>2g2f 3c3d 2f2e</code><br>candidate PV: <code>7g7f 3a2b 8h3c+ 2b3c 7i8h 7a6b 8h7g 8c8d</code></p>
+<details><summary>全合法応手とHuman Policy確率・PV</summary><table><tr><th>応手</th><th>確率</th><th>評価</th><th>good 100cp</th><th>signal / PV</th></tr>
+<tr><td>7g7f</td><td>38.6292%</td><td>105</td><td>True</td><td><br>3a4b 8h3c+ 4b3c 7i8h 8c8d 8h7g 5a4b 5i6h</td></tr>
+<tr><td>3i4h</td><td>18.2597%</td><td>-27</td><td>False</td><td><br>8c8d 7g7f 3a3b 8h7g 3c7g+ 8i7g 8d8e B*2b</td></tr>
+<tr><td>6i7h</td><td>12.9463%</td><td>44</td><td>True</td><td><br>8c8d 7g7f 3a4b 7i6h 3c8h+ 7h8h 4b3c 6h7g</td></tr>
+<tr><td>3i3h</td><td>10.6649%</td><td>-21</td><td>False</td><td><br>8c8d 7g7f 3a2b 8h3c+ 2b3c 7i8h 8d8e</td></tr>
+<tr><td>5g5f</td><td>3.2083%</td><td>-61</td><td>False</td><td><br>8c8d 7g7f 3a2b 8h7g 3c7g+ 8i7g 8d8e</td></tr>
+<tr><td>1g1f</td><td>3.1246%</td><td>22</td><td>True</td><td><br>3a2b 7g7f 8c8d 6i7h</td></tr>
+<tr><td>7i7h</td><td>3.0980%</td><td>-97</td><td>False</td><td><br>8c8d 3i4h 8d8e 5i6h 7a6b</td></tr>
+<tr><td>4i5h</td><td>2.8459%</td><td>-10</td><td>False</td><td><br>8c8d 6i7h 8d8e 7g7f 3a2b 8h7g</td></tr>
+<tr><td>7i6h</td><td>0.7569%</td><td>23</td><td>True</td><td><br>8c8d 6i7h 8d8e 7g7f</td></tr>
+<tr><td>3g3f</td><td>0.6442%</td><td>-78</td><td>False</td><td><br>8c8d 6i7h 8d8e 7g7f 3a4b 8h3c+ 4b3c 7i8h 8e8f 8g8f 8b8f</td></tr>
+<tr><td>6g6f</td><td>0.6358%</td><td>-212</td><td>False</td><td><br>3c6f 5i6h 6f3c 7g7f 3a2b 9g9f</td></tr>
+<tr><td>9g9f</td><td>0.5717%</td><td>-10</td><td>False</td><td><br>8c8d 6i7h 8d8e 7g7f 3a4b 8h3c+ 4b3c 7i8h 5a4b 8h7g 4a3b 3i4h 7a7b</td></tr>
+<tr><td>5i4h</td><td>0.5602%</td><td>-151</td><td>False</td><td><br>3a2b 7g7f 8c8d 6i7h 4a3b 3i3h 8d8e 8h7g 3c7g+ 8i7g 2b3c 7i6h</td></tr>
+<tr><td>4g4f</td><td>0.5410%</td><td>-37</td><td>False</td><td><br>8c8d 7g7f 3a2b 6i7h 4a3b 3i3h 8d8e</td></tr>
+<tr><td>2e2d</td><td>0.4936%</td><td>-417</td><td>False</td><td><br>2c2d 3g3f 8b2b 2i3g 5a6b 5i6h 3a4b 6h7h 3c4d 3i3h</td></tr>
+<tr><td>8g8f</td><td>0.4908%</td><td>-308</td><td>False</td><td><br>3a4b 5i5h 4a3b 7g7f 7a7b 8h3c+ 4b3c</td></tr>
+<tr><td>5i6h</td><td>0.4905%</td><td>37</td><td>True</td><td><br>3a3b 6i7h 8c8d 7g7f 8d8e 8h3c+ 3b3c 7i8h</td></tr>
+<tr><td>5i5h</td><td>0.3093%</td><td>-18</td><td>False</td><td><br>3a2b 7g7f 8c8d 8h7g</td></tr>
+<tr><td>6i5h</td><td>0.2651%</td><td>-336</td><td>False</td><td><br>8c8d 7g7f 3a4b 5g5f 7a7b</td></tr>
+<tr><td>4i3h</td><td>0.1982%</td><td>-178</td><td>False</td><td><br>8c8d 7g7f 3a4b 5i5h 8d8e 8h7g 3c7g+ 8i7g 4b3c 6i7h</td></tr>
+<tr><td>6i6h</td><td>0.1703%</td><td>-71</td><td>False</td><td><br>3a2b 5i6i 8c8d 7g7f 4a3b</td></tr>
+<tr><td>2h6h</td><td>0.1665%</td><td>-322</td><td>False</td><td><br>8c8d 6i7h 8d8e 6h2h 3a4b 9g9f 8e8f 8g8f 8b8f P*8g 8f8b 3i3h</td></tr>
+<tr><td>2h7h</td><td>0.1637%</td><td>-314</td><td>False</td><td><br>8c8d 7h2h 8d8e 6i7h 8e8f 8g8f 8b8f P*8g 8f8b 9g9f 3a3b 5i6i</td></tr>
+<tr><td>2h5h</td><td>0.1581%</td><td>-285</td><td>False</td><td><br>8c8d 7g7f 3a4b 5h2h 8d8e 6i7h 4a3b 8h3c+ 4b3c 7i8h</td></tr>
+<tr><td>4i4h</td><td>0.1536%</td><td>-81</td><td>False</td><td><br>3a3b 6i7h 8c8d 7g7f 8d8e 8h3c+ 3b3c 7i8h 8e8f 8g8f 8b8f</td></tr>
+<tr><td>2h3h</td><td>0.0940%</td><td>-221</td><td>False</td><td><br>8c8d 7g7f 3a3b 3g3f 8d8e 6i7h 8e8f 8g8f 8b8f</td></tr>
+<tr><td>2h2f</td><td>0.0773%</td><td>-138</td><td>False</td><td><br>8c8d 5i5h 3a4b 7g7f 1c1d 3g3f 3c8h+ 7i8h</td></tr>
+<tr><td>2h4h</td><td>0.0773%</td><td>-265</td><td>False</td><td><br>8c8d 7g7f 8d8e 5i5h 4a3b 8h3c+ 2a3c 7i7h</td></tr>
+<tr><td>2h2g</td><td>0.0661%</td><td>-195</td><td>False</td><td><br>8c8d 6i7h 8d8e 5i5h 3a3b 3g3f 8e8f 8g8f 8b8f</td></tr>
+<tr><td>2h1h</td><td>0.0633%</td><td>-328</td><td>False</td><td><br>8c8d 7g7f 3a3b 1h2h 8d8e 9g9f 7a7b</td></tr>
+<tr><td>1i1h</td><td>0.0407%</td><td>-332</td><td>False</td><td><br>3a4b 7g7f 8c8d 6g6f 4a3b 8h7g 7c7d 7i8h</td></tr>
+<tr><td>9i9h</td><td>0.0351%</td><td>-325</td><td>False</td><td><br>8c8d 7g7f 3a4b 8h3c+ 4b3c 7i6h 8d8e 6h7g 7a7b</td></tr>
+</table></details></article>
+<p>KIF generated / branches validated / user visual review required.</p></main><script>const esc=x=>String(x??'—').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pieces={P:'歩',L:'香',N:'桂',S:'銀',G:'金',B:'角',R:'飛',K:'玉','+P':'と','+L':'杏','+N':'圭','+S':'全','+B':'馬','+R':'龍'};
+function board(sfen,move){
+ const [layout,turn,hands]=sfen.split(' ');let cells='', y=0, last=move?move.slice(-2):'';if(move?.endsWith('+'))last=move.slice(-3,-1);
+ for(const row of layout.split('/')){let x=0,prom='';for(const ch of row){if(ch==='+'){prom='+';continue}if(/[1-9]/.test(ch)){x+=Number(ch);continue}
+ const cx=35+x*32,cy=55+y*32,key=prom+ch.toUpperCase(),white=ch===ch.toLowerCase();
+ if(String(9-x)+'abcdefghi'[y]===last)cells+=`<rect x="${cx-16}" y="${cy-16}" width="32" height="32" fill="#ffda8b"/>`;
+ cells+=`<text x="${cx}" y="${cy+7}" text-anchor="middle" font-size="22" fill="${prom?'#a33025':'#172b35'}" ${white?`transform="rotate(180 ${cx} ${cy})"`:''}>${pieces[key]}</text>`;prom='';x++}y++}
+ let grid='';for(let i=0;i<=9;i++){grid+=`<path d="M${19+i*32} 39V327 M19 ${39+i*32}H307" stroke="#8d805f" stroke-width=".7"/>`;if(i<9)grid+=`<text x="${35+i*32}" y="33" text-anchor="middle" font-size="10">${9-i}</text><text x="318" y="${59+i*32}" font-size="10">${'一二三四五六七八九'[i]}</text>`}
+ let hand=['',''];let n='';for(const ch of hands){if(/[0-9]/.test(ch)){n+=ch;continue}if(ch==='-')continue;hand[ch===ch.toUpperCase()?0:1]+=pieces[ch.toUpperCase()]+(n||'')+' ';n=''}
+ return `<svg role="img" aria-label="将棋盤 ${esc(sfen)}" viewBox="0 0 340 358"><rect width="340" height="358" rx="6" fill="#f5e7c9"/><text x="19" y="18" font-size="12">後手 持駒：${hand[1]||'なし'}</text>${grid}${cells}<text x="19" y="349" font-size="12">先手 持駒：${hand[0]||'なし'} / ${turn==='b'?'先手':'後手'}番</text></svg>`;
+}
+
+document.querySelectorAll('[data-sfen]').forEach(e=>e.innerHTML=board(e.getAttribute('data-sfen')));</script></html>

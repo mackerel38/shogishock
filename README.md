@@ -1,6 +1,9 @@
 # ShogiShock execution infrastructure
 
-This repository provides the engine and position layer and a first pass-sensitivity research pilot. Human Policy is not implemented yet.
+This repository provides the engine/position layer and bounded surprise-opening research pilots.
+The current checkpoint is [RESEARCH_V3.md](RESEARCH_V3.md): Terashock seeds, human reach sampling,
+held-out Human Policy baselines, and a small E2E. Conditional capture calibration remains inadequate;
+do not proceed to a large scan. The older commands below document historical pilots, not the next research step.
 
 ## Pass research pilot (existing environment)
 
@@ -39,6 +42,19 @@ with Engine.from_config() as engine:
 ```
 
 All returned scores have `score.perspective == "sente"`; `cp` and `mate` remain separate. `virtual_pass` never changes board or hands and rejects a position where the side to move is in check.
+
+## ShogiHome export and playback
+
+Export a small review set or one candidate as UTF-8 branching KIF:
+
+```bash
+.venv/bin/surprise export-shogihome --input reports/pass_pilot --output exports/shogihome --limit 10
+.venv/bin/surprise export-shogihome --input reports/pass_pilot \
+  --candidate-id eb5bc2ef917ec96fe217_9g9f --output exports/shogihome
+```
+
+ShogiHome v1.29.0 Linux AppImage is installed locally at `tools/shogihome/ShogiHome-1.29.0.AppImage`.
+Launch it with `scripts/shogihome.sh`, then open a generated `.kif` and select its candidate/PV/variation lines. See [SHOGIHOME.md](SHOGIHOME.md) and [exports/README.md](exports/README.md).
 
 ## Reproduction on Vast.ai
 

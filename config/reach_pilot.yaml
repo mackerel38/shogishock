@@ -1,0 +1,26 @@
+engine_config: config/pass_pilot.yaml
+baseline: reports/pass_pilot
+output: reports/reach_pilot
+diagnostic:
+  top_n: 30
+  nodes: 10000
+  confirm_nodes: 100000
+  confirm_per_side: 4
+  workers: 4
+  tolerances: [50, 100, 200, 300]
+selection:
+  parent_favorable_cp: 300
+  neutralize_tolerance: 100
+  min_reach_probability: 0.01
+  broad_good_reply_fraction: 0.5
+  minimum_games_before_scan: 1000
+ingestion:
+  users: [pona, Toadofsky]
+  max_games_per_user: 25
+  max_ply: 40
+  raw_dir: data/human_raw/reach_pilot
+  database: data/reach_pilot.sqlite3
+  terms_url: https://lishogi.org/terms-of-service
+  api_url: https://lishogi.org/api
+  usage_scope: local_research_prototype
+  redistribution_approved: false

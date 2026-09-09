@@ -1,0 +1,648 @@
+# ShogiShock branching KIF
+手合割：平手
+先手：ShogiShock / 5c46af1026197c8aeb70_1a1b
+後手：Research variation
+手数----指手---------
+   1 ２六歩(27)
+   2 ３四歩(33)
+   3 ７六歩(77)
+   4 １二香(11)
+* [ShogiShock candidate]
+* candidate_id: 5c46af1026197c8aeb70_1a1b
+* attacker_side: gote
+* parent_eval: 136cp
+* candidate_eval: 513cp
+* candidate_eval_loss: 377
+* pass_sensitivity: 216
+* pass_relative_median: -15
+* ply: 3
+* is_check: False
+* is_capture: False
+* source: BOOK-700T-Shock + independent human annotation
+* reach_probability: 0.12254901960784313
+* P_good: {'50': {'lower': 0.05855694438593188, 'upper': 0.05855694438593188, 'value': 0.05855694438593188, 'reference_is_engine_estimate': True}, '100': {'lower': 0.09414128200112903, 'upper': 0.09414128200112903, 'value': 0.09414128200112903, 'reference_is_engine_estimate': True}, '200': {'lower': 0.46559169698289515, 'upper': 0.46559169698289515, 'value': 0.46559169698289515, 'reference_is_engine_estimate': True}, '300': {'lower': 0.5210584503970731, 'upper': 0.5210584503970731, 'value': 0.5210584503970731, 'reference_is_engine_estimate': True}}
+* human_gap: 685.3076196151463
+* covered_probability: 1.0
+* obvious_reply_neutralizes: False
+* engine_optimal_pv: 8c8d 2f2e 8d8e 2e2d 2c2d 2h2d 4a3b
+   5 ５八玉(59)
+* [engine PV after candidate]
+* [audited legal reply]
+* reply_engine_eval: 375cp
+* [Human Policy reply]
+* human_probability: 0.02121016689427721
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ３二金(41)
+   7 ２五歩(26)
+   8 ８八角成(22)
+   9 ８八銀(79)
+  10 ２二銀(31)
+  11 ７七銀(88)
+  12 ３三銀(22)
+  13 ７八金(69)
+  14 ７二銀(71)
+  15 ３八銀(39)
+変化：6手
+   6 ４四歩(43)
+   7 ４八金(49)
+   8 ３三角(22)
+   9 ３六歩(37)
+  10 ３二銀(31)
+  11 ２五歩(26)
+  12 ４三銀(32)
+  13 ７八銀(79)
+  14 ３二金(41)
+  15 ３七桂(29)
+変化：5手
+   5 ２五歩(26)
+* [audited legal reply]
+* reply_engine_eval: 548cp
+* [Human Policy reply]
+* human_probability: 0.05855694438593188
+* good_by_tolerance: {'50': True, '100': True, '200': True, '300': True}
+   6 ３二金(41)
+   7 ２四歩(25)
+   8 ２四歩(23)
+   9 ２四飛(28)
+  10 ６四歩(63)
+  11 ２八飛(24)
+  12 ２三歩打
+  13 ２二角成(88)
+  14 ２二銀(31)
+  15 ６三角打
+  16 ４二玉(51)
+変化：5手
+   5 ４八銀(39)
+* [audited legal reply]
+* reply_engine_eval: 367cp
+* [Human Policy reply]
+* human_probability: 0.05549996827104359
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ３二金(41)
+   9 ５八玉(59)
+  10 ８五歩(84)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２四飛(28)
+  14 ８六歩(85)
+  15 ８六歩(87)
+変化：5手
+   5 ６八銀(79)
+* [audited legal reply]
+* reply_engine_eval: -3072cp
+* [Human Policy reply]
+* human_probability: 0.055278827183029434
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８八角成(22)
+   7 ７九金(69)
+   8 ９九馬(88)
+   9 ５八金(49)
+  10 ５二玉(51)
+  11 ７七銀(68)
+  12 ３二銀(31)
+  13 ４六歩(47)
+  14 ８四歩(83)
+変化：5手
+   5 ５六歩(57)
+* [audited legal reply]
+* reply_engine_eval: 211cp
+* [Human Policy reply]
+* human_probability: 0.052586135009549756
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８八角成(22)
+   7 ８八銀(79)
+   8 ５七角打
+   9 ７七銀(88)
+変化：5手
+   5 ３八銀(39)
+* [audited legal reply]
+* reply_engine_eval: 418cp
+* [Human Policy reply]
+* human_probability: 0.047981171278562385
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ４四歩(43)
+   7 ３六歩(37)
+   8 ８四歩(83)
+   9 ２五歩(26)
+  10 ３三角(22)
+  11 ３七銀(38)
+  12 ８五歩(84)
+  13 ７七角(88)
+  14 ４二銀(31)
+変化：5手
+   5 ３六歩(37)
+* [audited legal reply]
+* reply_engine_eval: 372cp
+* [Human Policy reply]
+* human_probability: 0.04749988998522424
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ８五歩(84)
+   9 ７八金(69)
+  10 ８六歩(85)
+  11 ８六歩(87)
+  12 ８六飛(82)
+  13 ６八玉(59)
+  14 ３二金(41)
+  15 ２四歩(25)
+  16 ２四歩(23)
+  17 ２四飛(28)
+変化：5手
+   5 ６六歩(67)
+* [audited legal reply]
+* reply_engine_eval: 223cp
+* [Human Policy reply]
+* human_probability: 0.046836466721181774
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ６二飛(82)
+   7 ２五歩(26)
+   8 ３三角(22)
+   9 ７八銀(79)
+  10 ６四歩(63)
+  11 ６七銀(78)
+  12 ７二銀(71)
+変化：5手
+   5 １六歩(17)
+* [audited legal reply]
+* reply_engine_eval: 384cp
+* [Human Policy reply]
+* human_probability: 0.045951902369125164
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ４四歩(43)
+   7 ２五歩(26)
+   8 ３三角(22)
+   9 ３六歩(37)
+  10 ８四歩(83)
+  11 ６八玉(59)
+  12 ３二金(41)
+変化：5手
+   5 ７八銀(79)
+* [audited legal reply]
+* reply_engine_eval: -3087cp
+* [Human Policy reply]
+* human_probability: 0.04267378516622271
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８八角成(22)
+   7 ７七桂(89)
+   8 ４二飛(82)
+   9 ５八金(49)
+  10 ９九馬(88)
+  11 １六歩(17)
+変化：5手
+   5 ９六歩(97)
+* [audited legal reply]
+* reply_engine_eval: 393cp
+* [Human Policy reply]
+* human_probability: 0.04175022169685626
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ４四歩(43)
+   7 ３六歩(37)
+   8 ３二金(41)
+   9 ２五歩(26)
+変化：5手
+   5 ４八玉(59)
+* [audited legal reply]
+* reply_engine_eval: 232cp
+* [Human Policy reply]
+* human_probability: 0.04111286481555098
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ４四歩(43)
+   7 ２五歩(26)
+   8 ３三角(22)
+   9 ５八玉(48)
+  10 ３二銀(31)
+  11 ３六歩(37)
+  12 ６二銀(71)
+変化：5手
+   5 ４六歩(47)
+* [audited legal reply]
+* reply_engine_eval: 393cp
+* [Human Policy reply]
+* human_probability: 0.03931766972870057
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ４四歩(43)
+   7 ７八銀(79)
+   8 ９四歩(93)
+   9 ９六歩(97)
+変化：5手
+   5 ７七角(88)
+* [audited legal reply]
+* reply_engine_eval: 235cp
+* [Human Policy reply]
+* human_probability: 0.03746928889199527
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ７七角成(22)
+   7 ７七桂(89)
+   8 ２二銀(31)
+   9 ５八玉(59)
+  10 ３三銀(22)
+  11 ２五歩(26)
+  12 ３二金(41)
+変化：5手
+   5 ６八玉(59)
+* [audited legal reply]
+* reply_engine_eval: 467cp
+* [Human Policy reply]
+* human_probability: 0.03558433761519715
+* good_by_tolerance: {'50': False, '100': True, '200': True, '300': True}
+   6 ４四歩(43)
+   7 ２五歩(26)
+   8 ３三角(22)
+   9 ３六歩(37)
+  10 ４二銀(31)
+  11 ５八金(49)
+  12 ４三銀(42)
+  13 ４八銀(39)
+  14 ２二飛(82)
+変化：5手
+   5 ８六歩(87)
+* [audited legal reply]
+* reply_engine_eval: 80cp
+* [Human Policy reply]
+* human_probability: 0.03533713014444582
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ３二金(41)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+変化：5手
+   5 ７八金(69)
+* [audited legal reply]
+* reply_engine_eval: 363cp
+* [Human Policy reply]
+* human_probability: 0.03403115721329581
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ４四歩(43)
+   7 ４八銀(39)
+   8 ９四歩(93)
+   9 ２五歩(26)
+変化：5手
+   5 ７五歩(76)
+* [audited legal reply]
+* reply_engine_eval: 144cp
+* [Human Policy reply]
+* human_probability: 0.026270345535865547
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ４四歩(43)
+   7 ７八飛(28)
+   8 ３三角(22)
+   9 ５八玉(59)
+  10 ３二銀(31)
+変化：5手
+   5 ５八金(49)
+* [audited legal reply]
+* reply_engine_eval: 372cp
+* [Human Policy reply]
+* human_probability: 0.026070078044786303
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ８五歩(84)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ８六歩(85)
+  13 ８六歩(87)
+  14 ３二金(41)
+  15 ７七角(88)
+変化：5手
+   5 ２二角成(88)
+* [audited legal reply]
+* reply_engine_eval: 308cp
+* [Human Policy reply]
+* human_probability: 0.025836215052257763
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': True}
+   6 ２二銀(31)
+   7 ６八玉(59)
+   8 ３三銀(22)
+   9 ８八銀(79)
+  10 ８四歩(83)
+  11 ７七銀(88)
+  12 ３二金(41)
+  13 ３八銀(39)
+変化：5手
+   5 ５八金(69)
+* [audited legal reply]
+* reply_engine_eval: 237cp
+* [Human Policy reply]
+* human_probability: 0.019656986492375864
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ３二金(41)
+   9 ６八金(58)
+  10 ８五歩(84)
+  11 ７七角(88)
+  12 ７七角成(22)
+  13 ７七金(68)
+  14 ２二銀(31)
+変化：5手
+   5 ７七桂(89)
+* [audited legal reply]
+* reply_engine_eval: -91cp
+* [Human Policy reply]
+* human_probability: 0.015530882407740101
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ７二飛(82)
+   7 ２五歩(26)
+   8 ３三角(22)
+   9 ７八銀(79)
+変化：5手
+   5 ３八金(49)
+* [audited legal reply]
+* reply_engine_eval: 316cp
+* [Human Policy reply]
+* human_probability: 0.014349600380036194
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': True}
+   6 ４四歩(43)
+   7 ５八玉(59)
+   8 ３二銀(31)
+   9 ２五歩(26)
+  10 ３三角(22)
+  11 ４八銀(39)
+  12 ４三銀(32)
+  13 ３六歩(37)
+  14 １四歩(13)
+変化：5手
+   5 ６八飛(28)
+* [audited legal reply]
+* reply_engine_eval: 115cp
+* [Human Policy reply]
+* human_probability: 0.012488675424309863
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ３二金(41)
+   7 ２八飛(68)
+   8 ８四歩(83)
+   9 ７八金(69)
+変化：5手
+   5 ７八飛(28)
+* [audited legal reply]
+* reply_engine_eval: 185cp
+* [Human Policy reply]
+* human_probability: 0.01226753433629571
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ３二金(41)
+   9 ２八飛(78)
+  10 ８五歩(84)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２四飛(28)
+  14 ８六歩(85)
+変化：5手
+   5 ６八金(69)
+* [audited legal reply]
+* reply_engine_eval: 353cp
+* [Human Policy reply]
+* human_probability: 0.012138189499894663
+* good_by_tolerance: {'50': False, '100': False, '200': True, '300': True}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ４二玉(51)
+   9 ２二角成(88)
+  10 ２二銀(31)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２四飛(28)
+変化：5手
+   5 ５八飛(28)
+* [audited legal reply]
+* reply_engine_eval: 124cp
+* [Human Policy reply]
+* human_probability: 0.011825252160267405
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ３二金(41)
+   7 ２八飛(58)
+   8 ８四歩(83)
+   9 ２五歩(26)
+  10 ８五歩(84)
+変化：5手
+   5 ４八金(49)
+* [audited legal reply]
+* reply_engine_eval: 342cp
+* [Human Policy reply]
+* human_probability: 0.010811342971809745
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': True}
+   6 ４四歩(43)
+   7 ７八銀(79)
+   8 ４二銀(31)
+   9 ３六歩(37)
+  10 ４三銀(42)
+  11 ６八玉(59)
+  12 ９四歩(93)
+  13 ７九玉(68)
+  14 ９五歩(94)
+  15 ３八銀(39)
+  16 ３三角(22)
+変化：5手
+   5 ６六角(88)
+* [audited legal reply]
+* reply_engine_eval: -325cp
+* [Human Policy reply]
+* human_probability: 0.010711217242282755
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ６六角(22)
+   7 ６六歩(67)
+   8 ６七角打
+変化：5手
+   5 ５五角(88)
+* [audited legal reply]
+* reply_engine_eval: -2846cp
+* [Human Policy reply]
+* human_probability: 0.00960551180221199
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ５五角(22)
+   7 ８八飛(28)
+   8 ２七角打
+   9 ３八銀(39)
+  10 ５四角成(27)
+  11 ７八金(69)
+  12 ８八角成(55)
+  13 ８八銀(79)
+  14 ５二玉(51)
+  15 ７七銀(88)
+  16 １四歩(13)
+  17 １一角打
+変化：5手
+   5 ３三角(88)
+* [audited legal reply]
+* reply_engine_eval: -2975cp
+* [Human Policy reply]
+* human_probability: 0.00894208853816953
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ３三角(22)
+   7 ９八飛(28)
+   8 ４五角打
+   9 ７八金(69)
+  10 ２七角成(45)
+  11 ４八玉(59)
+  12 ２六馬(27)
+  13 ９六歩(97)
+  14 ２七馬(26)
+  15 １六歩(17)
+変化：5手
+   5 ４四角(88)
+* [audited legal reply]
+* reply_engine_eval: -3165cp
+* [Human Policy reply]
+* human_probability: 0.00894208853816953
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ４四角(22)
+   7 ８八銀(79)
+   8 ９五角打
+   9 ７七銀(88)
+  10 ７七角成(44)
+  11 ７七桂(89)
+  12 ７七角成(95)
+  13 ６八金(69)
+  14 ９九馬(77)
+  15 ４八玉(59)
+  16 ８八馬(99)
+  17 ６六角打
+  18 ６六馬(88)
+  19 ６六歩(67)
+  20 ５二玉(51)
+  21 １六歩(17)
+変化：5手
+   5 ３八飛(28)
+* [audited legal reply]
+* reply_engine_eval: 185cp
+* [Human Policy reply]
+* human_probability: 0.0067390071359418845
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ３二金(41)
+   9 ２八飛(38)
+  10 ８五歩(84)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２四飛(28)
+  14 ８六歩(85)
+  15 ８六歩(87)
+  16 ８六飛(82)
+変化：5手
+   5 ４八飛(28)
+* [audited legal reply]
+* reply_engine_eval: 84cp
+* [Human Policy reply]
+* human_probability: 0.005412160607856966
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２八飛(48)
+   8 ３二金(41)
+   9 ２五歩(26)
+  10 ８五歩(84)
+  11 ２四歩(25)
+  12 ２四歩(23)
+  13 ２四飛(28)
+  14 ８六歩(85)
+  15 ８六歩(87)
+  16 ８六飛(82)
+変化：5手
+   5 ３三角成(88)
+* [audited legal reply]
+* reply_engine_eval: -2755cp
+* [Human Policy reply]
+* human_probability: 0.0047528371164329165
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ３三角(22)
+   7 ９八飛(28)
+   8 ４五角打
+   9 ６八銀(79)
+  10 ２七角成(45)
+  11 ５八玉(59)
+  12 ２六馬(27)
+  13 ９六歩(97)
+  14 ４四馬(26)
+  15 ７七桂(89)
+  16 ７七馬(44)
+  17 ７七銀(68)
+  18 ７七角成(33)
+  19 １五角打
+  20 ４二銀打
+変化：5手
+   5 ２七飛(28)
+* [audited legal reply]
+* reply_engine_eval: -544cp
+* [Human Policy reply]
+* human_probability: 0.004527596255800354
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８八角成(22)
+   7 ８八銀(79)
+   8 ４五角打
+   9 ３八銀(39)
+  10 ６七角成(45)
+  11 ７九金(69)
+  12 ５七馬(67)
+  13 ７七角打
+  14 ３五馬(57)
+  15 ２五歩(26)
+変化：5手
+   5 ２二角(88)
+* [audited legal reply]
+* reply_engine_eval: 320cp
+* [Human Policy reply]
+* human_probability: 0.004469595010074219
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': True}
+   6 ２二銀(31)
+   7 ６八玉(59)
+   8 ３二金(41)
+   9 ８八銀(79)
+  10 ８四歩(83)
+  11 ７七銀(88)
+  12 ３三銀(22)
+  13 ３六歩(37)
+変化：5手
+   5 １八飛(28)
+* [audited legal reply]
+* reply_engine_eval: 2cp
+* [Human Policy reply]
+* human_probability: 0.004306455167786201
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８八角成(22)
+   7 ８八銀(79)
+   8 ２七角打
+   9 ２八飛(18)
+  10 ４五角成(27)
+  11 ５八玉(59)
+  12 ２二銀(31)
+  13 ７七銀(88)
+  14 ３三銀(22)
+  15 ２五歩(26)
+変化：5手
+   5 １八香(19)
+* [audited legal reply]
+* reply_engine_eval: 96cp
+* [Human Policy reply]
+* human_probability: 0.003055347542736373
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ３二金(41)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ８五歩(84)
+  13 ２八飛(24)
+変化：5手
+   5 ９八香(99)
+* [audited legal reply]
+* reply_engine_eval: 150cp
+* [Human Policy reply]
+* human_probability: 0.002613065366708067
+* good_by_tolerance: {'50': False, '100': False, '200': False, '300': False}
+   6 ８四歩(83)
+   7 ２五歩(26)
+   8 ８五歩(84)
+   9 ２四歩(25)
+  10 ２四歩(23)
+  11 ２四飛(28)
+  12 ８六歩(85)
+まで

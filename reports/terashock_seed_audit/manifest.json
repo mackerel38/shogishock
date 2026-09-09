@@ -1,0 +1,15 @@
+{
+  "archive": "assets/books/700T/700T-shock-book.zip",
+  "archive_sha256": "0d14943c5e960fad35d554bea6700edcbd929e9cdb5fa048dc6c472a89cb90c3",
+  "source_url": "https://github.com/yaneurao/YaneuraOu/releases/tag/BOOK-700T-Shock",
+  "license_status": "no explicit redistribution license found in release or accompanying notice; local inspection only",
+  "max_bfs_ply": 20,
+  "symmetry_expansion": false,
+  "source": {
+    "source_position_records": 285463,
+    "source_distinct_positions": 284227,
+    "conflicting_move_records": 1567
+  },
+  "invalid_edges": [],
+  "edges_to_unstored_positions": 73271
+}

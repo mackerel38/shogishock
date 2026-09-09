@@ -1,0 +1,165 @@
+{
+  "scope": "post-hoc falsification on fixed time test; conditional on event move available; not causal effects",
+  "events": {
+    "capture": {
+      "opportunities": 1376,
+      "chosen": 297,
+      "mean_predicted_probability": 0.08055804243451781,
+      "observed_rate": 0.21584302325581395,
+      "binary_brier": 0.15076721988052533,
+      "event_ece": 0.13528498082129614,
+      "reliability": [
+        {
+          "bin": 0,
+          "n": 1008,
+          "predicted": 0.03196354771996577,
+          "observed": 0.09027777777777778
+        },
+        {
+          "bin": 1,
+          "n": 223,
+          "predicted": 0.14003978727786937,
+          "observed": 0.4080717488789238
+        },
+        {
+          "bin": 2,
+          "n": 104,
+          "predicted": 0.237254030763354,
+          "observed": 0.7596153846153846
+        },
+        {
+          "bin": 3,
+          "n": 15,
+          "predicted": 0.33278406687977546,
+          "observed": 0.8
+        },
+        {
+          "bin": 4,
+          "n": 5,
+          "predicted": 0.437786298505081,
+          "observed": 0.8
+        },
+        {
+          "bin": 5,
+          "n": 3,
+          "predicted": 0.5401620994878213,
+          "observed": 0.6666666666666666
+        },
+        {
+          "bin": 6,
+          "n": 9,
+          "predicted": 0.6194928058203737,
+          "observed": 1.0
+        },
+        {
+          "bin": 7,
+          "n": 1,
+          "predicted": 0.7868390322850785,
+          "observed": 1.0
+        },
+        {
+          "bin": 8,
+          "n": 2,
+          "predicted": 0.8480833518794217,
+          "observed": 1.0
+        },
+        {
+          "bin": 9,
+          "n": 6,
+          "predicted": 0.9776164572007545,
+          "observed": 1.0
+        }
+      ]
+    },
+    "promotion": {
+      "opportunities": 750,
+      "chosen": 81,
+      "mean_predicted_probability": 0.03570557001780697,
+      "observed_rate": 0.108,
+      "binary_brier": 0.09686352366945918,
+      "event_ece": 0.07229442998219304,
+      "reliability": [
+        {
+          "bin": 0,
+          "n": 721,
+          "predicted": 0.03176506230459848,
+          "observed": 0.08737864077669903
+        },
+        {
+          "bin": 1,
+          "n": 29,
+          "predicted": 0.13367474454274902,
+          "observed": 0.6206896551724138
+        }
+      ]
+    },
+    "pawn_contact_capture": {
+      "opportunities": 92,
+      "chosen": 68,
+      "mean_predicted_probability": 0.22128514425944187,
+      "observed_rate": 0.7391304347826086,
+      "binary_brier": 0.4616585332281363,
+      "event_ece": 0.5178452905231667,
+      "reliability": [
+        {
+          "bin": 1,
+          "n": 40,
+          "predicted": 0.18097447348382498,
+          "observed": 0.725
+        },
+        {
+          "bin": 2,
+          "n": 46,
+          "predicted": 0.23859002342534213,
+          "observed": 0.7391304347826086
+        },
+        {
+          "bin": 3,
+          "n": 5,
+          "predicted": 0.3419545055414444,
+          "observed": 0.8
+        },
+        {
+          "bin": 4,
+          "n": 1,
+          "predicted": 0.43434072724269285,
+          "observed": 1.0
+        }
+      ]
+    },
+    "retreat": {
+      "opportunities": 1980,
+      "chosen": 111,
+      "mean_predicted_probability": 0.02885186198113065,
+      "observed_rate": 0.05606060606060606,
+      "binary_brier": 0.05119482796004416,
+      "event_ece": 0.027672750931103784,
+      "reliability": [
+        {
+          "bin": 0,
+          "n": 1945,
+          "predicted": 0.026818571587832976,
+          "observed": 0.05141388174807198
+        },
+        {
+          "bin": 1,
+          "n": 30,
+          "predicted": 0.12132336339417664,
+          "observed": 0.3333333333333333
+        },
+        {
+          "bin": 2,
+          "n": 4,
+          "predicted": 0.21637432484154057,
+          "observed": 0.25
+        },
+        {
+          "bin": 4,
+          "n": 1,
+          "predicted": 0.45936678311208645,
+          "observed": 0.0
+        }
+      ]
+    }
+  }
+}

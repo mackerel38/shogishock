@@ -1,0 +1,23 @@
+{
+  "12": {
+    "book_positions": 30421,
+    "human_observed_positions": 1119,
+    "supported_games10_players10": 56,
+    "sample_games": 612,
+    "population_reach_unknown_for_unobserved": true
+  },
+  "16": {
+    "book_positions": 75192,
+    "human_observed_positions": 1398,
+    "supported_games10_players10": 56,
+    "sample_games": 612,
+    "population_reach_unknown_for_unobserved": true
+  },
+  "20": {
+    "book_positions": 146417,
+    "human_observed_positions": 1585,
+    "supported_games10_players10": 56,
+    "sample_games": 612,
+    "population_reach_unknown_for_unobserved": true
+  }
+}

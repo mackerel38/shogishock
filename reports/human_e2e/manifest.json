@@ -1,0 +1,135 @@
+{
+  "config": {
+    "output": "reports/human_pilot",
+    "raw_dir": "data/human_raw/human_pilot",
+    "database": "data/human_pilot.sqlite3",
+    "seed": "shogishock-20260909-v1",
+    "sampling": {
+      "team_pages": 1,
+      "exclude_teams": [
+        "lishogi-bots"
+      ],
+      "focal_players": 160,
+      "games_per_request": 12,
+      "max_games_per_player": 12,
+      "since": "2025-09-01T00:00:00+00:00",
+      "until": "2026-09-01T00:00:00+00:00",
+      "request_interval_seconds": 2,
+      "max_response_bytes": 8000000,
+      "max_ply": 24
+    },
+    "policy": {
+      "exact_thresholds": [
+        2,
+        5,
+        10
+      ],
+      "smoothing": 5,
+      "validation_min_games": 15,
+      "test_min_games": 15,
+      "nll_improvement_min": 0.02,
+      "ece_max": 0.1
+    },
+    "experiment": {
+      "engine_config": "config/pass_pilot.yaml",
+      "max_positions_per_side": 2,
+      "max_candidates_per_side": 3,
+      "nodes": 10000,
+      "parent_favorable_cp": 300,
+      "min_games_support": 10,
+      "min_players_support": 10,
+      "nonpromotion_loss_cp": 50,
+      "coverage_target": 0.95,
+      "tolerances": [
+        50,
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  "engine": {
+    "binary_sha256": "10a220dd34fc4def0a9862d37f0bb0bd2faec219514b630b908c3c6388babeea",
+    "eval_sha256": {
+      "/home/mackerel38/shogishock/assets/eval/nn.bin": "768068f0d534a0603a5d38bcd143de6bbca820d5f1c95a14d40863e5b7892d76"
+    },
+    "engine_config": {
+      "engine": {
+        "path": "engines/yaneuraou/yaneuraou",
+        "eval_dir": "eval",
+        "threads": 1,
+        "hash_mb": 16,
+        "options": {
+          "USI_OwnBook": false,
+          "PvInterval": 0
+        }
+      },
+      "search": {
+        "shallow_nodes": 10000,
+        "pass_nodes": 10000
+      },
+      "deep_nodes": [
+        100000,
+        1000000
+      ],
+      "cache": {
+        "path": "data/engine_cache.sqlite3"
+      },
+      "research": {
+        "workers": 8,
+        "seed_path": "data/opening_seeds.yaml",
+        "output_dir": "reports/pass_pilot",
+        "min_ply": 0,
+        "max_ply": 40,
+        "review_per_side": 30,
+        "obvious_blunder_loss_cp": 1000,
+        "large_material_loss": 700
+      }
+    }
+  },
+  "seed_config": {
+    "source_release": "BOOK-700T-Shock",
+    "archive": "assets/books/700T/700T-shock-book.zip",
+    "audit_output": "reports/terashock_seed_audit",
+    "primary_max_ply": 12,
+    "conditional_extension_max_ply": 16,
+    "audit_only_max_ply": 20,
+    "parent_book_abs_eval_low_priority_cp": 300,
+    "parent_engine_favorable_cp": 300,
+    "human_annotations": "reports/human_pilot/reach_positions.json",
+    "require_parent_engine_recheck": true,
+    "require_human_support_for_e2e": true,
+    "use_book_counts_as_human_frequency": false,
+    "symmetry_expansion": false,
+    "redistribution_approved": false
+  },
+  "seed_manifest": {
+    "archive": "assets/books/700T/700T-shock-book.zip",
+    "archive_sha256": "0d14943c5e960fad35d554bea6700edcbd929e9cdb5fa048dc6c472a89cb90c3",
+    "source_url": "https://github.com/yaneurao/YaneuraOu/releases/tag/BOOK-700T-Shock",
+    "license_status": "no explicit redistribution license found in release or accompanying notice; local inspection only",
+    "max_bfs_ply": 20,
+    "symmetry_expansion": false,
+    "source": {
+      "source_position_records": 285463,
+      "source_distinct_positions": 284227,
+      "conflicting_move_records": 1567
+    },
+    "invalid_edges": [],
+    "edges_to_unstored_positions": 73271
+  },
+  "policy_decision": {
+    "small_e2e_allowed": true,
+    "large_scan_allowed": false,
+    "reason": "bounded engineering/research trial only; no response-set/OOD calibration guarantee",
+    "splits_config_sha256": "bf32fb12d0ee2186b56e46bfc8f052491432a2d62b4231b96b6a9d7cf3cbaa2d"
+  },
+  "cache_schema": 5,
+  "positions": [
+    "8e41531c4f23213c9b17",
+    "f15331930e1f7569b35d",
+    "5c46af1026197c8aeb70",
+    "fa2a3aee31df970cb704"
+  ],
+  "scope": "local exploratory experiment only; book redistribution not approved"
+}

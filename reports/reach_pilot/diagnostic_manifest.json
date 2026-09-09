@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "candidates.json": "a47b98c62f3aa6e0ef832150ed5bf41f73ad89c93102248ce5f0b39adac67b1a",
+    "checkpoint.json": "a83d7631c7e7c9d1768daf721e1cafdf90b16fbab1e81fd4ff56e4175cc3522c",
+    "diverse_review.json": "fea28c6e81f84580bf4c58bc2649b30a8214a545bfad1d49bc1e1a7c9eec35fd",
+    "manifest.json": "25ec5841dde6d4b89fc5bb54df85c3f0de63548c0657d1abdb2ecdc01b25d4d0",
+    "positions.json": "dbef663b8b61c69636228288f8d145424b9190baefa30edc5a5ecdefe7e5502c",
+    "report_gote.html": "fa894e7daadfec98a27bb0325496b86d3a8fac0985e1fcdf90c9606d344386be",
+    "report_sente.html": "94287e96ba579e2327384ece5d0f7379c1bb08e9c300b4b7014e609b5c2ac898",
+    "review_candidates.json": "8aa6fb1f75846921835273f8c88bc3ad07a7f64b3b68d8f9cc2e27482e1f624b",
+    "scan.sqlite3": "84199bc0da41017cef359150a44793956acd2268aa07f9bce6a8b031fbcd4507",
+    "summary.json": "2378053f361deac2da1110aef37fef5bf9a7c97342298d55a4a6aae6ee3755d6"
+  },
+  "config": {
+    "engine_config": "config/pass_pilot.yaml",
+    "baseline": "reports/pass_pilot",
+    "output": "reports/reach_pilot",
+    "diagnostic": {
+      "top_n": 30,
+      "nodes": 10000,
+      "confirm_nodes": 100000,
+      "confirm_per_side": 4,
+      "workers": 4,
+      "tolerances": [
+        50,
+        100,
+        200,
+        300
+      ]
+    },
+    "selection": {
+      "parent_favorable_cp": 300,
+      "neutralize_tolerance": 100,
+      "min_reach_probability": 0.01,
+      "broad_good_reply_fraction": 0.5,
+      "minimum_games_before_scan": 1000
+    },
+    "ingestion": {
+      "users": [
+        "pona",
+        "Toadofsky"
+      ],
+      "max_games_per_user": 25,
+      "max_ply": 40,
+      "raw_dir": "data/human_raw/reach_pilot",
+      "database": "data/reach_pilot.sqlite3",
+      "terms_url": "https://lishogi.org/terms-of-service",
+      "api_url": "https://lishogi.org/api",
+      "usage_scope": "local_research_prototype",
+      "redistribution_approved": false
+    }
+  },
+  "cache_schema": 5
+}

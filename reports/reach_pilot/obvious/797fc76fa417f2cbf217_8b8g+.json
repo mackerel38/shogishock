@@ -1,0 +1,216 @@
+{
+  "candidate_id": "797fc76fa417f2cbf217_8b8g+",
+  "nodes": 10000,
+  "responses": [
+    {
+      "move": "7h8g",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 3850,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "P*2c",
+        "pv": [
+          "P*2c",
+          "P*8b",
+          "3c7g+",
+          "8i7g",
+          "5a4a",
+          "2f2h",
+          "7c7d",
+          "8b8a+",
+          "1c1d",
+          "8g8h"
+        ],
+        "depth": 13,
+        "nodes": 10008,
+        "time_ms": 45,
+        "raw_info": [
+          "info depth 13 seldepth 21 multipv 1 score cp -3850 nodes 10008 nps 222400 hashfull 2 time 45 pv P*2c P*8b 3c7g+ 8i7g 5a4a 2f2h 7c7d 8b8a+ 1c1d 8g8h"
+        ],
+        "reported_best_move": "P*2c"
+      },
+      "engine_eval": 3850,
+      "gap_from_optimal_estimate": 935,
+      "gap_from_root_estimate": 908,
+      "is_good_50": false,
+      "is_good_100": false,
+      "is_good_200": false,
+      "is_good_300": false
+    },
+    {
+      "move": "2f2a",
+      "is_capture": true,
+      "reply_captures_candidate": false,
+      "signals": [
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 4230,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "5a5b",
+        "pv": [
+          "5a5b",
+          "7h8g",
+          "4c4d",
+          "2a2h+",
+          "5c5d",
+          "4g4f"
+        ],
+        "depth": 13,
+        "nodes": 10006,
+        "time_ms": 93,
+        "raw_info": [
+          "info depth 13 seldepth 16 multipv 1 score cp -4230 nodes 10006 nps 107591 hashfull 3 time 93 pv 5a5b 7h8g 4c4d 2a2h+ 5c5d 4g4f"
+        ],
+        "reported_best_move": "5a5b"
+      },
+      "engine_eval": 4230,
+      "gap_from_optimal_estimate": 555,
+      "gap_from_root_estimate": 528,
+      "is_good_50": false,
+      "is_good_100": false,
+      "is_good_200": false,
+      "is_good_300": false
+    },
+    {
+      "move": "2f2a+",
+      "is_capture": true,
+      "reply_captures_candidate": false,
+      "signals": [
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 4785,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "5a5b",
+        "pv": [
+          "5a5b",
+          "7h8g",
+          "3c7g+",
+          "8i7g",
+          "3b3a",
+          "2a1a",
+          "B*4d",
+          "1a1c",
+          "P*1h",
+          "1i1h",
+          "4d3e",
+          "N*6d",
+          "6c6d",
+          "B*9f",
+          "N*6c"
+        ],
+        "depth": 14,
+        "nodes": 10005,
+        "time_ms": 99,
+        "raw_info": [
+          "info depth 14 seldepth 19 multipv 1 score cp -4785 nodes 10005 nps 101060 hashfull 4 time 99 pv 5a5b 7h8g 3c7g+ 8i7g 3b3a 2a1a B*4d 1a1c P*1h 1i1h 4d3e N*6d 6c6d B*9f N*6c"
+        ],
+        "reported_best_move": "5a5b"
+      },
+      "engine_eval": 4785,
+      "gap_from_optimal_estimate": 0,
+      "gap_from_root_estimate": -27,
+      "is_good_50": true,
+      "is_good_100": true,
+      "is_good_200": true,
+      "is_good_300": true
+    }
+  ],
+  "root": {
+    "score": {
+      "score_type": "cp",
+      "score_cp": 4758,
+      "mate_distance": null,
+      "perspective": "sente",
+      "bound": "exact"
+    },
+    "best_move": "2f2a+",
+    "pv": [
+      "2f2a+",
+      "5a5b",
+      "7h8g",
+      "3c7g+",
+      "8g7g",
+      "3b3a",
+      "2a1a",
+      "B*3c",
+      "1a1c",
+      "P*2a",
+      "1c1d"
+    ],
+    "depth": 15,
+    "nodes": 10000,
+    "time_ms": 43,
+    "raw_info": [
+      "info depth 15 seldepth 18 multipv 1 score cp 4758 nodes 10000 nps 232558 hashfull 4 time 43 pv 2f2a+ 5a5b 7h8g 3c7g+ 8g7g 3b3a 2a1a B*3c 1a1c P*2a 1c1d"
+    ],
+    "reported_best_move": "2f2a+"
+  },
+  "reference_eval": 4785,
+  "root_eval": 4758,
+  "numeric_comparable": true,
+  "reference_scope": "best of root estimate and explicitly evaluated replies; provisional",
+  "root_reference_delta": -27,
+  "legal_reply_count": 51,
+  "evaluated_reply_count": 3,
+  "all_legal_replies_evaluated": false,
+  "good_reply_count_50": 1,
+  "good_reply_fraction_50": null,
+  "good_reply_fraction_bounds_50": [
+    0.0196078431372549,
+    0.9607843137254902
+  ],
+  "good_reply_count_100": 1,
+  "good_reply_fraction_100": null,
+  "good_reply_fraction_bounds_100": [
+    0.0196078431372549,
+    0.9607843137254902
+  ],
+  "good_reply_count_200": 1,
+  "good_reply_fraction_200": null,
+  "good_reply_fraction_bounds_200": [
+    0.0196078431372549,
+    0.9607843137254902
+  ],
+  "good_reply_count_300": 1,
+  "good_reply_fraction_300": null,
+  "good_reply_fraction_bounds_300": [
+    0.0196078431372549,
+    0.9607843137254902
+  ],
+  "complete": true,
+  "obvious_reply_exists": true,
+  "candidate_piece_capturable": true,
+  "obvious_reply_neutralizes": true,
+  "obvious_reply_eval": 4785,
+  "obvious_reply_move": "2f2a+",
+  "obvious_reply_gap_from_optimal": 0,
+  "obvious_reply_is_good_50": true,
+  "obvious_reply_is_good_100": true,
+  "obvious_reply_is_good_200": true,
+  "obvious_reply_is_good_300": true
+}

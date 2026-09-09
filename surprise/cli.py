@@ -19,6 +19,11 @@ def main() -> None:
     audit = sub.add_parser("audit", help="Evaluate every legal reply to stratified examples; no human probabilities")
     audit.add_argument("--config", default="config/pass_pilot.yaml")
     audit.add_argument("--nodes", type=int, default=100000)
+    export = sub.add_parser("export-shogihome", help="Export branching KIF files for ShogiHome")
+    export.add_argument("--input", default="reports/pass_pilot")
+    export.add_argument("--candidate-id")
+    export.add_argument("--output", default="exports/shogihome")
+    export.add_argument("--limit", type=int, default=10)
     args = p.parse_args()
     if args.command == "setup":
         subprocess.run(["bash", "scripts/setup.sh"], check=True)
@@ -32,6 +37,17 @@ def main() -> None:
     elif args.command == "audit":
         from .audit import run_audit
         run_audit(args.config, args.nodes)
+    elif args.command == "export-shogihome":
+        from .kif_export import export_candidate
+        rows = json.loads((Path(args.input) / "candidates.json").read_text(encoding="utf-8"))
+        ids = [args.candidate_id] if args.candidate_id else []
+        if not ids:
+            for side in ("sente", "gote"):
+                group = [r for r in rows if r.get("attacker_side") == side and r.get("pass_sensitivity") is not None]
+                ids.extend(r["candidate_id"] for r in sorted(group, key=lambda r: (-r["pass_sensitivity"], r["candidate_id"]))[:args.limit])
+        for cid in ids:
+            path = export_candidate(args.input, cid, Path(args.output) / f"{cid}.kif")
+            print(path)
     else: benchmark()
 
 def engine_test() -> None:

@@ -1,0 +1,49 @@
+{
+  "output": "reports/human_pilot",
+  "raw_dir": "data/human_raw/human_pilot",
+  "database": "data/human_pilot.sqlite3",
+  "seed": "shogishock-20260909-v1",
+  "sampling": {
+    "team_pages": 1,
+    "exclude_teams": [
+      "lishogi-bots"
+    ],
+    "focal_players": 160,
+    "games_per_request": 12,
+    "max_games_per_player": 12,
+    "since": "2025-09-01T00:00:00+00:00",
+    "until": "2026-09-01T00:00:00+00:00",
+    "request_interval_seconds": 2,
+    "max_response_bytes": 8000000,
+    "max_ply": 24
+  },
+  "policy": {
+    "exact_thresholds": [
+      2,
+      5,
+      10
+    ],
+    "smoothing": 5,
+    "validation_min_games": 15,
+    "test_min_games": 15,
+    "nll_improvement_min": 0.02,
+    "ece_max": 0.1
+  },
+  "experiment": {
+    "engine_config": "config/pass_pilot.yaml",
+    "max_positions_per_side": 2,
+    "max_candidates_per_side": 3,
+    "nodes": 10000,
+    "parent_favorable_cp": 300,
+    "min_games_support": 10,
+    "min_players_support": 10,
+    "nonpromotion_loss_cp": 50,
+    "coverage_target": 0.95,
+    "tolerances": [
+      50,
+      100,
+      200,
+      300
+    ]
+  }
+}

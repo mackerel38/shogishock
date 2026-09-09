@@ -1,0 +1,175 @@
+{
+  "candidate_id": "1dfe8b9c6527d4331426_3b2c",
+  "nodes": 10000,
+  "responses": [
+    {
+      "move": "2f2c",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 2387,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "P*8h",
+        "pv": [
+          "P*8h",
+          "7g8h",
+          "3c8h+",
+          "7h8h",
+          "P*2b",
+          "2c2e+",
+          "2a3c",
+          "2e3d",
+          "9d9e",
+          "9f9e"
+        ],
+        "depth": 12,
+        "nodes": 10002,
+        "time_ms": 41,
+        "raw_info": [
+          "info depth 12 seldepth 13 multipv 1 score cp -2387 nodes 10002 nps 243951 hashfull 5 time 41 pv P*8h 7g8h 3c8h+ 7h8h P*2b 2c2e+ 2a3c 2e3d 9d9e 9f9e"
+        ],
+        "reported_best_move": "P*8h"
+      },
+      "engine_eval": 2387,
+      "gap_from_optimal_estimate": 4783,
+      "gap_from_root_estimate": 3119,
+      "is_good_50": false,
+      "is_good_100": false,
+      "is_good_200": false,
+      "is_good_300": false
+    },
+    {
+      "move": "2f2c+",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 7170,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "8b8i+",
+        "pv": [
+          "8b8i+",
+          "7i8i",
+          "P*8h",
+          "8i8h",
+          "P*8g",
+          "7h8g",
+          "3c7g+",
+          "6h7g",
+          "N*7e"
+        ],
+        "depth": 12,
+        "nodes": 10002,
+        "time_ms": 29,
+        "raw_info": [
+          "info depth 12 seldepth 18 multipv 1 score cp -7170 nodes 5207 nps 260350 hashfull 1 time 20 pv 8b8i+ 7i8i P*8h 8i8h P*8g 7h8g 3c7g+ 6h7g N*7e",
+          "info depth 12 seldepth 21 multipv 1 score cp -22453 upperbound nodes 10002 nps 344896 hashfull 1 time 29 pv 8b8i+ 7i8i"
+        ],
+        "reported_best_move": "8b8i+"
+      },
+      "engine_eval": 7170,
+      "gap_from_optimal_estimate": 0,
+      "gap_from_root_estimate": -1664,
+      "is_good_50": true,
+      "is_good_100": true,
+      "is_good_200": true,
+      "is_good_300": true
+    }
+  ],
+  "root": {
+    "score": {
+      "score_type": "cp",
+      "score_cp": 5506,
+      "mate_distance": null,
+      "perspective": "sente",
+      "bound": "exact"
+    },
+    "best_move": "2f2c+",
+    "pv": [
+      "2f2c+",
+      "8b8i+",
+      "7i8i",
+      "P*8h",
+      "8i8h",
+      "3c7g+",
+      "8h7g",
+      "N*6e",
+      "7g8h",
+      "B*3c",
+      "B*6f",
+      "3c6f",
+      "6g6f",
+      "B*7g",
+      "8h7i"
+    ],
+    "depth": 13,
+    "nodes": 10005,
+    "time_ms": 129,
+    "raw_info": [
+      "info depth 13 seldepth 18 multipv 1 score cp 5506 nodes 10005 nps 77558 hashfull 3 time 129 pv 2f2c+ 8b8i+ 7i8i P*8h 8i8h 3c7g+ 8h7g N*6e 7g8h B*3c B*6f 3c6f 6g6f B*7g 8h7i"
+    ],
+    "reported_best_move": "2f2c+"
+  },
+  "reference_eval": 7170,
+  "root_eval": 5506,
+  "numeric_comparable": true,
+  "reference_scope": "best of root estimate and explicitly evaluated replies; provisional",
+  "root_reference_delta": -1664,
+  "legal_reply_count": 52,
+  "evaluated_reply_count": 2,
+  "all_legal_replies_evaluated": false,
+  "good_reply_count_50": 1,
+  "good_reply_fraction_50": null,
+  "good_reply_fraction_bounds_50": [
+    0.019230769230769232,
+    0.9807692307692307
+  ],
+  "good_reply_count_100": 1,
+  "good_reply_fraction_100": null,
+  "good_reply_fraction_bounds_100": [
+    0.019230769230769232,
+    0.9807692307692307
+  ],
+  "good_reply_count_200": 1,
+  "good_reply_fraction_200": null,
+  "good_reply_fraction_bounds_200": [
+    0.019230769230769232,
+    0.9807692307692307
+  ],
+  "good_reply_count_300": 1,
+  "good_reply_fraction_300": null,
+  "good_reply_fraction_bounds_300": [
+    0.019230769230769232,
+    0.9807692307692307
+  ],
+  "complete": true,
+  "obvious_reply_exists": true,
+  "candidate_piece_capturable": true,
+  "obvious_reply_neutralizes": true,
+  "obvious_reply_eval": 7170,
+  "obvious_reply_move": "2f2c+",
+  "obvious_reply_gap_from_optimal": 0,
+  "obvious_reply_is_good_50": true,
+  "obvious_reply_is_good_100": true,
+  "obvious_reply_is_good_200": true,
+  "obvious_reply_is_good_300": true
+}

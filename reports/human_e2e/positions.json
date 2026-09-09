@@ -1,0 +1,122 @@
+[
+  {
+    "position_id": "8e41531c4f23213c9b17",
+    "sfen": "lnsgkgsnl/1r7/ppppppbpp/6p2/7P1/9/PPPPPPP1P/1B5R1/LNSGKGSNL b - 5",
+    "side_to_move": "sente",
+    "ply": 4,
+    "move_history": [
+      "2g2f",
+      "3c3d",
+      "2f2e",
+      "2b3c"
+    ],
+    "source": "BOOK-700T-Shock + independent human annotation",
+    "parent_book_eval_sente": 32,
+    "frequency_semantics": "book structure only; not human frequency",
+    "total_games": 612,
+    "reach_probability": 0.09640522875816994,
+    "occurrence_count": 59,
+    "move_distribution": {
+      "1g1f": 3,
+      "2h5h": 1,
+      "2h7h": 1,
+      "3i3h": 6,
+      "3i4h": 12,
+      "4i5h": 1,
+      "5g5f": 1,
+      "6i7h": 5,
+      "7g7f": 28,
+      "7i7h": 1
+    },
+    "distinct_players_reaching": 88,
+    "sample_count": 59
+  },
+  {
+    "position_id": "f15331930e1f7569b35d",
+    "sfen": "lnsgkgsnl/1r5b1/ppppp2pp/5pp2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL b - 5",
+    "side_to_move": "sente",
+    "ply": 4,
+    "move_history": [
+      "2g2f",
+      "3c3d",
+      "7g7f",
+      "4c4d"
+    ],
+    "source": "BOOK-700T-Shock + independent human annotation",
+    "parent_book_eval_sente": 150,
+    "frequency_semantics": "book structure only; not human frequency",
+    "total_games": 612,
+    "reach_probability": 0.058823529411764705,
+    "occurrence_count": 36,
+    "move_distribution": {
+      "2f2e": 15,
+      "3i4h": 17,
+      "4g4f": 1,
+      "4i5h": 1,
+      "5i6h": 1,
+      "8h7g": 1
+    },
+    "distinct_players_reaching": 59,
+    "sample_count": 36
+  },
+  {
+    "position_id": "5c46af1026197c8aeb70",
+    "sfen": "lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4",
+    "side_to_move": "gote",
+    "ply": 3,
+    "move_history": [
+      "2g2f",
+      "3c3d",
+      "7g7f"
+    ],
+    "source": "BOOK-700T-Shock + independent human annotation",
+    "parent_book_eval_sente": 59,
+    "frequency_semantics": "book structure only; not human frequency",
+    "total_games": 612,
+    "reach_probability": 0.12254901960784313,
+    "occurrence_count": 75,
+    "move_distribution": {
+      "2b3c": 4,
+      "2b8h+": 4,
+      "2c2d": 1,
+      "3a3b": 1,
+      "3d3e": 1,
+      "4a3b": 6,
+      "4c4d": 36,
+      "5c5d": 5,
+      "8b4b": 5,
+      "8b5b": 1,
+      "8c8d": 9,
+      "9c9d": 2
+    },
+    "distinct_players_reaching": 108,
+    "sample_count": 75
+  },
+  {
+    "position_id": "fa2a3aee31df970cb704",
+    "sfen": "lnsgkgsnl/1r5b1/pppppp1pp/6p2/7P1/9/PPPPPPP1P/1B5R1/LNSGKGSNL w - 4",
+    "side_to_move": "gote",
+    "ply": 3,
+    "move_history": [
+      "2g2f",
+      "3c3d",
+      "2f2e"
+    ],
+    "source": "BOOK-700T-Shock + independent human annotation",
+    "parent_book_eval_sente": 32,
+    "frequency_semantics": "book structure only; not human frequency",
+    "total_games": 612,
+    "reach_probability": 0.11437908496732026,
+    "occurrence_count": 70,
+    "move_distribution": {
+      "2b3c": 59,
+      "2b4d": 1,
+      "2b6f": 2,
+      "4a3b": 2,
+      "4c4d": 4,
+      "8c8d": 1
+    },
+    "distinct_players_reaching": 102,
+    "sample_count": 70
+  }
+]

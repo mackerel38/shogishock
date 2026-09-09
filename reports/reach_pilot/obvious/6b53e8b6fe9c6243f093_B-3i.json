@@ -1,0 +1,154 @@
+{
+  "candidate_id": "6b53e8b6fe9c6243f093_B-3i",
+  "nodes": 10000,
+  "responses": [
+    {
+      "move": "4h3i",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 2443,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "4a3b",
+        "pv": [
+          "4a3b",
+          "3i4h",
+          "1c1d",
+          "6i7h",
+          "6a5b",
+          "5i6i",
+          "6c6d"
+        ],
+        "depth": 14,
+        "nodes": 10007,
+        "time_ms": 31,
+        "raw_info": [
+          "info depth 14 seldepth 16 multipv 1 score cp -2443 nodes 10007 nps 322806 hashfull 4 time 31 pv 4a3b 3i4h 1c1d 6i7h 6a5b 5i6i 6c6d"
+        ],
+        "reported_best_move": "4a3b"
+      },
+      "engine_eval": 2443,
+      "gap_from_optimal_estimate": 92,
+      "gap_from_root_estimate": 92,
+      "is_good_50": false,
+      "is_good_100": true,
+      "is_good_200": true,
+      "is_good_300": true
+    },
+    {
+      "move": "4i3i",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 2400,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "4a3b",
+        "pv": [
+          "4a3b",
+          "3g3f",
+          "4c4d",
+          "2i3g"
+        ],
+        "depth": 14,
+        "nodes": 10000,
+        "time_ms": 36,
+        "raw_info": [
+          "info depth 14 seldepth 15 multipv 1 score cp -2400 nodes 10000 nps 277777 hashfull 3 time 36 pv 4a3b 3g3f 4c4d 2i3g"
+        ],
+        "reported_best_move": "4a3b"
+      },
+      "engine_eval": 2400,
+      "gap_from_optimal_estimate": 135,
+      "gap_from_root_estimate": 135,
+      "is_good_50": false,
+      "is_good_100": false,
+      "is_good_200": true,
+      "is_good_300": true
+    }
+  ],
+  "root": {
+    "score": {
+      "score_type": "cp",
+      "score_cp": 2535,
+      "mate_distance": null,
+      "perspective": "sente",
+      "bound": "exact"
+    },
+    "best_move": "4i3i",
+    "pv": [
+      "4i3i",
+      "6c6d",
+      "6i7h"
+    ],
+    "depth": 14,
+    "nodes": 10004,
+    "time_ms": 36,
+    "raw_info": [
+      "info depth 14 seldepth 14 multipv 1 score cp 2535 nodes 10004 nps 277888 hashfull 5 time 36 pv 4i3i 6c6d 6i7h"
+    ],
+    "reported_best_move": "4i3i"
+  },
+  "reference_eval": 2535,
+  "root_eval": 2535,
+  "numeric_comparable": true,
+  "reference_scope": "best of root estimate and explicitly evaluated replies; provisional",
+  "root_reference_delta": 0,
+  "legal_reply_count": 71,
+  "evaluated_reply_count": 2,
+  "all_legal_replies_evaluated": false,
+  "good_reply_count_50": 0,
+  "good_reply_fraction_50": null,
+  "good_reply_fraction_bounds_50": [
+    0.0,
+    0.971830985915493
+  ],
+  "good_reply_count_100": 1,
+  "good_reply_fraction_100": null,
+  "good_reply_fraction_bounds_100": [
+    0.014084507042253521,
+    0.9859154929577465
+  ],
+  "good_reply_count_200": 2,
+  "good_reply_fraction_200": null,
+  "good_reply_fraction_bounds_200": [
+    0.028169014084507043,
+    1.0
+  ],
+  "good_reply_count_300": 2,
+  "good_reply_fraction_300": null,
+  "good_reply_fraction_bounds_300": [
+    0.028169014084507043,
+    1.0
+  ],
+  "complete": true,
+  "obvious_reply_exists": true,
+  "candidate_piece_capturable": true,
+  "obvious_reply_neutralizes": true,
+  "obvious_reply_eval": 2443,
+  "obvious_reply_move": "4h3i",
+  "obvious_reply_gap_from_optimal": 92,
+  "obvious_reply_is_good_50": false,
+  "obvious_reply_is_good_100": true,
+  "obvious_reply_is_good_200": true,
+  "obvious_reply_is_good_300": true
+}

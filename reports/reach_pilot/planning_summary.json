@@ -1,0 +1,13 @@
+{
+  "retained_candidates": 6314,
+  "escalated": 0,
+  "accepted_games": 19,
+  "baseline_positions_observed": 12,
+  "baseline_positions": 148,
+  "review_candidates_observed": 1,
+  "review_candidates": 95,
+  "observed_review_ids": [
+    "0a33fbe73571830519e4_2b6f"
+  ],
+  "decision": "No new scan: convenience sample only; design broader sampling first."
+}

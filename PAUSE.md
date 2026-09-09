@@ -1,5 +1,17 @@
 # Research paused — 2026-09-08
 
+> Checkpoint policy: commit+push at meaningful milestones and before long work. See `CHECKPOINTING.md`.
+> Current public handoff and data exclusions: `PUBLIC_CHECKPOINT.md`. Preserve all local collaborator changes.
+
+> Current checkpoint: 2026-09-09, `RESEARCH_V3.md`. Terashock seed audit, human sampling,
+> corrected held-out Human Policy evaluation, and a bounded 4-parent E2E are complete.
+> Do not expand scanning: conditional capture calibration failed. Historical instructions below are superseded.
+
+> Superseded on research resumption, 2026-09-08: Stage A diagnostics and a small reach prototype are complete.
+> Do NOT execute the old deep/audit continuation below. Follow `RESEARCH_V2.md` and
+> `reports/reach_pilot/analysis.md`. No new scan or large deep run is authorized by this checkpoint.
+> The historical pause record below is retained for provenance.
+
 User requested a pause and a GitHub backup. Do not resume engine experiments until requested.
 
 ## Completed and preserved

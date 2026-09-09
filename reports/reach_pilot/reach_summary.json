@@ -1,0 +1,19 @@
+{
+  "this_ingestion": {
+    "accepted": 19,
+    "excluded": 27
+  },
+  "accepted_games": 19,
+  "unique_positions": 708,
+  "exclusion_reasons": {
+    "not_finished_game": 1,
+    "no_moves": 1,
+    "human_status_unknown": 3,
+    "declared_bot_or_ai": 23
+  },
+  "sampling": "most recent up to 25 games of each of two named accounts; non-random",
+  "can_estimate_population_reach": false,
+  "human_status": "no declared BOT/AI; cheating cannot be ruled out",
+  "max_ply": 40,
+  "redistribution_approved": false
+}

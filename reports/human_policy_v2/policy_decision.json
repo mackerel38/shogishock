@@ -1,0 +1,6 @@
+{
+  "small_e2e_allowed": true,
+  "large_scan_allowed": false,
+  "reason": "bounded engineering/research trial only; no response-set/OOD calibration guarantee",
+  "splits_config_sha256": "bf32fb12d0ee2186b56e46bfc8f052491432a2d62b4231b96b6a9d7cf3cbaa2d"
+}

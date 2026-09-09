@@ -1,5 +1,8 @@
 # 新奇襲探索：研究契約と最初の実験
 
+> 2026-09-08再開後の現行設計は [RESEARCH_V2.md](RESEARCH_V2.md)。以下は旧pilotの実験記録として保存する。
+> 大量deepに先行して反証診断・実棋譜reach prototypeを実施した。結果は [新しい考察](reports/reach_pilot/analysis.md)。
+
 既存YaneuraOu・水匠5・python-shogi・SQLiteを使用する。環境の再構築は行っていない。
 まずPhase 1–4のpass仮説だけを検証する。Human Policy、勝率推定、新規性の判定は未実装。
 

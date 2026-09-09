@@ -4,3 +4,24 @@ __pycache__/
 .pytest_cache/
 data/*.sqlite3
 *.egg-info/
+data/human_raw/
+reports/reach_pilot/reach_positions.json
+reports/human_pilot/reach_positions.json
+reports/human_pilot/reach_edges.json
+assets/books/
+reports/terashock_seed_audit/positions.json
+reports/terashock_seed_audit/source_notice.json
+# Public checkpoint defense in depth; use the explicit publication allowlist.
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+engines/yaneuraou/yaneuraou
+assets/eval/
+tools/shogihome/*.AppImage
+third_party/
+backups/
+.env
+.env.*
+*.pem
+.codex/
+.agents/

@@ -1,0 +1,125 @@
+{
+  "candidate_id": "0a33fbe73571830519e4_2b6f",
+  "nodes": 10000,
+  "responses": [
+    {
+      "move": "8h6f",
+      "is_capture": true,
+      "reply_captures_candidate": true,
+      "signals": [
+        "captures_candidate",
+        "recapture",
+        "material_recovery_proxy"
+      ],
+      "obvious": true,
+      "result": {
+        "score": {
+          "score_type": "cp",
+          "score_cp": 2912,
+          "mate_distance": null,
+          "perspective": "sente",
+          "bound": "exact"
+        },
+        "best_move": "8b2b",
+        "pv": [
+          "8b2b",
+          "B*8c",
+          "2b1b",
+          "8c5f+",
+          "7a7b",
+          "5f3d",
+          "3a3b",
+          "3d5f",
+          "5a5b",
+          "1g1f"
+        ],
+        "depth": 13,
+        "nodes": 10009,
+        "time_ms": 35,
+        "raw_info": [
+          "info depth 13 seldepth 17 multipv 1 score cp -2912 nodes 10009 nps 285971 hashfull 4 time 35 pv 8b2b B*8c 2b1b 8c5f+ 7a7b 5f3d 3a3b 3d5f 5a5b 1g1f"
+        ],
+        "reported_best_move": "8b2b"
+      },
+      "engine_eval": 2912,
+      "gap_from_optimal_estimate": 0,
+      "gap_from_root_estimate": -119,
+      "is_good_50": true,
+      "is_good_100": true,
+      "is_good_200": true,
+      "is_good_300": true
+    }
+  ],
+  "root": {
+    "score": {
+      "score_type": "cp",
+      "score_cp": 2793,
+      "mate_distance": null,
+      "perspective": "sente",
+      "bound": "exact"
+    },
+    "best_move": "8h6f",
+    "pv": [
+      "8h6f",
+      "8b2b",
+      "8i7g",
+      "5a5b",
+      "2g2f",
+      "6a7b",
+      "2f2e",
+      "1c1d",
+      "6f2b+",
+      "3a2b"
+    ],
+    "depth": 14,
+    "nodes": 10000,
+    "time_ms": 79,
+    "raw_info": [
+      "info depth 14 seldepth 17 multipv 1 score cp 2793 nodes 10000 nps 126582 hashfull 6 time 79 pv 8h6f 8b2b 8i7g 5a5b 2g2f 6a7b 2f2e 1c1d 6f2b+ 3a2b"
+    ],
+    "reported_best_move": "8h6f"
+  },
+  "reference_eval": 2912,
+  "root_eval": 2793,
+  "numeric_comparable": true,
+  "reference_scope": "best of root estimate and explicitly evaluated replies; provisional",
+  "root_reference_delta": -119,
+  "legal_reply_count": 31,
+  "evaluated_reply_count": 1,
+  "all_legal_replies_evaluated": false,
+  "good_reply_count_50": 1,
+  "good_reply_fraction_50": null,
+  "good_reply_fraction_bounds_50": [
+    0.03225806451612903,
+    1.0
+  ],
+  "good_reply_count_100": 1,
+  "good_reply_fraction_100": null,
+  "good_reply_fraction_bounds_100": [
+    0.03225806451612903,
+    1.0
+  ],
+  "good_reply_count_200": 1,
+  "good_reply_fraction_200": null,
+  "good_reply_fraction_bounds_200": [
+    0.03225806451612903,
+    1.0
+  ],
+  "good_reply_count_300": 1,
+  "good_reply_fraction_300": null,
+  "good_reply_fraction_bounds_300": [
+    0.03225806451612903,
+    1.0
+  ],
+  "complete": true,
+  "obvious_reply_exists": true,
+  "candidate_piece_capturable": true,
+  "obvious_reply_neutralizes": true,
+  "obvious_reply_eval": 2912,
+  "obvious_reply_move": "8h6f",
+  "obvious_reply_gap_from_optimal": 0,
+  "obvious_reply_is_good_50": true,
+  "obvious_reply_is_good_100": true,
+  "obvious_reply_is_good_200": true,
+  "obvious_reply_is_good_300": true
+}
