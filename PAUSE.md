@@ -153,6 +153,24 @@ Astra元checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`。
 
 運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
 
+## 固定例KIFの判定・内部表現修正 checkpoint — 2026-09-10
+
+今回直したもの: △3二銀KIFの「除外」と「保留」の混在を解消し、奇襲手としての判定を除外、
+Human Policyの確率推定への注意を別説明として表示した。親PV、候補手後PV、評価値の意味を分け、
+内部ID・生辞書・真偽値・`none`を人間向けKIFから除去した。3つのresponse calibration KIFを同じrendererで再生成した。
+
+研究内容は変更していない: Astra checkpoint `903f13a4c8a093709596e6716c35cce3dc071b5f` の判定、数値、分類、
+除外条件、Human Policy、研究結論は変更していない。元のJSON、metrics、analysis、Astra handoffのhashは一致した。
+
+確認点: △3二銀の▲2二角成、10cp差、+3808/+3681の127cp単純差を保持し、対照例の表示も同じlintで確認した。
+同じ注意書きは各KIF一回までに制限した。
+
+テスト結果: pytest 55件成功、`node scripts/check_calibration_review.mjs`成功、Astra source hashes OK。
+
+未解決事項: 本番自動除外の移行判断はAstra指定どおりINCONCLUSIVE。毒入り駒取り・成立した捨て駒の十分な独立検査例はない。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
 ## Astra独立検証の人間向け報告 checkpoint — 2026-09-10
 
 今回の入力: Astra checkpoint `f817675793949e1779216f30ec1fe1690d71efcd` と

@@ -109,3 +109,5 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
 - Human report: `reports/independent_policy_validation/REVIEW.md` and `report.html`.
 - Reproduction: `.venv/bin/python scripts/render_human_facing.py` reads the handoff and existing
   artifacts only; it performs no research computation.
+- Fixed-example KIFs are regenerated under `exports/response_calibration/`; △3二銀 is explicitly
+  shown as a surprise-move exclusion, while low Human Policy support is described separately.

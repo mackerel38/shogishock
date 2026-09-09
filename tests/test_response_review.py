@@ -71,3 +71,20 @@ def test_human_facing_review_has_no_internal_classification_labels():
         assert "exact_support=" not in text
         assert "calibration=exploratory_only" not in text
         assert "capture_any" not in text
+
+
+def test_fixed_kif_display_has_no_decision_contradiction_or_raw_values():
+    from pathlib import Path
+    files = list(Path("exports/response_calibration").glob("*/*.kif"))
+    assert len(files) == 3
+    for path in files:
+        text = path.read_text(encoding="utf-8")
+        assert not ("奇襲手としては除外" in text and "奇襲手として有望かどうかの判定：保留" in text)
+        for token in ("True", "False", "None", "parent_engine_best_pv", "candidate_eval", "parent_eval",
+                      "positive=sente", "response_sets", "exact_support=", "abstain=",
+                      "diagnostic_counterexample", "actual_candidate", "P_good", "true human P_good"):
+            assert token not in text, (path, token)
+        assert text.count("以下の確率・評価値は研究中のモデルと既存解析による参考値") <= 1
+    diagnostic = Path("exports/response_calibration/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.kif").read_text(encoding="utf-8")
+    assert "奇襲手としての判定：除外" in diagnostic
+    assert "人間の応手を予測するモデルについて" in diagnostic

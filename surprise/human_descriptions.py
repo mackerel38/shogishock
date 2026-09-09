@@ -51,5 +51,7 @@ FEATURE_DESCRIPTIONS = {
 
 
 def feature_set_sentence(value: str) -> str:
+    if value.strip().lower() == "none":
+        return "今回の確認対象となる特徴には該当しない"
     names = [FEATURE_DESCRIPTIONS.get(x.strip(), x.strip()) for x in value.split(",") if x.strip()]
     return "、".join(names) if names else "該当する特徴はない"

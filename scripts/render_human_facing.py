@@ -15,26 +15,55 @@ INDEP = ROOT / "reports/independent_policy_validation"
 def readable_kif(path: Path, case: dict) -> None:
     lines = path.read_text(encoding="utf-8").splitlines()
     out = []
+    warning_emitted = False
     for line in lines:
-        if "[diagnostic_counterexample; NOT an accepted surprise]" in line:
-            out.extend(["* 【奇襲手としては除外済みの検査用の指し手】",
-                        "* この指し手は奇襲手の候補ではない。",
-                        "* 人間の応手予測モデルが明白な応手を適切に扱えるか確認するために残している。"])
-            if case.get("candidate_move") == "3a3b":
-                out.extend(["* この局面では、▲2二角成で後手の角を取ることができ、後手は直ちに取り返せない。",
-                            "* 同じ条件で評価した最善級の応手との差は10cpで、この応手は実際にも十分良い。",
-                            "* 候補手直後の+3808と応手後の+3681の差127cpは、除外判定には使っていない。"])
+        if "[diagnostic_counterexample; NOT an accepted surprise]" in line or "【奇襲手としては除外済み" in line:
+            out.extend(["* 【奇襲手としては除外した検査用の指し手】",
+                        "* 調べている指し手：△3二銀",
+                        "* 奇襲手としての判定：除外",
+                        "* 除外理由：▲2二角成で後手の角を取ることができ、後手はその馬を直ちに取り返せないため。",
+                        "* 今回この局面を残している理由：明白な応手で咎められる指し手を、ShogiShockが奇襲手として通さないか確認するため。",
+                        "* ▲2二角成は、同じ条件で評価した相手の応手の中で最善級の応手から10cpしか離れていない。",
+                        "* 候補手直後の+3808と▲2二角成後の+3681の差127cpは、異なる局面の値の単純差であり、除外判定には使っていない。",
+                        "* 人間の応手を予測するモデルについて：この局面と同じ局面の実例が少ないため、この局面に対する確率予測そのものは信用しすぎない方がよい。",
+                        "* 以下の確率・評価値は研究中のモデルと既存解析による参考値であり、実際の人間がその確率で指すことを確認した値ではない。"])
+            warning_emitted = True
         elif "[control; NOT an accepted surprise]" in line:
             out.extend(["* 【通常の指し手に対する予測を確認するための指し手】",
                         "* この局面は、補正後の応手予測が通常の序盤局面で不自然になっていないか確認するために使っている。"])
+        elif "奇襲手として有望かどうかの判定：保留" in line:
+            if case.get("classification") == "diagnostic_counterexample":
+                out.append("* 奇襲手としての判定：除外。理由：▲2二角成で後手の角を取ることができ、後手は直ちに取り返せないため。")
+            else:
+                out.append("* この指し手は、奇襲手の判定ではなく通常局面の応手予測を確認する対照として表示している。")
+        elif "既存の△3二銀" in line:
+            continue
+        elif "人間の応手予測モデルが明白な応手を適切に扱えるか確認するために残している" in line:
+            continue
+        elif "人間の応手を予測するモデルについて：" in line:
+            if not warning_emitted:
+                out.append("* 人間の応手を予測するモデルについて：この局面と同じ局面の実例が少ないため、この局面に対する確率予測そのものは信用しすぎない方がよい。")
+                warning_emitted = True
+        elif "この指し手は奇襲手の候補ではない。" in line or "人間が実際に選ぶ確率については" in line:
+            continue
+        elif "奇襲手としての判定：除外。理由：" in line:
+            continue
         elif "reach=" in line and "exact_support=" in line:
             support = case.get("policy_exact_support")
             out.append("* " + support_sentence(support))
         elif "abstain=true" in line or "calibration=exploratory_only" in line:
-            out.append("* " + abstain_sentence())
+            if not warning_emitted:
+                out.append("* この局面に対するHuman Policyの確率推定は、同一局面の実例が少ないため信用しすぎない方がよい。")
+                warning_emitted = True
         elif "MODEL ONLY:" in line:
-            out.append("* 以下の確率・評価値は研究中のモデルと既存解析による参考値であり、実際の人間がその確率で指すことを確認した値ではない。")
-        elif "この応手が該当する特徴の集合：" in line or "response_sets:" in line:
+            if not warning_emitted:
+                out.append("* 以下の確率・評価値は研究中のモデルと既存解析による参考値であり、実際の人間がその確率で指すことを確認した値ではない。")
+                warning_emitted = True
+        elif "以下の確率・評価値は研究中のモデルと既存解析による参考値" in line:
+            if not warning_emitted:
+                out.append("* 以下の確率・評価値は研究中のモデルと既存解析による参考値であり、実際の人間がその確率で指すことを確認した値ではない。")
+                warning_emitted = True
+        elif "この応手が該当する特徴の集合：" in line or "この応手の種類：" in line or "response_sets:" in line:
             value = line.split("：", 1)[1].strip() if "：" in line else line.split(":", 1)[1].strip()
             out.append("* この応手の種類：" + feature_set_sentence(value))
         elif "Human Policy old=" in line:
@@ -53,6 +82,12 @@ def readable_kif(path: Path, case: dict) -> None:
             out.append("* この応手が候補手を明確に咎めるか：" + ("はい。" if value == "True" else "いいえ。"))
         elif "parent_eval=" in line:
             out.append("* 候補手を指す前の局面と、候補手を指した後の局面の評価値は、別々の局面の参考値として表示している。")
+        elif "parent_engine_best_pv:" in line:
+            out.append("* 候補手を指す前の局面で、エンジンが最善級と評価した進行：" + line.split(":", 1)[1].strip())
+        elif "true human P_good" in line:
+            out.append("* 人間が実際に選ぶ確率については、今回の検証だけでは確定していない。")
+        elif "Prediction-only diagnostic" in line or "positive=sente" in line:
+            continue
         elif "controlとして指定" in line:
             out.append("* この指し手は、通常の序盤局面に対する応手予測が不自然になっていないか確認するために使っている。")
         elif "Response calibration review" in line:
