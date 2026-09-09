@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "artifact_role": "既存の確定研究結果をLunaへ引き渡すもの。新研究・再評価・結論変更ではない。",
+  "research_question": "Human Policy・shrinkage・response-set定義・tilt係数・判定基準を一切再調整せず、過去に評価していない人間棋譜でも確率補正の改善が再現するか。",
+  "source_checkpoint": "f817675793949e1779216f30ec1fe1690d71efcd",
+  "source_checkpoint_meaning": "独立検証結果を確定したAstra側commit。取得前freeze commitや後続の表示整備commitではない。",
+  "source_files_sha256": {
+    "reports/independent_policy_validation/analysis.md": "b7b5664b9eada3cf8fc1e467fd4259fdce8089c8a9a604e66b2f984bb4d96864",
+    "reports/independent_policy_validation/decision.json": "f88d3196537b59c98e8bf913c3cbe83c7f5081b65a494d3121c3ce746bce99b4",
+    "reports/independent_policy_validation/metrics.json": "ccc41207cfd8e69a5061957a0a6cee4b21ef7f884117589ed5eb78f1bf9861cd",
+    "reports/independent_policy_validation/dataset_summary.json": "bbfa09ac54b9a74cf691e5f875184e3c0f1ada77396fe851074e607b3a7bfbb0",
+    "reports/independent_policy_validation/SAMPLING_PLAN.md": "4b1a305a727154b5d4179c14a41c95935c19710ed8415784a417daf0f8a94c1c",
+    "reports/response_calibration/review.json": "df6f918b5bc1094152e747096bbc2716b039e10a599eda8034b219771141cf06"
+  },
+  "conclusion": {
+    "improvement_reproduced": true,
+    "statements": [
+      "新しい独立標本でも以前の確率補正による相対的改善は再現した。",
+      "取り返し・駒得回収の代理集合が実際に選ばれる割合は、依然として約20ポイント低く予測された。",
+      "Human Policyを奇襲手の昇格判定に使えるほど十分に信頼できるとはまだ判断していない。"
+    ],
+    "relative_improvement_is_not_sufficient_calibration": true,
+    "source": "reports/independent_policy_validation/decision.json"
+  },
+  "next_step_decision": "NO",
+  "next_step_decision_target": "現在のHuman Policyを使った次の小規模な奇襲手探索へはまだ進まない。P_goodによる候補昇格も行わない。",
+  "confirmed_facts": {
+    "accepted_new_validation_games": 270,
+    "distinct_players": 250,
+    "player_identity_scope": "識別可能なアカウント数。潜在的な同一人物の別アカウントまで非重複と証明した数ではない。",
+    "known_previous_player_overlap": 0,
+    "previous_game_overlap": 0,
+    "correspondence_games": 0,
+    "predicted_human_moves": 6501,
+    "new_data_refit_count": 0,
+    "new_data_model_selection_count": 0,
+    "new_candidate_scan_count": 0,
+    "new_engine_call_count": 0,
+    "new_actual_candidates": 0,
+    "relative_improvement_reproduced": true,
+    "inherited_relative_gate_time": true,
+    "inherited_relative_gate_player": true,
+    "sources": [
+      "reports/independent_policy_validation/dataset_summary.json",
+      "reports/independent_policy_validation/decision.json",
+      "reports/independent_policy_validation/metrics.json#/time/new/overall"
+    ]
+  },
+  "important_numbers": {
+    "model_scope": "事前固定したtime snapshotの主評価。newは凍結済み種別tilt補正、oldは同じtime-train統計の旧hard-thresholdモデル。同一の新270局内で比較。",
+    "aggregation": "主表は通常の観測単位集計。player-equal重み付け感度分析や旧exploratory標本の数値とは混ぜない。",
+    "rounding": "生のprobabilityは既存JSON値のまま保存。表示用%は100倍して小数第1位へ四捨五入。差は丸め前の確率から計算して小数第1位へ四捨五入。NLL/Brier/ECEを表示するときは小数第4位。",
+    "response_sets": {
+      "capture_any": {
+        "meaning": "何らかの駒を取れる局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/capture_any",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 2962,
+        "distinct_games": 265,
+        "distinct_players_both_sides": 247,
+        "observed_probability": 0.2164078325455773,
+        "predicted_probability": 0.19804711350402876,
+        "underprediction_percentage_points": 1.836071904154854,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.08234735150936426,
+        "old_model_brier": 0.14571044050114826,
+        "frozen_model_brier": 0.08304169900049135,
+        "frozen_model_ece": 0.047419876601719264,
+        "display": {
+          "observed_percent": 21.6,
+          "predicted_percent": 19.8,
+          "underprediction_percentage_points": 1.8
+        }
+      },
+      "captures_candidate": {
+        "meaning": "直前に動いた駒を取れる局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/captures_candidate",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 833,
+        "distinct_games": 238,
+        "distinct_players_both_sides": 231,
+        "observed_probability": 0.5186074429771909,
+        "predicted_probability": 0.43957834155422765,
+        "underprediction_percentage_points": 7.902910142296321,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.1525645990738647,
+        "old_model_brier": 0.33573231868769127,
+        "frozen_model_brier": 0.13944986115930824,
+        "frozen_model_ece": 0.13114021517384594,
+        "display": {
+          "observed_percent": 51.9,
+          "predicted_percent": 44,
+          "underprediction_percentage_points": 7.9
+        }
+      },
+      "recapture": {
+        "meaning": "取り返しが可能な局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/recapture",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 311,
+        "distinct_games": 157,
+        "distinct_players_both_sides": 178,
+        "observed_probability": 0.8360128617363344,
+        "predicted_probability": 0.6411105029036834,
+        "underprediction_percentage_points": 19.490235883265093,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.20675030162557323,
+        "old_model_brier": 0.5444240567683922,
+        "frozen_model_brier": 0.14976409521972275,
+        "frozen_model_ece": 0.20077878487466017,
+        "display": {
+          "observed_percent": 83.6,
+          "predicted_percent": 64.1,
+          "underprediction_percentage_points": 19.5
+        }
+      },
+      "material_recovery": {
+        "meaning": "駒得回収の代理条件を満たす応手が可能な局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/material_recovery",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 470,
+        "distinct_games": 155,
+        "distinct_players_both_sides": 179,
+        "observed_probability": 0.7148936170212766,
+        "predicted_probability": 0.5090815449527117,
+        "underprediction_percentage_points": 20.58120720685649,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.17050210476371636,
+        "old_model_brier": 0.49388694771484276,
+        "frozen_model_brier": 0.21465350206230288,
+        "frozen_model_ece": 0.2058120720685648,
+        "display": {
+          "observed_percent": 71.5,
+          "predicted_percent": 50.9,
+          "underprediction_percentage_points": 20.6
+        }
+      },
+      "high_value_capture": {
+        "meaning": "大駒を取れる局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/high_value_capture",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 751,
+        "distinct_games": 187,
+        "distinct_players_both_sides": 203,
+        "observed_probability": 0.25033288948069243,
+        "predicted_probability": 0.1971664898313215,
+        "underprediction_percentage_points": 5.316639964937092,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.08028780057272976,
+        "old_model_brier": 0.1795543377055888,
+        "frozen_model_brier": 0.11620590727921763,
+        "frozen_model_ece": 0.060836931720585644,
+        "display": {
+          "observed_percent": 25,
+          "predicted_percent": 19.7,
+          "underprediction_percentage_points": 5.3
+        }
+      },
+      "pawn_contact_capture": {
+        "meaning": "歩で相手の歩を取れる局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/pawn_contact_capture",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 260,
+        "distinct_games": 142,
+        "distinct_players_both_sides": 161,
+        "observed_probability": 0.6923076923076923,
+        "predicted_probability": 0.536367266410708,
+        "underprediction_percentage_points": 15.594042589698432,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.23209896750688022,
+        "old_model_brier": 0.4159237794216965,
+        "frozen_model_brier": 0.2270405864212301,
+        "frozen_model_ece": 0.16603694963666563,
+        "display": {
+          "observed_percent": 69.2,
+          "predicted_percent": 53.6,
+          "underprediction_percentage_points": 15.6
+        }
+      },
+      "promotion": {
+        "meaning": "成る手が可能な局面",
+        "source": "reports/independent_policy_validation/metrics.json#/time/new/sets/promotion",
+        "conditioning": "当該集合の合法手が少なくとも1手ある局面観測のみ。集合は重複可能。",
+        "opportunity_count": 1730,
+        "distinct_games": 261,
+        "distinct_players_both_sides": 246,
+        "observed_probability": 0.09190751445086705,
+        "predicted_probability": 0.0681019638874486,
+        "underprediction_percentage_points": 2.3805550563418447,
+        "difference_definition": "100 * (observed_probability - predicted_probability)。正なら過小予測。相対的な%減少ではない。",
+        "old_model_predicted_probability": 0.03393737343091259,
+        "old_model_brier": 0.08224216774177553,
+        "frozen_model_brier": 0.075253582574848,
+        "frozen_model_ece": 0.024788802068948037,
+        "display": {
+          "observed_percent": 9.2,
+          "predicted_percent": 6.8,
+          "underprediction_percentage_points": 2.4
+        }
+      }
+    },
+    "normal_prediction": {
+      "source": "reports/independent_policy_validation/metrics.json#/time",
+      "meaning": "同一6501着手の旧モデル対凍結補正モデル。NLLはnats、Brierはmulticlass、top-kは0–1比率、ECEはtop-label。",
+      "old": {
+        "n": 6501,
+        "nll": 2.9691952766358876,
+        "brier": 0.892732031081468,
+        "top1": 0.19012459621596678,
+        "top3": 0.34333179510844486,
+        "top5": 0.42885709890786033,
+        "ece": 0.025952292661591575
+      },
+      "new": {
+        "n": 6501,
+        "nll": 2.868463185414979,
+        "brier": 0.8634909499961749,
+        "top1": 0.2131979695431472,
+        "top3": 0.3677895708352561,
+        "top5": 0.4494693124134749,
+        "ece": 0.04017506856942221
+      }
+    },
+    "low_support_fraction": {
+      "value": 0.8032610367635749,
+      "meaning": "凍結exact supportが2未満の着手割合。真のOOD検知率ではない。",
+      "source": "reports/independent_policy_validation/metrics.json#/time/new/low_support_fraction"
+    }
+  },
+  "unknowns": [
+    {
+      "kind": "unresolved",
+      "statement": "取り返し・駒得回収について十分な確率予測ができるHuman Policyはまだ得られていない。"
+    },
+    {
+      "kind": "unresolved",
+      "statement": "P_goodを候補昇格へ使えるほど集合確率が十分に校正されているとは確認できていない。"
+    },
+    {
+      "kind": "data_use_constraint",
+      "statement": "今回の270局を調整用データとして再利用してはいけない。モデル改良後に同じ標本を独立最終testと呼び直してはいけない。"
+    },
+    {
+      "kind": "scope_limit",
+      "statement": "公開チーム所属者の便宜標本で、一般人口代表性・潜在人物レベルの完全独立性・隠れたAI利用の不在は保証しない。"
+    }
+  ],
+  "human_policy_reliability": {
+    "can_support": [
+      "この確認標本における旧モデル対凍結補正モデルの相対的性能比較。",
+      "自然応手集合の過小予測と残存校正誤差を調べる診断。"
+    ],
+    "not_established": [
+      "個別の奇襲後局面で人間の応手確率を十分正確に推定できること。",
+      "低いP_goodや大きいhuman_gapを根拠に奇襲候補を昇格できること。"
+    ],
+    "candidate_promotion_allowed": false,
+    "frozen_abstention_maintained": true,
+    "separation_from_move_decision": "モデルの信頼性不足は、特定の手が奇襲として除外・保留・採用対象かという判断とは別。"
+  },
+  "cases": {
+    "new_surprise_candidates_generated": false,
+    "new_actual_candidate_count": 0,
+    "referenced_existing_cases": [
+      {
+        "case_id": "5c46af1026197c8aeb70_3a3b",
+        "classification": "diagnostic_counterexample",
+        "classification_reason": "明白な角取りで否定される既存反例。奇襲候補として残しているのではない。",
+        "parent_sfen": "lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4",
+        "resulting_sfen": "lnsgkg1nl/1r4sb1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL b - 5",
+        "move_history_usi": [
+          "2g2f",
+          "3c3d",
+          "7g7f"
+        ],
+        "move_history_label": "▲2六歩 △3四歩 ▲7六歩",
+        "candidate_move_usi": "3a3b",
+        "candidate_move_label": "△3二銀",
+        "attacker_side": "gote",
+        "purpose": "この独立検証では、obvious tactical rejectが必ず除外するsanity / regression fixtureとしてのみ参照。",
+        "surprise_move_decision": "除外",
+        "decision_reason": "▲2二角成で角をただで取られ、取り返せない。明白な応手で咎められるため奇襲候補ではない。保留ではない。",
+        "obvious_refuting_replies": [
+          {
+            "usi": "8h2b+",
+            "label": "▲2二角成"
+          },
+          {
+            "usi": "8h2b",
+            "label": "▲2二角不成"
+          }
+        ],
+        "obvious_reply_neutralizes": true,
+        "human_policy_reliability": {
+          "assessment": "この局面については低い（既存の診断結果）。",
+          "probability_evaluated_in_independent_cycle": false,
+          "probability_claim_in_this_handoff": null,
+          "warning": "過去のfixture確率を独立検証の新しい測定結果として表示しない。確率の信頼性とは別に、この手は除外済み。"
+        },
+        "human_review_point": "明白な角取りで奇襲手として除外済みであり、モデル診断のために保存している、という二つの意味を分けて表示する。",
+        "existing_kif": "exports/response_calibration/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.kif",
+        "sources": [
+          "reports/response_calibration/review.json",
+          "reports/independent_policy_validation/analysis.md#Sanity / verification / STOP"
+        ]
+      }
+    ]
+  },
+  "human_report": {
+    "lead_conclusion": "独立した新標本でも補正の改善は再現したが、取り返し・駒得回収の確率を依然大きく低く予測する。次の小規模奇襲手探索へは進まない。",
+    "emphasize_number_refs": [
+      "confirmed_facts.accepted_new_validation_games",
+      "confirmed_facts.distinct_players",
+      "important_numbers.response_sets.recapture",
+      "important_numbers.response_sets.material_recovery"
+    ],
+    "comparison_explanation": "実測は集合内の応手が実際に選ばれた割合。予測は同じ機会局面における凍結補正モデルの集合確率の平均。差は実測−予測のパーセントポイント。",
+    "must_not_misrepresent": [
+      "改善の再現に失敗したわけではない。",
+      "相対的な改善条件の通過は、十分な絶対校正や次scanへの許可ではない。",
+      "material_recoveryは駒得回収の代理条件。安全な駒得の証明ではない。",
+      "機会数は対局数・プレイヤー数ではなく、集合は重複する。",
+      "一般人口の無作為標本ではない。",
+      "△3二銀の奇襲手判定は除外。モデルの信頼性が低いから奇襲手として保留、とは書かない。"
+    ],
+    "reference_values_allowed": [
+      "important_numbers.normal_prediction",
+      "important_numbers.response_sets内のBrier/ECEと旧モデル予測",
+      "既存metrics.jsonの校正bin・支持数・player/game snapshot感度分析"
+    ],
+    "values_requiring_caveats": [
+      "game-bootstrap区間は参加者・チーム依存を完全補正した母集団CIではない。",
+      "低support割合は真のOOD率ではない。",
+      "top-label ECEの小ささはP_goodという任意の応手集合の校正を保証しない。",
+      "旧exploratoryとの比較ではcorrespondence・rating・標本枠等が異なる。"
+    ],
+    "human_review_requests": [
+      "相対改善と、取り返し・回収集合の約20ポイントの残存誤差を区別して読めるか。",
+      "駒取り全体の平均で重要subsetの誤差を隠していないか。",
+      "次scanへ進まず既存保留を維持する判断が妥当か。"
+    ],
+    "case_refs": [
+      "cases.referenced_existing_cases[0]"
+    ],
+    "next_step_decision": "NO",
+    "next_step_target": "次の小規模な奇襲手探索・P_goodによる候補昇格",
+    "luna_tasks": [
+      "このJSONを根拠に人間向け説明・表示を整える。",
+      "研究結論・数値の意味・case判定を変更しない。",
+      "KIF/HTML/REVIEW.md整備はLuna担当。本handoff作成では実施していない。"
+    ]
+  },
+  "handoff_operation": {
+    "new_research": false,
+    "new_data_acquisition": false,
+    "model_execution": false,
+    "refit": false,
+    "reevaluation": false,
+    "engine_analysis": false,
+    "candidate_scan": false,
+    "stop_after_push": true
+  }
+}
