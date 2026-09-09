@@ -1,0 +1,5978 @@
+{
+  "game": {
+    "frozen_selected": "differentiated_tilt",
+    "inherited_relative_gate": true,
+    "new": {
+      "abstain_fraction": 1.0,
+      "exact_supported": {
+        "brier": 0.6851822906874241,
+        "distinct_games": 270,
+        "ece": 0.047170538437856284,
+        "n": 1293,
+        "nll": 1.843788132345017,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.2803738317757009,
+            "confidence": 0.17009410231992791,
+            "lower": 0.1,
+            "n": 107,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2073732718894009,
+            "confidence": 0.2611901700112344,
+            "lower": 0.2,
+            "n": 217,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.47058823529411764,
+            "confidence": 0.3447571796685434,
+            "lower": 0.3,
+            "n": 119,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.49072164948453606,
+            "confidence": 0.47487625281033663,
+            "lower": 0.4,
+            "n": 485,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.5641025641025641,
+            "confidence": 0.5716435512904894,
+            "lower": 0.5,
+            "n": 234,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.5666666666666667,
+            "confidence": 0.6235687358474642,
+            "lower": 0.6,
+            "n": 30,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.855072463768116,
+            "confidence": 0.7471058166145714,
+            "lower": 0.7,
+            "n": 69,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8399734500924062,
+            "lower": 0.8,
+            "n": 20,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9389572899693627,
+            "lower": 0.9,
+            "n": 12,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.4709976798143852,
+        "top3": 0.7478731631863882,
+        "top5": 0.8105181747873164
+      },
+      "fallback": {
+        "brier": 0.9067515237659436,
+        "distinct_games": 268,
+        "ece": 0.03876690467323237,
+        "n": 5208,
+        "nll": 3.1089540518638596,
+        "reliability": [
+          {
+            "accuracy": 0.06647864625302176,
+            "confidence": 0.08327095439326099,
+            "lower": 0.0,
+            "n": 2482,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.09305912596401028,
+            "confidence": 0.12438373240744388,
+            "lower": 0.1,
+            "n": 1945,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.3333333333333333,
+            "confidence": 0.2339091195510061,
+            "lower": 0.2,
+            "n": 237,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.46236559139784944,
+            "confidence": 0.3505611019725098,
+            "lower": 0.3,
+            "n": 93,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.4842105263157895,
+            "confidence": 0.4503886718268678,
+            "lower": 0.4,
+            "n": 95,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.7835051546391752,
+            "confidence": 0.5506429349487472,
+            "lower": 0.5,
+            "n": 194,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7931034482758621,
+            "confidence": 0.638313618285807,
+            "lower": 0.6,
+            "n": 87,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.7608695652173914,
+            "confidence": 0.7374697750977738,
+            "lower": 0.7,
+            "n": 46,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.9473684210526315,
+            "confidence": 0.8522475056714618,
+            "lower": 0.8,
+            "n": 19,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9406934724596108,
+            "lower": 0.9,
+            "n": 10,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.1532258064516129,
+        "top3": 0.27860983102918585,
+        "top5": 0.3632872503840246
+      },
+      "inherited_primary_mean_brier": 0.14170664615721779,
+      "low_support_fraction": 0.8011075219197047,
+      "overall": {
+        "brier": 0.8626830699326062,
+        "distinct_games": 270,
+        "ece": 0.03214733790111281,
+        "n": 6501,
+        "nll": 2.8573220669480217,
+        "reliability": [
+          {
+            "accuracy": 0.06647864625302176,
+            "confidence": 0.08327095439326099,
+            "lower": 0.0,
+            "n": 2482,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.10282651072124756,
+            "confidence": 0.12676726534147692,
+            "lower": 0.1,
+            "n": 2052,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.27312775330396477,
+            "confidence": 0.24694874058596106,
+            "lower": 0.2,
+            "n": 454,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.4669811320754717,
+            "confidence": 0.34730323992452866,
+            "lower": 0.3,
+            "n": 212,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.4896551724137931,
+            "confidence": 0.47086535592511325,
+            "lower": 0.4,
+            "n": 580,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6635514018691588,
+            "confidence": 0.5621245803318492,
+            "lower": 0.5,
+            "n": 428,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7350427350427351,
+            "confidence": 0.6345328791990525,
+            "lower": 0.6,
+            "n": 117,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8173913043478261,
+            "confidence": 0.7432514000078523,
+            "lower": 0.7,
+            "n": 115,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.9743589743589743,
+            "confidence": 0.8459531181950231,
+            "lower": 0.8,
+            "n": 39,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9397464638285663,
+            "lower": 0.9,
+            "n": 22,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.21642824180895248,
+        "top3": 0.3719427780341486,
+        "top5": 0.4522381172127365
+      },
+      "response_set_calibration_status": "frozen_abstention",
+      "sets": {
+        "capture_any": {
+          "brier": 0.08227097520101301,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1483,
+              "observed": 0.01820633850303439,
+              "predicted": 0.0353756923896044
+            },
+            {
+              "bin": 1,
+              "n": 486,
+              "observed": 0.09876543209876543,
+              "predicted": 0.1373038696753077
+            },
+            {
+              "bin": 2,
+              "n": 269,
+              "observed": 0.15985130111524162,
+              "predicted": 0.2463456962120461
+            },
+            {
+              "bin": 3,
+              "n": 141,
+              "observed": 0.4326241134751773,
+              "predicted": 0.34929711592943063
+            },
+            {
+              "bin": 4,
+              "n": 83,
+              "observed": 0.4819277108433735,
+              "predicted": 0.4501344305194656
+            },
+            {
+              "bin": 5,
+              "n": 220,
+              "observed": 0.8045454545454546,
+              "predicted": 0.5565138494000402
+            },
+            {
+              "bin": 6,
+              "n": 92,
+              "observed": 0.8043478260869565,
+              "predicted": 0.6380194676985758
+            },
+            {
+              "bin": 7,
+              "n": 75,
+              "observed": 0.8,
+              "predicted": 0.7415650023120923
+            },
+            {
+              "bin": 8,
+              "n": 39,
+              "observed": 0.9743589743589743,
+              "predicted": 0.8614119919401211
+            },
+            {
+              "bin": 9,
+              "n": 74,
+              "observed": 0.9864864864864865,
+              "predicted": 0.9542938070763022
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.05499181336896087,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.08258867166276707,
+            "observed": 0.22327917716977314,
+            "predicted": 0.2074307902214614,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.20696552947845526,
+          "sample_count": 2962
+        },
+        "captures_candidate": {
+          "brier": 0.13684965566241444,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 144,
+              "observed": 0.04861111111111111,
+              "predicted": 0.021537572205496344
+            },
+            {
+              "bin": 1,
+              "n": 87,
+              "observed": 0.09195402298850575,
+              "predicted": 0.1550396084070584
+            },
+            {
+              "bin": 2,
+              "n": 84,
+              "observed": 0.10714285714285714,
+              "predicted": 0.24179804709220876
+            },
+            {
+              "bin": 3,
+              "n": 40,
+              "observed": 0.35,
+              "predicted": 0.3564804539753216
+            },
+            {
+              "bin": 4,
+              "n": 59,
+              "observed": 0.6610169491525424,
+              "predicted": 0.45023812914443856
+            },
+            {
+              "bin": 5,
+              "n": 196,
+              "observed": 0.8061224489795918,
+              "predicted": 0.5519407632769212
+            },
+            {
+              "bin": 6,
+              "n": 62,
+              "observed": 0.7741935483870968,
+              "predicted": 0.6360014546337127
+            },
+            {
+              "bin": 7,
+              "n": 56,
+              "observed": 0.8214285714285714,
+              "predicted": 0.7389673219063215
+            },
+            {
+              "bin": 8,
+              "n": 36,
+              "observed": 0.9722222222222222,
+              "predicted": 0.8626691226054826
+            },
+            {
+              "bin": 9,
+              "n": 69,
+              "observed": 0.9855072463768116,
+              "predicted": 0.9568621403663838
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.12283194971627914,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.13356764019956824,
+            "observed": 0.5323160951926827,
+            "predicted": 0.43400556777297716,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.4367327562769321,
+          "sample_count": 833
+        },
+        "high_value_capture": {
+          "brier": 0.11575814956863242,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 297,
+              "observed": 0.11784511784511785,
+              "predicted": 0.06379036520668505
+            },
+            {
+              "bin": 1,
+              "n": 220,
+              "observed": 0.15,
+              "predicted": 0.12273228119929137
+            },
+            {
+              "bin": 2,
+              "n": 110,
+              "observed": 0.15454545454545454,
+              "predicted": 0.23526436868042394
+            },
+            {
+              "bin": 3,
+              "n": 11,
+              "observed": 0.36363636363636365,
+              "predicted": 0.35489089061092505
+            },
+            {
+              "bin": 4,
+              "n": 13,
+              "observed": 0.46153846153846156,
+              "predicted": 0.43337240922331505
+            },
+            {
+              "bin": 5,
+              "n": 6,
+              "observed": 0.5,
+              "predicted": 0.5381551779663026
+            },
+            {
+              "bin": 6,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.6320785057147241
+            },
+            {
+              "bin": 7,
+              "n": 12,
+              "observed": 0.8333333333333334,
+              "predicted": 0.7397064717288623
+            },
+            {
+              "bin": 8,
+              "n": 23,
+              "observed": 0.9565217391304348,
+              "predicted": 0.8699443322596687
+            },
+            {
+              "bin": 9,
+              "n": 54,
+              "observed": 0.9814814814814815,
+              "predicted": 0.9597442575250684
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.05026864239433499,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.11999535909927761,
+            "observed": 0.2659392724539304,
+            "predicted": 0.23005426279318308,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.22431993715997778,
+          "sample_count": 751
+        },
+        "material_recovery": {
+          "brier": 0.20544425182976167,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 28,
+              "observed": 0.39285714285714285,
+              "predicted": 0.04645871921042945
+            },
+            {
+              "bin": 1,
+              "n": 69,
+              "observed": 0.43478260869565216,
+              "predicted": 0.14806564026253352
+            },
+            {
+              "bin": 2,
+              "n": 41,
+              "observed": 0.5365853658536586,
+              "predicted": 0.24943872059038727
+            },
+            {
+              "bin": 3,
+              "n": 22,
+              "observed": 0.3181818181818182,
+              "predicted": 0.34791552576134405
+            },
+            {
+              "bin": 4,
+              "n": 28,
+              "observed": 0.6785714285714286,
+              "predicted": 0.452796673833998
+            },
+            {
+              "bin": 5,
+              "n": 77,
+              "observed": 0.8571428571428571,
+              "predicted": 0.5549701966928096
+            },
+            {
+              "bin": 6,
+              "n": 51,
+              "observed": 0.7843137254901961,
+              "predicted": 0.6414016634297256
+            },
+            {
+              "bin": 7,
+              "n": 56,
+              "observed": 0.8035714285714286,
+              "predicted": 0.7437445954840826
+            },
+            {
+              "bin": 8,
+              "n": 33,
+              "observed": 0.9696969696969697,
+              "predicted": 0.8644583441528979
+            },
+            {
+              "bin": 9,
+              "n": 65,
+              "observed": 0.9846153846153847,
+              "predicted": 0.9588759097816144
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.18570963195524123,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.19949687285502235,
+            "observed": 0.7298984580669425,
+            "predicted": 0.5275134288327834,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.5319675662011399,
+          "sample_count": 470
+        },
+        "pawn_contact_capture": {
+          "brier": 0.22994887572056105,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.19525205802914103
+            },
+            {
+              "bin": 2,
+              "n": 7,
+              "observed": 0.14285714285714285,
+              "predicted": 0.24271415297405471
+            },
+            {
+              "bin": 3,
+              "n": 34,
+              "observed": 0.6470588235294118,
+              "predicted": 0.3633000080474488
+            },
+            {
+              "bin": 4,
+              "n": 45,
+              "observed": 0.6444444444444445,
+              "predicted": 0.4618439061343336
+            },
+            {
+              "bin": 5,
+              "n": 113,
+              "observed": 0.7522123893805309,
+              "predicted": 0.5486862125813716
+            },
+            {
+              "bin": 6,
+              "n": 26,
+              "observed": 0.6538461538461539,
+              "predicted": 0.6435334332693708
+            },
+            {
+              "bin": 7,
+              "n": 26,
+              "observed": 0.7307692307692307,
+              "predicted": 0.7272930709024036
+            },
+            {
+              "bin": 8,
+              "n": 4,
+              "observed": 1.0,
+              "predicted": 0.8649343156709481
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.9076108383944282
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.16587971626611608,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.22320320089084913,
+            "observed": 0.7290705339485827,
+            "predicted": 0.538644212402115,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.5348087697867814,
+          "sample_count": 260
+        },
+        "promotion": {
+          "brier": 0.07537745463419923,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1341,
+              "observed": 0.0395227442207308,
+              "predicted": 0.052566906154257846
+            },
+            {
+              "bin": 1,
+              "n": 225,
+              "observed": 0.24444444444444444,
+              "predicted": 0.12283192203722426
+            },
+            {
+              "bin": 2,
+              "n": 136,
+              "observed": 0.3088235294117647,
+              "predicted": 0.23639934394545895
+            },
+            {
+              "bin": 3,
+              "n": 21,
+              "observed": 0.42857142857142855,
+              "predicted": 0.3533875825298002
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "observed": 0.0,
+              "predicted": 0.4352505598026098
+            },
+            {
+              "bin": 5,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.5225504092288824
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.03439592040592306,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.07744400651401358,
+            "observed": 0.09383531072566664,
+            "predicted": 0.08247631941913114,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.081457923259199,
+          "sample_count": 1730
+        },
+        "recapture": {
+          "brier": 0.14226170193568202,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 6,
+              "observed": 0.3333333333333333,
+              "predicted": 0.05328826296702217
+            },
+            {
+              "bin": 1,
+              "n": 6,
+              "observed": 0.3333333333333333,
+              "predicted": 0.1598958268058651
+            },
+            {
+              "bin": 2,
+              "n": 10,
+              "observed": 0.3,
+              "predicted": 0.26839309979537884
+            },
+            {
+              "bin": 3,
+              "n": 23,
+              "observed": 0.34782608695652173,
+              "predicted": 0.35448273103290723
+            },
+            {
+              "bin": 4,
+              "n": 23,
+              "observed": 0.8260869565217391,
+              "predicted": 0.4549738300309966
+            },
+            {
+              "bin": 5,
+              "n": 77,
+              "observed": 0.8831168831168831,
+              "predicted": 0.5563765732431903
+            },
+            {
+              "bin": 6,
+              "n": 35,
+              "observed": 0.8857142857142857,
+              "predicted": 0.6378636135747381
+            },
+            {
+              "bin": 7,
+              "n": 36,
+              "observed": 0.9166666666666666,
+              "predicted": 0.7448928298707217
+            },
+            {
+              "bin": 8,
+              "n": 30,
+              "observed": 1.0,
+              "predicted": 0.8614396709353632
+            },
+            {
+              "bin": 9,
+              "n": 65,
+              "observed": 0.9846153846153847,
+              "predicted": 0.9596345229227038
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.18496421407790584,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.13465145636906023,
+            "observed": 0.851968503937008,
+            "predicted": 0.6564126309543518,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.6520332316697267,
+          "sample_count": 311
+        }
+      },
+      "support_one": {
+        "brier": 0.8051294292731628,
+        "distinct_games": 119,
+        "ece": 0.21804704294582014,
+        "n": 230,
+        "nll": 2.4648082012731063,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.38636363636363635,
+            "confidence": 0.18665069243924917,
+            "lower": 0.1,
+            "n": 88,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.4406779661016949,
+            "confidence": 0.2186260825206852,
+            "lower": 0.2,
+            "n": 118,
+            "upper": 0.3
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.3,
+            "n": 0,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.16666666666666666,
+            "confidence": 0.4473239300868163,
+            "lower": 0.4,
+            "n": 6,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.548339082215298,
+            "lower": 0.5,
+            "n": 5,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6666666666666666,
+            "confidence": 0.6737361674313703,
+            "lower": 0.6,
+            "n": 3,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.7037020323360889,
+            "lower": 0.7,
+            "n": 5,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8141975920849326,
+            "lower": 0.8,
+            "n": 5,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.45217391304347826,
+        "top3": 0.5956521739130435,
+        "top5": 0.6695652173913044
+      },
+      "support_zero": {
+        "brier": 0.9114467993250717,
+        "distinct_games": 267,
+        "ece": 0.03945246447065231,
+        "n": 4978,
+        "nll": 3.13871571229694,
+        "reliability": [
+          {
+            "accuracy": 0.06647864625302176,
+            "confidence": 0.08327095439326099,
+            "lower": 0.0,
+            "n": 2482,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.0791599353796446,
+            "confidence": 0.12143300947648057,
+            "lower": 0.1,
+            "n": 1857,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.226890756302521,
+            "confidence": 0.24906372769871926,
+            "lower": 0.2,
+            "n": 119,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.46236559139784944,
+            "confidence": 0.3505611019725098,
+            "lower": 0.3,
+            "n": 93,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5056179775280899,
+            "confidence": 0.4505952836295679,
+            "lower": 0.4,
+            "n": 89,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.7777777777777778,
+            "confidence": 0.5507038834337591,
+            "lower": 0.5,
+            "n": 189,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7976190476190477,
+            "confidence": 0.637048527244894,
+            "lower": 0.6,
+            "n": 84,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.7317073170731707,
+            "confidence": 0.7415877925077354,
+            "lower": 0.7,
+            "n": 41,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.9285714285714286,
+            "confidence": 0.8658367605237937,
+            "lower": 0.8,
+            "n": 14,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9406934724596108,
+            "lower": 0.9,
+            "n": 10,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.13941341904379267,
+        "top3": 0.2639614302932905,
+        "top5": 0.349136199276818
+      }
+    },
+    "old": {
+      "abstain_fraction": 1.0,
+      "exact_supported": {
+        "brier": 0.6885652617516484,
+        "distinct_games": 270,
+        "ece": 0.03642559254592847,
+        "n": 1293,
+        "nll": 1.854094364886857,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.2719298245614035,
+            "confidence": 0.17107988391004822,
+            "lower": 0.1,
+            "n": 114,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2112676056338028,
+            "confidence": 0.24939219787276812,
+            "lower": 0.2,
+            "n": 142,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.37575757575757573,
+            "confidence": 0.339500650957937,
+            "lower": 0.3,
+            "n": 165,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.4881889763779528,
+            "confidence": 0.4721304596914791,
+            "lower": 0.4,
+            "n": 508,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6,
+            "confidence": 0.5718190783740322,
+            "lower": 0.5,
+            "n": 255,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6666666666666666,
+            "confidence": 0.637034355648633,
+            "lower": 0.6,
+            "n": 39,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8571428571428571,
+            "confidence": 0.7470601197613738,
+            "lower": 0.7,
+            "n": 70,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.4717710750193349,
+        "top3": 0.7447795823665894,
+        "top5": 0.805877803557618
+      },
+      "fallback": {
+        "brier": 0.9431405136780859,
+        "distinct_games": 268,
+        "ece": 0.019358510775952683,
+        "n": 5208,
+        "nll": 3.235229079383849,
+        "reliability": [
+          {
+            "accuracy": 0.076290693850707,
+            "confidence": 0.08116138706372693,
+            "lower": 0.0,
+            "n": 3041,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.12164948453608247,
+            "confidence": 0.12280037442078943,
+            "lower": 0.1,
+            "n": 1940,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.6815642458100558,
+            "confidence": 0.2337581722102908,
+            "lower": 0.2,
+            "n": 179,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3125,
+            "confidence": 0.33019338738229026,
+            "lower": 0.3,
+            "n": 16,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.375,
+            "confidence": 0.44354586401610613,
+            "lower": 0.4,
+            "n": 8,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "confidence": 0.5357869489310877,
+            "lower": 0.5,
+            "n": 6,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6923076923076923,
+            "confidence": 0.6504206651639189,
+            "lower": 0.6,
+            "n": 13,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.6666666666666666,
+            "confidence": 0.7544015240474868,
+            "lower": 0.7,
+            "n": 3,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8911604207798114,
+            "lower": 0.8,
+            "n": 1,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9159824112121351,
+            "lower": 0.9,
+            "n": 1,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11827956989247312,
+        "top3": 0.24865591397849462,
+        "top5": 0.3377496159754224
+      },
+      "inherited_primary_mean_brier": 0.37948961671894965,
+      "low_support_fraction": 0.8011075219197047,
+      "overall": {
+        "brier": 0.8925074109645215,
+        "distinct_games": 270,
+        "ece": 0.020063874322372235,
+        "n": 6501,
+        "nll": 2.960531773454821,
+        "reliability": [
+          {
+            "accuracy": 0.076290693850707,
+            "confidence": 0.08116138706372693,
+            "lower": 0.0,
+            "n": 3041,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.1299902629016553,
+            "confidence": 0.1254799577127931,
+            "lower": 0.1,
+            "n": 2054,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.4735202492211838,
+            "confidence": 0.24067415864042097,
+            "lower": 0.2,
+            "n": 321,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3701657458563536,
+            "confidence": 0.33867790942638815,
+            "lower": 0.3,
+            "n": 181,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.48643410852713176,
+            "confidence": 0.4716872876655044,
+            "lower": 0.4,
+            "n": 516,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6053639846743295,
+            "confidence": 0.570990753559252,
+            "lower": 0.5,
+            "n": 261,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6730769230769231,
+            "confidence": 0.6403809330274546,
+            "lower": 0.6,
+            "n": 52,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8493150684931506,
+            "confidence": 0.7473618213073784,
+            "lower": 0.7,
+            "n": 73,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8911604207798114,
+            "lower": 0.8,
+            "n": 1,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9159824112121351,
+            "lower": 0.9,
+            "n": 1,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.18858637132748807,
+        "top3": 0.3473311798184895,
+        "top5": 0.4308567912628826
+      },
+      "response_set_calibration_status": "frozen_abstention",
+      "sets": {
+        "capture_any": {
+          "brier": 0.1450341094287735,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2170,
+              "observed": 0.08294930875576037,
+              "predicted": 0.0330232882918648
+            },
+            {
+              "bin": 1,
+              "n": 377,
+              "observed": 0.3660477453580902,
+              "predicted": 0.13643571366010057
+            },
+            {
+              "bin": 2,
+              "n": 319,
+              "observed": 0.7366771159874608,
+              "predicted": 0.24196309772018804
+            },
+            {
+              "bin": 3,
+              "n": 38,
+              "observed": 0.8157894736842105,
+              "predicted": 0.3251160055632698
+            },
+            {
+              "bin": 4,
+              "n": 8,
+              "observed": 1.0,
+              "predicted": 0.4518102395734074
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.5553648369015778
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.6687441558895308
+            },
+            {
+              "bin": 7,
+              "n": 9,
+              "observed": 1.0,
+              "predicted": 0.7311122192219119
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.13158737769790443,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.14904860845416865,
+            "observed": 0.22327917716977314,
+            "predicted": 0.0856900848526836,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.08521459883587917,
+          "sample_count": 2962
+        },
+        "captures_candidate": {
+          "brier": 0.33384302231196605,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 428,
+              "observed": 0.2850467289719626,
+              "predicted": 0.04798889012009608
+            },
+            {
+              "bin": 1,
+              "n": 147,
+              "observed": 0.6462585034013606,
+              "predicted": 0.1528625500878107
+            },
+            {
+              "bin": 2,
+              "n": 192,
+              "observed": 0.7916666666666666,
+              "predicted": 0.23517229337438983
+            },
+            {
+              "bin": 3,
+              "n": 12,
+              "observed": 0.8333333333333334,
+              "predicted": 0.32681921978466266
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45274528595475055
+            },
+            {
+              "bin": 5,
+              "n": 8,
+              "observed": 1.0,
+              "predicted": 0.5423297092915764
+            },
+            {
+              "bin": 6,
+              "n": 21,
+              "observed": 1.0,
+              "predicted": 0.6662805054765697
+            },
+            {
+              "bin": 7,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.7341081697657605
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.36464682300219514,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.33991806918044193,
+            "observed": 0.5323160951926827,
+            "predicted": 0.15602989621482746,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.15536212596907373,
+          "sample_count": 833
+        },
+        "high_value_capture": {
+          "brier": 0.17694101012926308,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 645,
+              "observed": 0.15658914728682172,
+              "predicted": 0.042685891713609085
+            },
+            {
+              "bin": 1,
+              "n": 34,
+              "observed": 0.6176470588235294,
+              "predicted": 0.14321350501300242
+            },
+            {
+              "bin": 2,
+              "n": 35,
+              "observed": 0.8857142857142857,
+              "predicted": 0.23569948122637388
+            },
+            {
+              "bin": 3,
+              "n": 4,
+              "observed": 0.75,
+              "predicted": 0.3441551611739714
+            },
+            {
+              "bin": 4,
+              "n": 4,
+              "observed": 1.0,
+              "predicted": 0.4513226046836508
+            },
+            {
+              "bin": 5,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.5361566036588468
+            },
+            {
+              "bin": 6,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.6683876622368867
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7077095574282875
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.9583727246533493
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.1644446763187968,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.18618378433888422,
+            "observed": 0.2659392724539304,
+            "predicted": 0.08953123802860041,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.08744274644161198,
+          "sample_count": 751
+        },
+        "material_recovery": {
+          "brier": 0.49420721937472556,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 248,
+              "observed": 0.6209677419354839,
+              "predicted": 0.05887702131593401
+            },
+            {
+              "bin": 1,
+              "n": 97,
+              "observed": 0.7422680412371134,
+              "predicted": 0.14950697868767548
+            },
+            {
+              "bin": 2,
+              "n": 69,
+              "observed": 0.8260869565217391,
+              "predicted": 0.23932877437836364
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "observed": 0.8,
+              "predicted": 0.33263566499697406
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.4598139251907251
+            },
+            {
+              "bin": 5,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.5422056347863228
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.6648006455730388
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7077095574282875
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.5455344281220473,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.4997862967033874,
+            "observed": 0.7298984580669425,
+            "predicted": 0.17377331305387264,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.17184313462915904,
+          "sample_count": 470
+        },
+        "pawn_contact_capture": {
+          "brier": 0.40733703913649605,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 52,
+              "observed": 0.5576923076923077,
+              "predicted": 0.1801669811475376
+            },
+            {
+              "bin": 2,
+              "n": 190,
+              "observed": 0.7052631578947368,
+              "predicted": 0.23787761904144986
+            },
+            {
+              "bin": 3,
+              "n": 8,
+              "observed": 0.875,
+              "predicted": 0.3251699326969836
+            },
+            {
+              "bin": 4,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.42514155130968057
+            },
+            {
+              "bin": 5,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.5883843240717272
+            },
+            {
+              "bin": 6,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.6751596648977558
+            },
+            {
+              "bin": 7,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.7188744513476845
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.4491819175928446,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.42494808570716147,
+            "observed": 0.7290705339485827,
+            "predicted": 0.24564658833565597,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.24312577471484761,
+          "sample_count": 260
+        },
+        "promotion": {
+          "brier": 0.08256550667899124,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1675,
+              "observed": 0.07880597014925374,
+              "predicted": 0.032162516054512924
+            },
+            {
+              "bin": 1,
+              "n": 54,
+              "observed": 0.5,
+              "predicted": 0.1325589865953305
+            },
+            {
+              "bin": 2,
+              "n": 1,
+              "observed": 0.0,
+              "predicted": 0.2671526780865076
+            },
+            {
+              "bin": 3,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.05678425029516157,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08441114061531979,
+            "observed": 0.09383531072566664,
+            "predicted": 0.035887640391591855,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.03543211118239508,
+          "sample_count": 1730
+        },
+        "recapture": {
+          "brier": 0.5448741157603334,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 143,
+              "observed": 0.7412587412587412,
+              "predicted": 0.07317144446620981
+            },
+            {
+              "bin": 1,
+              "n": 74,
+              "observed": 0.8243243243243243,
+              "predicted": 0.14836802951776012
+            },
+            {
+              "bin": 2,
+              "n": 44,
+              "observed": 1.0,
+              "predicted": 0.23454205923526372
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.32968072685783395
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.4598139251907251
+            },
+            {
+              "bin": 5,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.5357504786086977
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.6648006455730388
+            },
+            {
+              "bin": 7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.7280433849311336
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.6319216771484976,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.5456835726119885,
+            "observed": 0.851968503937008,
+            "predicted": 0.21495448573969192,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.20784505755589794,
+          "sample_count": 311
+        }
+      },
+      "support_one": {
+        "brier": 0.9316459350362355,
+        "distinct_games": 119,
+        "ece": 0.09116895433171225,
+        "n": 230,
+        "nll": 3.0571041002344943,
+        "reliability": [
+          {
+            "accuracy": 0.16201117318435754,
+            "confidence": 0.0800105214708484,
+            "lower": 0.0,
+            "n": 179,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13953488372093023,
+            "confidence": 0.11345561691176065,
+            "lower": 0.1,
+            "n": 43,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.875,
+            "confidence": 0.22883320415232636,
+            "lower": 0.2,
+            "n": 8,
+            "upper": 0.3
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.3,
+            "n": 0,
+            "upper": 0.4
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.4,
+            "n": 0,
+            "upper": 0.5
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.5,
+            "n": 0,
+            "upper": 0.6
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.6,
+            "n": 0,
+            "upper": 0.7
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.7,
+            "n": 0,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.1826086956521739,
+        "top3": 0.3826086956521739,
+        "top5": 0.4434782608695652
+      },
+      "support_zero": {
+        "brier": 0.9436716010801804,
+        "distinct_games": 267,
+        "ece": 0.02238837181275465,
+        "n": 4978,
+        "nll": 3.243459040252542,
+        "reliability": [
+          {
+            "accuracy": 0.07092941998602376,
+            "confidence": 0.08123336642820117,
+            "lower": 0.0,
+            "n": 2862,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.12124406958355298,
+            "confidence": 0.12301219549242266,
+            "lower": 0.1,
+            "n": 1897,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.672514619883041,
+            "confidence": 0.23398858007265172,
+            "lower": 0.2,
+            "n": 171,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3125,
+            "confidence": 0.33019338738229026,
+            "lower": 0.3,
+            "n": 16,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.375,
+            "confidence": 0.44354586401610613,
+            "lower": 0.4,
+            "n": 8,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "confidence": 0.5357869489310877,
+            "lower": 0.5,
+            "n": 6,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6923076923076923,
+            "confidence": 0.6504206651639189,
+            "lower": 0.6,
+            "n": 13,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.6666666666666666,
+            "confidence": 0.7544015240474868,
+            "lower": 0.7,
+            "n": 3,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8911604207798114,
+            "lower": 0.8,
+            "n": 1,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9159824112121351,
+            "lower": 0.9,
+            "n": 1,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11530735235034151,
+        "top3": 0.2424668541582965,
+        "top5": 0.33286460425873843
+      }
+    },
+    "paired_game_bootstrap": {
+      "capture_any": {
+        "delta_brier_interval95": [
+          -0.07168989095998106,
+          -0.053978058519154874
+        ],
+        "valid_draws": 300
+      },
+      "captures_candidate": {
+        "delta_brier_interval95": [
+          -0.21649032786278558,
+          -0.17684251901444448
+        ],
+        "valid_draws": 300
+      },
+      "material_recovery": {
+        "delta_brier_interval95": [
+          -0.3254661419162821,
+          -0.24973925058803384
+        ],
+        "valid_draws": 300
+      },
+      "recapture": {
+        "delta_brier_interval95": [
+          -0.44232141230571326,
+          -0.36834146830372827
+        ],
+        "valid_draws": 300
+      }
+    },
+    "sample_independent_of_previous_known_accounts": true,
+    "selection_or_fit_on_new_sample": false
+  },
+  "player": {
+    "frozen_selected": "capture_tilt",
+    "inherited_relative_gate": true,
+    "new": {
+      "abstain_fraction": 1.0,
+      "exact_supported": {
+        "brier": 0.6977568444106,
+        "distinct_games": 270,
+        "ece": 0.03177787739636557,
+        "n": 1222,
+        "nll": 1.908232512607107,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13178294573643412,
+            "confidence": 0.16821474625180746,
+            "lower": 0.1,
+            "n": 129,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2608695652173913,
+            "confidence": 0.25691557498294976,
+            "lower": 0.2,
+            "n": 92,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.375,
+            "confidence": 0.33103511930995266,
+            "lower": 0.3,
+            "n": 136,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.33714285714285713,
+            "confidence": 0.42099432575045065,
+            "lower": 0.4,
+            "n": 175,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.5119825708061002,
+            "confidence": 0.5196158843533031,
+            "lower": 0.5,
+            "n": 459,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.620253164556962,
+            "confidence": 0.6149189159268746,
+            "lower": 0.6,
+            "n": 158,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "confidence": 0.7181783733757031,
+            "lower": 0.7,
+            "n": 48,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8657774444255918,
+            "lower": 0.8,
+            "n": 22,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9036568240638388,
+            "lower": 0.9,
+            "n": 3,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.4492635024549918,
+        "top3": 0.7340425531914894,
+        "top5": 0.806873977086743
+      },
+      "fallback": {
+        "brier": 0.9227344590636544,
+        "distinct_games": 268,
+        "ece": 0.04469398748251032,
+        "n": 5279,
+        "nll": 3.168194632312156,
+        "reliability": [
+          {
+            "accuracy": 0.05961251862891207,
+            "confidence": 0.08268544970761997,
+            "lower": 0.0,
+            "n": 2013,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.08209313490158425,
+            "confidence": 0.13789917196309628,
+            "lower": 0.1,
+            "n": 2083,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.15450643776824036,
+            "confidence": 0.23974478387046644,
+            "lower": 0.2,
+            "n": 466,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.314878892733564,
+            "confidence": 0.3406107396992493,
+            "lower": 0.3,
+            "n": 289,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5075757575757576,
+            "confidence": 0.4407465069864641,
+            "lower": 0.4,
+            "n": 132,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6090909090909091,
+            "confidence": 0.5572409906552432,
+            "lower": 0.5,
+            "n": 110,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7133333333333334,
+            "confidence": 0.6477200528373388,
+            "lower": 0.6,
+            "n": 150,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.7857142857142857,
+            "confidence": 0.7346882816359448,
+            "lower": 0.7,
+            "n": 28,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "confidence": 0.8573134198734397,
+            "lower": 0.8,
+            "n": 6,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9236757053301684,
+            "lower": 0.9,
+            "n": 2,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.13714718696722863,
+        "top3": 0.26122371661299487,
+        "top5": 0.3620003788596325
+      },
+      "inherited_primary_mean_brier": 0.20428751989226177,
+      "low_support_fraction": 0.8120289186279034,
+      "overall": {
+        "brier": 0.8804451735528048,
+        "distinct_games": 270,
+        "ece": 0.036478707786081144,
+        "n": 6501,
+        "nll": 2.931358190183319,
+        "reliability": [
+          {
+            "accuracy": 0.05961251862891207,
+            "confidence": 0.08268544970761997,
+            "lower": 0.0,
+            "n": 2013,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.08499095840867993,
+            "confidence": 0.1396671236282155,
+            "lower": 0.1,
+            "n": 2212,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.17204301075268819,
+            "confidence": 0.24257581036213036,
+            "lower": 0.2,
+            "n": 558,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3341176470588235,
+            "confidence": 0.3375465411746744,
+            "lower": 0.3,
+            "n": 425,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.41042345276872966,
+            "confidence": 0.42948712028841085,
+            "lower": 0.4,
+            "n": 307,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.5307557117750439,
+            "confidence": 0.526889630738564,
+            "lower": 0.5,
+            "n": 569,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6655844155844156,
+            "confidence": 0.6308934955910618,
+            "lower": 0.6,
+            "n": 308,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8157894736842105,
+            "confidence": 0.7242609711557921,
+            "lower": 0.7,
+            "n": 76,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.9642857142857143,
+            "confidence": 0.8639637248787021,
+            "lower": 0.8,
+            "n": 28,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9116643765703707,
+            "lower": 0.9,
+            "n": 5,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.19581602830333794,
+        "top3": 0.3500999846177511,
+        "top5": 0.4456237501922781
+      },
+      "response_set_calibration_status": "frozen_abstention",
+      "sets": {
+        "capture_any": {
+          "brier": 0.11238177016844351,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 866,
+              "observed": 0.009237875288683603,
+              "predicted": 0.05100789066297907
+            },
+            {
+              "bin": 1,
+              "n": 325,
+              "observed": 0.043076923076923075,
+              "predicted": 0.1707686710069379
+            },
+            {
+              "bin": 2,
+              "n": 554,
+              "observed": 0.09205776173285199,
+              "predicted": 0.228257077420451
+            },
+            {
+              "bin": 3,
+              "n": 324,
+              "observed": 0.2623456790123457,
+              "predicted": 0.35590095245257714
+            },
+            {
+              "bin": 4,
+              "n": 323,
+              "observed": 0.2693498452012384,
+              "predicted": 0.4391710302028181
+            },
+            {
+              "bin": 5,
+              "n": 135,
+              "observed": 0.48148148148148145,
+              "predicted": 0.5498573474611496
+            },
+            {
+              "bin": 6,
+              "n": 290,
+              "observed": 0.7275862068965517,
+              "predicted": 0.6537658533395752
+            },
+            {
+              "bin": 7,
+              "n": 90,
+              "observed": 0.7333333333333333,
+              "predicted": 0.7364016855297096
+            },
+            {
+              "bin": 8,
+              "n": 16,
+              "observed": 1.0,
+              "predicted": 0.8576714233501568
+            },
+            {
+              "bin": 9,
+              "n": 39,
+              "observed": 0.9743589743589743,
+              "predicted": 0.9415030232717638
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.09208800104244455,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.1127306327200965,
+            "observed": 0.22327917716977314,
+            "predicted": 0.2917281059351601,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.291637939023321,
+          "sample_count": 2962
+        },
+        "captures_candidate": {
+          "brier": 0.18096487635598318,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 149,
+              "observed": 0.0738255033557047,
+              "predicted": 0.03979883636901524
+            },
+            {
+              "bin": 1,
+              "n": 45,
+              "observed": 0.1111111111111111,
+              "predicted": 0.1568349283601532
+            },
+            {
+              "bin": 2,
+              "n": 103,
+              "observed": 0.24271844660194175,
+              "predicted": 0.2508673567687409
+            },
+            {
+              "bin": 3,
+              "n": 154,
+              "observed": 0.5909090909090909,
+              "predicted": 0.35114976949732
+            },
+            {
+              "bin": 4,
+              "n": 64,
+              "observed": 0.703125,
+              "predicted": 0.43851230154167037
+            },
+            {
+              "bin": 5,
+              "n": 90,
+              "observed": 0.7111111111111111,
+              "predicted": 0.556257195617429
+            },
+            {
+              "bin": 6,
+              "n": 149,
+              "observed": 0.7986577181208053,
+              "predicted": 0.6493642834801863
+            },
+            {
+              "bin": 7,
+              "n": 28,
+              "observed": 0.7857142857142857,
+              "predicted": 0.7349004117926567
+            },
+            {
+              "bin": 8,
+              "n": 21,
+              "observed": 1.0,
+              "predicted": 0.8611017113235487
+            },
+            {
+              "bin": 9,
+              "n": 30,
+              "observed": 0.9666666666666667,
+              "predicted": 0.9482976502337038
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.12352620442260909,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.1801217065967011,
+            "observed": 0.5323160951926827,
+            "predicted": 0.3971056590956857,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.40203660355671195,
+          "sample_count": 833
+        },
+        "high_value_capture": {
+          "brier": 0.14762628540982942,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 110,
+              "observed": 0.14545454545454545,
+              "predicted": 0.06315389435607732
+            },
+            {
+              "bin": 1,
+              "n": 136,
+              "observed": 0.15441176470588236,
+              "predicted": 0.1578113158705447
+            },
+            {
+              "bin": 2,
+              "n": 300,
+              "observed": 0.14666666666666667,
+              "predicted": 0.2336344224388211
+            },
+            {
+              "bin": 3,
+              "n": 35,
+              "observed": 0.42857142857142855,
+              "predicted": 0.3549743273425015
+            },
+            {
+              "bin": 4,
+              "n": 79,
+              "observed": 0.20253164556962025,
+              "predicted": 0.42445915606495416
+            },
+            {
+              "bin": 5,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.5548544512375644
+            },
+            {
+              "bin": 6,
+              "n": 27,
+              "observed": 0.8518518518518519,
+              "predicted": 0.6399917140354563
+            },
+            {
+              "bin": 7,
+              "n": 20,
+              "observed": 0.55,
+              "predicted": 0.7568082017792204
+            },
+            {
+              "bin": 8,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.8490294655150459
+            },
+            {
+              "bin": 9,
+              "n": 24,
+              "observed": 0.9583333333333334,
+              "predicted": 0.9521548937628741
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.0941141682048039,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.15018001636610268,
+            "observed": 0.2659392724539304,
+            "predicted": 0.2877447687480985,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.28463710491039235,
+          "sample_count": 751
+        },
+        "material_recovery": {
+          "brier": 0.269443962012019,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 38,
+              "observed": 0.3684210526315789,
+              "predicted": 0.060483932627054815
+            },
+            {
+              "bin": 1,
+              "n": 56,
+              "observed": 0.4642857142857143,
+              "predicted": 0.1580123636968432
+            },
+            {
+              "bin": 2,
+              "n": 52,
+              "observed": 0.6153846153846154,
+              "predicted": 0.24478490960955782
+            },
+            {
+              "bin": 3,
+              "n": 105,
+              "observed": 0.7523809523809524,
+              "predicted": 0.353623274438926
+            },
+            {
+              "bin": 4,
+              "n": 48,
+              "observed": 0.8125,
+              "predicted": 0.43567210699185455
+            },
+            {
+              "bin": 5,
+              "n": 51,
+              "observed": 0.7450980392156863,
+              "predicted": 0.5506446540961728
+            },
+            {
+              "bin": 6,
+              "n": 60,
+              "observed": 0.8333333333333334,
+              "predicted": 0.6476619228895403
+            },
+            {
+              "bin": 7,
+              "n": 14,
+              "observed": 0.9285714285714286,
+              "predicted": 0.7472317228737506
+            },
+            {
+              "bin": 8,
+              "n": 21,
+              "observed": 1.0,
+              "predicted": 0.8540080386891324
+            },
+            {
+              "bin": 9,
+              "n": 25,
+              "observed": 0.96,
+              "predicted": 0.9540686980123592
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.28700356346056377,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.2707055722036583,
+            "observed": 0.7298984580669425,
+            "predicted": 0.4235087228824049,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.4278900535607129,
+          "sample_count": 470
+        },
+        "pawn_contact_capture": {
+          "brier": 0.20534431557991528,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 2,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.38919627829996356
+            },
+            {
+              "bin": 4,
+              "n": 25,
+              "observed": 0.48,
+              "predicted": 0.4540041043342224
+            },
+            {
+              "bin": 5,
+              "n": 53,
+              "observed": 0.6981132075471698,
+              "predicted": 0.5629539081131113
+            },
+            {
+              "bin": 6,
+              "n": 148,
+              "observed": 0.722972972972973,
+              "predicted": 0.6503110738342106
+            },
+            {
+              "bin": 7,
+              "n": 22,
+              "observed": 0.7727272727272727,
+              "predicted": 0.7273265358977233
+            },
+            {
+              "bin": 8,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.8560494765334351
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.9036568240638388
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.08316221658632471,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.1946956463270809,
+            "observed": 0.7290705339485827,
+            "predicted": 0.6208491354795221,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.619416073181366,
+          "sample_count": 260
+        },
+        "promotion": {
+          "brier": 0.08790780029494111,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 613,
+              "observed": 0.05546492659053834,
+              "predicted": 0.05730124326603148
+            },
+            {
+              "bin": 1,
+              "n": 809,
+              "observed": 0.06551297898640297,
+              "predicted": 0.15972595784163687
+            },
+            {
+              "bin": 2,
+              "n": 208,
+              "observed": 0.25961538461538464,
+              "predicted": 0.23405578426513143
+            },
+            {
+              "bin": 3,
+              "n": 15,
+              "observed": 0.3333333333333333,
+              "predicted": 0.35603058150582056
+            },
+            {
+              "bin": 4,
+              "n": 71,
+              "observed": 0.15492957746478872,
+              "predicted": 0.4204957141445879
+            },
+            {
+              "bin": 5,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.5544432652831568
+            },
+            {
+              "bin": 6,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.6604479319666928
+            },
+            {
+              "bin": 7,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.7726952973655153
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.06333165272961087,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08875347253656893,
+            "observed": 0.09383531072566664,
+            "predicted": 0.15046285169805126,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.1490930436280471,
+          "sample_count": 1730
+        },
+        "recapture": {
+          "brier": 0.25435947103260137,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 10,
+              "observed": 0.5,
+              "predicted": 0.05778667382961642
+            },
+            {
+              "bin": 1,
+              "n": 10,
+              "observed": 0.3,
+              "predicted": 0.15385465819506314
+            },
+            {
+              "bin": 2,
+              "n": 26,
+              "observed": 0.6923076923076923,
+              "predicted": 0.2572363980589577
+            },
+            {
+              "bin": 3,
+              "n": 99,
+              "observed": 0.797979797979798,
+              "predicted": 0.35299127909509853
+            },
+            {
+              "bin": 4,
+              "n": 41,
+              "observed": 0.8536585365853658,
+              "predicted": 0.4324367054641052
+            },
+            {
+              "bin": 5,
+              "n": 34,
+              "observed": 0.8823529411764706,
+              "predicted": 0.5520207397999493
+            },
+            {
+              "bin": 6,
+              "n": 37,
+              "observed": 1.0,
+              "predicted": 0.6425741796630422
+            },
+            {
+              "bin": 7,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.7458011437350371
+            },
+            {
+              "bin": 8,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.8619437504552343
+            },
+            {
+              "bin": 9,
+              "n": 26,
+              "observed": 0.9615384615384616,
+              "predicted": 0.9533814160217257
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.34795669843388083,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.2535527788784035,
+            "observed": 0.851968503937008,
+            "predicted": 0.48934485776415987,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.48805616330245355,
+          "sample_count": 311
+        }
+      },
+      "support_one": {
+        "brier": 0.8562499682967384,
+        "distinct_games": 116,
+        "ece": 0.1203242555619594,
+        "n": 188,
+        "nll": 2.67972933288412,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.2823529411764706,
+            "confidence": 0.1767472991533084,
+            "lower": 0.1,
+            "n": 85,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.3563218390804598,
+            "confidence": 0.2173488302135046,
+            "lower": 0.2,
+            "n": 87,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.5,
+            "confidence": 0.32769600771359153,
+            "lower": 0.3,
+            "n": 2,
+            "upper": 0.4
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.4,
+            "n": 0,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6,
+            "confidence": 0.550324650666353,
+            "lower": 0.5,
+            "n": 5,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7142857142857143,
+            "confidence": 0.6454495606495587,
+            "lower": 0.6,
+            "n": 7,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.7605045522198313,
+            "lower": 0.7,
+            "n": 2,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.35106382978723405,
+        "top3": 0.5212765957446809,
+        "top5": 0.5957446808510638
+      },
+      "support_zero": {
+        "brier": 0.9251895924881643,
+        "distinct_games": 268,
+        "ece": 0.050312724126980374,
+        "n": 5091,
+        "nll": 3.1862326359052555,
+        "reliability": [
+          {
+            "accuracy": 0.05961251862891207,
+            "confidence": 0.08268544970761997,
+            "lower": 0.0,
+            "n": 2013,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.07357357357357357,
+            "confidence": 0.13624647385940858,
+            "lower": 0.1,
+            "n": 1998,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.10817941952506596,
+            "confidence": 0.24488580753314634,
+            "lower": 0.2,
+            "n": 379,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.313588850174216,
+            "confidence": 0.3407007378315536,
+            "lower": 0.3,
+            "n": 287,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5075757575757576,
+            "confidence": 0.4407465069864641,
+            "lower": 0.4,
+            "n": 132,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6095238095238096,
+            "confidence": 0.5575703401785237,
+            "lower": 0.5,
+            "n": 105,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7132867132867133,
+            "confidence": 0.6478311958115658,
+            "lower": 0.6,
+            "n": 143,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.7692307692307693,
+            "confidence": 0.7327024146679536,
+            "lower": 0.7,
+            "n": 26,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.8333333333333334,
+            "confidence": 0.8573134198734397,
+            "lower": 0.8,
+            "n": 6,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9236757053301684,
+            "lower": 0.9,
+            "n": 2,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.1292476920054999,
+        "top3": 0.2516205067766647,
+        "top5": 0.3533686898448242
+      }
+    },
+    "old": {
+      "abstain_fraction": 1.0,
+      "exact_supported": {
+        "brier": 0.6912545517915185,
+        "distinct_games": 270,
+        "ece": 0.033836896262954046,
+        "n": 1222,
+        "nll": 1.893297555916745,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13385826771653545,
+            "confidence": 0.17529235822479752,
+            "lower": 0.1,
+            "n": 127,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2608695652173913,
+            "confidence": 0.2538035284752651,
+            "lower": 0.2,
+            "n": 69,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3826086956521739,
+            "confidence": 0.33982386247590113,
+            "lower": 0.3,
+            "n": 230,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.4915254237288136,
+            "confidence": 0.4251280036029672,
+            "lower": 0.4,
+            "n": 118,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.5191489361702127,
+            "confidence": 0.5218880405235031,
+            "lower": 0.5,
+            "n": 470,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6686390532544378,
+            "confidence": 0.6152868654271636,
+            "lower": 0.6,
+            "n": 169,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.9230769230769231,
+            "confidence": 0.72770012283781,
+            "lower": 0.7,
+            "n": 39,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.469721767594108,
+        "top3": 0.737315875613748,
+        "top5": 0.8052373158756138
+      },
+      "fallback": {
+        "brier": 0.943332288205092,
+        "distinct_games": 268,
+        "ece": 0.02632796193826425,
+        "n": 5279,
+        "nll": 3.2329728030733933,
+        "reliability": [
+          {
+            "accuracy": 0.06867619639527657,
+            "confidence": 0.08016947576098718,
+            "lower": 0.0,
+            "n": 3218,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13503253796095444,
+            "confidence": 0.1239246882659448,
+            "lower": 0.1,
+            "n": 1844,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.6918604651162791,
+            "confidence": 0.23373241647720475,
+            "lower": 0.2,
+            "n": 172,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.4,
+            "confidence": 0.3350989751732907,
+            "lower": 0.3,
+            "n": 15,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.42857142857142855,
+            "confidence": 0.44933848031826995,
+            "lower": 0.4,
+            "n": 7,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.5714285714285714,
+            "confidence": 0.5489392323902541,
+            "lower": 0.5,
+            "n": 7,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7142857142857143,
+            "confidence": 0.6644419209331739,
+            "lower": 0.6,
+            "n": 7,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8571428571428571,
+            "confidence": 0.7285102111671025,
+            "lower": 0.7,
+            "n": 7,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8954542690686769,
+            "lower": 0.8,
+            "n": 1,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9111520444044462,
+            "lower": 0.9,
+            "n": 1,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11649933699564312,
+        "top3": 0.24322788406895246,
+        "top5": 0.34286796741807163
+      },
+      "inherited_primary_mean_brier": 0.385485852140668,
+      "low_support_fraction": 0.8120289186279034,
+      "overall": {
+        "brier": 0.8959489635016021,
+        "distinct_games": 270,
+        "ece": 0.02602740345259745,
+        "n": 6501,
+        "nll": 2.9811525981779274,
+        "reliability": [
+          {
+            "accuracy": 0.06867619639527657,
+            "confidence": 0.08016947576098718,
+            "lower": 0.0,
+            "n": 3218,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13495687468290207,
+            "confidence": 0.12723452798424734,
+            "lower": 0.1,
+            "n": 1971,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.5684647302904564,
+            "confidence": 0.23947891742270752,
+            "lower": 0.2,
+            "n": 241,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3836734693877551,
+            "confidence": 0.3395345836614556,
+            "lower": 0.3,
+            "n": 245,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.488,
+            "confidence": 0.42648379029902417,
+            "lower": 0.4,
+            "n": 125,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.519916142557652,
+            "confidence": 0.5222850181819251,
+            "lower": 0.5,
+            "n": 477,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6704545454545454,
+            "confidence": 0.6172418960438799,
+            "lower": 0.6,
+            "n": 176,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.9130434782608695,
+            "confidence": 0.7278233971487893,
+            "lower": 0.7,
+            "n": 46,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8954542690686769,
+            "lower": 0.8,
+            "n": 1,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9111520444044462,
+            "lower": 0.9,
+            "n": 1,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.1828949392401169,
+        "top3": 0.336102138132595,
+        "top5": 0.42978003384094754
+      },
+      "response_set_calibration_status": "frozen_abstention",
+      "sets": {
+        "capture_any": {
+          "brier": 0.14687161684940786,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2126,
+              "observed": 0.08278457196613359,
+              "predicted": 0.034540096327080945
+            },
+            {
+              "bin": 1,
+              "n": 431,
+              "observed": 0.35730858468677495,
+              "predicted": 0.13125711109097532
+            },
+            {
+              "bin": 2,
+              "n": 316,
+              "observed": 0.7436708860759493,
+              "predicted": 0.23982425156843917
+            },
+            {
+              "bin": 3,
+              "n": 35,
+              "observed": 0.6571428571428571,
+              "predicted": 0.33789763533948736
+            },
+            {
+              "bin": 4,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.456293812428939
+            },
+            {
+              "bin": 5,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.5372358751985257
+            },
+            {
+              "bin": 6,
+              "n": 23,
+              "observed": 1.0,
+              "predicted": 0.6445201650969863
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7482560468435955
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.13108649437917438,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.15070757866947476,
+            "observed": 0.22327917716977314,
+            "predicted": 0.08607696362497061,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.08565570324158887,
+          "sample_count": 2962
+        },
+        "captures_candidate": {
+          "brier": 0.3400388069280272,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 437,
+              "observed": 0.2837528604118993,
+              "predicted": 0.0483905045855652
+            },
+            {
+              "bin": 1,
+              "n": 154,
+              "observed": 0.6753246753246753,
+              "predicted": 0.15282088583958692
+            },
+            {
+              "bin": 2,
+              "n": 184,
+              "observed": 0.8097826086956522,
+              "predicted": 0.2332076066899501
+            },
+            {
+              "bin": 3,
+              "n": 7,
+              "observed": 0.7142857142857143,
+              "predicted": 0.3319647574176045
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45793966120603746
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.554122840278923
+            },
+            {
+              "bin": 6,
+              "n": 20,
+              "observed": 1.0,
+              "predicted": 0.6412883564536759
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7482560468435955
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.3707802858016183,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.3459969958356959,
+            "observed": 0.5323160951926827,
+            "predicted": 0.14956883489937736,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.14901609997593362,
+          "sample_count": 833
+        },
+        "high_value_capture": {
+          "brier": 0.1772830257321789,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 578,
+              "observed": 0.16089965397923875,
+              "predicted": 0.04082857875622214
+            },
+            {
+              "bin": 1,
+              "n": 96,
+              "observed": 0.3020833333333333,
+              "predicted": 0.11562946098788628
+            },
+            {
+              "bin": 2,
+              "n": 30,
+              "observed": 0.9333333333333333,
+              "predicted": 0.22980916470526377
+            },
+            {
+              "bin": 3,
+              "n": 13,
+              "observed": 0.38461538461538464,
+              "predicted": 0.34940680551600517
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45793966120603746
+            },
+            {
+              "bin": 5,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.524331359393683
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6434569699083789
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.9495194676350394
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.15894877160054105,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.18604635107358294,
+            "observed": 0.2659392724539304,
+            "predicted": 0.09420214376781542,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.09270287866936677,
+          "sample_count": 751
+        },
+        "material_recovery": {
+          "brier": 0.5000845138121756,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 254,
+              "observed": 0.6220472440944882,
+              "predicted": 0.05943711240430602
+            },
+            {
+              "bin": 1,
+              "n": 99,
+              "observed": 0.7474747474747475,
+              "predicted": 0.15160736417063925
+            },
+            {
+              "bin": 2,
+              "n": 65,
+              "observed": 0.8307692307692308,
+              "predicted": 0.2335368246664218
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 0.8333333333333334,
+              "predicted": 0.3366709129183285
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.4640554835997822
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.554122840278923
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6434569699083789
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.5515809119232952,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.5057805718686889,
+            "observed": 0.7298984580669425,
+            "predicted": 0.1672475922945498,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.16541991648670648,
+          "sample_count": 470
+        },
+        "pawn_contact_capture": {
+          "brier": 0.4178441917228374,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 64,
+              "observed": 0.5625,
+              "predicted": 0.1805321620911003
+            },
+            {
+              "bin": 2,
+              "n": 184,
+              "observed": 0.7228260869565217,
+              "predicted": 0.2342302076321023
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 0.8333333333333334,
+              "predicted": 0.34081034446133535
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.6274094682994807
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.4597625559434533,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.43525965868388355,
+            "observed": 0.7290705339485827,
+            "predicted": 0.23487200583931203,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.23254513636423899,
+          "sample_count": 260
+        },
+        "promotion": {
+          "brier": 0.08296911912584122,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1631,
+              "observed": 0.08338442673206621,
+              "predicted": 0.031950473418823795
+            },
+            {
+              "bin": 1,
+              "n": 89,
+              "observed": 0.23595505617977527,
+              "predicted": 0.10679009573910411
+            },
+            {
+              "bin": 2,
+              "n": 1,
+              "observed": 0.0,
+              "predicted": 0.269172712192563
+            },
+            {
+              "bin": 3,
+              "n": 9,
+              "observed": 0.2222222222222222,
+              "predicted": 0.3453317181723323
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.055931570814370904,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08432096614773224,
+            "observed": 0.09383531072566664,
+            "predicted": 0.03797519730321323,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.03756803401307828,
+          "sample_count": 1730
+        },
+        "recapture": {
+          "brier": 0.5549484709730613,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 148,
+              "observed": 0.7297297297297297,
+              "predicted": 0.07349431025524328
+            },
+            {
+              "bin": 1,
+              "n": 77,
+              "observed": 0.8701298701298701,
+              "predicted": 0.14655986028431142
+            },
+            {
+              "bin": 2,
+              "n": 40,
+              "observed": 1.0,
+              "predicted": 0.23097265182168125
+            },
+            {
+              "bin": 3,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.3442711911235426
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45793966120603746
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.554122840278923
+            },
+            {
+              "bin": 6,
+              "n": 14,
+              "observed": 1.0,
+              "predicted": 0.6472364513769023
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.6405080230568124,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.5556821827514884,
+            "observed": 0.851968503937008,
+            "predicted": 0.20572762011307447,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.19868937036023188,
+          "sample_count": 311
+        }
+      },
+      "support_one": {
+        "brier": 0.9453659432865561,
+        "distinct_games": 116,
+        "ece": 0.0329311180345339,
+        "n": 188,
+        "nll": 3.192001340549367,
+        "reliability": [
+          {
+            "accuracy": 0.09090909090909091,
+            "confidence": 0.0762225226946016,
+            "lower": 0.0,
+            "n": 154,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.1875,
+            "confidence": 0.11327321111266092,
+            "lower": 0.1,
+            "n": 32,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.22296927946691564,
+            "lower": 0.2,
+            "n": 2,
+            "upper": 0.3
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.3,
+            "n": 0,
+            "upper": 0.4
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.4,
+            "n": 0,
+            "upper": 0.5
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.5,
+            "n": 0,
+            "upper": 0.6
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.6,
+            "n": 0,
+            "upper": 0.7
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.7,
+            "n": 0,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11702127659574468,
+        "top3": 0.30851063829787234,
+        "top5": 0.3723404255319149
+      },
+      "support_zero": {
+        "brier": 0.9432571895692021,
+        "distinct_games": 268,
+        "ece": 0.02697264268152962,
+        "n": 5091,
+        "nll": 3.2344857936360567,
+        "reliability": [
+          {
+            "accuracy": 0.06755874673629243,
+            "confidence": 0.08036785395035512,
+            "lower": 0.0,
+            "n": 3064,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13410596026490065,
+            "confidence": 0.12411279382273568,
+            "lower": 0.1,
+            "n": 1812,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.6882352941176471,
+            "confidence": 0.23385904161850227,
+            "lower": 0.2,
+            "n": 170,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.4,
+            "confidence": 0.3350989751732907,
+            "lower": 0.3,
+            "n": 15,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.42857142857142855,
+            "confidence": 0.44933848031826995,
+            "lower": 0.4,
+            "n": 7,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.5714285714285714,
+            "confidence": 0.5489392323902541,
+            "lower": 0.5,
+            "n": 7,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7142857142857143,
+            "confidence": 0.6644419209331739,
+            "lower": 0.6,
+            "n": 7,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8571428571428571,
+            "confidence": 0.7285102111671025,
+            "lower": 0.7,
+            "n": 7,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8954542690686769,
+            "lower": 0.8,
+            "n": 1,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9111520444044462,
+            "lower": 0.9,
+            "n": 1,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11648006285602043,
+        "top3": 0.2408171282655667,
+        "top5": 0.3417796110783736
+      }
+    },
+    "paired_game_bootstrap": {
+      "capture_any": {
+        "delta_brier_interval95": [
+          -0.04387898782529646,
+          -0.02648703405443848
+        ],
+        "valid_draws": 300
+      },
+      "captures_candidate": {
+        "delta_brier_interval95": [
+          -0.17423577156991513,
+          -0.1409807876812696
+        ],
+        "valid_draws": 300
+      },
+      "material_recovery": {
+        "delta_brier_interval95": [
+          -0.2575519636246577,
+          -0.20237784990008134
+        ],
+        "valid_draws": 300
+      },
+      "recapture": {
+        "delta_brier_interval95": [
+          -0.32629074142839615,
+          -0.27713454513406544
+        ],
+        "valid_draws": 300
+      }
+    },
+    "sample_independent_of_previous_known_accounts": true,
+    "selection_or_fit_on_new_sample": false
+  },
+  "time": {
+    "frozen_selected": "differentiated_tilt",
+    "inherited_relative_gate": true,
+    "new": {
+      "abstain_fraction": 1.0,
+      "exact_supported": {
+        "brier": 0.6749592761504094,
+        "distinct_games": 270,
+        "ece": 0.038546588023943444,
+        "n": 1279,
+        "nll": 1.837126908680645,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.1588785046728972,
+            "confidence": 0.16540963361387756,
+            "lower": 0.1,
+            "n": 107,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2727272727272727,
+            "confidence": 0.2582733304739851,
+            "lower": 0.2,
+            "n": 110,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.35714285714285715,
+            "confidence": 0.34565265636753306,
+            "lower": 0.3,
+            "n": 224,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5084388185654009,
+            "confidence": 0.4603839731826656,
+            "lower": 0.4,
+            "n": 474,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6018099547511312,
+            "confidence": 0.5602055995320158,
+            "lower": 0.5,
+            "n": 221,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.5714285714285714,
+            "confidence": 0.6357116502447576,
+            "lower": 0.6,
+            "n": 42,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8666666666666667,
+            "confidence": 0.7740403574850527,
+            "lower": 0.7,
+            "n": 75,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.8593364073247718,
+            "lower": 0.8,
+            "n": 14,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9291829455658784,
+            "lower": 0.9,
+            "n": 12,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.48162627052384677,
+        "top3": 0.7427677873338546,
+        "top5": 0.8068803752931978
+      },
+      "fallback": {
+        "brier": 0.9096671297833703,
+        "distinct_games": 268,
+        "ece": 0.04160796884483909,
+        "n": 5222,
+        "nll": 3.12106354886638,
+        "reliability": [
+          {
+            "accuracy": 0.06913866357667053,
+            "confidence": 0.08308660426316634,
+            "lower": 0.0,
+            "n": 2589,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.08021390374331551,
+            "confidence": 0.1240728379268899,
+            "lower": 0.1,
+            "n": 1870,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.3181818181818182,
+            "confidence": 0.2335348240368673,
+            "lower": 0.2,
+            "n": 220,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.4563106796116505,
+            "confidence": 0.34664249217391635,
+            "lower": 0.3,
+            "n": 103,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5392156862745098,
+            "confidence": 0.4484350710463667,
+            "lower": 0.4,
+            "n": 102,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.8010471204188482,
+            "confidence": 0.5519512316557514,
+            "lower": 0.5,
+            "n": 191,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.7362637362637363,
+            "confidence": 0.6428956838778371,
+            "lower": 0.6,
+            "n": 91,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8235294117647058,
+            "confidence": 0.7518445401802492,
+            "lower": 0.7,
+            "n": 34,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.9090909090909091,
+            "confidence": 0.8449404906892654,
+            "lower": 0.8,
+            "n": 11,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9313767801160323,
+            "lower": 0.9,
+            "n": 11,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.14745308310991956,
+        "top3": 0.2759479126771352,
+        "top5": 0.36193029490616624
+      },
+      "inherited_primary_mean_brier": 0.14672728936045631,
+      "low_support_fraction": 0.8032610367635749,
+      "overall": {
+        "brier": 0.8634909499961749,
+        "distinct_games": 270,
+        "ece": 0.04017506856942221,
+        "n": 6501,
+        "nll": 2.868463185414979,
+        "reliability": [
+          {
+            "accuracy": 0.06913866357667053,
+            "confidence": 0.08308660426316634,
+            "lower": 0.0,
+            "n": 2589,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.08447142134547293,
+            "confidence": 0.12631008483559386,
+            "lower": 0.1,
+            "n": 1977,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.30303030303030304,
+            "confidence": 0.24178099284923987,
+            "lower": 0.2,
+            "n": 330,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.38837920489296635,
+            "confidence": 0.3459644395114397,
+            "lower": 0.3,
+            "n": 327,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5138888888888888,
+            "confidence": 0.458268021762696,
+            "lower": 0.4,
+            "n": 576,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6941747572815534,
+            "confidence": 0.5563789386961748,
+            "lower": 0.5,
+            "n": 412,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.6842105263157895,
+            "confidence": 0.6406270416779173,
+            "lower": 0.6,
+            "n": 133,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8532110091743119,
+            "confidence": 0.7671168915367654,
+            "lower": 0.7,
+            "n": 109,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.96,
+            "confidence": 0.853002204005149,
+            "lower": 0.8,
+            "n": 25,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9302321707855172,
+            "lower": 0.9,
+            "n": 23,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.2131979695431472,
+        "top3": 0.3677895708352561,
+        "top5": 0.4494693124134749
+      },
+      "response_set_calibration_status": "frozen_abstention",
+      "sets": {
+        "capture_any": {
+          "brier": 0.08304169900049135,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1679,
+              "observed": 0.02858844550327576,
+              "predicted": 0.03682483827982387
+            },
+            {
+              "bin": 1,
+              "n": 380,
+              "observed": 0.10526315789473684,
+              "predicted": 0.14878486314677497
+            },
+            {
+              "bin": 2,
+              "n": 174,
+              "observed": 0.1781609195402299,
+              "predicted": 0.250973913097782
+            },
+            {
+              "bin": 3,
+              "n": 149,
+              "observed": 0.40939597315436244,
+              "predicted": 0.346102904123732
+            },
+            {
+              "bin": 4,
+              "n": 87,
+              "observed": 0.5747126436781609,
+              "predicted": 0.45272023207214007
+            },
+            {
+              "bin": 5,
+              "n": 225,
+              "observed": 0.7733333333333333,
+              "predicted": 0.55699203475238
+            },
+            {
+              "bin": 6,
+              "n": 98,
+              "observed": 0.8061224489795918,
+              "predicted": 0.6451011140569404
+            },
+            {
+              "bin": 7,
+              "n": 55,
+              "observed": 0.8181818181818182,
+              "predicted": 0.7368976023452343
+            },
+            {
+              "bin": 8,
+              "n": 55,
+              "observed": 0.9818181818181818,
+              "predicted": 0.858853644261001
+            },
+            {
+              "bin": 9,
+              "n": 60,
+              "observed": 0.9833333333333333,
+              "predicted": 0.9552251564566586
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.047419876601719264,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.0836534075833721,
+            "observed": 0.22327917716977314,
+            "predicted": 0.19811395389932165,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.19804711350402876,
+          "sample_count": 2962
+        },
+        "captures_candidate": {
+          "brier": 0.13944986115930824,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 141,
+              "observed": 0.05673758865248227,
+              "predicted": 0.019535801904916442
+            },
+            {
+              "bin": 1,
+              "n": 68,
+              "observed": 0.07352941176470588,
+              "predicted": 0.15040438390130076
+            },
+            {
+              "bin": 2,
+              "n": 91,
+              "observed": 0.07692307692307693,
+              "predicted": 0.24917124439389604
+            },
+            {
+              "bin": 3,
+              "n": 48,
+              "observed": 0.3333333333333333,
+              "predicted": 0.35004578191895136
+            },
+            {
+              "bin": 4,
+              "n": 75,
+              "observed": 0.64,
+              "predicted": 0.45119339920817697
+            },
+            {
+              "bin": 5,
+              "n": 184,
+              "observed": 0.8043478260869565,
+              "predicted": 0.552478062633987
+            },
+            {
+              "bin": 6,
+              "n": 82,
+              "observed": 0.7682926829268293,
+              "predicted": 0.6458540385764826
+            },
+            {
+              "bin": 7,
+              "n": 34,
+              "observed": 0.8529411764705882,
+              "predicted": 0.7418959391519467
+            },
+            {
+              "bin": 8,
+              "n": 50,
+              "observed": 0.98,
+              "predicted": 0.8551062280854267
+            },
+            {
+              "bin": 9,
+              "n": 60,
+              "observed": 0.9833333333333333,
+              "predicted": 0.9545776434143297
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.13114021517384594,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.13655539817924542,
+            "observed": 0.5323160951926827,
+            "predicted": 0.436852878746387,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.43957834155422765,
+          "sample_count": 833
+        },
+        "high_value_capture": {
+          "brier": 0.11620590727921763,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 468,
+              "observed": 0.11965811965811966,
+              "predicted": 0.06483439747388578
+            },
+            {
+              "bin": 1,
+              "n": 142,
+              "observed": 0.18309859154929578,
+              "predicted": 0.14234633697337487
+            },
+            {
+              "bin": 2,
+              "n": 23,
+              "observed": 0.17391304347826086,
+              "predicted": 0.2406357130232023
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "observed": 0.3,
+              "predicted": 0.35729888426046214
+            },
+            {
+              "bin": 4,
+              "n": 9,
+              "observed": 0.6666666666666666,
+              "predicted": 0.4514299267396301
+            },
+            {
+              "bin": 5,
+              "n": 7,
+              "observed": 0.7142857142857143,
+              "predicted": 0.5480514519740927
+            },
+            {
+              "bin": 6,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.6607118164477109
+            },
+            {
+              "bin": 7,
+              "n": 5,
+              "observed": 0.6,
+              "predicted": 0.7545349101205706
+            },
+            {
+              "bin": 8,
+              "n": 32,
+              "observed": 0.96875,
+              "predicted": 0.8579559524504429
+            },
+            {
+              "bin": 9,
+              "n": 43,
+              "observed": 0.9767441860465116,
+              "predicted": 0.9617141726121282
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.060836931720585644,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.12125209893871255,
+            "observed": 0.2659392724539304,
+            "predicted": 0.2030475494241173,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.1971664898313215,
+          "sample_count": 751
+        },
+        "material_recovery": {
+          "brier": 0.21465350206230288,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 46,
+              "observed": 0.45652173913043476,
+              "predicted": 0.05855197069388065
+            },
+            {
+              "bin": 1,
+              "n": 62,
+              "observed": 0.43548387096774194,
+              "predicted": 0.14149116333393233
+            },
+            {
+              "bin": 2,
+              "n": 38,
+              "observed": 0.42105263157894735,
+              "predicted": 0.2508101148828596
+            },
+            {
+              "bin": 3,
+              "n": 22,
+              "observed": 0.36363636363636365,
+              "predicted": 0.3544503691541798
+            },
+            {
+              "bin": 4,
+              "n": 42,
+              "observed": 0.7857142857142857,
+              "predicted": 0.46487758278311103
+            },
+            {
+              "bin": 5,
+              "n": 71,
+              "observed": 0.9014084507042254,
+              "predicted": 0.5500483331066423
+            },
+            {
+              "bin": 6,
+              "n": 56,
+              "observed": 0.7678571428571429,
+              "predicted": 0.6538469208436039
+            },
+            {
+              "bin": 7,
+              "n": 38,
+              "observed": 0.8157894736842105,
+              "predicted": 0.7402439808752863
+            },
+            {
+              "bin": 8,
+              "n": 37,
+              "observed": 0.972972972972973,
+              "predicted": 0.858559886506322
+            },
+            {
+              "bin": 9,
+              "n": 58,
+              "observed": 0.9827586206896551,
+              "predicted": 0.9548980360950471
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.2058120720685648,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.2094808590291402,
+            "observed": 0.7298984580669425,
+            "predicted": 0.5044867951657586,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.5090815449527117,
+          "sample_count": 470
+        },
+        "pawn_contact_capture": {
+          "brier": 0.2270405864212301,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.1932612492054442
+            },
+            {
+              "bin": 2,
+              "n": 8,
+              "observed": 0.125,
+              "predicted": 0.24075319846845877
+            },
+            {
+              "bin": 3,
+              "n": 29,
+              "observed": 0.6896551724137931,
+              "predicted": 0.346751582207905
+            },
+            {
+              "bin": 4,
+              "n": 44,
+              "observed": 0.5909090909090909,
+              "predicted": 0.44876490113429207
+            },
+            {
+              "bin": 5,
+              "n": 111,
+              "observed": 0.7477477477477478,
+              "predicted": 0.5536181831768978
+            },
+            {
+              "bin": 6,
+              "n": 44,
+              "observed": 0.6818181818181818,
+              "predicted": 0.642915916649406
+            },
+            {
+              "bin": 7,
+              "n": 10,
+              "observed": 0.8,
+              "predicted": 0.7260244084510693
+            },
+            {
+              "bin": 8,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.8617772414139325
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.16603694963666563,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.2196592723164452,
+            "observed": 0.7290705339485827,
+            "predicted": 0.5417189014136646,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.536367266410708,
+          "sample_count": 260
+        },
+        "promotion": {
+          "brier": 0.075253582574848,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1478,
+              "observed": 0.052097428958051424,
+              "predicted": 0.05026100235187102
+            },
+            {
+              "bin": 1,
+              "n": 189,
+              "observed": 0.25925925925925924,
+              "predicted": 0.13482394791917193
+            },
+            {
+              "bin": 2,
+              "n": 44,
+              "observed": 0.5909090909090909,
+              "predicted": 0.248207405883774
+            },
+            {
+              "bin": 3,
+              "n": 15,
+              "observed": 0.4,
+              "predicted": 0.35181809875520587
+            },
+            {
+              "bin": 4,
+              "n": 3,
+              "observed": 0.3333333333333333,
+              "predicted": 0.44149596092905125
+            },
+            {
+              "bin": 5,
+              "n": 1,
+              "observed": 0.0,
+              "predicted": 0.5260246694959477
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.024788802068948037,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.07762120070242101,
+            "observed": 0.09383531072566664,
+            "predicted": 0.06886903057948296,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.0681019638874486,
+          "sample_count": 1730
+        },
+        "recapture": {
+          "brier": 0.14976409521972275,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 7,
+              "observed": 0.42857142857142855,
+              "predicted": 0.04837038609269272
+            },
+            {
+              "bin": 1,
+              "n": 4,
+              "observed": 0.25,
+              "predicted": 0.15939889310237515
+            },
+            {
+              "bin": 2,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.2713666895013351
+            },
+            {
+              "bin": 3,
+              "n": 26,
+              "observed": 0.34615384615384615,
+              "predicted": 0.35713785048170826
+            },
+            {
+              "bin": 4,
+              "n": 40,
+              "observed": 0.825,
+              "predicted": 0.45791003249742185
+            },
+            {
+              "bin": 5,
+              "n": 69,
+              "observed": 0.8840579710144928,
+              "predicted": 0.5499088647846391
+            },
+            {
+              "bin": 6,
+              "n": 38,
+              "observed": 0.9210526315789473,
+              "predicted": 0.6524201133257432
+            },
+            {
+              "bin": 7,
+              "n": 26,
+              "observed": 0.8846153846153846,
+              "predicted": 0.7474115788063256
+            },
+            {
+              "bin": 8,
+              "n": 36,
+              "observed": 1.0,
+              "predicted": 0.851951885761145
+            },
+            {
+              "bin": 9,
+              "n": 59,
+              "observed": 0.9830508474576272,
+              "predicted": 0.9549211468758283
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.20077878487466017,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.1428454263127695,
+            "observed": 0.851968503937008,
+            "predicted": 0.6456244447823609,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.6411105029036834,
+          "sample_count": 311
+        }
+      },
+      "support_one": {
+        "brier": 0.8266366849818884,
+        "distinct_games": 120,
+        "ece": 0.17181471627938882,
+        "n": 218,
+        "nll": 2.5777441875673053,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.35353535353535354,
+            "confidence": 0.18498568247128588,
+            "lower": 0.1,
+            "n": 99,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.3838383838383838,
+            "confidence": 0.21706182060507057,
+            "lower": 0.2,
+            "n": 99,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.0,
+            "confidence": 0.38657252410818616,
+            "lower": 0.3,
+            "n": 3,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.6666666666666666,
+            "confidence": 0.4314948044380798,
+            "lower": 0.4,
+            "n": 3,
+            "upper": 0.5
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.5,
+            "n": 0,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.75,
+            "confidence": 0.6890637427582177,
+            "lower": 0.6,
+            "n": 4,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.7850667234511395,
+            "lower": 0.7,
+            "n": 10,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.4036697247706422,
+        "top3": 0.573394495412844,
+        "top5": 0.6513761467889908
+      },
+      "support_zero": {
+        "brier": 0.9132843633898299,
+        "distinct_games": 267,
+        "ece": 0.043068240442481524,
+        "n": 5004,
+        "nll": 3.1447333371883617,
+        "reliability": [
+          {
+            "accuracy": 0.06913866357667053,
+            "confidence": 0.08308660426316634,
+            "lower": 0.0,
+            "n": 2589,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.06493506493506493,
+            "confidence": 0.12066777208279325,
+            "lower": 0.1,
+            "n": 1771,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2644628099173554,
+            "confidence": 0.24701273593561002,
+            "lower": 0.2,
+            "n": 121,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.47,
+            "confidence": 0.3454445912158882,
+            "lower": 0.3,
+            "n": 100,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5353535353535354,
+            "confidence": 0.44894841245873907,
+            "lower": 0.4,
+            "n": 99,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.8010471204188482,
+            "confidence": 0.5519512316557514,
+            "lower": 0.5,
+            "n": 191,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.735632183908046,
+            "confidence": 0.6407730145040265,
+            "lower": 0.6,
+            "n": 87,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.75,
+            "confidence": 0.7380019638173781,
+            "lower": 0.7,
+            "n": 24,
+            "upper": 0.8
+          },
+          {
+            "accuracy": 0.9090909090909091,
+            "confidence": 0.8449404906892654,
+            "lower": 0.8,
+            "n": 11,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9313767801160323,
+            "lower": 0.9,
+            "n": 11,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.13629096722621903,
+        "top3": 0.26298960831334933,
+        "top5": 0.34932054356514786
+      }
+    },
+    "old": {
+      "abstain_fraction": 1.0,
+      "exact_supported": {
+        "brier": 0.6817669831775812,
+        "distinct_games": 270,
+        "ece": 0.047906815311584104,
+        "n": 1279,
+        "nll": 1.8550378667574987,
+        "reliability": [
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.0,
+            "n": 0,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.19090909090909092,
+            "confidence": 0.16675386889893817,
+            "lower": 0.1,
+            "n": 110,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.2631578947368421,
+            "confidence": 0.2573670964305616,
+            "lower": 0.2,
+            "n": 114,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3698630136986301,
+            "confidence": 0.3564040558565787,
+            "lower": 0.3,
+            "n": 219,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.52834008097166,
+            "confidence": 0.46107296312254814,
+            "lower": 0.4,
+            "n": 494,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6283185840707964,
+            "confidence": 0.5620880897488586,
+            "lower": 0.5,
+            "n": 226,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.5769230769230769,
+            "confidence": 0.6267886066797937,
+            "lower": 0.6,
+            "n": 52,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.84375,
+            "confidence": 0.7778589983358506,
+            "lower": 0.7,
+            "n": 64,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.4839718530101642,
+        "top3": 0.7365129007036747,
+        "top5": 0.8045347928068803
+      },
+      "fallback": {
+        "brier": 0.9444027120981419,
+        "distinct_games": 268,
+        "ece": 0.020981399800869223,
+        "n": 5222,
+        "nll": 3.242080632291663,
+        "reliability": [
+          {
+            "accuracy": 0.07637997432605904,
+            "confidence": 0.08180926723384338,
+            "lower": 0.0,
+            "n": 3116,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.1358921161825726,
+            "confidence": 0.1227186005455668,
+            "lower": 0.1,
+            "n": 1928,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.696969696969697,
+            "confidence": 0.22767378270791294,
+            "lower": 0.2,
+            "n": 132,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3333333333333333,
+            "confidence": 0.33067525100364503,
+            "lower": 0.3,
+            "n": 15,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.2857142857142857,
+            "confidence": 0.4364922656201183,
+            "lower": 0.4,
+            "n": 7,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.8888888888888888,
+            "confidence": 0.5480189953043122,
+            "lower": 0.5,
+            "n": 9,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.5555555555555556,
+            "confidence": 0.663708216985363,
+            "lower": 0.6,
+            "n": 9,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.75,
+            "confidence": 0.7513675289958341,
+            "lower": 0.7,
+            "n": 4,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9201979883092781,
+            "lower": 0.9,
+            "n": 2,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11815396399846802,
+        "top3": 0.24703178858674837,
+        "top5": 0.33684412102642664
+      },
+      "inherited_primary_mean_brier": 0.37993844091801865,
+      "low_support_fraction": 0.8032610367635749,
+      "overall": {
+        "brier": 0.892732031081468,
+        "distinct_games": 270,
+        "ece": 0.025952292661591575,
+        "n": 6501,
+        "nll": 2.9691952766358876,
+        "reliability": [
+          {
+            "accuracy": 0.07637997432605904,
+            "confidence": 0.08180926723384338,
+            "lower": 0.0,
+            "n": 3116,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13886162904808635,
+            "confidence": 0.12509538146748575,
+            "lower": 0.1,
+            "n": 2038,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.4959349593495935,
+            "confidence": 0.2414340988232867,
+            "lower": 0.2,
+            "n": 246,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.36752136752136755,
+            "confidence": 0.35475477349421114,
+            "lower": 0.3,
+            "n": 234,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.5249500998003992,
+            "confidence": 0.46072952024327263,
+            "lower": 0.4,
+            "n": 501,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.6382978723404256,
+            "confidence": 0.561549273365876,
+            "lower": 0.5,
+            "n": 235,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.5737704918032787,
+            "confidence": 0.6322357622986482,
+            "lower": 0.6,
+            "n": 61,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.8382352941176471,
+            "confidence": 0.7763006766099673,
+            "lower": 0.7,
+            "n": 68,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9201979883092781,
+            "lower": 0.9,
+            "n": 2,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.19012459621596678,
+        "top3": 0.34333179510844486,
+        "top5": 0.42885709890786033
+      },
+      "response_set_calibration_status": "frozen_abstention",
+      "sets": {
+        "capture_any": {
+          "brier": 0.14571044050114826,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2147,
+              "observed": 0.08290638099673964,
+              "predicted": 0.0297222204520909
+            },
+            {
+              "bin": 1,
+              "n": 429,
+              "observed": 0.36596736596736595,
+              "predicted": 0.14004008847894286
+            },
+            {
+              "bin": 2,
+              "n": 294,
+              "observed": 0.7414965986394558,
+              "predicted": 0.23790295605732106
+            },
+            {
+              "bin": 3,
+              "n": 28,
+              "observed": 0.8928571428571429,
+              "predicted": 0.3250574106253948
+            },
+            {
+              "bin": 4,
+              "n": 14,
+              "observed": 1.0,
+              "predicted": 0.47324913426741894
+            },
+            {
+              "bin": 5,
+              "n": 17,
+              "observed": 1.0,
+              "predicted": 0.5571460898749884
+            },
+            {
+              "bin": 6,
+              "n": 19,
+              "observed": 1.0,
+              "predicted": 0.623075922951994
+            },
+            {
+              "bin": 7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.7781190147083672
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.1345032091173686,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.14958807467852236,
+            "observed": 0.22327917716977314,
+            "predicted": 0.08278845855654708,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.08234735150936426,
+          "sample_count": 2962
+        },
+        "captures_candidate": {
+          "brier": 0.33573231868769127,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 421,
+              "observed": 0.28028503562945367,
+              "predicted": 0.048071907021308063
+            },
+            {
+              "bin": 1,
+              "n": 186,
+              "observed": 0.6236559139784946,
+              "predicted": 0.15656933713512616
+            },
+            {
+              "bin": 2,
+              "n": 156,
+              "observed": 0.8397435897435898,
+              "predicted": 0.22813364685094875
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "observed": 0.8,
+              "predicted": 0.3288082219678894
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.4778621202796483
+            },
+            {
+              "bin": 5,
+              "n": 20,
+              "observed": 1.0,
+              "predicted": 0.5552626053326639
+            },
+            {
+              "bin": 6,
+              "n": 16,
+              "observed": 1.0,
+              "predicted": 0.6202361029366992
+            },
+            {
+              "bin": 7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.7781190147083672
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.367617106299944,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.34122161760010283,
+            "observed": 0.5323160951926827,
+            "predicted": 0.1536557802262099,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.1525645990738647,
+          "sample_count": 833
+        },
+        "high_value_capture": {
+          "brier": 0.1795543377055888,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 644,
+              "observed": 0.15838509316770186,
+              "predicted": 0.03633278327864906
+            },
+            {
+              "bin": 1,
+              "n": 37,
+              "observed": 0.5675675675675675,
+              "predicted": 0.1454003436088608
+            },
+            {
+              "bin": 2,
+              "n": 35,
+              "observed": 0.9142857142857143,
+              "predicted": 0.23536055015132348
+            },
+            {
+              "bin": 3,
+              "n": 4,
+              "observed": 0.75,
+              "predicted": 0.3508662124728041
+            },
+            {
+              "bin": 4,
+              "n": 4,
+              "observed": 1.0,
+              "predicted": 0.4506971149048637
+            },
+            {
+              "bin": 5,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.5231729622813198
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6168692524882093
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.9655680288191331
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.17179124147305275,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.1891871370948318,
+            "observed": 0.2659392724539304,
+            "predicted": 0.08190815153416063,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.08028780057272976,
+          "sample_count": 751
+        },
+        "material_recovery": {
+          "brier": 0.49388694771484276,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 245,
+              "observed": 0.6244897959183674,
+              "predicted": 0.05998067071722682
+            },
+            {
+              "bin": 1,
+              "n": 101,
+              "observed": 0.7029702970297029,
+              "predicted": 0.15280813953669312
+            },
+            {
+              "bin": 2,
+              "n": 67,
+              "observed": 0.8507462686567164,
+              "predicted": 0.23593053773108802
+            },
+            {
+              "bin": 3,
+              "n": 8,
+              "observed": 0.875,
+              "predicted": 0.3335964172999967
+            },
+            {
+              "bin": 4,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.4656153660798337
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.5430330964643783
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6168692524882093
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.5471816411434808,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.4994244484296625,
+            "observed": 0.7298984580669425,
+            "predicted": 0.17194554040304383,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.17050210476371636,
+          "sample_count": 470
+        },
+        "pawn_contact_capture": {
+          "brier": 0.4159237794216965,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 95,
+              "observed": 0.5789473684210527,
+              "predicted": 0.17807192719663886
+            },
+            {
+              "bin": 2,
+              "n": 145,
+              "observed": 0.7310344827586207,
+              "predicted": 0.23269215410423533
+            },
+            {
+              "bin": 3,
+              "n": 7,
+              "observed": 0.8571428571428571,
+              "predicted": 0.3215750762022598
+            },
+            {
+              "bin": 4,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.4011451793926412
+            },
+            {
+              "bin": 5,
+              "n": 9,
+              "observed": 1.0,
+              "predicted": 0.5702097828383462
+            },
+            {
+              "bin": 6,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.634825788213488
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.4602087248008121,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.43266238151508424,
+            "observed": 0.7290705339485827,
+            "predicted": 0.23622086784325472,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.23209896750688022,
+          "sample_count": 260
+        },
+        "promotion": {
+          "brier": 0.08224216774177553,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1672,
+              "observed": 0.07775119617224881,
+              "predicted": 0.030171592012863947
+            },
+            {
+              "bin": 1,
+              "n": 54,
+              "observed": 0.5,
+              "predicted": 0.13520990283224374
+            },
+            {
+              "bin": 2,
+              "n": 4,
+              "observed": 0.5,
+              "predicted": 0.2408548592572752
+            },
+            {
+              "bin": 3,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.05797014101995447,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08413675509959388,
+            "observed": 0.09383531072566664,
+            "predicted": 0.034305778937621205,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.03393737343091259,
+          "sample_count": 1730
+        },
+        "recapture": {
+          "brier": 0.5444240567683922,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 137,
+              "observed": 0.7518248175182481,
+              "predicted": 0.07352398527310332
+            },
+            {
+              "bin": 1,
+              "n": 79,
+              "observed": 0.7974683544303798,
+              "predicted": 0.1477187712544414
+            },
+            {
+              "bin": 2,
+              "n": 43,
+              "observed": 1.0,
+              "predicted": 0.23051586714792763
+            },
+            {
+              "bin": 3,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.3248177786216221
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.4778621202796483
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.5430330964643783
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6168692524882093
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7638968161723501
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.633479153603953,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.5447640075323643,
+            "observed": 0.851968503937008,
+            "predicted": 0.2138150843635465,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.20675030162557323,
+          "sample_count": 311
+        }
+      },
+      "support_one": {
+        "brier": 0.9414180792667202,
+        "distinct_games": 120,
+        "ece": 0.06729796535362689,
+        "n": 218,
+        "nll": 3.1715004791993713,
+        "reliability": [
+          {
+            "accuracy": 0.11976047904191617,
+            "confidence": 0.07859329383902931,
+            "lower": 0.0,
+            "n": 167,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.24489795918367346,
+            "confidence": 0.11797215131761338,
+            "lower": 0.1,
+            "n": 49,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.2116640336141933,
+            "lower": 0.2,
+            "n": 2,
+            "upper": 0.3
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.3,
+            "n": 0,
+            "upper": 0.4
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.4,
+            "n": 0,
+            "upper": 0.5
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.5,
+            "n": 0,
+            "upper": 0.6
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.6,
+            "n": 0,
+            "upper": 0.7
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.7,
+            "n": 0,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.9,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.1559633027522936,
+        "top3": 0.3302752293577982,
+        "top5": 0.40825688073394495
+      },
+      "support_zero": {
+        "brier": 0.9445327380688153,
+        "distinct_games": 267,
+        "ece": 0.021711381528939373,
+        "n": 5004,
+        "nll": 3.2451554670986416,
+        "reliability": [
+          {
+            "accuracy": 0.07392336385215327,
+            "confidence": 0.08199138576790033,
+            "lower": 0.0,
+            "n": 2949,
+            "upper": 0.1
+          },
+          {
+            "accuracy": 0.13304949441192124,
+            "confidence": 0.12284237702889288,
+            "lower": 0.1,
+            "n": 1879,
+            "upper": 0.2
+          },
+          {
+            "accuracy": 0.6923076923076923,
+            "confidence": 0.22792008654012402,
+            "lower": 0.2,
+            "n": 130,
+            "upper": 0.3
+          },
+          {
+            "accuracy": 0.3333333333333333,
+            "confidence": 0.33067525100364503,
+            "lower": 0.3,
+            "n": 15,
+            "upper": 0.4
+          },
+          {
+            "accuracy": 0.2857142857142857,
+            "confidence": 0.4364922656201183,
+            "lower": 0.4,
+            "n": 7,
+            "upper": 0.5
+          },
+          {
+            "accuracy": 0.8888888888888888,
+            "confidence": 0.5480189953043122,
+            "lower": 0.5,
+            "n": 9,
+            "upper": 0.6
+          },
+          {
+            "accuracy": 0.5555555555555556,
+            "confidence": 0.663708216985363,
+            "lower": 0.6,
+            "n": 9,
+            "upper": 0.7
+          },
+          {
+            "accuracy": 0.75,
+            "confidence": 0.7513675289958341,
+            "lower": 0.7,
+            "n": 4,
+            "upper": 0.8
+          },
+          {
+            "accuracy": null,
+            "confidence": null,
+            "lower": 0.8,
+            "n": 0,
+            "upper": 0.9
+          },
+          {
+            "accuracy": 1.0,
+            "confidence": 0.9201979883092781,
+            "lower": 0.9,
+            "n": 2,
+            "upper": 1.0
+          }
+        ],
+        "top1": 0.11650679456434852,
+        "top3": 0.2434052757793765,
+        "top5": 0.3337330135891287
+      }
+    },
+    "paired_game_bootstrap": {
+      "capture_any": {
+        "delta_brier_interval95": [
+          -0.07130537819305859,
+          -0.054236446397464305
+        ],
+        "valid_draws": 300
+      },
+      "captures_candidate": {
+        "delta_brier_interval95": [
+          -0.21520205178351395,
+          -0.1766895078830866
+        ],
+        "valid_draws": 300
+      },
+      "material_recovery": {
+        "delta_brier_interval95": [
+          -0.3130026198949836,
+          -0.243116233304183
+        ],
+        "valid_draws": 300
+      },
+      "recapture": {
+        "delta_brier_interval95": [
+          -0.432779368756793,
+          -0.35954364305129
+        ],
+        "valid_draws": 300
+      }
+    },
+    "sample_independent_of_previous_known_accounts": true,
+    "selection_or_fit_on_new_sample": false
+  }
+}

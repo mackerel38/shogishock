@@ -1,0 +1,16 @@
+{
+  "validation_completed": true,
+  "improvement_reproduced": true,
+  "inherited_relative_gate_time": true,
+  "inherited_relative_gate_player": true,
+  "next_small_scan_decision": "NO",
+  "reason": "Relative improvement replicated on previously unseen known-account-disjoint games, but recapture and material-recovery sets remain systematically underpredicted by about 20 percentage points. Frozen abstention is not lifted; calibrated P_good use is not established.",
+  "model_refit_calls_on_new_data": 0,
+  "new_model_selection": false,
+  "new_engine_calls": 0,
+  "new_candidate_scan": false,
+  "actual_candidates_generated": 0,
+  "candidate_promotion_allowed": false,
+  "dataset_must_not_be_reused_for_confirmatory_tuning": true,
+  "stop_for_human_review": true
+}

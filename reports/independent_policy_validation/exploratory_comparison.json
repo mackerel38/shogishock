@@ -1,0 +1,4910 @@
+{
+  "game": {
+    "prior_exploratory_sample_scope": "old full sample included correspondence; not paired with confirmation",
+    "sets": {
+      "capture_any": {
+        "old_exploratory_selected": {
+          "sample_count": 1228,
+          "distinct_games": 111,
+          "chosen": 230,
+          "observed_probability": 0.18729641693811075,
+          "predicted_probability": 0.18742786303012124,
+          "brier": 0.07120134649557418,
+          "ece": 0.055642224453636126,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 667,
+              "predicted": 0.032276360127365934,
+              "observed": 0.013493253373313344
+            },
+            {
+              "bin": 1,
+              "n": 190,
+              "predicted": 0.13858075852046622,
+              "observed": 0.11052631578947368
+            },
+            {
+              "bin": 2,
+              "n": 112,
+              "predicted": 0.24009608235941005,
+              "observed": 0.13392857142857142
+            },
+            {
+              "bin": 3,
+              "n": 50,
+              "predicted": 0.3499119233386287,
+              "observed": 0.26
+            },
+            {
+              "bin": 4,
+              "n": 31,
+              "predicted": 0.4536763086223783,
+              "observed": 0.5483870967741935
+            },
+            {
+              "bin": 5,
+              "n": 76,
+              "predicted": 0.5523606896447296,
+              "observed": 0.8421052631578947
+            },
+            {
+              "bin": 6,
+              "n": 22,
+              "predicted": 0.6366618114900446,
+              "observed": 0.8181818181818182
+            },
+            {
+              "bin": 7,
+              "n": 27,
+              "predicted": 0.7414166377745254,
+              "observed": 0.7777777777777778
+            },
+            {
+              "bin": 8,
+              "n": 23,
+              "predicted": 0.8500406967575992,
+              "observed": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 30,
+              "predicted": 0.9432419669183577,
+              "observed": 0.9666666666666667
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.1450341094287735,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2170,
+              "observed": 0.08294930875576037,
+              "predicted": 0.0330232882918648
+            },
+            {
+              "bin": 1,
+              "n": 377,
+              "observed": 0.3660477453580902,
+              "predicted": 0.13643571366010057
+            },
+            {
+              "bin": 2,
+              "n": 319,
+              "observed": 0.7366771159874608,
+              "predicted": 0.24196309772018804
+            },
+            {
+              "bin": 3,
+              "n": 38,
+              "observed": 0.8157894736842105,
+              "predicted": 0.3251160055632698
+            },
+            {
+              "bin": 4,
+              "n": 8,
+              "observed": 1.0,
+              "predicted": 0.4518102395734074
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.5553648369015778
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.6687441558895308
+            },
+            {
+              "bin": 7,
+              "n": 9,
+              "observed": 1.0,
+              "predicted": 0.7311122192219119
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.13158737769790443,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.14904860845416865,
+            "observed": 0.22327917716977314,
+            "predicted": 0.0856900848526836,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.08521459883587917,
+          "sample_count": 2962
+        },
+        "independent_frozen_selected": {
+          "brier": 0.08227097520101301,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1483,
+              "observed": 0.01820633850303439,
+              "predicted": 0.0353756923896044
+            },
+            {
+              "bin": 1,
+              "n": 486,
+              "observed": 0.09876543209876543,
+              "predicted": 0.1373038696753077
+            },
+            {
+              "bin": 2,
+              "n": 269,
+              "observed": 0.15985130111524162,
+              "predicted": 0.2463456962120461
+            },
+            {
+              "bin": 3,
+              "n": 141,
+              "observed": 0.4326241134751773,
+              "predicted": 0.34929711592943063
+            },
+            {
+              "bin": 4,
+              "n": 83,
+              "observed": 0.4819277108433735,
+              "predicted": 0.4501344305194656
+            },
+            {
+              "bin": 5,
+              "n": 220,
+              "observed": 0.8045454545454546,
+              "predicted": 0.5565138494000402
+            },
+            {
+              "bin": 6,
+              "n": 92,
+              "observed": 0.8043478260869565,
+              "predicted": 0.6380194676985758
+            },
+            {
+              "bin": 7,
+              "n": 75,
+              "observed": 0.8,
+              "predicted": 0.7415650023120923
+            },
+            {
+              "bin": 8,
+              "n": 39,
+              "observed": 0.9743589743589743,
+              "predicted": 0.8614119919401211
+            },
+            {
+              "bin": 9,
+              "n": 74,
+              "observed": 0.9864864864864865,
+              "predicted": 0.9542938070763022
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.05499181336896087,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.08258867166276707,
+            "observed": 0.22327917716977314,
+            "predicted": 0.2074307902214614,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.20696552947845526,
+          "sample_count": 2962
+        }
+      },
+      "captures_candidate": {
+        "old_exploratory_selected": {
+          "sample_count": 305,
+          "distinct_games": 104,
+          "chosen": 156,
+          "observed_probability": 0.5114754098360655,
+          "predicted_probability": 0.42679522306478807,
+          "brier": 0.12386499908746312,
+          "ece": 0.10857498379121802,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 67,
+              "predicted": 0.023590463354250496,
+              "observed": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 35,
+              "predicted": 0.15848138792069694,
+              "observed": 0.11428571428571428
+            },
+            {
+              "bin": 2,
+              "n": 20,
+              "predicted": 0.23823133362939322,
+              "observed": 0.25
+            },
+            {
+              "bin": 3,
+              "n": 13,
+              "predicted": 0.34742668642936536,
+              "observed": 0.3076923076923077
+            },
+            {
+              "bin": 4,
+              "n": 22,
+              "predicted": 0.4634683139085336,
+              "observed": 0.5909090909090909
+            },
+            {
+              "bin": 5,
+              "n": 65,
+              "predicted": 0.5511529759310878,
+              "observed": 0.8615384615384616
+            },
+            {
+              "bin": 6,
+              "n": 16,
+              "predicted": 0.6425808682123912,
+              "observed": 0.75
+            },
+            {
+              "bin": 7,
+              "n": 20,
+              "predicted": 0.7430098008213638,
+              "observed": 0.75
+            },
+            {
+              "bin": 8,
+              "n": 20,
+              "predicted": 0.8518095852549429,
+              "observed": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 27,
+              "predicted": 0.9468530319332862,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.33384302231196605,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 428,
+              "observed": 0.2850467289719626,
+              "predicted": 0.04798889012009608
+            },
+            {
+              "bin": 1,
+              "n": 147,
+              "observed": 0.6462585034013606,
+              "predicted": 0.1528625500878107
+            },
+            {
+              "bin": 2,
+              "n": 192,
+              "observed": 0.7916666666666666,
+              "predicted": 0.23517229337438983
+            },
+            {
+              "bin": 3,
+              "n": 12,
+              "observed": 0.8333333333333334,
+              "predicted": 0.32681921978466266
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45274528595475055
+            },
+            {
+              "bin": 5,
+              "n": 8,
+              "observed": 1.0,
+              "predicted": 0.5423297092915764
+            },
+            {
+              "bin": 6,
+              "n": 21,
+              "observed": 1.0,
+              "predicted": 0.6662805054765697
+            },
+            {
+              "bin": 7,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.7341081697657605
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.36464682300219514,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.33991806918044193,
+            "observed": 0.5323160951926827,
+            "predicted": 0.15602989621482746,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.15536212596907373,
+          "sample_count": 833
+        },
+        "independent_frozen_selected": {
+          "brier": 0.13684965566241444,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 144,
+              "observed": 0.04861111111111111,
+              "predicted": 0.021537572205496344
+            },
+            {
+              "bin": 1,
+              "n": 87,
+              "observed": 0.09195402298850575,
+              "predicted": 0.1550396084070584
+            },
+            {
+              "bin": 2,
+              "n": 84,
+              "observed": 0.10714285714285714,
+              "predicted": 0.24179804709220876
+            },
+            {
+              "bin": 3,
+              "n": 40,
+              "observed": 0.35,
+              "predicted": 0.3564804539753216
+            },
+            {
+              "bin": 4,
+              "n": 59,
+              "observed": 0.6610169491525424,
+              "predicted": 0.45023812914443856
+            },
+            {
+              "bin": 5,
+              "n": 196,
+              "observed": 0.8061224489795918,
+              "predicted": 0.5519407632769212
+            },
+            {
+              "bin": 6,
+              "n": 62,
+              "observed": 0.7741935483870968,
+              "predicted": 0.6360014546337127
+            },
+            {
+              "bin": 7,
+              "n": 56,
+              "observed": 0.8214285714285714,
+              "predicted": 0.7389673219063215
+            },
+            {
+              "bin": 8,
+              "n": 36,
+              "observed": 0.9722222222222222,
+              "predicted": 0.8626691226054826
+            },
+            {
+              "bin": 9,
+              "n": 69,
+              "observed": 0.9855072463768116,
+              "predicted": 0.9568621403663838
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.12283194971627914,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.13356764019956824,
+            "observed": 0.5323160951926827,
+            "predicted": 0.43400556777297716,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.4367327562769321,
+          "sample_count": 833
+        }
+      },
+      "recapture": {
+        "old_exploratory_selected": {
+          "sample_count": 109,
+          "distinct_games": 62,
+          "chosen": 88,
+          "observed_probability": 0.8073394495412844,
+          "predicted_probability": 0.6670433263654686,
+          "brier": 0.13846045380130556,
+          "ece": 0.1494052526833519,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2,
+              "predicted": 0.07416644433129031,
+              "observed": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 1,
+              "predicted": 0.17291041905289634,
+              "observed": 1.0
+            },
+            {
+              "bin": 2,
+              "n": 4,
+              "predicted": 0.25065751574751083,
+              "observed": 0.25
+            },
+            {
+              "bin": 3,
+              "n": 5,
+              "predicted": 0.3363249740729007,
+              "observed": 0.4
+            },
+            {
+              "bin": 4,
+              "n": 11,
+              "predicted": 0.45204613111310593,
+              "observed": 0.45454545454545453
+            },
+            {
+              "bin": 5,
+              "n": 28,
+              "predicted": 0.5508100138029914,
+              "observed": 0.8928571428571429
+            },
+            {
+              "bin": 6,
+              "n": 9,
+              "predicted": 0.6423774500889871,
+              "observed": 0.7777777777777778
+            },
+            {
+              "bin": 7,
+              "n": 7,
+              "predicted": 0.7636406580725846,
+              "observed": 0.7142857142857143
+            },
+            {
+              "bin": 8,
+              "n": 17,
+              "predicted": 0.8485807053295015,
+              "observed": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 25,
+              "predicted": 0.9501713142451051,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.5448741157603334,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 143,
+              "observed": 0.7412587412587412,
+              "predicted": 0.07317144446620981
+            },
+            {
+              "bin": 1,
+              "n": 74,
+              "observed": 0.8243243243243243,
+              "predicted": 0.14836802951776012
+            },
+            {
+              "bin": 2,
+              "n": 44,
+              "observed": 1.0,
+              "predicted": 0.23454205923526372
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.32968072685783395
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.4598139251907251
+            },
+            {
+              "bin": 5,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.5357504786086977
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.6648006455730388
+            },
+            {
+              "bin": 7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.7280433849311336
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.6319216771484976,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.5456835726119885,
+            "observed": 0.851968503937008,
+            "predicted": 0.21495448573969192,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.20784505755589794,
+          "sample_count": 311
+        },
+        "independent_frozen_selected": {
+          "brier": 0.14226170193568202,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 6,
+              "observed": 0.3333333333333333,
+              "predicted": 0.05328826296702217
+            },
+            {
+              "bin": 1,
+              "n": 6,
+              "observed": 0.3333333333333333,
+              "predicted": 0.1598958268058651
+            },
+            {
+              "bin": 2,
+              "n": 10,
+              "observed": 0.3,
+              "predicted": 0.26839309979537884
+            },
+            {
+              "bin": 3,
+              "n": 23,
+              "observed": 0.34782608695652173,
+              "predicted": 0.35448273103290723
+            },
+            {
+              "bin": 4,
+              "n": 23,
+              "observed": 0.8260869565217391,
+              "predicted": 0.4549738300309966
+            },
+            {
+              "bin": 5,
+              "n": 77,
+              "observed": 0.8831168831168831,
+              "predicted": 0.5563765732431903
+            },
+            {
+              "bin": 6,
+              "n": 35,
+              "observed": 0.8857142857142857,
+              "predicted": 0.6378636135747381
+            },
+            {
+              "bin": 7,
+              "n": 36,
+              "observed": 0.9166666666666666,
+              "predicted": 0.7448928298707217
+            },
+            {
+              "bin": 8,
+              "n": 30,
+              "observed": 1.0,
+              "predicted": 0.8614396709353632
+            },
+            {
+              "bin": 9,
+              "n": 65,
+              "observed": 0.9846153846153847,
+              "predicted": 0.9596345229227038
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.18496421407790584,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.13465145636906023,
+            "observed": 0.851968503937008,
+            "predicted": 0.6564126309543518,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.6520332316697267,
+          "sample_count": 311
+        }
+      },
+      "material_recovery": {
+        "old_exploratory_selected": {
+          "sample_count": 168,
+          "distinct_games": 64,
+          "chosen": 121,
+          "observed_probability": 0.7202380952380952,
+          "predicted_probability": 0.5621273568780873,
+          "brier": 0.2039768636923886,
+          "ece": 0.17590888446969336,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 8,
+              "predicted": 0.050968366992189644,
+              "observed": 0.75
+            },
+            {
+              "bin": 1,
+              "n": 27,
+              "predicted": 0.1521172278896392,
+              "observed": 0.37037037037037035
+            },
+            {
+              "bin": 2,
+              "n": 6,
+              "predicted": 0.2333131637238296,
+              "observed": 0.3333333333333333
+            },
+            {
+              "bin": 3,
+              "n": 9,
+              "predicted": 0.34247609931099854,
+              "observed": 0.4444444444444444
+            },
+            {
+              "bin": 4,
+              "n": 9,
+              "predicted": 0.4578463873783876,
+              "observed": 0.7777777777777778
+            },
+            {
+              "bin": 5,
+              "n": 31,
+              "predicted": 0.5514887889392133,
+              "observed": 0.8064516129032258
+            },
+            {
+              "bin": 6,
+              "n": 16,
+              "predicted": 0.6445378449965253,
+              "observed": 0.6875
+            },
+            {
+              "bin": 7,
+              "n": 14,
+              "predicted": 0.7496460195152556,
+              "observed": 0.6428571428571429
+            },
+            {
+              "bin": 8,
+              "n": 20,
+              "predicted": 0.8476802756987272,
+              "observed": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 28,
+              "predicted": 0.945081954991618,
+              "observed": 0.9642857142857143
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.49420721937472556,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 248,
+              "observed": 0.6209677419354839,
+              "predicted": 0.05887702131593401
+            },
+            {
+              "bin": 1,
+              "n": 97,
+              "observed": 0.7422680412371134,
+              "predicted": 0.14950697868767548
+            },
+            {
+              "bin": 2,
+              "n": 69,
+              "observed": 0.8260869565217391,
+              "predicted": 0.23932877437836364
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "observed": 0.8,
+              "predicted": 0.33263566499697406
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.4598139251907251
+            },
+            {
+              "bin": 5,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.5422056347863228
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.6648006455730388
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7077095574282875
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9621570224121357
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.5455344281220473,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.4997862967033874,
+            "observed": 0.7298984580669425,
+            "predicted": 0.17377331305387264,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.17184313462915904,
+          "sample_count": 470
+        },
+        "independent_frozen_selected": {
+          "brier": 0.20544425182976167,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 28,
+              "observed": 0.39285714285714285,
+              "predicted": 0.04645871921042945
+            },
+            {
+              "bin": 1,
+              "n": 69,
+              "observed": 0.43478260869565216,
+              "predicted": 0.14806564026253352
+            },
+            {
+              "bin": 2,
+              "n": 41,
+              "observed": 0.5365853658536586,
+              "predicted": 0.24943872059038727
+            },
+            {
+              "bin": 3,
+              "n": 22,
+              "observed": 0.3181818181818182,
+              "predicted": 0.34791552576134405
+            },
+            {
+              "bin": 4,
+              "n": 28,
+              "observed": 0.6785714285714286,
+              "predicted": 0.452796673833998
+            },
+            {
+              "bin": 5,
+              "n": 77,
+              "observed": 0.8571428571428571,
+              "predicted": 0.5549701966928096
+            },
+            {
+              "bin": 6,
+              "n": 51,
+              "observed": 0.7843137254901961,
+              "predicted": 0.6414016634297256
+            },
+            {
+              "bin": 7,
+              "n": 56,
+              "observed": 0.8035714285714286,
+              "predicted": 0.7437445954840826
+            },
+            {
+              "bin": 8,
+              "n": 33,
+              "observed": 0.9696969696969697,
+              "predicted": 0.8644583441528979
+            },
+            {
+              "bin": 9,
+              "n": 65,
+              "observed": 0.9846153846153847,
+              "predicted": 0.9588759097816144
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.18570963195524123,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.19949687285502235,
+            "observed": 0.7298984580669425,
+            "predicted": 0.5275134288327834,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.5319675662011399,
+          "sample_count": 470
+        }
+      },
+      "pawn_contact_capture": {
+        "old_exploratory_selected": {
+          "sample_count": 79,
+          "distinct_games": 51,
+          "chosen": 59,
+          "observed_probability": 0.7468354430379747,
+          "predicted_probability": 0.5534270430424497,
+          "brier": 0.2184642048345705,
+          "ece": 0.19340839999552492,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 1,
+              "n": 1,
+              "predicted": 0.14952651207030915,
+              "observed": 1.0
+            },
+            {
+              "bin": 2,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "predicted": 0.35756462073248735,
+              "observed": 0.4
+            },
+            {
+              "bin": 4,
+              "n": 15,
+              "predicted": 0.4684140556431599,
+              "observed": 0.6
+            },
+            {
+              "bin": 5,
+              "n": 33,
+              "predicted": 0.5496109597354192,
+              "observed": 0.8484848484848485
+            },
+            {
+              "bin": 6,
+              "n": 4,
+              "predicted": 0.6544823283387194,
+              "observed": 1.0
+            },
+            {
+              "bin": 7,
+              "n": 12,
+              "predicted": 0.7328805393111781,
+              "observed": 0.75
+            },
+            {
+              "bin": 8,
+              "n": 3,
+              "predicted": 0.8373615171862253,
+              "observed": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 1,
+              "predicted": 0.9076108383944284,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.40733703913649605,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 52,
+              "observed": 0.5576923076923077,
+              "predicted": 0.1801669811475376
+            },
+            {
+              "bin": 2,
+              "n": 190,
+              "observed": 0.7052631578947368,
+              "predicted": 0.23787761904144986
+            },
+            {
+              "bin": 3,
+              "n": 8,
+              "observed": 0.875,
+              "predicted": 0.3251699326969836
+            },
+            {
+              "bin": 4,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.42514155130968057
+            },
+            {
+              "bin": 5,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.5883843240717272
+            },
+            {
+              "bin": 6,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.6751596648977558
+            },
+            {
+              "bin": 7,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.7188744513476845
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.4491819175928446,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.42494808570716147,
+            "observed": 0.7290705339485827,
+            "predicted": 0.24564658833565597,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.24312577471484761,
+          "sample_count": 260
+        },
+        "independent_frozen_selected": {
+          "brier": 0.22994887572056105,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.19525205802914103
+            },
+            {
+              "bin": 2,
+              "n": 7,
+              "observed": 0.14285714285714285,
+              "predicted": 0.24271415297405471
+            },
+            {
+              "bin": 3,
+              "n": 34,
+              "observed": 0.6470588235294118,
+              "predicted": 0.3633000080474488
+            },
+            {
+              "bin": 4,
+              "n": 45,
+              "observed": 0.6444444444444445,
+              "predicted": 0.4618439061343336
+            },
+            {
+              "bin": 5,
+              "n": 113,
+              "observed": 0.7522123893805309,
+              "predicted": 0.5486862125813716
+            },
+            {
+              "bin": 6,
+              "n": 26,
+              "observed": 0.6538461538461539,
+              "predicted": 0.6435334332693708
+            },
+            {
+              "bin": 7,
+              "n": 26,
+              "observed": 0.7307692307692307,
+              "predicted": 0.7272930709024036
+            },
+            {
+              "bin": 8,
+              "n": 4,
+              "observed": 1.0,
+              "predicted": 0.8649343156709481
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.9076108383944282
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.16587971626611608,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.22320320089084913,
+            "observed": 0.7290705339485827,
+            "predicted": 0.538644212402115,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.5348087697867814,
+          "sample_count": 260
+        }
+      },
+      "high_value_capture": {
+        "old_exploratory_selected": {
+          "sample_count": 301,
+          "distinct_games": 79,
+          "chosen": 73,
+          "observed_probability": 0.2425249169435216,
+          "predicted_probability": 0.24396968117118834,
+          "brier": 0.11102946729080142,
+          "ece": 0.07954949141660449,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 96,
+              "predicted": 0.06532846855403557,
+              "observed": 0.08333333333333333
+            },
+            {
+              "bin": 1,
+              "n": 90,
+              "predicted": 0.12423484254576947,
+              "observed": 0.2
+            },
+            {
+              "bin": 2,
+              "n": 55,
+              "predicted": 0.2317045740100515,
+              "observed": 0.05454545454545454
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "predicted": 0.35628030693776963,
+              "observed": 0.3
+            },
+            {
+              "bin": 4,
+              "n": 8,
+              "predicted": 0.4451108534631997,
+              "observed": 0.375
+            },
+            {
+              "bin": 5,
+              "n": 3,
+              "predicted": 0.5222664821756129,
+              "observed": 0.3333333333333333
+            },
+            {
+              "bin": 6,
+              "n": 2,
+              "predicted": 0.639809382069862,
+              "observed": 1.0
+            },
+            {
+              "bin": 7,
+              "n": 5,
+              "predicted": 0.7510789120599706,
+              "observed": 0.6
+            },
+            {
+              "bin": 8,
+              "n": 10,
+              "predicted": 0.8721982219160666,
+              "observed": 1.0
+            },
+            {
+              "bin": 9,
+              "n": 22,
+              "predicted": 0.9450440347480824,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.17694101012926308,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 645,
+              "observed": 0.15658914728682172,
+              "predicted": 0.042685891713609085
+            },
+            {
+              "bin": 1,
+              "n": 34,
+              "observed": 0.6176470588235294,
+              "predicted": 0.14321350501300242
+            },
+            {
+              "bin": 2,
+              "n": 35,
+              "observed": 0.8857142857142857,
+              "predicted": 0.23569948122637388
+            },
+            {
+              "bin": 3,
+              "n": 4,
+              "observed": 0.75,
+              "predicted": 0.3441551611739714
+            },
+            {
+              "bin": 4,
+              "n": 4,
+              "observed": 1.0,
+              "predicted": 0.4513226046836508
+            },
+            {
+              "bin": 5,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.5361566036588468
+            },
+            {
+              "bin": 6,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.6683876622368867
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7077095574282875
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8435785764784298
+            },
+            {
+              "bin": 9,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.9583727246533493
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.1644446763187968,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.18618378433888422,
+            "observed": 0.2659392724539304,
+            "predicted": 0.08953123802860041,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.08744274644161198,
+          "sample_count": 751
+        },
+        "independent_frozen_selected": {
+          "brier": 0.11575814956863242,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 297,
+              "observed": 0.11784511784511785,
+              "predicted": 0.06379036520668505
+            },
+            {
+              "bin": 1,
+              "n": 220,
+              "observed": 0.15,
+              "predicted": 0.12273228119929137
+            },
+            {
+              "bin": 2,
+              "n": 110,
+              "observed": 0.15454545454545454,
+              "predicted": 0.23526436868042394
+            },
+            {
+              "bin": 3,
+              "n": 11,
+              "observed": 0.36363636363636365,
+              "predicted": 0.35489089061092505
+            },
+            {
+              "bin": 4,
+              "n": 13,
+              "observed": 0.46153846153846156,
+              "predicted": 0.43337240922331505
+            },
+            {
+              "bin": 5,
+              "n": 6,
+              "observed": 0.5,
+              "predicted": 0.5381551779663026
+            },
+            {
+              "bin": 6,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.6320785057147241
+            },
+            {
+              "bin": 7,
+              "n": 12,
+              "observed": 0.8333333333333334,
+              "predicted": 0.7397064717288623
+            },
+            {
+              "bin": 8,
+              "n": 23,
+              "observed": 0.9565217391304348,
+              "predicted": 0.8699443322596687
+            },
+            {
+              "bin": 9,
+              "n": 54,
+              "observed": 0.9814814814814815,
+              "predicted": 0.9597442575250684
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.05026864239433499,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.11999535909927761,
+            "observed": 0.2659392724539304,
+            "predicted": 0.23005426279318308,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.22431993715997778,
+          "sample_count": 751
+        }
+      },
+      "promotion": {
+        "old_exploratory_selected": {
+          "sample_count": 648,
+          "distinct_games": 108,
+          "chosen": 55,
+          "observed_probability": 0.08487654320987655,
+          "predicted_probability": 0.08745409706230524,
+          "brier": 0.07120896545807903,
+          "ece": 0.044756651709106116,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 506,
+              "predicted": 0.053851800353709886,
+              "observed": 0.037549407114624504
+            },
+            {
+              "bin": 1,
+              "n": 64,
+              "predicted": 0.12623800996773815,
+              "observed": 0.328125
+            },
+            {
+              "bin": 2,
+              "n": 61,
+              "predicted": 0.23520900094754305,
+              "observed": 0.13114754098360656
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "predicted": 0.3643355993821576,
+              "observed": 0.4
+            },
+            {
+              "bin": 4,
+              "n": 4,
+              "predicted": 0.43488064128998755,
+              "observed": 0.25
+            },
+            {
+              "bin": 5,
+              "n": 3,
+              "predicted": 0.5371278875598988,
+              "observed": 0.6666666666666666
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.08256550667899124,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1675,
+              "observed": 0.07880597014925374,
+              "predicted": 0.032162516054512924
+            },
+            {
+              "bin": 1,
+              "n": 54,
+              "observed": 0.5,
+              "predicted": 0.1325589865953305
+            },
+            {
+              "bin": 2,
+              "n": 1,
+              "observed": 0.0,
+              "predicted": 0.2671526780865076
+            },
+            {
+              "bin": 3,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.05678425029516157,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08441114061531979,
+            "observed": 0.09383531072566664,
+            "predicted": 0.035887640391591855,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.03543211118239508,
+          "sample_count": 1730
+        },
+        "independent_frozen_selected": {
+          "brier": 0.07537745463419923,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1341,
+              "observed": 0.0395227442207308,
+              "predicted": 0.052566906154257846
+            },
+            {
+              "bin": 1,
+              "n": 225,
+              "observed": 0.24444444444444444,
+              "predicted": 0.12283192203722426
+            },
+            {
+              "bin": 2,
+              "n": 136,
+              "observed": 0.3088235294117647,
+              "predicted": 0.23639934394545895
+            },
+            {
+              "bin": 3,
+              "n": 21,
+              "observed": 0.42857142857142855,
+              "predicted": 0.3533875825298002
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "observed": 0.0,
+              "predicted": 0.4352505598026098
+            },
+            {
+              "bin": 5,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.5225504092288824
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.03439592040592306,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.07744400651401358,
+            "observed": 0.09383531072566664,
+            "predicted": 0.08247631941913114,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.081457923259199,
+          "sample_count": 1730
+        }
+      }
+    }
+  },
+  "player": {
+    "prior_exploratory_sample_scope": "old full sample included correspondence; not paired with confirmation",
+    "sets": {
+      "capture_any": {
+        "old_exploratory_selected": {
+          "sample_count": 304,
+          "distinct_games": 26,
+          "chosen": 76,
+          "observed_probability": 0.25,
+          "predicted_probability": 0.29152732853348723,
+          "brier": 0.12273594255522635,
+          "ece": 0.06814969477022137,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 108,
+              "predicted": 0.049284339486412074,
+              "observed": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 31,
+              "predicted": 0.16353934892461663,
+              "observed": 0.0967741935483871
+            },
+            {
+              "bin": 2,
+              "n": 30,
+              "predicted": 0.23183750530101657,
+              "observed": 0.23333333333333334
+            },
+            {
+              "bin": 3,
+              "n": 33,
+              "predicted": 0.36424188899821197,
+              "observed": 0.2727272727272727
+            },
+            {
+              "bin": 4,
+              "n": 31,
+              "predicted": 0.43412867447221926,
+              "observed": 0.25806451612903225
+            },
+            {
+              "bin": 5,
+              "n": 20,
+              "predicted": 0.5462316173356471,
+              "observed": 0.6
+            },
+            {
+              "bin": 6,
+              "n": 40,
+              "predicted": 0.6471701653486158,
+              "observed": 0.7
+            },
+            {
+              "bin": 7,
+              "n": 7,
+              "predicted": 0.740976601761191,
+              "observed": 0.8571428571428571
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 4,
+              "predicted": 0.9501269538470738,
+              "observed": 0.75
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.14687161684940786,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2126,
+              "observed": 0.08278457196613359,
+              "predicted": 0.034540096327080945
+            },
+            {
+              "bin": 1,
+              "n": 431,
+              "observed": 0.35730858468677495,
+              "predicted": 0.13125711109097532
+            },
+            {
+              "bin": 2,
+              "n": 316,
+              "observed": 0.7436708860759493,
+              "predicted": 0.23982425156843917
+            },
+            {
+              "bin": 3,
+              "n": 35,
+              "observed": 0.6571428571428571,
+              "predicted": 0.33789763533948736
+            },
+            {
+              "bin": 4,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.456293812428939
+            },
+            {
+              "bin": 5,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.5372358751985257
+            },
+            {
+              "bin": 6,
+              "n": 23,
+              "observed": 1.0,
+              "predicted": 0.6445201650969863
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7482560468435955
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.13108649437917438,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.15070757866947476,
+            "observed": 0.22327917716977314,
+            "predicted": 0.08607696362497061,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.08565570324158887,
+          "sample_count": 2962
+        },
+        "independent_frozen_selected": {
+          "brier": 0.11238177016844351,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 866,
+              "observed": 0.009237875288683603,
+              "predicted": 0.05100789066297907
+            },
+            {
+              "bin": 1,
+              "n": 325,
+              "observed": 0.043076923076923075,
+              "predicted": 0.1707686710069379
+            },
+            {
+              "bin": 2,
+              "n": 554,
+              "observed": 0.09205776173285199,
+              "predicted": 0.228257077420451
+            },
+            {
+              "bin": 3,
+              "n": 324,
+              "observed": 0.2623456790123457,
+              "predicted": 0.35590095245257714
+            },
+            {
+              "bin": 4,
+              "n": 323,
+              "observed": 0.2693498452012384,
+              "predicted": 0.4391710302028181
+            },
+            {
+              "bin": 5,
+              "n": 135,
+              "observed": 0.48148148148148145,
+              "predicted": 0.5498573474611496
+            },
+            {
+              "bin": 6,
+              "n": 290,
+              "observed": 0.7275862068965517,
+              "predicted": 0.6537658533395752
+            },
+            {
+              "bin": 7,
+              "n": 90,
+              "observed": 0.7333333333333333,
+              "predicted": 0.7364016855297096
+            },
+            {
+              "bin": 8,
+              "n": 16,
+              "observed": 1.0,
+              "predicted": 0.8576714233501568
+            },
+            {
+              "bin": 9,
+              "n": 39,
+              "observed": 0.9743589743589743,
+              "predicted": 0.9415030232717638
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.09208800104244455,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.1127306327200965,
+            "observed": 0.22327917716977314,
+            "predicted": 0.2917281059351601,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.291637939023321,
+          "sample_count": 2962
+        }
+      },
+      "captures_candidate": {
+        "old_exploratory_selected": {
+          "sample_count": 107,
+          "distinct_games": 26,
+          "chosen": 54,
+          "observed_probability": 0.5046728971962616,
+          "predicted_probability": 0.4152177491201369,
+          "brier": 0.18430404952669988,
+          "ece": 0.10912345702532042,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 18,
+              "predicted": 0.0416558262851831,
+              "observed": 0.05555555555555555
+            },
+            {
+              "bin": 1,
+              "n": 8,
+              "predicted": 0.15646833917420913,
+              "observed": 0.125
+            },
+            {
+              "bin": 2,
+              "n": 6,
+              "predicted": 0.24546681236713871,
+              "observed": 0.5
+            },
+            {
+              "bin": 3,
+              "n": 23,
+              "predicted": 0.3674642951318678,
+              "observed": 0.391304347826087
+            },
+            {
+              "bin": 4,
+              "n": 6,
+              "predicted": 0.4405497086485419,
+              "observed": 0.6666666666666666
+            },
+            {
+              "bin": 5,
+              "n": 13,
+              "predicted": 0.5527276799612306,
+              "observed": 0.6153846153846154
+            },
+            {
+              "bin": 6,
+              "n": 26,
+              "predicted": 0.6398903901310019,
+              "observed": 0.8461538461538461
+            },
+            {
+              "bin": 7,
+              "n": 3,
+              "predicted": 0.7452839523034324,
+              "observed": 1.0
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 4,
+              "predicted": 0.9501269538470738,
+              "observed": 0.75
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.3400388069280272,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 437,
+              "observed": 0.2837528604118993,
+              "predicted": 0.0483905045855652
+            },
+            {
+              "bin": 1,
+              "n": 154,
+              "observed": 0.6753246753246753,
+              "predicted": 0.15282088583958692
+            },
+            {
+              "bin": 2,
+              "n": 184,
+              "observed": 0.8097826086956522,
+              "predicted": 0.2332076066899501
+            },
+            {
+              "bin": 3,
+              "n": 7,
+              "observed": 0.7142857142857143,
+              "predicted": 0.3319647574176045
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45793966120603746
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.554122840278923
+            },
+            {
+              "bin": 6,
+              "n": 20,
+              "observed": 1.0,
+              "predicted": 0.6412883564536759
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7482560468435955
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.3707802858016183,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.3459969958356959,
+            "observed": 0.5323160951926827,
+            "predicted": 0.14956883489937736,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.14901609997593362,
+          "sample_count": 833
+        },
+        "independent_frozen_selected": {
+          "brier": 0.18096487635598318,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 149,
+              "observed": 0.0738255033557047,
+              "predicted": 0.03979883636901524
+            },
+            {
+              "bin": 1,
+              "n": 45,
+              "observed": 0.1111111111111111,
+              "predicted": 0.1568349283601532
+            },
+            {
+              "bin": 2,
+              "n": 103,
+              "observed": 0.24271844660194175,
+              "predicted": 0.2508673567687409
+            },
+            {
+              "bin": 3,
+              "n": 154,
+              "observed": 0.5909090909090909,
+              "predicted": 0.35114976949732
+            },
+            {
+              "bin": 4,
+              "n": 64,
+              "observed": 0.703125,
+              "predicted": 0.43851230154167037
+            },
+            {
+              "bin": 5,
+              "n": 90,
+              "observed": 0.7111111111111111,
+              "predicted": 0.556257195617429
+            },
+            {
+              "bin": 6,
+              "n": 149,
+              "observed": 0.7986577181208053,
+              "predicted": 0.6493642834801863
+            },
+            {
+              "bin": 7,
+              "n": 28,
+              "observed": 0.7857142857142857,
+              "predicted": 0.7349004117926567
+            },
+            {
+              "bin": 8,
+              "n": 21,
+              "observed": 1.0,
+              "predicted": 0.8611017113235487
+            },
+            {
+              "bin": 9,
+              "n": 30,
+              "observed": 0.9666666666666667,
+              "predicted": 0.9482976502337038
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.12352620442260909,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.1801217065967011,
+            "observed": 0.5323160951926827,
+            "predicted": 0.3971056590956857,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.40203660355671195,
+          "sample_count": 833
+        }
+      },
+      "recapture": {
+        "old_exploratory_selected": {
+          "sample_count": 41,
+          "distinct_games": 19,
+          "chosen": 28,
+          "observed_probability": 0.6829268292682927,
+          "predicted_probability": 0.49048098934540674,
+          "brier": 0.19516201615238363,
+          "ece": 0.21023852147944727,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2,
+              "predicted": 0.07294969278435337,
+              "observed": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 2,
+              "n": 3,
+              "predicted": 0.2608484242808907,
+              "observed": 0.6666666666666666
+            },
+            {
+              "bin": 3,
+              "n": 14,
+              "predicted": 0.37277504188148575,
+              "observed": 0.35714285714285715
+            },
+            {
+              "bin": 4,
+              "n": 4,
+              "predicted": 0.43556402331179644,
+              "observed": 1.0
+            },
+            {
+              "bin": 5,
+              "n": 6,
+              "predicted": 0.5553935504493298,
+              "observed": 0.8333333333333334
+            },
+            {
+              "bin": 6,
+              "n": 6,
+              "predicted": 0.6338566604973618,
+              "observed": 1.0
+            },
+            {
+              "bin": 7,
+              "n": 3,
+              "predicted": 0.7452839523034324,
+              "observed": 1.0
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "predicted": 0.9496053675239552,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.5549484709730613,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 148,
+              "observed": 0.7297297297297297,
+              "predicted": 0.07349431025524328
+            },
+            {
+              "bin": 1,
+              "n": 77,
+              "observed": 0.8701298701298701,
+              "predicted": 0.14655986028431142
+            },
+            {
+              "bin": 2,
+              "n": 40,
+              "observed": 1.0,
+              "predicted": 0.23097265182168125
+            },
+            {
+              "bin": 3,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.3442711911235426
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45793966120603746
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.554122840278923
+            },
+            {
+              "bin": 6,
+              "n": 14,
+              "observed": 1.0,
+              "predicted": 0.6472364513769023
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.6405080230568124,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.5556821827514884,
+            "observed": 0.851968503937008,
+            "predicted": 0.20572762011307447,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.19868937036023188,
+          "sample_count": 311
+        },
+        "independent_frozen_selected": {
+          "brier": 0.25435947103260137,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 10,
+              "observed": 0.5,
+              "predicted": 0.05778667382961642
+            },
+            {
+              "bin": 1,
+              "n": 10,
+              "observed": 0.3,
+              "predicted": 0.15385465819506314
+            },
+            {
+              "bin": 2,
+              "n": 26,
+              "observed": 0.6923076923076923,
+              "predicted": 0.2572363980589577
+            },
+            {
+              "bin": 3,
+              "n": 99,
+              "observed": 0.797979797979798,
+              "predicted": 0.35299127909509853
+            },
+            {
+              "bin": 4,
+              "n": 41,
+              "observed": 0.8536585365853658,
+              "predicted": 0.4324367054641052
+            },
+            {
+              "bin": 5,
+              "n": 34,
+              "observed": 0.8823529411764706,
+              "predicted": 0.5520207397999493
+            },
+            {
+              "bin": 6,
+              "n": 37,
+              "observed": 1.0,
+              "predicted": 0.6425741796630422
+            },
+            {
+              "bin": 7,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.7458011437350371
+            },
+            {
+              "bin": 8,
+              "n": 18,
+              "observed": 1.0,
+              "predicted": 0.8619437504552343
+            },
+            {
+              "bin": 9,
+              "n": 26,
+              "observed": 0.9615384615384616,
+              "predicted": 0.9533814160217257
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.34795669843388083,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.2535527788784035,
+            "observed": 0.851968503937008,
+            "predicted": 0.48934485776415987,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.48805616330245355,
+          "sample_count": 311
+        }
+      },
+      "material_recovery": {
+        "old_exploratory_selected": {
+          "sample_count": 67,
+          "distinct_games": 18,
+          "chosen": 36,
+          "observed_probability": 0.5373134328358209,
+          "predicted_probability": 0.48024286568045405,
+          "brier": 0.24161117582618816,
+          "ece": 0.12025760459169414,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2,
+              "predicted": 0.048140683499497225,
+              "observed": 0.0
+            },
+            {
+              "bin": 1,
+              "n": 6,
+              "predicted": 0.16342844495144807,
+              "observed": 0.6666666666666666
+            },
+            {
+              "bin": 2,
+              "n": 4,
+              "predicted": 0.2506980957938119,
+              "observed": 0.25
+            },
+            {
+              "bin": 3,
+              "n": 11,
+              "predicted": 0.35794872096338626,
+              "observed": 0.5454545454545454
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "predicted": 0.44283493832697884,
+              "observed": 0.4
+            },
+            {
+              "bin": 5,
+              "n": 14,
+              "predicted": 0.5454793251682558,
+              "observed": 0.5
+            },
+            {
+              "bin": 6,
+              "n": 14,
+              "predicted": 0.6394737191655252,
+              "observed": 0.5714285714285714
+            },
+            {
+              "bin": 7,
+              "n": 3,
+              "predicted": 0.764227847865218,
+              "observed": 1.0
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "predicted": 0.9496053675239552,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.5000845138121756,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 254,
+              "observed": 0.6220472440944882,
+              "predicted": 0.05943711240430602
+            },
+            {
+              "bin": 1,
+              "n": 99,
+              "observed": 0.7474747474747475,
+              "predicted": 0.15160736417063925
+            },
+            {
+              "bin": 2,
+              "n": 65,
+              "observed": 0.8307692307692308,
+              "predicted": 0.2335368246664218
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 0.8333333333333334,
+              "predicted": 0.3366709129183285
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.4640554835997822
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.554122840278923
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6434569699083789
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9541086069409449
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.5515809119232952,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.5057805718686889,
+            "observed": 0.7298984580669425,
+            "predicted": 0.1672475922945498,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.16541991648670648,
+          "sample_count": 470
+        },
+        "independent_frozen_selected": {
+          "brier": 0.269443962012019,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 38,
+              "observed": 0.3684210526315789,
+              "predicted": 0.060483932627054815
+            },
+            {
+              "bin": 1,
+              "n": 56,
+              "observed": 0.4642857142857143,
+              "predicted": 0.1580123636968432
+            },
+            {
+              "bin": 2,
+              "n": 52,
+              "observed": 0.6153846153846154,
+              "predicted": 0.24478490960955782
+            },
+            {
+              "bin": 3,
+              "n": 105,
+              "observed": 0.7523809523809524,
+              "predicted": 0.353623274438926
+            },
+            {
+              "bin": 4,
+              "n": 48,
+              "observed": 0.8125,
+              "predicted": 0.43567210699185455
+            },
+            {
+              "bin": 5,
+              "n": 51,
+              "observed": 0.7450980392156863,
+              "predicted": 0.5506446540961728
+            },
+            {
+              "bin": 6,
+              "n": 60,
+              "observed": 0.8333333333333334,
+              "predicted": 0.6476619228895403
+            },
+            {
+              "bin": 7,
+              "n": 14,
+              "observed": 0.9285714285714286,
+              "predicted": 0.7472317228737506
+            },
+            {
+              "bin": 8,
+              "n": 21,
+              "observed": 1.0,
+              "predicted": 0.8540080386891324
+            },
+            {
+              "bin": 9,
+              "n": 25,
+              "observed": 0.96,
+              "predicted": 0.9540686980123592
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.28700356346056377,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.2707055722036583,
+            "observed": 0.7298984580669425,
+            "predicted": 0.4235087228824049,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.4278900535607129,
+          "sample_count": 470
+        }
+      },
+      "pawn_contact_capture": {
+        "old_exploratory_selected": {
+          "sample_count": 27,
+          "distinct_games": 17,
+          "chosen": 18,
+          "observed_probability": 0.6666666666666666,
+          "predicted_probability": 0.6042563629779167,
+          "brier": 0.20582684959413056,
+          "ece": 0.19324106909097807,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 1,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 2,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 3,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 4,
+              "n": 3,
+              "predicted": 0.4720716207231899,
+              "observed": 0.3333333333333333
+            },
+            {
+              "bin": 5,
+              "n": 6,
+              "predicted": 0.5583334117934181,
+              "observed": 0.3333333333333333
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "predicted": 0.6415948037485373,
+              "observed": 0.8333333333333334
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.4178441917228374,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 64,
+              "observed": 0.5625,
+              "predicted": 0.1805321620911003
+            },
+            {
+              "bin": 2,
+              "n": 184,
+              "observed": 0.7228260869565217,
+              "predicted": 0.2342302076321023
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 0.8333333333333334,
+              "predicted": 0.34081034446133535
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 6,
+              "observed": 1.0,
+              "predicted": 0.6274094682994807
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.4597625559434533,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.43525965868388355,
+            "observed": 0.7290705339485827,
+            "predicted": 0.23487200583931203,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.23254513636423899,
+          "sample_count": 260
+        },
+        "independent_frozen_selected": {
+          "brier": 0.20534431557991528,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 2,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.38919627829996356
+            },
+            {
+              "bin": 4,
+              "n": 25,
+              "observed": 0.48,
+              "predicted": 0.4540041043342224
+            },
+            {
+              "bin": 5,
+              "n": 53,
+              "observed": 0.6981132075471698,
+              "predicted": 0.5629539081131113
+            },
+            {
+              "bin": 6,
+              "n": 148,
+              "observed": 0.722972972972973,
+              "predicted": 0.6503110738342106
+            },
+            {
+              "bin": 7,
+              "n": 22,
+              "observed": 0.7727272727272727,
+              "predicted": 0.7273265358977233
+            },
+            {
+              "bin": 8,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.8560494765334351
+            },
+            {
+              "bin": 9,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.9036568240638388
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.08316221658632471,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.1946956463270809,
+            "observed": 0.7290705339485827,
+            "predicted": 0.6208491354795221,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.619416073181366,
+          "sample_count": 260
+        }
+      },
+      "high_value_capture": {
+        "old_exploratory_selected": {
+          "sample_count": 80,
+          "distinct_games": 21,
+          "chosen": 28,
+          "observed_probability": 0.35,
+          "predicted_probability": 0.2980121615692546,
+          "brier": 0.17048790577454578,
+          "ece": 0.11720460007807601,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 7,
+              "predicted": 0.06731402413057833,
+              "observed": 0.2857142857142857
+            },
+            {
+              "bin": 1,
+              "n": 24,
+              "predicted": 0.15804722932829893,
+              "observed": 0.20833333333333334
+            },
+            {
+              "bin": 2,
+              "n": 24,
+              "predicted": 0.2290897362395302,
+              "observed": 0.20833333333333334
+            },
+            {
+              "bin": 3,
+              "n": 5,
+              "predicted": 0.36048277778415133,
+              "observed": 0.4
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "predicted": 0.42210335922889985,
+              "observed": 0.0
+            },
+            {
+              "bin": 5,
+              "n": 5,
+              "predicted": 0.561334784375577,
+              "observed": 0.8
+            },
+            {
+              "bin": 6,
+              "n": 5,
+              "predicted": 0.6350068611026913,
+              "observed": 1.0
+            },
+            {
+              "bin": 7,
+              "n": 3,
+              "predicted": 0.764227847865218,
+              "observed": 1.0
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 2,
+              "predicted": 0.9455825634730841,
+              "observed": 1.0
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.1772830257321789,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 578,
+              "observed": 0.16089965397923875,
+              "predicted": 0.04082857875622214
+            },
+            {
+              "bin": 1,
+              "n": 96,
+              "observed": 0.3020833333333333,
+              "predicted": 0.11562946098788628
+            },
+            {
+              "bin": 2,
+              "n": 30,
+              "observed": 0.9333333333333333,
+              "predicted": 0.22980916470526377
+            },
+            {
+              "bin": 3,
+              "n": 13,
+              "observed": 0.38461538461538464,
+              "predicted": 0.34940680551600517
+            },
+            {
+              "bin": 4,
+              "n": 7,
+              "observed": 1.0,
+              "predicted": 0.45793966120603746
+            },
+            {
+              "bin": 5,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.524331359393683
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6434569699083789
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8452447001123513
+            },
+            {
+              "bin": 9,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.9495194676350394
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.15894877160054105,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.18604635107358294,
+            "observed": 0.2659392724539304,
+            "predicted": 0.09420214376781542,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.09270287866936677,
+          "sample_count": 751
+        },
+        "independent_frozen_selected": {
+          "brier": 0.14762628540982942,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 110,
+              "observed": 0.14545454545454545,
+              "predicted": 0.06315389435607732
+            },
+            {
+              "bin": 1,
+              "n": 136,
+              "observed": 0.15441176470588236,
+              "predicted": 0.1578113158705447
+            },
+            {
+              "bin": 2,
+              "n": 300,
+              "observed": 0.14666666666666667,
+              "predicted": 0.2336344224388211
+            },
+            {
+              "bin": 3,
+              "n": 35,
+              "observed": 0.42857142857142855,
+              "predicted": 0.3549743273425015
+            },
+            {
+              "bin": 4,
+              "n": 79,
+              "observed": 0.20253164556962025,
+              "predicted": 0.42445915606495416
+            },
+            {
+              "bin": 5,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.5548544512375644
+            },
+            {
+              "bin": 6,
+              "n": 27,
+              "observed": 0.8518518518518519,
+              "predicted": 0.6399917140354563
+            },
+            {
+              "bin": 7,
+              "n": 20,
+              "observed": 0.55,
+              "predicted": 0.7568082017792204
+            },
+            {
+              "bin": 8,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.8490294655150459
+            },
+            {
+              "bin": 9,
+              "n": 24,
+              "observed": 0.9583333333333334,
+              "predicted": 0.9521548937628741
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.0941141682048039,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.15018001636610268,
+            "observed": 0.2659392724539304,
+            "predicted": 0.2877447687480985,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.28463710491039235,
+          "sample_count": 751
+        }
+      },
+      "promotion": {
+        "old_exploratory_selected": {
+          "sample_count": 123,
+          "distinct_games": 25,
+          "chosen": 23,
+          "observed_probability": 0.18699186991869918,
+          "predicted_probability": 0.14170819168653698,
+          "brier": 0.16679632177671624,
+          "ece": 0.08272066101594001,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 46,
+              "predicted": 0.053072389480505834,
+              "observed": 0.21739130434782608
+            },
+            {
+              "bin": 1,
+              "n": 53,
+              "predicted": 0.15470126357145073,
+              "observed": 0.1509433962264151
+            },
+            {
+              "bin": 2,
+              "n": 19,
+              "predicted": 0.24665280105991813,
+              "observed": 0.2631578947368421
+            },
+            {
+              "bin": 3,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 4,
+              "n": 5,
+              "predicted": 0.4206414943830893,
+              "observed": 0.0
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.08296911912584122,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1631,
+              "observed": 0.08338442673206621,
+              "predicted": 0.031950473418823795
+            },
+            {
+              "bin": 1,
+              "n": 89,
+              "observed": 0.23595505617977527,
+              "predicted": 0.10679009573910411
+            },
+            {
+              "bin": 2,
+              "n": 1,
+              "observed": 0.0,
+              "predicted": 0.269172712192563
+            },
+            {
+              "bin": 3,
+              "n": 9,
+              "observed": 0.2222222222222222,
+              "predicted": 0.3453317181723323
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.055931570814370904,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08432096614773224,
+            "observed": 0.09383531072566664,
+            "predicted": 0.03797519730321323,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.03756803401307828,
+          "sample_count": 1730
+        },
+        "independent_frozen_selected": {
+          "brier": 0.08790780029494111,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 613,
+              "observed": 0.05546492659053834,
+              "predicted": 0.05730124326603148
+            },
+            {
+              "bin": 1,
+              "n": 809,
+              "observed": 0.06551297898640297,
+              "predicted": 0.15972595784163687
+            },
+            {
+              "bin": 2,
+              "n": 208,
+              "observed": 0.25961538461538464,
+              "predicted": 0.23405578426513143
+            },
+            {
+              "bin": 3,
+              "n": 15,
+              "observed": 0.3333333333333333,
+              "predicted": 0.35603058150582056
+            },
+            {
+              "bin": 4,
+              "n": 71,
+              "observed": 0.15492957746478872,
+              "predicted": 0.4204957141445879
+            },
+            {
+              "bin": 5,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.5544432652831568
+            },
+            {
+              "bin": 6,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.6604479319666928
+            },
+            {
+              "bin": 7,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.7726952973655153
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.06333165272961087,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08875347253656893,
+            "observed": 0.09383531072566664,
+            "predicted": 0.15046285169805126,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.1490930436280471,
+          "sample_count": 1730
+        }
+      }
+    }
+  },
+  "time": {
+    "prior_exploratory_sample_scope": "old full sample included correspondence; not paired with confirmation",
+    "sets": {
+      "capture_any": {
+        "old_exploratory_selected": {
+          "sample_count": 1376,
+          "distinct_games": 121,
+          "chosen": 297,
+          "observed_probability": 0.21584302325581395,
+          "predicted_probability": 0.19151364666170162,
+          "brier": 0.08949834985642888,
+          "ece": 0.04890906741846741,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 756,
+              "predicted": 0.037167337558039804,
+              "observed": 0.031746031746031744
+            },
+            {
+              "bin": 1,
+              "n": 205,
+              "predicted": 0.149749121418961,
+              "observed": 0.13658536585365855
+            },
+            {
+              "bin": 2,
+              "n": 113,
+              "predicted": 0.24866814436586002,
+              "observed": 0.168141592920354
+            },
+            {
+              "bin": 3,
+              "n": 71,
+              "predicted": 0.34423425604664687,
+              "observed": 0.4647887323943662
+            },
+            {
+              "bin": 4,
+              "n": 33,
+              "predicted": 0.45427066509227765,
+              "observed": 0.7575757575757576
+            },
+            {
+              "bin": 5,
+              "n": 81,
+              "predicted": 0.5523708060824789,
+              "observed": 0.8271604938271605
+            },
+            {
+              "bin": 6,
+              "n": 34,
+              "predicted": 0.6317052688818995,
+              "observed": 0.8235294117647058
+            },
+            {
+              "bin": 7,
+              "n": 29,
+              "predicted": 0.7465994231554387,
+              "observed": 0.8275862068965517
+            },
+            {
+              "bin": 8,
+              "n": 25,
+              "predicted": 0.8523595474325978,
+              "observed": 0.88
+            },
+            {
+              "bin": 9,
+              "n": 29,
+              "predicted": 0.9660086168637588,
+              "observed": 0.9310344827586207
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.14571044050114826,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2147,
+              "observed": 0.08290638099673964,
+              "predicted": 0.0297222204520909
+            },
+            {
+              "bin": 1,
+              "n": 429,
+              "observed": 0.36596736596736595,
+              "predicted": 0.14004008847894286
+            },
+            {
+              "bin": 2,
+              "n": 294,
+              "observed": 0.7414965986394558,
+              "predicted": 0.23790295605732106
+            },
+            {
+              "bin": 3,
+              "n": 28,
+              "observed": 0.8928571428571429,
+              "predicted": 0.3250574106253948
+            },
+            {
+              "bin": 4,
+              "n": 14,
+              "observed": 1.0,
+              "predicted": 0.47324913426741894
+            },
+            {
+              "bin": 5,
+              "n": 17,
+              "observed": 1.0,
+              "predicted": 0.5571460898749884
+            },
+            {
+              "bin": 6,
+              "n": 19,
+              "observed": 1.0,
+              "predicted": 0.623075922951994
+            },
+            {
+              "bin": 7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.7781190147083672
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.1345032091173686,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.14958807467852236,
+            "observed": 0.22327917716977314,
+            "predicted": 0.08278845855654708,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.08234735150936426,
+          "sample_count": 2962
+        },
+        "independent_frozen_selected": {
+          "brier": 0.08304169900049135,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1679,
+              "observed": 0.02858844550327576,
+              "predicted": 0.03682483827982387
+            },
+            {
+              "bin": 1,
+              "n": 380,
+              "observed": 0.10526315789473684,
+              "predicted": 0.14878486314677497
+            },
+            {
+              "bin": 2,
+              "n": 174,
+              "observed": 0.1781609195402299,
+              "predicted": 0.250973913097782
+            },
+            {
+              "bin": 3,
+              "n": 149,
+              "observed": 0.40939597315436244,
+              "predicted": 0.346102904123732
+            },
+            {
+              "bin": 4,
+              "n": 87,
+              "observed": 0.5747126436781609,
+              "predicted": 0.45272023207214007
+            },
+            {
+              "bin": 5,
+              "n": 225,
+              "observed": 0.7733333333333333,
+              "predicted": 0.55699203475238
+            },
+            {
+              "bin": 6,
+              "n": 98,
+              "observed": 0.8061224489795918,
+              "predicted": 0.6451011140569404
+            },
+            {
+              "bin": 7,
+              "n": 55,
+              "observed": 0.8181818181818182,
+              "predicted": 0.7368976023452343
+            },
+            {
+              "bin": 8,
+              "n": 55,
+              "observed": 0.9818181818181818,
+              "predicted": 0.858853644261001
+            },
+            {
+              "bin": 9,
+              "n": 60,
+              "observed": 0.9833333333333333,
+              "predicted": 0.9552251564566586
+            }
+          ],
+          "chosen": 641,
+          "distinct_actual_movers": 242,
+          "distinct_games": 265,
+          "distinct_players_both_sides": 247,
+          "ece": 0.047419876601719264,
+          "observed_probability": 0.2164078325455773,
+          "opportunity_count": 2962,
+          "player_equal_game_weighted": {
+            "brier": 0.0836534075833721,
+            "observed": 0.22327917716977314,
+            "predicted": 0.19811395389932165,
+            "weight_sum": 1358.725
+          },
+          "predicted_probability": 0.19804711350402876,
+          "sample_count": 2962
+        }
+      },
+      "captures_candidate": {
+        "old_exploratory_selected": {
+          "sample_count": 374,
+          "distinct_games": 112,
+          "chosen": 187,
+          "observed_probability": 0.5,
+          "predicted_probability": 0.42296433666763467,
+          "brier": 0.14411581206685123,
+          "ece": 0.12353796401617739,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 72,
+              "predicted": 0.027991405860421408,
+              "observed": 0.05555555555555555
+            },
+            {
+              "bin": 1,
+              "n": 38,
+              "predicted": 0.14058861612823,
+              "observed": 0.15789473684210525
+            },
+            {
+              "bin": 2,
+              "n": 42,
+              "predicted": 0.23974116945539575,
+              "observed": 0.07142857142857142
+            },
+            {
+              "bin": 3,
+              "n": 25,
+              "predicted": 0.3445020488678888,
+              "observed": 0.32
+            },
+            {
+              "bin": 4,
+              "n": 27,
+              "predicted": 0.4639837144022121,
+              "observed": 0.8148148148148148
+            },
+            {
+              "bin": 5,
+              "n": 67,
+              "predicted": 0.5498499633076787,
+              "observed": 0.835820895522388
+            },
+            {
+              "bin": 6,
+              "n": 25,
+              "predicted": 0.6379483744066807,
+              "observed": 0.8
+            },
+            {
+              "bin": 7,
+              "n": 28,
+              "predicted": 0.7465423650087814,
+              "observed": 0.8214285714285714
+            },
+            {
+              "bin": 8,
+              "n": 21,
+              "predicted": 0.8531228400053489,
+              "observed": 0.8571428571428571
+            },
+            {
+              "bin": 9,
+              "n": 29,
+              "predicted": 0.9660086168637588,
+              "observed": 0.9310344827586207
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.33573231868769127,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 421,
+              "observed": 0.28028503562945367,
+              "predicted": 0.048071907021308063
+            },
+            {
+              "bin": 1,
+              "n": 186,
+              "observed": 0.6236559139784946,
+              "predicted": 0.15656933713512616
+            },
+            {
+              "bin": 2,
+              "n": 156,
+              "observed": 0.8397435897435898,
+              "predicted": 0.22813364685094875
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "observed": 0.8,
+              "predicted": 0.3288082219678894
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.4778621202796483
+            },
+            {
+              "bin": 5,
+              "n": 20,
+              "observed": 1.0,
+              "predicted": 0.5552626053326639
+            },
+            {
+              "bin": 6,
+              "n": 16,
+              "observed": 1.0,
+              "predicted": 0.6202361029366992
+            },
+            {
+              "bin": 7,
+              "n": 2,
+              "observed": 1.0,
+              "predicted": 0.7781190147083672
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.367617106299944,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.34122161760010283,
+            "observed": 0.5323160951926827,
+            "predicted": 0.1536557802262099,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.1525645990738647,
+          "sample_count": 833
+        },
+        "independent_frozen_selected": {
+          "brier": 0.13944986115930824,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 141,
+              "observed": 0.05673758865248227,
+              "predicted": 0.019535801904916442
+            },
+            {
+              "bin": 1,
+              "n": 68,
+              "observed": 0.07352941176470588,
+              "predicted": 0.15040438390130076
+            },
+            {
+              "bin": 2,
+              "n": 91,
+              "observed": 0.07692307692307693,
+              "predicted": 0.24917124439389604
+            },
+            {
+              "bin": 3,
+              "n": 48,
+              "observed": 0.3333333333333333,
+              "predicted": 0.35004578191895136
+            },
+            {
+              "bin": 4,
+              "n": 75,
+              "observed": 0.64,
+              "predicted": 0.45119339920817697
+            },
+            {
+              "bin": 5,
+              "n": 184,
+              "observed": 0.8043478260869565,
+              "predicted": 0.552478062633987
+            },
+            {
+              "bin": 6,
+              "n": 82,
+              "observed": 0.7682926829268293,
+              "predicted": 0.6458540385764826
+            },
+            {
+              "bin": 7,
+              "n": 34,
+              "observed": 0.8529411764705882,
+              "predicted": 0.7418959391519467
+            },
+            {
+              "bin": 8,
+              "n": 50,
+              "observed": 0.98,
+              "predicted": 0.8551062280854267
+            },
+            {
+              "bin": 9,
+              "n": 60,
+              "observed": 0.9833333333333333,
+              "predicted": 0.9545776434143297
+            }
+          ],
+          "chosen": 432,
+          "distinct_actual_movers": 203,
+          "distinct_games": 238,
+          "distinct_players_both_sides": 231,
+          "ece": 0.13114021517384594,
+          "observed_probability": 0.5186074429771909,
+          "opportunity_count": 833,
+          "player_equal_game_weighted": {
+            "brier": 0.13655539817924542,
+            "observed": 0.5323160951926827,
+            "predicted": 0.436852878746387,
+            "weight_sum": 384.48333333333335
+          },
+          "predicted_probability": 0.43957834155422765,
+          "sample_count": 833
+        }
+      },
+      "recapture": {
+        "old_exploratory_selected": {
+          "sample_count": 133,
+          "distinct_games": 70,
+          "chosen": 114,
+          "observed_probability": 0.8571428571428571,
+          "predicted_probability": 0.6581457975535273,
+          "brier": 0.1586044470525333,
+          "ece": 0.20581076591705869,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 2,
+              "predicted": 0.03386914086484615,
+              "observed": 0.5
+            },
+            {
+              "bin": 1,
+              "n": 1,
+              "predicted": 0.12558208073576346,
+              "observed": 1.0
+            },
+            {
+              "bin": 2,
+              "n": 1,
+              "predicted": 0.26178288526919885,
+              "observed": 0.0
+            },
+            {
+              "bin": 3,
+              "n": 14,
+              "predicted": 0.35096880543390024,
+              "observed": 0.35714285714285715
+            },
+            {
+              "bin": 4,
+              "n": 15,
+              "predicted": 0.45870535844731813,
+              "observed": 0.8
+            },
+            {
+              "bin": 5,
+              "n": 30,
+              "predicted": 0.5444073275440092,
+              "observed": 0.9666666666666667
+            },
+            {
+              "bin": 6,
+              "n": 9,
+              "predicted": 0.6401332738731206,
+              "observed": 1.0
+            },
+            {
+              "bin": 7,
+              "n": 16,
+              "predicted": 0.75523854108029,
+              "observed": 1.0
+            },
+            {
+              "bin": 8,
+              "n": 21,
+              "predicted": 0.8531228400053489,
+              "observed": 0.8571428571428571
+            },
+            {
+              "bin": 9,
+              "n": 24,
+              "predicted": 0.9663053577301987,
+              "observed": 0.9583333333333334
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.5444240567683922,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 137,
+              "observed": 0.7518248175182481,
+              "predicted": 0.07352398527310332
+            },
+            {
+              "bin": 1,
+              "n": 79,
+              "observed": 0.7974683544303798,
+              "predicted": 0.1477187712544414
+            },
+            {
+              "bin": 2,
+              "n": 43,
+              "observed": 1.0,
+              "predicted": 0.23051586714792763
+            },
+            {
+              "bin": 3,
+              "n": 5,
+              "observed": 1.0,
+              "predicted": 0.3248177786216221
+            },
+            {
+              "bin": 4,
+              "n": 10,
+              "observed": 1.0,
+              "predicted": 0.4778621202796483
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.5430330964643783
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6168692524882093
+            },
+            {
+              "bin": 7,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.7638968161723501
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.633479153603953,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.5447640075323643,
+            "observed": 0.851968503937008,
+            "predicted": 0.2138150843635465,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.20675030162557323,
+          "sample_count": 311
+        },
+        "independent_frozen_selected": {
+          "brier": 0.14976409521972275,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 7,
+              "observed": 0.42857142857142855,
+              "predicted": 0.04837038609269272
+            },
+            {
+              "bin": 1,
+              "n": 4,
+              "observed": 0.25,
+              "predicted": 0.15939889310237515
+            },
+            {
+              "bin": 2,
+              "n": 6,
+              "observed": 0.16666666666666666,
+              "predicted": 0.2713666895013351
+            },
+            {
+              "bin": 3,
+              "n": 26,
+              "observed": 0.34615384615384615,
+              "predicted": 0.35713785048170826
+            },
+            {
+              "bin": 4,
+              "n": 40,
+              "observed": 0.825,
+              "predicted": 0.45791003249742185
+            },
+            {
+              "bin": 5,
+              "n": 69,
+              "observed": 0.8840579710144928,
+              "predicted": 0.5499088647846391
+            },
+            {
+              "bin": 6,
+              "n": 38,
+              "observed": 0.9210526315789473,
+              "predicted": 0.6524201133257432
+            },
+            {
+              "bin": 7,
+              "n": 26,
+              "observed": 0.8846153846153846,
+              "predicted": 0.7474115788063256
+            },
+            {
+              "bin": 8,
+              "n": 36,
+              "observed": 1.0,
+              "predicted": 0.851951885761145
+            },
+            {
+              "bin": 9,
+              "n": 59,
+              "observed": 0.9830508474576272,
+              "predicted": 0.9549211468758283
+            }
+          ],
+          "chosen": 260,
+          "distinct_actual_movers": 143,
+          "distinct_games": 157,
+          "distinct_players_both_sides": 178,
+          "ece": 0.20077878487466017,
+          "observed_probability": 0.8360128617363344,
+          "opportunity_count": 311,
+          "player_equal_game_weighted": {
+            "brier": 0.1428454263127695,
+            "observed": 0.851968503937008,
+            "predicted": 0.6456244447823609,
+            "weight_sum": 142.875
+          },
+          "predicted_probability": 0.6411105029036834,
+          "sample_count": 311
+        }
+      },
+      "material_recovery": {
+        "old_exploratory_selected": {
+          "sample_count": 227,
+          "distinct_games": 72,
+          "chosen": 167,
+          "observed_probability": 0.73568281938326,
+          "predicted_probability": 0.48126875218290704,
+          "brier": 0.26086364913520654,
+          "ece": 0.26377968575138416,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 30,
+              "predicted": 0.0656785023583151,
+              "observed": 0.6
+            },
+            {
+              "bin": 1,
+              "n": 45,
+              "predicted": 0.14907971425114838,
+              "observed": 0.4666666666666667
+            },
+            {
+              "bin": 2,
+              "n": 13,
+              "predicted": 0.24614103346614888,
+              "observed": 0.46153846153846156
+            },
+            {
+              "bin": 3,
+              "n": 6,
+              "predicted": 0.3484366758309016,
+              "observed": 0.8333333333333334
+            },
+            {
+              "bin": 4,
+              "n": 18,
+              "predicted": 0.46244611331794033,
+              "observed": 0.8888888888888888
+            },
+            {
+              "bin": 5,
+              "n": 29,
+              "predicted": 0.5439418018494107,
+              "observed": 0.896551724137931
+            },
+            {
+              "bin": 6,
+              "n": 17,
+              "predicted": 0.6424468901837583,
+              "observed": 0.8235294117647058
+            },
+            {
+              "bin": 7,
+              "n": 18,
+              "predicted": 0.7620300462673686,
+              "observed": 0.8333333333333334
+            },
+            {
+              "bin": 8,
+              "n": 24,
+              "predicted": 0.8532972116078755,
+              "observed": 0.875
+            },
+            {
+              "bin": 9,
+              "n": 27,
+              "predicted": 0.9652962113163723,
+              "observed": 0.9259259259259259
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.49388694771484276,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 245,
+              "observed": 0.6244897959183674,
+              "predicted": 0.05998067071722682
+            },
+            {
+              "bin": 1,
+              "n": 101,
+              "observed": 0.7029702970297029,
+              "predicted": 0.15280813953669312
+            },
+            {
+              "bin": 2,
+              "n": 67,
+              "observed": 0.8507462686567164,
+              "predicted": 0.23593053773108802
+            },
+            {
+              "bin": 3,
+              "n": 8,
+              "observed": 0.875,
+              "predicted": 0.3335964172999967
+            },
+            {
+              "bin": 4,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.4656153660798337
+            },
+            {
+              "bin": 5,
+              "n": 11,
+              "observed": 1.0,
+              "predicted": 0.5430330964643783
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6168692524882093
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 11,
+              "observed": 0.9090909090909091,
+              "predicted": 0.9686982080173937
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.5471816411434808,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.4994244484296625,
+            "observed": 0.7298984580669425,
+            "predicted": 0.17194554040304383,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.17050210476371636,
+          "sample_count": 470
+        },
+        "independent_frozen_selected": {
+          "brier": 0.21465350206230288,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 46,
+              "observed": 0.45652173913043476,
+              "predicted": 0.05855197069388065
+            },
+            {
+              "bin": 1,
+              "n": 62,
+              "observed": 0.43548387096774194,
+              "predicted": 0.14149116333393233
+            },
+            {
+              "bin": 2,
+              "n": 38,
+              "observed": 0.42105263157894735,
+              "predicted": 0.2508101148828596
+            },
+            {
+              "bin": 3,
+              "n": 22,
+              "observed": 0.36363636363636365,
+              "predicted": 0.3544503691541798
+            },
+            {
+              "bin": 4,
+              "n": 42,
+              "observed": 0.7857142857142857,
+              "predicted": 0.46487758278311103
+            },
+            {
+              "bin": 5,
+              "n": 71,
+              "observed": 0.9014084507042254,
+              "predicted": 0.5500483331066423
+            },
+            {
+              "bin": 6,
+              "n": 56,
+              "observed": 0.7678571428571429,
+              "predicted": 0.6538469208436039
+            },
+            {
+              "bin": 7,
+              "n": 38,
+              "observed": 0.8157894736842105,
+              "predicted": 0.7402439808752863
+            },
+            {
+              "bin": 8,
+              "n": 37,
+              "observed": 0.972972972972973,
+              "predicted": 0.858559886506322
+            },
+            {
+              "bin": 9,
+              "n": 58,
+              "observed": 0.9827586206896551,
+              "predicted": 0.9548980360950471
+            }
+          ],
+          "chosen": 336,
+          "distinct_actual_movers": 145,
+          "distinct_games": 155,
+          "distinct_players_both_sides": 179,
+          "ece": 0.2058120720685648,
+          "observed_probability": 0.7148936170212766,
+          "opportunity_count": 470,
+          "player_equal_game_weighted": {
+            "brier": 0.2094808590291402,
+            "observed": 0.7298984580669425,
+            "predicted": 0.5044867951657586,
+            "weight_sum": 221.58333333333334
+          },
+          "predicted_probability": 0.5090815449527117,
+          "sample_count": 470
+        }
+      },
+      "pawn_contact_capture": {
+        "old_exploratory_selected": {
+          "sample_count": 92,
+          "distinct_games": 55,
+          "chosen": 68,
+          "observed_probability": 0.7391304347826086,
+          "predicted_probability": 0.5402176137865289,
+          "brier": 0.24866544867508417,
+          "ece": 0.2055124051467584,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 1,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 2,
+              "n": 1,
+              "predicted": 0.23266671501210526,
+              "observed": 1.0
+            },
+            {
+              "bin": 3,
+              "n": 11,
+              "predicted": 0.3414088678175223,
+              "observed": 0.7272727272727273
+            },
+            {
+              "bin": 4,
+              "n": 19,
+              "predicted": 0.4609244868960399,
+              "observed": 0.6842105263157895
+            },
+            {
+              "bin": 5,
+              "n": 33,
+              "predicted": 0.5528399751244728,
+              "observed": 0.8181818181818182
+            },
+            {
+              "bin": 6,
+              "n": 18,
+              "predicted": 0.6337217170162351,
+              "observed": 0.6666666666666666
+            },
+            {
+              "bin": 7,
+              "n": 10,
+              "predicted": 0.7303580870931211,
+              "observed": 0.7
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.4159237794216965,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 95,
+              "observed": 0.5789473684210527,
+              "predicted": 0.17807192719663886
+            },
+            {
+              "bin": 2,
+              "n": 145,
+              "observed": 0.7310344827586207,
+              "predicted": 0.23269215410423533
+            },
+            {
+              "bin": 3,
+              "n": 7,
+              "observed": 0.8571428571428571,
+              "predicted": 0.3215750762022598
+            },
+            {
+              "bin": 4,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.4011451793926412
+            },
+            {
+              "bin": 5,
+              "n": 9,
+              "observed": 1.0,
+              "predicted": 0.5702097828383462
+            },
+            {
+              "bin": 6,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.634825788213488
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.4602087248008121,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.43266238151508424,
+            "observed": 0.7290705339485827,
+            "predicted": 0.23622086784325472,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.23209896750688022,
+          "sample_count": 260
+        },
+        "independent_frozen_selected": {
+          "brier": 0.2270405864212301,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 1,
+              "n": 2,
+              "observed": 0.0,
+              "predicted": 0.1932612492054442
+            },
+            {
+              "bin": 2,
+              "n": 8,
+              "observed": 0.125,
+              "predicted": 0.24075319846845877
+            },
+            {
+              "bin": 3,
+              "n": 29,
+              "observed": 0.6896551724137931,
+              "predicted": 0.346751582207905
+            },
+            {
+              "bin": 4,
+              "n": 44,
+              "observed": 0.5909090909090909,
+              "predicted": 0.44876490113429207
+            },
+            {
+              "bin": 5,
+              "n": 111,
+              "observed": 0.7477477477477478,
+              "predicted": 0.5536181831768978
+            },
+            {
+              "bin": 6,
+              "n": 44,
+              "observed": 0.6818181818181818,
+              "predicted": 0.642915916649406
+            },
+            {
+              "bin": 7,
+              "n": 10,
+              "observed": 0.8,
+              "predicted": 0.7260244084510693
+            },
+            {
+              "bin": 8,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.8617772414139325
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 180,
+          "distinct_actual_movers": 126,
+          "distinct_games": 142,
+          "distinct_players_both_sides": 161,
+          "ece": 0.16603694963666563,
+          "observed_probability": 0.6923076923076923,
+          "opportunity_count": 260,
+          "player_equal_game_weighted": {
+            "brier": 0.2196592723164452,
+            "observed": 0.7290705339485827,
+            "predicted": 0.5417189014136646,
+            "weight_sum": 113.775
+          },
+          "predicted_probability": 0.536367266410708,
+          "sample_count": 260
+        }
+      },
+      "high_value_capture": {
+        "old_exploratory_selected": {
+          "sample_count": 314,
+          "distinct_games": 90,
+          "chosen": 88,
+          "observed_probability": 0.2802547770700637,
+          "predicted_probability": 0.22895122875501886,
+          "brier": 0.13146814791090627,
+          "ece": 0.06571315533491208,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 172,
+              "predicted": 0.0692504564787644,
+              "observed": 0.12209302325581395
+            },
+            {
+              "bin": 1,
+              "n": 69,
+              "predicted": 0.1387401165118972,
+              "observed": 0.15942028985507245
+            },
+            {
+              "bin": 2,
+              "n": 10,
+              "predicted": 0.23729895387236238,
+              "observed": 0.6
+            },
+            {
+              "bin": 3,
+              "n": 7,
+              "predicted": 0.33058288587993684,
+              "observed": 0.42857142857142855
+            },
+            {
+              "bin": 4,
+              "n": 6,
+              "predicted": 0.42298751371576043,
+              "observed": 0.8333333333333334
+            },
+            {
+              "bin": 5,
+              "n": 4,
+              "predicted": 0.53621970034551,
+              "observed": 0.25
+            },
+            {
+              "bin": 6,
+              "n": 1,
+              "predicted": 0.6134937435361526,
+              "observed": 1.0
+            },
+            {
+              "bin": 7,
+              "n": 6,
+              "predicted": 0.7615945995012566,
+              "observed": 0.8333333333333334
+            },
+            {
+              "bin": 8,
+              "n": 16,
+              "predicted": 0.8585109256604337,
+              "observed": 0.875
+            },
+            {
+              "bin": 9,
+              "n": 23,
+              "predicted": 0.9616273695972658,
+              "observed": 0.9130434782608695
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.1795543377055888,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 644,
+              "observed": 0.15838509316770186,
+              "predicted": 0.03633278327864906
+            },
+            {
+              "bin": 1,
+              "n": 37,
+              "observed": 0.5675675675675675,
+              "predicted": 0.1454003436088608
+            },
+            {
+              "bin": 2,
+              "n": 35,
+              "observed": 0.9142857142857143,
+              "predicted": 0.23536055015132348
+            },
+            {
+              "bin": 3,
+              "n": 4,
+              "observed": 0.75,
+              "predicted": 0.3508662124728041
+            },
+            {
+              "bin": 4,
+              "n": 4,
+              "observed": 1.0,
+              "predicted": 0.4506971149048637
+            },
+            {
+              "bin": 5,
+              "n": 3,
+              "observed": 1.0,
+              "predicted": 0.5231729622813198
+            },
+            {
+              "bin": 6,
+              "n": 13,
+              "observed": 1.0,
+              "predicted": 0.6168692524882093
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 1,
+              "observed": 1.0,
+              "predicted": 0.8296410629532014
+            },
+            {
+              "bin": 9,
+              "n": 10,
+              "observed": 0.9,
+              "predicted": 0.9655680288191331
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.17179124147305275,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.1891871370948318,
+            "observed": 0.2659392724539304,
+            "predicted": 0.08190815153416063,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.08028780057272976,
+          "sample_count": 751
+        },
+        "independent_frozen_selected": {
+          "brier": 0.11620590727921763,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 468,
+              "observed": 0.11965811965811966,
+              "predicted": 0.06483439747388578
+            },
+            {
+              "bin": 1,
+              "n": 142,
+              "observed": 0.18309859154929578,
+              "predicted": 0.14234633697337487
+            },
+            {
+              "bin": 2,
+              "n": 23,
+              "observed": 0.17391304347826086,
+              "predicted": 0.2406357130232023
+            },
+            {
+              "bin": 3,
+              "n": 10,
+              "observed": 0.3,
+              "predicted": 0.35729888426046214
+            },
+            {
+              "bin": 4,
+              "n": 9,
+              "observed": 0.6666666666666666,
+              "predicted": 0.4514299267396301
+            },
+            {
+              "bin": 5,
+              "n": 7,
+              "observed": 0.7142857142857143,
+              "predicted": 0.5480514519740927
+            },
+            {
+              "bin": 6,
+              "n": 12,
+              "observed": 1.0,
+              "predicted": 0.6607118164477109
+            },
+            {
+              "bin": 7,
+              "n": 5,
+              "observed": 0.6,
+              "predicted": 0.7545349101205706
+            },
+            {
+              "bin": 8,
+              "n": 32,
+              "observed": 0.96875,
+              "predicted": 0.8579559524504429
+            },
+            {
+              "bin": 9,
+              "n": 43,
+              "observed": 0.9767441860465116,
+              "predicted": 0.9617141726121282
+            }
+          ],
+          "chosen": 188,
+          "distinct_actual_movers": 178,
+          "distinct_games": 187,
+          "distinct_players_both_sides": 203,
+          "ece": 0.060836931720585644,
+          "observed_probability": 0.25033288948069243,
+          "opportunity_count": 751,
+          "player_equal_game_weighted": {
+            "brier": 0.12125209893871255,
+            "observed": 0.2659392724539304,
+            "predicted": 0.2030475494241173,
+            "weight_sum": 365.8416666666667
+          },
+          "predicted_probability": 0.1971664898313215,
+          "sample_count": 751
+        }
+      },
+      "promotion": {
+        "old_exploratory_selected": {
+          "sample_count": 750,
+          "distinct_games": 118,
+          "chosen": 81,
+          "observed_probability": 0.108,
+          "predicted_probability": 0.07156219357524768,
+          "brier": 0.0870790622327403,
+          "ece": 0.03924327132873071,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 634,
+              "predicted": 0.05265410305744749,
+              "observed": 0.061514195583596214
+            },
+            {
+              "bin": 1,
+              "n": 86,
+              "predicted": 0.13638244963319188,
+              "observed": 0.29069767441860467
+            },
+            {
+              "bin": 2,
+              "n": 19,
+              "predicted": 0.236929102671539,
+              "observed": 0.631578947368421
+            },
+            {
+              "bin": 3,
+              "n": 9,
+              "predicted": 0.33403898720093417,
+              "observed": 0.5555555555555556
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 5,
+              "n": 2,
+              "predicted": 0.5260246694959477,
+              "observed": 0.0
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "predicted": null,
+              "observed": null
+            }
+          ]
+        },
+        "independent_old_model": {
+          "brier": 0.08224216774177553,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1672,
+              "observed": 0.07775119617224881,
+              "predicted": 0.030171592012863947
+            },
+            {
+              "bin": 1,
+              "n": 54,
+              "observed": 0.5,
+              "predicted": 0.13520990283224374
+            },
+            {
+              "bin": 2,
+              "n": 4,
+              "observed": 0.5,
+              "predicted": 0.2408548592572752
+            },
+            {
+              "bin": 3,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 4,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 5,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.05797014101995447,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.08413675509959388,
+            "observed": 0.09383531072566664,
+            "predicted": 0.034305778937621205,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.03393737343091259,
+          "sample_count": 1730
+        },
+        "independent_frozen_selected": {
+          "brier": 0.075253582574848,
+          "calibration_bins": [
+            {
+              "bin": 0,
+              "n": 1478,
+              "observed": 0.052097428958051424,
+              "predicted": 0.05026100235187102
+            },
+            {
+              "bin": 1,
+              "n": 189,
+              "observed": 0.25925925925925924,
+              "predicted": 0.13482394791917193
+            },
+            {
+              "bin": 2,
+              "n": 44,
+              "observed": 0.5909090909090909,
+              "predicted": 0.248207405883774
+            },
+            {
+              "bin": 3,
+              "n": 15,
+              "observed": 0.4,
+              "predicted": 0.35181809875520587
+            },
+            {
+              "bin": 4,
+              "n": 3,
+              "observed": 0.3333333333333333,
+              "predicted": 0.44149596092905125
+            },
+            {
+              "bin": 5,
+              "n": 1,
+              "observed": 0.0,
+              "predicted": 0.5260246694959477
+            },
+            {
+              "bin": 6,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 7,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 8,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            },
+            {
+              "bin": 9,
+              "n": 0,
+              "observed": null,
+              "predicted": null
+            }
+          ],
+          "chosen": 159,
+          "distinct_actual_movers": 214,
+          "distinct_games": 261,
+          "distinct_players_both_sides": 246,
+          "ece": 0.024788802068948037,
+          "observed_probability": 0.09190751445086705,
+          "opportunity_count": 1730,
+          "player_equal_game_weighted": {
+            "brier": 0.07762120070242101,
+            "observed": 0.09383531072566664,
+            "predicted": 0.06886903057948296,
+            "weight_sum": 802.825
+          },
+          "predicted_probability": 0.0681019638874486,
+          "sample_count": 1730
+        }
+      }
+    }
+  }
+}

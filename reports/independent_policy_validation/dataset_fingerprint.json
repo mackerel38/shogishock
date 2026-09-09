@@ -1,0 +1,7 @@
+{
+  "dataset_seal_sha256": "3b265699584937864f14d338d6d1802262701e5eb497204166dc76f8440453e8",
+  "database_sha256": "603d34d354fe8ae13e20a0a52cc526135747944f756be28aaee7fdb8db10af1f",
+  "accepted_games": 270,
+  "distinct_players": 250,
+  "sealed_before_evaluation": true
+}

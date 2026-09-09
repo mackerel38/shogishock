@@ -1,9 +1,10 @@
 # Research paused — 2026-09-08
 
-> New authorized cycle: independent confirmation ONLY. See
-> `reports/independent_policy_validation/SAMPLING_PLAN.md` and `frozen_model_fingerprint.json`.
-> Model/code/statistics/weights/protocol frozen before new games. No refit, candidate scan, or promotion.
-> Current acquisition/validation status must be read from that directory; prior results below are not independent confirmation.
+> Completed independent confirmation: `reports/independent_policy_validation/analysis.md`.
+> 270 real-time games / 250 new known accounts; old account/game overlap 0; 6,501 moves.
+> Frozen models only, no refit or selection. Relative improvement replicated, but recapture/recovery remain ~20pp underpredicted.
+> Next small surprise scan: **NO**. Review `report.html`, `metrics.json`, and `decision.json` in that directory.
+> No new candidate/engine/KIF. After final checkpoint push: STOP for human review; do not tune on this confirmation sample.
 
 > Current completed cycle, 2026-09-09: `reports/response_calibration/analysis.md`.
 > Response-set calibration improved but remains inadequate for P_good candidate promotion.

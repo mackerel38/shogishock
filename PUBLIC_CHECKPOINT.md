@@ -1,5 +1,16 @@
 # Public research checkpoint — 2026-09-09
 
+## Latest: independent confirmation completed — STOP
+
+[Independent validation report](reports/independent_policy_validation/analysis.md):
+270 real-time games, 250 accounts disjoint from all known prior game participants, no new fitting.
+Relative improvement replicated, but recapture/material-recovery remain substantially underpredicted.
+**Next small surprise scan: NO.** No new candidates, engine calls or KIF.
+Review [HTML](reports/independent_policy_validation/report.html) and
+[metrics](reports/independent_policy_validation/metrics.json). Frozen model/data hashes are included;
+raw games, SQLite, exclusion IDs and sufficient-statistic snapshots remain private.
+STOP after push; human review required. Do not retune and call this sample independent again.
+
 ## Latest response-set calibration cycle
 
 Read [response calibration analysis](reports/response_calibration/analysis.md) first.

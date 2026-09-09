@@ -1,0 +1,9 @@
+{
+  "adapter_sha256": "a6320014bf35d34e3bf87b4717f553b15cf3d60469d5563ba3462f7ba1813eda",
+  "dataset_seal_sha256": "3b265699584937864f14d338d6d1802262701e5eb497204166dc76f8440453e8",
+  "frozen_model_manifest_sha256": "ccb8ebd2e83327382df49a2c3211085be733e572e225d6e844b61d2e05877ed4",
+  "measured_at": "2026-09-09T06:35:38.780008+00:00",
+  "metrics_sha256": "ccc41207cfd8e69a5061957a0a6cee4b21ef7f884117589ed5eb78f1bf9861cd",
+  "new_engine_calls": 0,
+  "new_fit_calls": 0
+}
