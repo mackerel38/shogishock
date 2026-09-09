@@ -24,7 +24,7 @@
 * human_gap: 4050.5383791445183
 * covered_probability: 1.0
 * obvious_reply_neutralizes: True
-* engine_optimal_pv: 8c8d 2f2e 8d8e 2e2d 2c2d 2h2d 4a3b
+* parent_engine_best_pv: 8c8d 2f2e 8d8e 2e2d 2c2d 2h2d 4a3b
    5 ２二角成(88)
 * [engine PV after candidate]
 * [obvious reply]

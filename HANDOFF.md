@@ -82,3 +82,10 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
 - History-dependent response diagnostics must use `history_aware_response_cache_key`, which includes
   move history as well as SFEN, candidate move, and reply move. This protects recapture/repetition-sensitive
   values from an SFEN-only cache collision.
+- Response diagnostic cache API: `from surprise.response_cache import ResponseDiagnosticCache, response_cache_key`.
+  Use `get_or_compute(...)` with `sfen`, `move_history`, `candidate_move`, `reply_move`, and `feature_schema`.
+  This cache is separate from the engine cache.
+- KIF parent PV label: `parent_engine_best_pv`; candidate continuation remains labeled
+  `[engine PV after candidate]`.
+- Review manifest resolves parent metadata from `positions.json` by `position_id`, including
+  `parent_sfen`, `move_history`, `ply`, `candidate_move`, and `attacker_side`.

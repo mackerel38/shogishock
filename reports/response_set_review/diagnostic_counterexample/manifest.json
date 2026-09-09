@@ -9,8 +9,15 @@
       "borderline": false,
       "classification_reason": "既存の△3二銀。応手集合の校正を検査する診断用カウンター例として指定する。",
       "review_status": "reference",
+      "position_id": "5c46af1026197c8aeb70",
+      "parent_sfen": "lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4",
+      "move_history": [
+        "2g2f",
+        "3c3d",
+        "7g7f"
+      ],
+      "ply": 3,
       "attacker_side": "gote",
-      "sfen": null,
       "candidate_move": "3a3b",
       "source_candidate_json": "reports/human_e2e/candidates.json",
       "source_kif": "exports/human_e2e/gote_5c46af1026197c8aeb70_3a3b.kif",

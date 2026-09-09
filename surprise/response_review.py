@@ -5,12 +5,14 @@ classification from engine scores, policy probabilities, or rankings.
 """
 from __future__ import annotations
 
-import hashlib
 import html
 import json
 import shutil
 from pathlib import Path
 from typing import Any
+
+from .response_cache import response_cache_key
+from .kif_export import export_candidate
 
 
 # Review decisions are intentionally explicit and human maintained.  An empty
@@ -49,11 +51,9 @@ def history_aware_response_cache_key(*, sfen: str, move_history: list[str] | tup
     SFEN is retained for board identity, but move history is part of the key:
     repetition and recapture diagnostics cannot safely use an SFEN-only key.
     """
-    payload = {"schema": feature_schema, "sfen": sfen,
-               "move_history": list(move_history), "candidate_move": candidate_move,
-               "reply_move": reply_move}
-    return hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True,
-                                     separators=(",", ":")).encode()).hexdigest()
+    return response_cache_key(sfen=sfen, move_history=move_history,
+                              candidate_move=candidate_move, reply_move=reply_move,
+                              feature_schema=feature_schema)
 
 
 def _load_candidates(input_dir: Path) -> dict[str, dict[str, Any]]:
@@ -91,6 +91,8 @@ def build_review(input_dir: str | Path = "reports/human_e2e",
     output_path.mkdir(parents=True, exist_ok=True)
     export_path.mkdir(parents=True, exist_ok=True)
     by_class = {name: [] for name in CLASSIFICATIONS}
+    positions = {p["position_id"]: p for p in json.loads(
+        (input_path / "positions.json").read_text(encoding="utf-8"))}
     for classification in CLASSIFICATIONS:
         (export_path / classification).mkdir(parents=True, exist_ok=True)
     for declared in MANUAL_REVIEW_CASES:
@@ -100,16 +102,22 @@ def build_review(input_dir: str | Path = "reports/human_e2e",
         if cid not in candidates:
             raise ValueError(f"manual review candidate is missing: {cid}")
         row = candidates[cid]
-        case = {**declared, "attacker_side": row.get("attacker_side"),
-                "sfen": row.get("sfen"), "candidate_move": row.get("candidate_move", row.get("move")),
+        parent = positions.get(row["position_id"])
+        if parent is None:
+            raise ValueError(f"candidate parent position is missing: {row['position_id']}")
+        case = {**declared, "position_id": row["position_id"], "parent_sfen": parent["sfen"],
+                "move_history": list(parent.get("move_history") or []), "ply": parent.get("ply"),
+                "attacker_side": row.get("attacker_side"),
+                "candidate_move": row.get("candidate_move", row.get("move")),
                 "source_candidate_json": "reports/human_e2e/candidates.json"}
         source_kif = _source_path(input_path, row, ".kif")
         source_json = _source_path(input_path, row, ".json")
         destination = export_path / declared["classification"]
         if source_kif.is_file():
             kif_target = destination / source_kif.name
-            shutil.copy2(source_kif, kif_target)
-            case["source_kif"] = str(source_kif)
+            # Re-export through the corrected exporter; never overwrite the old source KIF.
+            export_candidate(input_path, cid, kif_target)
+            case["source_kif"] = f"exports/human_e2e/{source_kif.name}"
             case["export_kif"] = str(kif_target)
         if source_json.is_file():
             json_target = destination / source_json.name

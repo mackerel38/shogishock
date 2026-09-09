@@ -21,6 +21,18 @@ def test_candidate_exports_with_candidate_and_variation(tmp_path):
     assert "７" in text and "まで" in text
 
 
+def test_parent_and_candidate_pv_labels_are_distinct():
+    candidate = VariationNode(move="7g7f", comment=[
+        "parent_engine_best_pv: 7g7f 3c3d",
+    ])
+    after = shogi.Board(); after.push_usi("7g7f")
+    _add_branch(candidate, ["3c3d"], ["[engine PV after candidate]"], [], after)
+    text = to_kif(ExportedKif("test", shogi.Board().sfen(), [], candidate, []))
+    assert "parent_engine_best_pv:" in text
+    assert "engine_optimal_pv:" not in text
+    assert "[engine PV after candidate]" in text
+
+
 def test_kif_contains_variation_branch():
     candidate = VariationNode(move="7g7f", comment=["[ShogiShock candidate]"])
     after = shogi.Board(); after.push_usi("7g7f")

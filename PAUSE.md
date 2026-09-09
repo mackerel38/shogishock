@@ -116,3 +116,25 @@ cache key、公開除外ファイルが checkpoint に入っていないこと�
 次の提案: この checkpoint をレビュー後、明示的な続行指示があれば次の軽量実装サイクルを決める。
 
 運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
+
+## Review metadata plumbing checkpoint — 2026-09-09
+
+今回直したもの: KIF親局面PVのラベルを `parent_engine_best_pv` に修正し、候補後PVの
+`[engine PV after candidate]` と区別した。review manifestは `positions.json` の
+`position_id` から `parent_sfen`、`move_history`、`ply`、候補手、先後を解決するようにした。
+履歴依存response診断用の `ResponseDiagnosticCache` を追加し、cache identityへSFEN、履歴、
+候補手、応手、feature schemaを含めた。
+
+テスト結果: 既存を含む40テストに今回の回帰テストを加え、全件pass。
+
+生成成果物: `reports/response_set_review/` と `exports/response_set_review/` を修正後exporterから再生成した。
+分類は actual_candidate 0件、diagnostic_counterexample △3二銀 1件、control ▲7六歩・△3三角 2件を維持した。
+旧KIF・旧JSON・旧HTMLは変更していない。
+
+Astraが次に使うAPI: `from surprise.response_cache import ResponseDiagnosticCache, response_cache_key`。
+KIF exportは既存の `surprise.kif_export`、review生成は `surprise response-set-review` を使う。
+
+未解決事項: response diagnosticでどの特徴量を計算するか、研究上の分類・ランキング、実験再開の判断。
+これらはAstraの判断対象であり、このcheckpointでは変更していない。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。

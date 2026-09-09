@@ -65,7 +65,8 @@ def _candidate_comment(row: dict[str, Any], parent: dict[str, Any]) -> list[str]
     out = ["[ShogiShock candidate]"]
     out += [f"{k}: {v}" for k, v in fields if v is not None]
     if row.get("best", {}).get("pv"):
-        out.append("engine_optimal_pv: " + " ".join(row["best"]["pv"]))
+        # This PV belongs to the parent position, before the candidate move.
+        out.append("parent_engine_best_pv: " + " ".join(row["best"]["pv"]))
     if row.get("pass_applicable") is False:
         out.append("pass_applicable: false")
     return out

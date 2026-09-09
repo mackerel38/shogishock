@@ -25,7 +25,7 @@
 * human_gap: 266.73759563889905
 * covered_probability: 1.0
 * obvious_reply_neutralizes: False
-* engine_optimal_pv: 7g7f 3a2b 8h3c+ 2b3c 7i8h 7a6b 8h7g 8c8d
+* parent_engine_best_pv: 7g7f 3a2b 8h3c+ 2b3c 7i8h 7a6b 8h7g 8c8d
    6 ４二銀(31)
 * [engine PV after candidate]
 * [audited legal reply]
