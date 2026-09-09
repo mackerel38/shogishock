@@ -126,7 +126,7 @@ def run():
         board = shogi.Board(old['resulting_sfen'])
         for r in sorted(responses,key=lambda r:-r['human_probability']):
             _add_branch(node,[r['move']]+r['result']['pv'],[
-                'response_sets: '+', '.join(r['response_sets']),
+                'response_sets: '+(', '.join(r['response_sets']) or 'none'),
                 f"Human Policy old={r['previous_probability']:.6f} new={r['human_probability']:.6f}",
                 f"cached 10k engine_eval={cp(r['result'])}; obvious={r['obvious']}",
                 'good replies: '+str(r['good_by_tolerance']),

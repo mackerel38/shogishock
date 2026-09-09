@@ -20,7 +20,7 @@
 * MODEL ONLY: E_human=313.82; human_gap=267.82; coverage=1.000000
 * parent_engine_best_pv: 7g7f 3a2b 8h3c+ 2b3c 7i8h 7a6b 8h7g 8c8d
    6 ４四歩(43)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.534856 new=0.529300
 * cached 10k engine_eval=237; obvious=False
 * good replies: {'50': False, '100': False, '200': True, '300': True}
@@ -30,7 +30,7 @@
    9 ７八銀(79)
 変化：6手
    6 ４二銀(31)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.155881 new=0.154262
 * cached 10k engine_eval=102; obvious=False
 * good replies: {'50': False, '100': True, '200': True, '300': True}
@@ -47,7 +47,7 @@
   13 ６八玉(59)
 変化：6手
    6 ２二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.097102 new=0.096093
 * cached 10k engine_eval=364; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -59,7 +59,7 @@
   11 ７八玉(68)
 変化：6手
    6 ８四歩(83)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.016228 new=0.016059
 * cached 10k engine_eval=471; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -86,7 +86,7 @@
   13 ３六歩(37)
 変化：6手
    6 ６二銀(71)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.013480 new=0.013340
 * cached 10k engine_eval=500; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -107,7 +107,7 @@
   20 ９五歩(94)
 変化：6手
    6 ５四歩(53)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.011901 new=0.011777
 * cached 10k engine_eval=453; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -123,7 +123,7 @@
   15 ８八銀(79)
 変化：6手
    6 ７二銀(71)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.010462 new=0.010353
 * cached 10k engine_eval=557; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -136,7 +136,7 @@
   12 ４四角打
 変化：6手
    6 １四歩(13)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.010364 new=0.010256
 * cached 10k engine_eval=414; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -152,7 +152,7 @@
   15 ４八銀(39)
 変化：6手
    6 ７四歩(73)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.009851 new=0.009749
 * cached 10k engine_eval=338; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': True}
@@ -166,7 +166,7 @@
   13 ２四飛(28)
 変化：6手
    6 ９四歩(93)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.009851 new=0.009749
 * cached 10k engine_eval=401; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -179,7 +179,7 @@
   12 ４二銀(31)
 変化：6手
    6 ３二銀(31)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.009551 new=0.009452
 * cached 10k engine_eval=46; obvious=False
 * good replies: {'50': True, '100': True, '200': True, '300': True}
@@ -190,7 +190,7 @@
   10 ６二銀(71)
 変化：6手
    6 ６二玉(51)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.009405 new=0.009308
 * cached 10k engine_eval=522; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -205,7 +205,7 @@
   14 ２二銀(31)
 変化：6手
    6 ２四歩(23)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.009225 new=0.009129
 * cached 10k engine_eval=1834; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -224,7 +224,7 @@
   18 ９九馬(88)
 変化：6手
    6 ６四歩(63)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.008770 new=0.008678
 * cached 10k engine_eval=530; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -241,7 +241,7 @@
   16 ４四角打
 変化：6手
    6 ３二金(41)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.008748 new=0.008657
 * cached 10k engine_eval=328; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': True}
@@ -258,7 +258,7 @@
   16 ２四金(33)
 変化：6手
    6 ４二玉(51)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.008381 new=0.008293
 * cached 10k engine_eval=470; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -276,7 +276,7 @@
   17 ２四飛(28)
 変化：6手
    6 ２二銀(31)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.007957 new=0.007874
 * cached 10k engine_eval=74; obvious=False
 * good replies: {'50': True, '100': True, '200': True, '300': True}
@@ -291,7 +291,7 @@
   14 ６二銀(71)
 変化：6手
    6 ５二金(61)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.007040 new=0.006967
 * cached 10k engine_eval=418; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -311,7 +311,7 @@
   19 ２八飛(24)
 変化：6手
    6 ３五歩(34)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.006321 new=0.006256
 * cached 10k engine_eval=404; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -326,7 +326,7 @@
   14 ７二玉(62)
 変化：6手
    6 ５二玉(51)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.004851 new=0.004800
 * cached 10k engine_eval=424; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -343,7 +343,7 @@
   16 ２二銀(31)
 変化：6手
    6 ５二金(41)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.004364 new=0.004318
 * cached 10k engine_eval=932; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -360,7 +360,7 @@
   16 ２三歩(22)
 変化：6手
    6 ３二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.003344 new=0.003309
 * cached 10k engine_eval=347; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -372,7 +372,7 @@
   11 ６八玉(59)
 変化：6手
    6 ５二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002888 new=0.002858
 * cached 10k engine_eval=347; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -391,7 +391,7 @@
   18 ３二金(41)
 変化：6手
    6 ４二金(41)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002770 new=0.002741
 * cached 10k engine_eval=255; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': True}
@@ -403,7 +403,7 @@
   11 ５八玉(59)
 変化：6手
    6 ４二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002718 new=0.002689
 * cached 10k engine_eval=337; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': True}
@@ -415,7 +415,7 @@
   11 ９六歩(97)
 変化：6手
    6 ７二金(61)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002599 new=0.002572
 * cached 10k engine_eval=706; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -449,7 +449,7 @@
   16 ５二玉(51)
 変化：6手
    6 ６二金(61)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002314 new=0.002290
 * cached 10k engine_eval=616; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -471,7 +471,7 @@
   21 ２八飛(24)
 変化：6手
    6 ４二角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002213 new=0.002190
 * cached 10k engine_eval=1502; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -491,7 +491,7 @@
   19 ５八玉(59)
 変化：6手
    6 ２四角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002126 new=0.002104
 * cached 10k engine_eval=3932; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -509,7 +509,7 @@
   17 ８八銀(79)
 変化：6手
    6 ４四角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002069 new=0.002048
 * cached 10k engine_eval=672; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -522,7 +522,7 @@
   12 ２二銀(31)
 変化：6手
    6 ５五角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.002013 new=0.001992
 * cached 10k engine_eval=3591; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -539,7 +539,7 @@
   16 ９九角成(44)
 変化：6手
    6 １五角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001956 new=0.001935
 * cached 10k engine_eval=1535; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -554,7 +554,7 @@
   14 ９四歩(93)
 変化：6手
    6 ６六角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001956 new=0.001935
 * cached 10k engine_eval=3547; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -571,7 +571,7 @@
   16 ２四歩(23)
 変化：6手
    6 ７七角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001956 new=0.001935
 * cached 10k engine_eval=3111; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -587,7 +587,7 @@
   15 ２四飛(28)
 変化：6手
    6 ２二角(33)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001928 new=0.001908
 * cached 10k engine_eval=507; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -598,7 +598,7 @@
   10 ７二銀(71)
 変化：6手
    6 ７二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001408 new=0.001394
 * cached 10k engine_eval=504; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -610,7 +610,7 @@
   11 ８八銀(79)
 変化：6手
    6 ６二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001010 new=0.000999
 * cached 10k engine_eval=528; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -625,7 +625,7 @@
   14 ３二金(41)
 変化：6手
    6 ９二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.001010 new=0.000999
 * cached 10k engine_eval=356; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -641,7 +641,7 @@
   15 ４六歩(47)
 変化：6手
    6 １二飛(82)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.000896 new=0.000886
 * cached 10k engine_eval=501; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -657,7 +657,7 @@
   15 ４六歩(47)
 変化：6手
    6 １二香(11)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.000806 new=0.000798
 * cached 10k engine_eval=615; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
@@ -684,7 +684,7 @@
   15 ２四飛(28)
 変化：6手
    6 ９二香(91)
-* response_sets: 
+* response_sets: none
 * Human Policy old=0.000635 new=0.000629
 * cached 10k engine_eval=536; obvious=False
 * good replies: {'50': False, '100': False, '200': False, '300': False}
