@@ -11,6 +11,7 @@ REMOTE='https://github.com/mackerel38/shogishock.git'
 DOCS=['.gitignore','pyproject.toml','Dockerfile','README.md','HANDOFF.md','PAUSE.md','RESEARCH.md',
       'RESEARCH_V2.md','RESEARCH_V3.md','SHOGIHOME.md','BACKUP.md','CHECKPOINTING.md','PUBLIC_CHECKPOINT.md']
 REPORTS={
+ 'reports/response_calibration':['PLAN.md'],
  'reports/pass_pilot':['analysis.md','checkpoint.json','manifest.json','summary.json'],
  'reports/reach_pilot':['analysis.md','SOURCES.md','pilot_summary.json','pilot_diagnostics.json',
     'diagnostic_manifest.json','confirmation_selection.json','reach_summary.json','planning_summary.json','report_sente.html','report_gote.html'],

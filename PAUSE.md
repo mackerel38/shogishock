@@ -1,5 +1,9 @@
 # Research paused — 2026-09-08
 
+> Current bounded cycle, 2026-09-09: `reports/response_calibration/PLAN.md`.
+> Response-set calibration only; reused held-out tests are exploratory, not independent confirmation.
+> No new acquisition/engine scan. After classified review artifacts are pushed, STOP for human review.
+
 > Checkpoint policy: commit+push at meaningful milestones and before long work. See `CHECKPOINTING.md`.
 > Current public handoff and data exclusions: `PUBLIC_CHECKPOINT.md`. Preserve all local collaborator changes.
 
