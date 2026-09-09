@@ -92,9 +92,11 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
 
 ## Human-facing output handoff
 
+- Astra source checkpoint: `f817675793949e1779216f30ec1fe1690d71efcd` (independent validation result).
 - Shared prose layer: `surprise.human_descriptions`.
 - Regeneration command: `.venv/bin/python scripts/render_human_facing.py`.
 - First-read summaries: `reports/response_calibration/REVIEW.md` and
   `reports/independent_policy_validation/REVIEW.md`.
 - The renderer reads existing JSON/KIF/metrics and performs no engine calls, model fitting,
   probability recalculation, candidate scan, or research selection.
+- Source handoff: `reports/independent_policy_validation/ASTRA_HANDOFF.json`.

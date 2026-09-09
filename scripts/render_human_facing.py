@@ -81,10 +81,20 @@ def render_review() -> None:
 
 def render_independent() -> None:
     data = json.loads((INDEP / "metrics.json").read_text(encoding="utf-8"))
+    handoff = json.loads((INDEP / "ASTRA_HANDOFF.json").read_text(encoding="utf-8"))
+    sets = handoff["important_numbers"]["response_sets"]
     parts = ["<!doctype html><html lang='ja'><meta charset='utf-8'><title>独立検証の人間向け報告</title>",
              "<style>body{font-family:system-ui;max-width:1100px;margin:2em auto;padding:1em;line-height:1.7}section{margin:2em 0}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:.4em}.note{background:#fff8dc;padding:1em}</style>",
-             "<h1>新しい検証データでの人間応手予測の確認</h1>", f"<p class='note'>{freeze_sentence()}再調整は行っていない。</p>",
-             "<p>NLL（実際に選ばれた手へ低い確率を与えるほど悪化する指標）、Brier score（予測確率と実際の選択結果との二乗誤差）、ECE（予測確率と実際の選択率とのずれをまとめる指標）を保存済みの数値から表示している。</p>"]
+             "<h1>新しい検証データでの人間応手予測の独立確認</h1>",
+             "<p class='note'>新しい独立標本でも以前の確率補正による相対的改善は再現した。しかし、取り返し・駒得回収の確率は依然として約20ポイント低く予測されている。そのため、次の小規模な奇襲手探索へは進まない。</p>",
+             f"<p>{freeze_sentence()}</p><p>対象は新しい270局、250人の識別可能なアカウント、予測対象6,501着手。新データでの再fit、モデル選択、エンジン解析、候補探索は行っていない。</p>",
+             "<p>NLL（実際に選ばれた手へ低い確率を与えるほど悪化する指標）、Brier score（予測確率と実際の選択結果との二乗誤差）、ECE（予測確率と実際の選択率とのずれをまとめる指標）を保存済みの数値から表示している。</p>",
+             "<h2>取り返し・駒得回収の実際の選択率とモデル予測</h2><p>実際の選択率は、その応手集合に合法手がある局面で実際に選ばれた割合。モデル予測は、同じ機会局面で補正モデルが集合全体へ割り当てた確率の平均。差は実際の選択率からモデル予測を引いたパーセントポイント。</p>",
+             "<table><tr><th>応手の対象</th><th>機会局面数</th><th>実際の対局で選ばれた割合</th><th>モデルが予測した割合</th><th>実際の割合−予測の差</th></tr>"]
+    for key, label in (("recapture", "取り返しが可能な局面"), ("material_recovery", "駒得を回収する応手が可能な局面")):
+        item = sets[key]
+        parts.append(f"<tr><td>{label}</td><td>{item['opportunity_count']}</td><td>{item['display']['observed_percent']:.1f}%</td><td>{item['display']['predicted_percent']:.1f}%</td><td>{item['display']['underprediction_percentage_points']:.1f}ポイント</td></tr>")
+    parts.append("</table><p>取り返しでは実際の選択率83.6%に対して予測64.1%で19.5ポイント低く、駒得回収では実際の選択率71.5%に対して予測50.9%で20.6ポイント低い。</p>")
     for mode, value in data.items():
         parts.append(f"<section><h2>{html.escape(mode)}の検証結果</h2><p>この比較は、凍結前に決めたモデルを新しい検証データへ適用した結果である。</p><table><tr><th>比較するモデル</th><th>NLL</th><th>Brier score</th><th>上位1/3/5手の一致率</th><th>ECE</th></tr>")
         for name in ("old", "new"):
@@ -92,7 +102,7 @@ def render_independent() -> None:
             parts.append(f"<tr><td>{'比較対象の旧モデル' if name=='old' else '検証前に決めて変更していないモデル'}</td><td>{m.get('nll','不明'):.4f}</td><td>{m.get('brier','不明'):.4f}</td><td>{m.get('top1','不明'):.3f} / {m.get('top3','不明'):.3f} / {m.get('top5','不明'):.3f}</td><td>{m.get('ece','不明'):.4f}</td></tr>")
         parts.append("</table></section>")
     (INDEP / "report.html").write_text("\n".join(parts)+"</html>", encoding="utf-8")
-    (INDEP / "REVIEW.md").write_text("# 今回の結論\n\n## 今回は何を調べたか\n\n検証前に決めて変更していない人間応手予測モデルを、新しい検証データで確認した。\n\n## 何が分かったか\n\n保存済みのNLL、Brier score、ECEなどを、旧モデルとの比較として表示している。\n\n## まだ何が分かっていないか\n\nこの表示だけからモデル変更や奇襲手の採否は判断しない。\n\n## 人間に確認してほしい局面・指し手\n\n対応するKIFはresponse calibration reviewを参照する。\n\n## 次の段階へ進んでよいか\n\n研究担当のレビュー待ち。\n", encoding="utf-8")
+    (INDEP / "REVIEW.md").write_text("# 今回の結論\n\n独立した新しい人間棋譜標本でも、以前の確率補正による相対的な改善は再現した。一方、取り返しと駒得回収の応手は実際の選択率を約20ポイント低く予測した。Human Policyを奇襲手の昇格判定に使えるほど十分に信頼できるとは、まだ判断していない。\n\n## 今回は何を調べたか\n\n研究判断、モデル、係数、応手集合、判定基準を検証前に決めたまま、新しい270局（識別可能なアカウント250人、予測対象6,501着手）へ適用し、旧モデルと検証前に決めて変更していない補正モデルの相対比較を確認した。新しい標本を使った再fitやモデル選択は行っていない。\n\n## 何が分かったか\n\n相対的な改善は再現した。取り返しが可能な311局面では、実際の対局で取り返しが選ばれた割合は83.6%だった。一方、モデルが取り返しに該当する応手全体へ割り当てた確率は64.1%で、実際の選択率を19.5ポイント低く予測した。\n\n駒得を回収する応手が可能な470局面では、実際にその応手が選ばれた割合は71.5%だった。モデルがその応手集合へ割り当てた確率は50.9%で、実際の選択率を20.6ポイント低く予測した。ここでいう駒得回収は既存の代理条件であり、安全な駒得の証明ではない。\n\n## まだ何が分かっていないか\n\n相対的な改善が確認できたことは、任意の応手集合の確率が十分に校正されたことや、個別の奇襲後局面で人間の応手確率を正確に推定できることを意味しない。今回の標本は一般人口の無作為標本ではなく、同じ局面の実例が少ない着手の割合も真の未知局面検出率ではない。\n\n## 人間に確認してほしい局面・指し手\n\n既存の△3二銀は奇襲手として除外されている。明白な▲2二角成で角を取られるためであり、Human Policyの信頼性が低いから保留されているのではない。このKIFはモデル診断用の検査資料として確認する。\n\n## 次の段階へ進んでよいか\n\nNO。取り返しと駒得回収の応手集合に約20ポイントの残存する過小予測があり、Human Policyの判定保留を解除する根拠が得られていない。現在のHuman Policyを使った次の小規模な奇襲手探索と、P_goodによる候補昇格には進まない。\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

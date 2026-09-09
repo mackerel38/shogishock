@@ -13,7 +13,7 @@ DOCS=['.gitignore','pyproject.toml','Dockerfile','README.md','HANDOFF.md','PAUSE
 REPORTS={
  'reports/independent_policy_validation':['SAMPLING_PLAN.md','LUNA_TASK.md','frozen_model_fingerprint.json',
     'acquisition_status.json','dataset_fingerprint.json','dataset_summary.json','measurement_seal.json',
-    'metrics.json','exploratory_comparison.json','report.html','REVIEW.md','analysis.md','decision.json'],
+    'ASTRA_HANDOFF.json','metrics.json','exploratory_comparison.json','report.html','REVIEW.md','analysis.md','decision.json'],
  'reports/response_calibration':['PLAN.md','analysis.md','metrics.json','decision.json',
     'provenance.json','review_provenance.json','bootstrap.json','victim_slices.json','review.json','review.html','REVIEW.md'],
  'reports/pass_pilot':['analysis.md','checkpoint.json','manifest.json','summary.json'],

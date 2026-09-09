@@ -131,6 +131,27 @@ cache key、公開除外ファイルが checkpoint に入っていないこと�
 
 運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
 
+## Astra独立検証の人間向け報告 checkpoint — 2026-09-10
+
+今回の入力: Astra checkpoint `f817675793949e1779216f30ec1fe1690d71efcd` と
+`reports/independent_policy_validation/ASTRA_HANDOFF.json`。引き継ぎとanalysis/decisionの結論に矛盾はなかった。
+
+今回直したもの: 独立検証の `REVIEW.md` と `report.html` に、検証目的、270局・250人・6,501着手、
+相対改善の再現、取り返し83.6%対64.1%（19.5ポイント差）、駒得回収71.5%対50.9%（20.6ポイント差）、
+次の小規模奇襲探索へ進まない理由を記載した。Human Policyの信頼性と、既存△3二銀の奇襲手判定は分離して表示した。
+
+研究データは変更していない: model、係数、確率、評価値、指標、分類、候補、sampling、JSON内部キーは変更していない。
+保存済み成果物を読み取り、表示のみを再生成した。独立検証標本での再fit、再評価、候補探索、engine呼び出しは行っていない。
+
+人間が確認する成果物: `reports/independent_policy_validation/REVIEW.md`、`report.html`、
+`exports/response_calibration/` の既存3KIF。主要表示に内部英語ID、生JSON辞書、True/False/Noneを出していない。
+
+テスト結果: `node scripts/check_calibration_review.mjs` 成功、pytest 54件成功。
+
+未解決事項: Astraが指定した通り、Human Policyの信頼性不足は残っており、次の小規模奇襲探索とP_good候補昇格はNO。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
 ## Review metadata plumbing checkpoint — 2026-09-09
 
 今回直したもの: KIF親局面PVのラベルを `parent_engine_best_pv` に修正し、候補後PVの
