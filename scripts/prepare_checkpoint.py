@@ -11,6 +11,7 @@ REMOTE='https://github.com/mackerel38/shogishock.git'
 DOCS=['.gitignore','pyproject.toml','Dockerfile','README.md','HANDOFF.md','PAUSE.md','RESEARCH.md',
       'RESEARCH_V2.md','RESEARCH_V3.md','SHOGIHOME.md','BACKUP.md','CHECKPOINTING.md','PUBLIC_CHECKPOINT.md']
 REPORTS={
+ 'reports/independent_policy_validation':['SAMPLING_PLAN.md','LUNA_TASK.md','frozen_model_fingerprint.json'],
  'reports/response_calibration':['PLAN.md','analysis.md','metrics.json','decision.json',
     'provenance.json','review_provenance.json','bootstrap.json','victim_slices.json','review.json','review.html'],
  'reports/pass_pilot':['analysis.md','checkpoint.json','manifest.json','summary.json'],

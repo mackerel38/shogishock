@@ -1,0 +1,32 @@
+output: reports/independent_policy_validation
+raw_dir: data/human_raw/independent_policy_validation
+database: data/independent_policy_validation.sqlite3
+seed: shogishock-independent-confirmation-20260909-v1
+sampling:
+  team_pages: [2, 3, 4]
+  exclude_teams: [lishogi-bots]
+  focal_players_max: 160
+  games_per_request: 12
+  max_games_per_player: 6
+  accepted_games_max: 300
+  since: '2026-06-01T00:00:00+00:00'
+  until: '2026-09-09T00:00:00+00:00'
+  perf_type: realTime
+  require_clock: true
+  exclude_correspondence: true
+  exclude_previously_exposed_players: true
+  request_interval_seconds: 2
+  max_response_bytes: 8000000
+  max_ply: 24
+validation:
+  primary_snapshot: time
+  sensitivity_snapshots: [player, game]
+  primary_sets: [capture_any, captures_candidate, recapture, material_recovery, high_value_capture]
+  inherited_gate_sets: [capture_any, captures_candidate, recapture, material_recovery]
+  nll_max_deterioration: 0.02
+  event_brier_max_deterioration: 0.01
+  selection_allowed: false
+  refit_allowed: false
+  candidate_promotion_allowed: false
+  descriptive_bootstrap_draws: 300
+  bootstrap_seed: 20260909

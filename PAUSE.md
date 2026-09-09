@@ -1,5 +1,10 @@
 # Research paused — 2026-09-08
 
+> New authorized cycle: independent confirmation ONLY. See
+> `reports/independent_policy_validation/SAMPLING_PLAN.md` and `frozen_model_fingerprint.json`.
+> Model/code/statistics/weights/protocol frozen before new games. No refit, candidate scan, or promotion.
+> Current acquisition/validation status must be read from that directory; prior results below are not independent confirmation.
+
 > Current completed cycle, 2026-09-09: `reports/response_calibration/analysis.md`.
 > Response-set calibration improved but remains inadequate for P_good candidate promotion.
 > Time capture mass: 8.06% → 19.15% (observed 21.58%); recapture/recovery remain underpredicted.
