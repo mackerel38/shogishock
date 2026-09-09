@@ -24,6 +24,10 @@ def main() -> None:
     export.add_argument("--candidate-id")
     export.add_argument("--output", default="exports/shogihome")
     export.add_argument("--limit", type=int, default=10)
+    review = sub.add_parser("response-set-review", help="Build manual, separated response-set review exports")
+    review.add_argument("--input", default="reports/human_e2e")
+    review.add_argument("--output", default="reports/response_set_review")
+    review.add_argument("--export-output", default="exports/response_set_review")
     args = p.parse_args()
     if args.command == "setup":
         subprocess.run(["bash", "scripts/setup.sh"], check=True)
@@ -48,6 +52,12 @@ def main() -> None:
         for cid in ids:
             path = export_candidate(args.input, cid, Path(args.output) / f"{cid}.kif")
             print(path)
+    elif args.command == "response-set-review":
+        from .response_review import build_review
+        result = build_review(args.input, args.output, args.export_output)
+        print(json.dumps({"schema": result["schema"], "counts": {
+            key: len(value) for key, value in result["classifications"].items()}},
+            ensure_ascii=False, indent=2))
     else: benchmark()
 
 def engine_test() -> None:

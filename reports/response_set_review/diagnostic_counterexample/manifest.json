@@ -1,0 +1,21 @@
+{
+  "schema": "response-set-review-v1",
+  "classification": "diagnostic_counterexample",
+  "classification_policy": "manual_specified",
+  "cases": [
+    {
+      "candidate_id": "5c46af1026197c8aeb70_3a3b",
+      "classification": "diagnostic_counterexample",
+      "borderline": false,
+      "classification_reason": "既存の△3二銀。応手集合の校正を検査する診断用カウンター例として指定する。",
+      "review_status": "reference",
+      "attacker_side": "gote",
+      "sfen": null,
+      "candidate_move": "3a3b",
+      "source_candidate_json": "reports/human_e2e/candidates.json",
+      "source_kif": "exports/human_e2e/gote_5c46af1026197c8aeb70_3a3b.kif",
+      "export_kif": "exports/response_set_review/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.kif",
+      "export_json": "exports/response_set_review/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.json"
+    }
+  ]
+}

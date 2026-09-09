@@ -1,0 +1,99 @@
+{
+  "schema": "response-set-review-v1",
+  "classification_policy": "manual_specified",
+  "model_score_classification": false,
+  "actual_candidate_count": 0,
+  "classifications": {
+    "actual_candidate": [],
+    "diagnostic_counterexample": [
+      {
+        "candidate_id": "5c46af1026197c8aeb70_3a3b",
+        "classification": "diagnostic_counterexample",
+        "borderline": false,
+        "classification_reason": "既存の△3二銀。応手集合の校正を検査する診断用カウンター例として指定する。",
+        "review_status": "reference",
+        "attacker_side": "gote",
+        "sfen": null,
+        "candidate_move": "3a3b",
+        "source_candidate_json": "reports/human_e2e/candidates.json",
+        "source_kif": "exports/human_e2e/gote_5c46af1026197c8aeb70_3a3b.kif",
+        "export_kif": "exports/response_set_review/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.kif",
+        "export_json": "exports/response_set_review/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.json"
+      }
+    ],
+    "control": [
+      {
+        "candidate_id": "8e41531c4f23213c9b17_7g7f",
+        "classification": "control",
+        "borderline": false,
+        "classification_reason": "通常の▲7六歩を基準局面のcontrolとして指定する。",
+        "review_status": "reference",
+        "attacker_side": "sente",
+        "sfen": null,
+        "candidate_move": "7g7f",
+        "source_candidate_json": "reports/human_e2e/candidates.json",
+        "source_kif": "exports/human_e2e/sente_8e41531c4f23213c9b17_7g7f.kif",
+        "export_kif": "exports/response_set_review/control/sente_8e41531c4f23213c9b17_7g7f.kif",
+        "export_json": "exports/response_set_review/control/sente_8e41531c4f23213c9b17_7g7f.json"
+      },
+      {
+        "candidate_id": "fa2a3aee31df970cb704_2b3c",
+        "classification": "control",
+        "borderline": false,
+        "classification_reason": "通常の△3三角を基準局面のcontrolとして指定する。",
+        "review_status": "reference",
+        "attacker_side": "gote",
+        "sfen": null,
+        "candidate_move": "2b3c",
+        "source_candidate_json": "reports/human_e2e/candidates.json",
+        "source_kif": "exports/human_e2e/gote_fa2a3aee31df970cb704_2b3c.kif",
+        "export_kif": "exports/response_set_review/control/gote_fa2a3aee31df970cb704_2b3c.kif",
+        "export_json": "exports/response_set_review/control/gote_fa2a3aee31df970cb704_2b3c.json"
+      }
+    ]
+  },
+  "cases": [
+    {
+      "candidate_id": "5c46af1026197c8aeb70_3a3b",
+      "classification": "diagnostic_counterexample",
+      "borderline": false,
+      "classification_reason": "既存の△3二銀。応手集合の校正を検査する診断用カウンター例として指定する。",
+      "review_status": "reference",
+      "attacker_side": "gote",
+      "sfen": null,
+      "candidate_move": "3a3b",
+      "source_candidate_json": "reports/human_e2e/candidates.json",
+      "source_kif": "exports/human_e2e/gote_5c46af1026197c8aeb70_3a3b.kif",
+      "export_kif": "exports/response_set_review/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.kif",
+      "export_json": "exports/response_set_review/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.json"
+    },
+    {
+      "candidate_id": "8e41531c4f23213c9b17_7g7f",
+      "classification": "control",
+      "borderline": false,
+      "classification_reason": "通常の▲7六歩を基準局面のcontrolとして指定する。",
+      "review_status": "reference",
+      "attacker_side": "sente",
+      "sfen": null,
+      "candidate_move": "7g7f",
+      "source_candidate_json": "reports/human_e2e/candidates.json",
+      "source_kif": "exports/human_e2e/sente_8e41531c4f23213c9b17_7g7f.kif",
+      "export_kif": "exports/response_set_review/control/sente_8e41531c4f23213c9b17_7g7f.kif",
+      "export_json": "exports/response_set_review/control/sente_8e41531c4f23213c9b17_7g7f.json"
+    },
+    {
+      "candidate_id": "fa2a3aee31df970cb704_2b3c",
+      "classification": "control",
+      "borderline": false,
+      "classification_reason": "通常の△3三角を基準局面のcontrolとして指定する。",
+      "review_status": "reference",
+      "attacker_side": "gote",
+      "sfen": null,
+      "candidate_move": "2b3c",
+      "source_candidate_json": "reports/human_e2e/candidates.json",
+      "source_kif": "exports/human_e2e/gote_fa2a3aee31df970cb704_2b3c.kif",
+      "export_kif": "exports/response_set_review/control/gote_fa2a3aee31df970cb704_2b3c.kif",
+      "export_json": "exports/response_set_review/control/gote_fa2a3aee31df970cb704_2b3c.json"
+    }
+  ]
+}

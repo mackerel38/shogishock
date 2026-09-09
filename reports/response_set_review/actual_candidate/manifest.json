@@ -1,0 +1,6 @@
+{
+  "schema": "response-set-review-v1",
+  "classification": "actual_candidate",
+  "classification_policy": "manual_specified",
+  "cases": []
+}

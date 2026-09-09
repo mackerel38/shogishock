@@ -68,3 +68,17 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
 - ShogiHome: `tools/shogihome/ShogiHome-1.29.0.AppImage`, official Linux AppImage, SHA-256 `4b79e2ae833a07d7439ba58decbac4ec1b2a7098b117b4f5debdd71a6d6474ba`
 - Version check: `ShogiHome-1.29.0.AppImage --appimage-version` returned `Version: effcebc`
 - GUI visual QA: the binary is installed and executable, but GUI playback was not automated because no display session was available
+
+## Response-set calibration review handoff
+
+- CLI: `.venv/bin/surprise response-set-review`
+- Aggregate manifest: `reports/response_set_review/review_manifest.json`
+- Separated HTML: `reports/response_set_review/report_actual_candidate.html`,
+  `report_diagnostic_counterexample.html`, and `report_control.html`
+- Separated replay exports: `exports/response_set_review/{actual_candidate,diagnostic_counterexample,control}/`
+- Classification source: the explicit `MANUAL_REVIEW_CASES` table in `surprise/response_review.py`.
+  It is not inferred from model scores, features, splits, or rankings. `actual_candidate` may be empty.
+- Existing `reports/human_e2e` and `exports/human_e2e` files are preserved as read-only sources.
+- History-dependent response diagnostics must use `history_aware_response_cache_key`, which includes
+  move history as well as SFEN, candidate move, and reply move. This protects recapture/repetition-sensitive
+  values from an SFEN-only cache collision.

@@ -22,3 +22,36 @@ Preserve remote-only files; if concurrent remote changes overlap local edits, st
 The helper prepares a tree but does not commit or push automatically. The agent must inspect and then complete those steps.
 Public `reports/human_e2e/positions.json` omits raw book move/count/depth records; the local research file remains intact.
 The publication manifest lists exported paths and hashes. No private input snapshot is disguised as a public reproducibility artifact.
+
+## Small-cycle operating protocol
+
+Every implementation checkpoint follows this finite cycle:
+
+```text
+small cycle (one specified change)
+→ tests and artifact review
+→ public allowlist preparation
+→ commit + push
+→ STOP
+→ wait for an explicit continuation instruction
+```
+
+The STOP is intentional. Do not begin the next research or implementation cycle from an
+implicit assumption that the previous checkpoint authorizes it. A push is not permission to
+start a scan, change a research definition, or continue into an unrequested follow-up.
+
+## Checkpoint note template
+
+Each checkpoint note in `PAUSE.md` should contain:
+
+```text
+問い:
+結論:
+変更:
+未解決:
+レビュー対象KIF・HTML・JSON:
+確認点:
+次の提案:
+```
+
+`次の提案` is a proposal only; execution requires an explicit continuation instruction.

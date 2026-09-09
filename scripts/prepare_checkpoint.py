@@ -21,6 +21,8 @@ REPORTS={
     'book_policy_slices.json','seed_reach_join_summary.json','calibration.html'],
  'reports/human_e2e':['analysis.md','candidates.json','human_responses.json','manifest.json','summary.json',
     'report_sente.html','report_gote.html'],
+ 'reports/response_set_review':['review_manifest.json','report_actual_candidate.html',
+    'report_diagnostic_counterexample.html','report_control.html'],
 }
 
 
@@ -39,6 +41,10 @@ def main(target):
     paths += [Path(directory)/name for directory,names in REPORTS.items() for name in names]
     paths += [p.relative_to(ROOT) for p in (ROOT/'exports/human_e2e').glob('*.kif')]
     paths += [p.relative_to(ROOT) for p in (ROOT/'exports/human_e2e').glob('*.json')]
+    for classification in ('actual_candidate','diagnostic_counterexample','control'):
+        paths += [p.relative_to(ROOT) for p in (ROOT/'reports/response_set_review'/classification).glob('manifest.json')]
+        paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_set_review'/classification).glob('*.kif')]
+        paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_set_review'/classification).glob('*.json')]
     # Old schema-5 explicit reply analyses are engine-generated, not human raw data.
     for kind in ('obvious','confirm'):
         paths += [p.relative_to(ROOT) for p in (ROOT/'reports/reach_pilot'/kind).glob('*.json')]
