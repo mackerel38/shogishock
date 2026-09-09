@@ -1,12 +1,4 @@
-# Research paused — 2026-09-10
-
-> Latest completed cycle: `reports/tactical_falsification/ASTRA_HANDOFF.json` and `analysis.md`.
-> Cached fixed-case prototype: 3 obvious bishop-loss diagnostics rejected, 2 exchange controls retained.
-> Production automatic rejection: **INCONCLUSIVE**; no independent sacrifice/poisoned-piece safety validation.
-> New engine/policy calls: 0. No scan, refit or independent270 changes.
-> Review full positions/replies in `results.json`; public offline replay uses `prototype.py --fixtures`.
-> Six prototype and eleven existing unit tests passed. Luna presentation/shadow-only instructions in `LUNA_TASK.md`.
-> STOP after checkpoint. Await human review. No production activation or large-search permission.
+# Research paused — 2026-09-08
 
 > Completed independent confirmation: `reports/independent_policy_validation/analysis.md`.
 > 270 real-time games / 250 new known accounts; old account/game overlap 0; 6,501 moves.
@@ -138,6 +130,28 @@ cache key、公開除外ファイルが checkpoint に入っていないこと�
 次の提案: この checkpoint をレビュー後、明示的な続行指示があれば次の軽量実装サイクルを決める。
 
 運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
+
+## 明白な応手による固定例検証の人間向け報告 checkpoint — 2026-09-10
+
+Astra元checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`。
+`reports/independent_policy_validation/ASTRA_HANDOFF.json` と固定例の引き継ぎを根拠にした。
+
+今回直したもの: `reports/independent_policy_validation/REVIEW.md` と `report.html` に、固定例の中心結論
+`INCONCLUSIVE`、△3二銀の除外理由、3つの明白な駒損例と2つの駒交換対照例の意味、本番自動除外へ移行しない理由を記載した。
+△3二銀の+3808、▲2二角成後+3681、単純差127cp、同条件での最善級との差10cp、対照例の1931cp/2328cpを区別して表示した。
+
+内部データは変更していない: 研究結論、判定、数値、分類、モデル、指標、候補、JSON内部キーは変更していない。
+表示のみを既存成果物から再生成し、新しい研究計算・engine解析・候補探索・Human Policy変更は行っていない。
+
+確認対象: `reports/independent_policy_validation/REVIEW.md`、`report.html`、
+`exports/response_calibration/` の固定例KIF。表示では「奇襲手としての判定」と「Human Policyの信頼性」を分離した。
+
+テスト結果: 54 tests passed、`node scripts/check_calibration_review.mjs` 成功、Astra元ファイルのhash一致。
+
+未解決事項: 毒入り駒取り、成立した捨て駒などへの独立した十分な検査例がなく、本番自動除外の安全性は未確認。
+次の小規模奇襲探索とP_goodによる候補昇格はAstra判断どおりNO。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
 
 ## Astra独立検証の人間向け報告 checkpoint — 2026-09-10
 

@@ -100,3 +100,12 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
 - The renderer reads existing JSON/KIF/metrics and performs no engine calls, model fitting,
   probability recalculation, candidate scan, or research selection.
 - Source handoff: `reports/independent_policy_validation/ASTRA_HANDOFF.json`.
+
+## Fixed exclusion review handoff
+
+- Astra source checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`.
+- Human conclusion: `INCONCLUSIVE`; fixed examples support a diagnostic exclusion path but do not
+  establish that production automatic exclusion is safe.
+- Human report: `reports/independent_policy_validation/REVIEW.md` and `report.html`.
+- Reproduction: `.venv/bin/python scripts/render_human_facing.py` reads the handoff and existing
+  artifacts only; it performs no research computation.
