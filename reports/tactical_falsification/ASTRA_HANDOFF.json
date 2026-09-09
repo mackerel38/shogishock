@@ -1,0 +1,52 @@
+{
+  "research_question": "Can obvious and objectively adequate replies safely falsify a candidate before Human Policy?",
+  "source_checkpoint": "328a4df3f8a4568648a83134f4cd254c9005a4d5",
+  "conclusion": "Narrow conjunction passes five selected fixed fixtures; production false-negative safety remains unestablished.",
+  "next_step_decision": "INCONCLUSIVE",
+  "decision_target": "Production automatic tactical rejection; not permission for candidate search",
+  "confirmed_facts": [
+    "Three existing bishop-loss diagnostics reject, including mandatory 3a3b",
+    "Two bishop-exchange controls are not falsified",
+    "Bad recaptures are not accepted merely because they capture",
+    "No changes to Human Policy, independent270, P_good, ranking or seed universe"
+  ],
+  "unknowns": [
+    "Independent false-negative rate on poisoned pieces and valid sacrifices",
+    "Human obviousness of the proposed strong-witness heuristic",
+    "Stability beyond cached shallow searches",
+    "General validity of provisional 100cp gap and 300cp defender-advantage thresholds"
+  ],
+  "important_numbers": {
+    "fixed_cases": 5,
+    "diagnostic_counterexamples": 3,
+    "controls": 2,
+    "actual_candidates": 0,
+    "new_engine_calls": 0,
+    "new_policy_calls": 0,
+    "mandatory_case": {"parent_cp": 136, "candidate_root_cp": 3808, "explicit_best_reply_cp": 3691, "promoted_bishop_capture_cp": 3681, "comparable_gap_cp": 10},
+    "bad_recapture_gaps_cp": [1931, 2328],
+    "sensitivity_combinations": 12,
+    "sensitivity_meaning": "All five fixture outcomes unchanged; not independent validation"
+  },
+  "cases": {
+    "file": "reports/tactical_falsification/results.json",
+    "json_field": "cases",
+    "contents": "Five full SFEN/history cases, separate surprise decision and policy reliability, obvious replies, typed scores, PVs, evidence, purpose and human review point",
+    "mandatory_3a3b": {"purpose": "diagnostic_counterexample", "surprise_move_decision": "reject", "decision_reason": "Unrecapturable bishop capture retains overwhelming defender advantage and is within 10cp of best explicit reply", "human_policy_reliability": "Previously low here; not used or re-evaluated", "human_review_point": "Verify 8h2b+ wins the bishop without immediate recapture"}
+  },
+  "human_policy_role": {
+    "falsified": "No need to estimate probability of an already-obvious tactical refutation",
+    "not_falsified": "Not an actual candidate approval. Later policy work may assess competing natural replies only with adequate support/calibration; existing independent-validation NO remains",
+    "unknown_evidence": "needs_verification, never automatic pass to promotion"
+  },
+  "luna_tasks": {"specification": "reports/tactical_falsification/LUNA_TASK.md", "production_rejection_authorized": false},
+  "human_report": {
+    "lead": "3 clear diagnostics rejected, 2 exchange controls retained; automatic production rejection remains INCONCLUSIVE",
+    "emphasize": "Comparable reply gap is 10cp, not mixed-root 127cp; natural recaptures can lose 1931/2328cp",
+    "do_not_claim": ["Measured human response probabilities", "Zero false negatives in general", "Validated true sacrifice/poisoned-piece coverage", "Authorization for a new scan"],
+    "review": "Review the mandatory bishop loss and both exchange controls, especially alternative recaptures and compensation",
+    "next_stage": "Human review first; no production rejection and no next research in this cycle"
+  },
+  "reproducibility": {"command": "PYTHONPATH=. .venv/bin/python reports/tactical_falsification/prototype.py", "source_hashes": "results.json:source_sha256", "tests": "PYTHONPATH=.:reports/tactical_falsification .venv/bin/python -m unittest discover -s reports/tactical_falsification -p test_prototype.py"},
+  "stop": true
+}

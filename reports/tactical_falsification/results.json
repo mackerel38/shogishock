@@ -1,0 +1,687 @@
+{
+  "cases": [
+    {
+      "candidate_id": "5c46af1026197c8aeb70_3a3b",
+      "position": "lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4",
+      "move_history": [
+        "2g2f",
+        "3c3d",
+        "7g7f"
+      ],
+      "move_being_examined": "3a3b",
+      "attacker_side": "gote",
+      "purpose": "diagnostic_counterexample",
+      "surprise_move_decision": "reject",
+      "decision_reason": "strong_adequate_punishing_reply",
+      "obvious_replies": [
+        {
+          "move": "8h2b+",
+          "is_capture": true,
+          "reply_captures_candidate": false,
+          "signals": [
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 6,
+          "can_be_recaptured": false,
+          "engine_eval": 3681,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 3681,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "8c8d",
+            "2b1a",
+            "6a5b",
+            "7i8h",
+            "8d8e",
+            "1a2b",
+            "8e8f",
+            "8g8f",
+            "8b8f"
+          ],
+          "gap": 10
+        },
+        {
+          "move": "8h2b",
+          "is_capture": true,
+          "reply_captures_candidate": false,
+          "signals": [
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 6,
+          "can_be_recaptured": false,
+          "engine_eval": 3691,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 3691,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "6a5b",
+            "2b1a+",
+            "4a3a",
+            "7i8h",
+            "2a3c",
+            "2f2e",
+            "5a6a",
+            "5i5h",
+            "1c1d"
+          ],
+          "gap": 0
+        }
+      ],
+      "engine_evidence": {
+        "parent_eval": 136,
+        "candidate_root_eval": 3808,
+        "nominal_reply_nodes": 10000,
+        "legal_reply_count": 40,
+        "decision": "reject",
+        "reason": "strong_adequate_punishing_reply",
+        "reference_eval": 3691,
+        "witnesses": [
+          "8h2b+",
+          "8h2b"
+        ]
+      },
+      "human_policy_reliability": "not assessed or used; independent-validation restriction remains",
+      "human_review_point": "Verify the free capture and absence of compensation",
+      "sensitivity": {
+        "gap_50_advantage_300": "reject",
+        "gap_50_advantage_500": "reject",
+        "gap_50_advantage_1000": "reject",
+        "gap_100_advantage_300": "reject",
+        "gap_100_advantage_500": "reject",
+        "gap_100_advantage_1000": "reject",
+        "gap_200_advantage_300": "reject",
+        "gap_200_advantage_500": "reject",
+        "gap_200_advantage_1000": "reject",
+        "gap_300_advantage_300": "reject",
+        "gap_300_advantage_500": "reject",
+        "gap_300_advantage_1000": "reject"
+      }
+    },
+    {
+      "candidate_id": "0a33fbe73571830519e4_2b6f",
+      "position": "lnsgkgsnl/1r5b1/p1pppp1pp/1p4p2/9/2PP5/PP2PPPPP/1B1S3R1/LN1GKGSNL w - 6",
+      "move_history": [
+        "7g7f",
+        "8c8d",
+        "7i6h",
+        "3c3d",
+        "6g6f"
+      ],
+      "move_being_examined": "2b6f",
+      "attacker_side": "gote",
+      "purpose": "diagnostic_counterexample",
+      "surprise_move_decision": "reject",
+      "decision_reason": "strong_adequate_punishing_reply",
+      "obvious_replies": [
+        {
+          "move": "8h6f",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 6,
+          "can_be_recaptured": false,
+          "engine_eval": 2803,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 2803,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "8b2b",
+            "B*8c",
+            "2b8b",
+            "8c6a+",
+            "5a6a",
+            "6f1a+",
+            "3a3b",
+            "1a8h",
+            "7a6b",
+            "8h7h",
+            "9c9d",
+            "7h5f",
+            "7c7d",
+            "5f7d",
+            "B*8h",
+            "L*8c"
+          ],
+          "gap": 0
+        }
+      ],
+      "engine_evidence": {
+        "parent_eval": -54,
+        "candidate_root_eval": 2793,
+        "nominal_reply_nodes": 100000,
+        "legal_reply_count": 31,
+        "decision": "reject",
+        "reason": "strong_adequate_punishing_reply",
+        "reference_eval": 2803,
+        "witnesses": [
+          "8h6f"
+        ]
+      },
+      "human_policy_reliability": "not assessed or used; independent-validation restriction remains",
+      "human_review_point": "Verify the free capture and absence of compensation",
+      "sensitivity": {
+        "gap_50_advantage_300": "reject",
+        "gap_50_advantage_500": "reject",
+        "gap_50_advantage_1000": "reject",
+        "gap_100_advantage_300": "reject",
+        "gap_100_advantage_500": "reject",
+        "gap_100_advantage_1000": "reject",
+        "gap_200_advantage_300": "reject",
+        "gap_200_advantage_500": "reject",
+        "gap_200_advantage_1000": "reject",
+        "gap_300_advantage_300": "reject",
+        "gap_300_advantage_500": "reject",
+        "gap_300_advantage_1000": "reject"
+      }
+    },
+    {
+      "candidate_id": "5ecc3699847f6446b58a_8h4d",
+      "position": "lnsgkg1nl/1r4sb1/ppppp2pp/5pp2/7P1/2P6/PP1PPPP1P/1B5R1/LNSGKGSNL b - 7",
+      "move_history": [
+        "7g7f",
+        "3c3d",
+        "2g2f",
+        "4c4d",
+        "2f2e",
+        "3a3b"
+      ],
+      "move_being_examined": "8h4d",
+      "attacker_side": "sente",
+      "purpose": "diagnostic_counterexample",
+      "surprise_move_decision": "reject",
+      "decision_reason": "strong_adequate_punishing_reply",
+      "obvious_replies": [
+        {
+          "move": "2b4d",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 6,
+          "can_be_recaptured": false,
+          "engine_eval": -2935,
+          "score": {
+            "score_type": "cp",
+            "score_cp": -2935,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "2h8h",
+            "B*2g",
+            "8h2h",
+            "2g5d+",
+            "7i8h",
+            "5d7f",
+            "6i7h",
+            "6c6d",
+            "8h7g",
+            "7f5d",
+            "9g9f",
+            "2a3c"
+          ],
+          "gap": 0
+        }
+      ],
+      "engine_evidence": {
+        "parent_eval": 363,
+        "candidate_root_eval": -2973,
+        "nominal_reply_nodes": 100000,
+        "legal_reply_count": 32,
+        "decision": "reject",
+        "reason": "strong_adequate_punishing_reply",
+        "reference_eval": -2935,
+        "witnesses": [
+          "2b4d"
+        ]
+      },
+      "human_policy_reliability": "not assessed or used; independent-validation restriction remains",
+      "human_review_point": "Verify the free capture and absence of compensation",
+      "sensitivity": {
+        "gap_50_advantage_300": "reject",
+        "gap_50_advantage_500": "reject",
+        "gap_50_advantage_1000": "reject",
+        "gap_100_advantage_300": "reject",
+        "gap_100_advantage_500": "reject",
+        "gap_100_advantage_1000": "reject",
+        "gap_200_advantage_300": "reject",
+        "gap_200_advantage_500": "reject",
+        "gap_200_advantage_1000": "reject",
+        "gap_300_advantage_300": "reject",
+        "gap_300_advantage_500": "reject",
+        "gap_300_advantage_1000": "reject"
+      }
+    },
+    {
+      "candidate_id": "a77ad58c704df8bb27bf_7g3c+",
+      "position": "ln4knl/1r1sgsg2/2ppppb2/p5p1p/9/P1P4RP/2BPPPP2/2GSGS3/LNK4NL b 2P2p 33",
+      "move_history": [
+        "2g2f",
+        "8c8d",
+        "2f2e",
+        "8d8e",
+        "7g7f",
+        "3c3d",
+        "6i7h",
+        "4a3b",
+        "2e2d",
+        "2c2d",
+        "2h2d",
+        "8e8f",
+        "8g8f",
+        "8b8f",
+        "2d2f",
+        "8f8b",
+        "8h7g",
+        "2b3c",
+        "3i4h",
+        "7a6b",
+        "7i6h",
+        "3a4b",
+        "4i5h",
+        "6a5b",
+        "5i6i",
+        "5a4a",
+        "6i7i",
+        "4a3a",
+        "9g9f",
+        "1c1d",
+        "1g1f",
+        "9c9d"
+      ],
+      "move_being_examined": "7g3c+",
+      "attacker_side": "sente",
+      "purpose": "control",
+      "surprise_move_decision": "not_falsified",
+      "decision_reason": "conjunction_not_met",
+      "obvious_replies": [
+        {
+          "move": "2a3c",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 13,
+          "can_be_recaptured": false,
+          "engine_eval": 543,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 543,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "P*8c",
+            "8b9b",
+            "6h7g",
+            "8a9c",
+            "P*2d",
+            "P*2b",
+            "2f2h",
+            "5c5d",
+            "7i6h",
+            "3a4a",
+            "3g3f"
+          ],
+          "gap": 191
+        },
+        {
+          "move": "4b3c",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 13,
+          "can_be_recaptured": false,
+          "engine_eval": 352,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 352,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "P*8c",
+            "8b9b",
+            "6h7g",
+            "P*2c",
+            "7i6h",
+            "3a2b",
+            "3g3f",
+            "6c6d",
+            "2i3g",
+            "6b6c",
+            "4g4f",
+            "5b4b",
+            "4h4g",
+            "4c4d",
+            "2f2i",
+            "9b6b"
+          ],
+          "gap": 0
+        },
+        {
+          "move": "3b3c",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 13,
+          "can_be_recaptured": false,
+          "engine_eval": 2283,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 2283,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "B*2b",
+            "3a3b",
+            "2b1a+",
+            "P*2d",
+            "L*8h",
+            "P*8f",
+            "6h7g",
+            "8a9c",
+            "8h8f",
+            "9c8e",
+            "P*2b",
+            "2a1c",
+            "2b2a+",
+            "B*4d",
+            "2f2h",
+            "3b4a"
+          ],
+          "gap": 1931
+        }
+      ],
+      "engine_evidence": {
+        "parent_eval": 126,
+        "candidate_root_eval": 57,
+        "nominal_reply_nodes": 100000,
+        "legal_reply_count": 47,
+        "decision": "not_falsified",
+        "reason": "conjunction_not_met",
+        "reference_eval": 352,
+        "witnesses": []
+      },
+      "human_policy_reliability": "not assessed or used; independent-validation restriction remains",
+      "human_review_point": "Compare alternative recaptures; not_falsified is not approval as a surprise",
+      "sensitivity": {
+        "gap_50_advantage_300": "not_falsified",
+        "gap_50_advantage_500": "not_falsified",
+        "gap_50_advantage_1000": "not_falsified",
+        "gap_100_advantage_300": "not_falsified",
+        "gap_100_advantage_500": "not_falsified",
+        "gap_100_advantage_1000": "not_falsified",
+        "gap_200_advantage_300": "not_falsified",
+        "gap_200_advantage_500": "not_falsified",
+        "gap_200_advantage_1000": "not_falsified",
+        "gap_300_advantage_300": "not_falsified",
+        "gap_300_advantage_500": "not_falsified",
+        "gap_300_advantage_1000": "not_falsified"
+      }
+    },
+    {
+      "candidate_id": "b1d901d7811d5a04a762_3c7g+",
+      "position": "ln4knl/1r1sgsg2/2pp1pb2/p3p1p1p/9/P1P1PP1RP/2BP2P2/2GSGS3/LNK4NL w 2P2p 36",
+      "move_history": [
+        "2g2f",
+        "8c8d",
+        "2f2e",
+        "8d8e",
+        "7g7f",
+        "3c3d",
+        "6i7h",
+        "4a3b",
+        "2e2d",
+        "2c2d",
+        "2h2d",
+        "8e8f",
+        "8g8f",
+        "8b8f",
+        "2d2f",
+        "8f8b",
+        "8h7g",
+        "2b3c",
+        "3i4h",
+        "7a6b",
+        "7i6h",
+        "3a4b",
+        "4i5h",
+        "6a5b",
+        "5i6i",
+        "5a4a",
+        "6i7i",
+        "4a3a",
+        "9g9f",
+        "1c1d",
+        "1g1f",
+        "9c9d",
+        "5g5f",
+        "5c5d",
+        "4g4f"
+      ],
+      "move_being_examined": "3c7g+",
+      "attacker_side": "gote",
+      "purpose": "control",
+      "surprise_move_decision": "not_falsified",
+      "decision_reason": "conjunction_not_met",
+      "obvious_replies": [
+        {
+          "move": "8i7g",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 13,
+          "can_be_recaptured": false,
+          "engine_eval": 45,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 45,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "5b5a",
+            "1f1e",
+            "1d1e",
+            "P*2b",
+            "3b2b",
+            "P*2c",
+            "2b1b",
+            "1i1e",
+            "P*1c",
+            "B*6f",
+            "4c4d",
+            "1e1c",
+            "2a1c",
+            "P*1d",
+            "P*2e"
+          ],
+          "gap": 99
+        },
+        {
+          "move": "6h7g",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 13,
+          "can_be_recaptured": false,
+          "engine_eval": 144,
+          "score": {
+            "score_type": "cp",
+            "score_cp": 144,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "5b5a",
+            "P*8g",
+            "P*2c",
+            "B*6f",
+            "4b3c",
+            "3g3f",
+            "9d9e",
+            "9f9e",
+            "P*9g",
+            "9i9g",
+            "6c6d",
+            "3f3e"
+          ],
+          "gap": 0
+        },
+        {
+          "move": "7h7g",
+          "is_capture": true,
+          "reply_captures_candidate": true,
+          "signals": [
+            "captures_candidate",
+            "recapture",
+            "material_recovery_proxy"
+          ],
+          "obvious": true,
+          "strong": true,
+          "free_major": true,
+          "victim_piece_type": 13,
+          "can_be_recaptured": false,
+          "engine_eval": -2184,
+          "score": {
+            "score_type": "cp",
+            "score_cp": -2184,
+            "mate_distance": null,
+            "perspective": "sente",
+            "bound": "exact"
+          },
+          "pv": [
+            "B*8h",
+            "7i7h",
+            "8h9i+",
+            "P*8f",
+            "L*2b",
+            "P*2d",
+            "P*8h",
+            "8i9g",
+            "8h8i+",
+            "1f1e",
+            "4b3c",
+            "1e1d",
+            "3c2d",
+            "1d1c+",
+            "2a1c"
+          ],
+          "gap": 2328
+        }
+      ],
+      "engine_evidence": {
+        "parent_eval": -132,
+        "candidate_root_eval": -120,
+        "nominal_reply_nodes": 100000,
+        "legal_reply_count": 51,
+        "decision": "not_falsified",
+        "reason": "conjunction_not_met",
+        "reference_eval": 144,
+        "witnesses": []
+      },
+      "human_policy_reliability": "not assessed or used; independent-validation restriction remains",
+      "human_review_point": "Compare alternative recaptures; not_falsified is not approval as a surprise",
+      "sensitivity": {
+        "gap_50_advantage_300": "not_falsified",
+        "gap_50_advantage_500": "not_falsified",
+        "gap_50_advantage_1000": "not_falsified",
+        "gap_100_advantage_300": "not_falsified",
+        "gap_100_advantage_500": "not_falsified",
+        "gap_100_advantage_1000": "not_falsified",
+        "gap_200_advantage_300": "not_falsified",
+        "gap_200_advantage_500": "not_falsified",
+        "gap_200_advantage_1000": "not_falsified",
+        "gap_300_advantage_300": "not_falsified",
+        "gap_300_advantage_500": "not_falsified",
+        "gap_300_advantage_1000": "not_falsified"
+      }
+    }
+  ],
+  "source_sha256": {
+    "reports/human_e2e/candidates.json": "9144076518fea7988c6f4a5903e40c23ab171a80c65eff89c02bedb08000667c",
+    "reports/human_e2e/positions.json": "3a295d018faad3a9d99339f71069e815953b602632021f541de97f6d7997d955",
+    "reports/human_e2e/human_responses.json": "8ba498d1b85d0e1c5c038261ad5c5cf24672548999416005eb610eac0628cc68",
+    "reports/pass_pilot/candidates.json": "a47b98c62f3aa6e0ef832150ed5bf41f73ad89c93102248ce5f0b39adac67b1a",
+    "reports/pass_pilot/positions.json": "dbef663b8b61c69636228288f8d145424b9190baefa30edc5a5ecdefe7e5502c",
+    "reports/reach_pilot/confirm/0a33fbe73571830519e4_2b6f.json": "e4cc3fd97f41180622c38679c1dfe37d23afac3d52e9d4f2c5d0e4b2853bb91c",
+    "reports/reach_pilot/confirm/5ecc3699847f6446b58a_8h4d.json": "13cec9320ae9e3115121bd9c694b804b6bc3559872aa4bbc5bcd715e834e0827",
+    "reports/reach_pilot/confirm/a77ad58c704df8bb27bf_7g3c+.json": "5de899f1b0d0822b7b50fd161221030af801aff36ccb3498224441744cb0610a",
+    "reports/reach_pilot/confirm/b1d901d7811d5a04a762_3c7g+.json": "449e390cf5867d4c2a2ea872f5e2099258ca1c53154abe1eee0c3f18a8d0dfd1"
+  },
+  "new_engine_calls": 0,
+  "new_policy_calls": 0
+}

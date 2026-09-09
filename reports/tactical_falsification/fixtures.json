@@ -1,0 +1,5477 @@
+{
+  "fixtures": [
+    {
+      "candidate": {
+        "candidate_id": "5c46af1026197c8aeb70_3a3b",
+        "position_id": "5c46af1026197c8aeb70",
+        "move": "3a3b",
+        "attacker_side": "gote",
+        "best_eval": 136,
+        "candidate_eval": 3808
+      },
+      "position": {
+        "sfen": "lnsgkgsnl/1r5b1/pppppp1pp/6p2/9/2P4P1/PP1PPPP1P/1B5R1/LNSGKGSNL w - 4",
+        "move_history": [
+          "2g2f",
+          "3c3d",
+          "7g7f"
+        ]
+      },
+      "budget": 10000,
+      "evidence": {
+        "responses": [
+          {
+            "move": "2f2e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 106,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "6i7h",
+                "7a6b",
+                "5i6i",
+                "8c8d",
+                "7i6h"
+              ]
+            }
+          },
+          {
+            "move": "3i4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 156,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3b3c",
+                "3g3f",
+                "8c8d",
+                "7i7h",
+                "8d8e",
+                "8h7g",
+                "4a3b",
+                "2i3g"
+              ]
+            }
+          },
+          {
+            "move": "7i6h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3581,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b8h+",
+                "6i7i",
+                "8h9i",
+                "5i4h",
+                "5a5b",
+                "8i7g",
+                "B*9h",
+                "4i5h",
+                "9h8g+"
+              ]
+            }
+          },
+          {
+            "move": "5g5f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -15,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "3i4h",
+                "8c8d",
+                "4h5g",
+                "8d8e",
+                "2f2e"
+              ]
+            }
+          },
+          {
+            "move": "3i3h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 117,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "3g3f",
+                "8c8d",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "4a3b",
+                "8h7g",
+                "5a4a",
+                "3h3g",
+                "7a6b",
+                "3g4f",
+                "7c7d"
+              ]
+            }
+          },
+          {
+            "move": "3g3f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 90,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "3i3h",
+                "8c8d",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "8d8e"
+              ]
+            }
+          },
+          {
+            "move": "6g6f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -76,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6c6d",
+                "2f2e",
+                "2b3c",
+                "5g5f",
+                "8b6b",
+                "4i5h",
+                "7a7b",
+                "3i4h",
+                "9c9d"
+              ]
+            }
+          },
+          {
+            "move": "1g1f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 88,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i6h",
+                "8c8d",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "8d8e"
+              ]
+            }
+          },
+          {
+            "move": "7i7h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3567,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b8h+",
+                "8i7g",
+                "5a5b",
+                "5i6h",
+                "8h9i",
+                "4g4f",
+                "8c8d",
+                "1g1f"
+              ]
+            }
+          },
+          {
+            "move": "9g9f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 33,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "6i7h",
+                "8c8d",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "8d8e"
+              ]
+            }
+          },
+          {
+            "move": "5i4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -116,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "3i3h",
+                "8c8d",
+                "6i7h",
+                "5a4b"
+              ]
+            }
+          },
+          {
+            "move": "4g4f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 78,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3b3c",
+                "3i3h",
+                "4a3b",
+                "3h4g",
+                "8c8d",
+                "4g5f",
+                "8d8e",
+                "6i7h",
+                "8e8f",
+                "8g8f",
+                "8b8f"
+              ]
+            }
+          },
+          {
+            "move": "8h7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -281,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b7g+",
+                "8i7g",
+                "3b3c",
+                "6i7h",
+                "7c7d",
+                "7i6h",
+                "7a6b",
+                "5i5h",
+                "5a4b",
+                "3i3h"
+              ]
+            }
+          },
+          {
+            "move": "5i6h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 97,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "4i5h",
+                "8c8d",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "7c7d",
+                "3i4h"
+              ]
+            }
+          },
+          {
+            "move": "8g8f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -323,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "8h7g"
+              ]
+            }
+          },
+          {
+            "move": "6i7h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 125,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "7i6h",
+                "9c9d",
+                "5i6i",
+                "9d9e",
+                "2f2e",
+                "7a7b",
+                "4i5h"
+              ]
+            }
+          },
+          {
+            "move": "7f7e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -272,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "7a6b",
+                "2f2e",
+                "5a4b"
+              ]
+            }
+          },
+          {
+            "move": "4i5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 38,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "8c8d",
+                "6i7h"
+              ]
+            }
+          },
+          {
+            "move": "8h2b+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3681,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "8c8d",
+                "2b1a",
+                "6a5b",
+                "7i8h",
+                "8d8e",
+                "1a2b",
+                "8e8f",
+                "8g8f",
+                "8b8f"
+              ]
+            }
+          },
+          {
+            "move": "5i5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 56,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3b3c",
+                "3i4h",
+                "8c8d",
+                "3g3f",
+                "4a3b",
+                "4h3g",
+                "8d8e",
+                "8h7g",
+                "1c1d",
+                "7i8h",
+                "5a4a"
+              ]
+            }
+          },
+          {
+            "move": "6i5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -210,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "8c8d",
+                "8h7g",
+                "8d8e",
+                "5h6h",
+                "5a5b"
+              ]
+            }
+          },
+          {
+            "move": "8i7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -384,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "8c8d",
+                "3i3h",
+                "8d8e",
+                "6i7h",
+                "7a6b"
+              ]
+            }
+          },
+          {
+            "move": "4i3h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -80,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i5h",
+                "8c8d",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "4a3b",
+                "6i7h",
+                "5a4b"
+              ]
+            }
+          },
+          {
+            "move": "2h6h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -220,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "3g3f",
+                "8c8d",
+                "6h3h",
+                "8d8e",
+                "3f3e",
+                "3d3e",
+                "3h3e",
+                "8e8f",
+                "8g8f"
+              ]
+            }
+          },
+          {
+            "move": "2h7h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -222,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i5h",
+                "8c8d",
+                "8h3c+",
+                "3b3c"
+              ]
+            }
+          },
+          {
+            "move": "6i6h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -24,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i6i",
+                "7a6b",
+                "8h3c+",
+                "3b3c",
+                "7i8h",
+                "8c8d",
+                "8h7g",
+                "8d8e"
+              ]
+            }
+          },
+          {
+            "move": "2h5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -254,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "6i7h",
+                "8c8d",
+                "3g3f",
+                "8d8e",
+                "5i6i",
+                "8e8f",
+                "8g8f",
+                "8b8f"
+              ]
+            }
+          },
+          {
+            "move": "4i4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 63,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3b3c",
+                "3g3f",
+                "8c8d",
+                "2f2e",
+                "4a3b",
+                "8h7g",
+                "5a4a"
+              ]
+            }
+          },
+          {
+            "move": "8h6f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -114,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b6f",
+                "6g6f",
+                "B*4d",
+                "2h6h",
+                "3b3c",
+                "5i5h",
+                "8b2b",
+                "3i2h",
+                "4d2f"
+              ]
+            }
+          },
+          {
+            "move": "8h5e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3006,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b5e",
+                "2h8h",
+                "2c2d",
+                "6i7h",
+                "2d2e",
+                "2f2e",
+                "B*2g",
+                "2e2d",
+                "5e8h+",
+                "7i8h"
+              ]
+            }
+          },
+          {
+            "move": "8h3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3074,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "2h9h",
+                "8c8d",
+                "9g9f",
+                "8d8e",
+                "5i5h",
+                "8e8f",
+                "8g8f"
+              ]
+            }
+          },
+          {
+            "move": "8h4d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3225,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b4d",
+                "2h9h",
+                "B*5e",
+                "7i6h",
+                "5e9i+",
+                "9h9i",
+                "4d9i+",
+                "B*6f",
+                "9i6f",
+                "6g6f",
+                "9c9d"
+              ]
+            }
+          },
+          {
+            "move": "2h3h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -115,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b8h+",
+                "7i8h",
+                "3b3c",
+                "3g3f",
+                "5a5b",
+                "5i6h",
+                "8c8d",
+                "8h7g"
+              ]
+            }
+          },
+          {
+            "move": "2h4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -105,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i6h",
+                "8c8d",
+                "3g3f",
+                "8d8e",
+                "4g4f",
+                "8e8f",
+                "8g8f",
+                "8b8f"
+              ]
+            }
+          },
+          {
+            "move": "8h3c+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3094,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "2h9h",
+                "8c8d",
+                "7i7h",
+                "5a5b",
+                "5i5h"
+              ]
+            }
+          },
+          {
+            "move": "2h2g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -368,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b8h+",
+                "7i8h",
+                "B*4e",
+                "2g2h",
+                "4e6g+",
+                "6i7h",
+                "6g6f",
+                "B*7g",
+                "6f3c",
+                "7g3c+",
+                "3b3c",
+                "4i5h",
+                "8b6b"
+              ]
+            }
+          },
+          {
+            "move": "8h2b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3691,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6a5b",
+                "2b1a+",
+                "4a3a",
+                "7i8h",
+                "2a3c",
+                "2f2e",
+                "5a6a",
+                "5i5h",
+                "1c1d"
+              ]
+            }
+          },
+          {
+            "move": "2h1h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -236,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i6h",
+                "8c8d",
+                "3g3f",
+                "8d8e",
+                "1h3h",
+                "8e8f"
+              ]
+            }
+          },
+          {
+            "move": "1i1h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -225,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i6h",
+                "7c7d",
+                "4i5h",
+                "8c8d",
+                "8h7g",
+                "3c7g+",
+                "6h7g",
+                "3b3c"
+              ]
+            }
+          },
+          {
+            "move": "9i9h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -277,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2b3c",
+                "5i6h",
+                "8c8d",
+                "8h7g",
+                "3c7g+",
+                "6h7g",
+                "3b3c",
+                "7i8h"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "candidate_id": "0a33fbe73571830519e4_2b6f",
+        "position_id": "0a33fbe73571830519e4",
+        "move": "2b6f",
+        "attacker_side": "gote",
+        "best_eval": -54,
+        "candidate_eval": 2793
+      },
+      "position": {
+        "sfen": "lnsgkgsnl/1r5b1/p1pppp1pp/1p4p2/9/2PP5/PP2PPPPP/1B1S3R1/LN1GKGSNL w - 6",
+        "move_history": [
+          "7g7f",
+          "8c8d",
+          "7i6h",
+          "3c3d",
+          "6g6f"
+        ]
+      },
+      "budget": 100000,
+      "evidence": {
+        "responses": [
+          {
+            "move": "7f7e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4222,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "6i7h",
+                "8d8e",
+                "5g5f",
+                "9i8i",
+                "7h7i"
+              ]
+            }
+          },
+          {
+            "move": "9g9f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4180,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "6i7i",
+                "8h9i",
+                "6h7g",
+                "3a3b",
+                "4i5h",
+                "5a5b"
+              ]
+            }
+          },
+          {
+            "move": "8g8f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4242,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "5a5b",
+                "4i5h",
+                "8h9i",
+                "5h6g",
+                "9i9h",
+                "5g5f",
+                "9h9g",
+                "2g2f",
+                "9g8f"
+              ]
+            }
+          },
+          {
+            "move": "5g5f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3937,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "2h5h",
+                "L*6d",
+                "5i4h",
+                "B*8h",
+                "4h3h",
+                "8h7g+",
+                "6h7g",
+                "9i7g",
+                "B*5e"
+              ]
+            }
+          },
+          {
+            "move": "4g4f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4010,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "6i7i",
+                "8h9i",
+                "6h7g",
+                "B*9h",
+                "2h9h",
+                "9i9h",
+                "4f4e",
+                "8d8e",
+                "4e4d",
+                "4c4d",
+                "B*4c",
+                "3a3b"
+              ]
+            }
+          },
+          {
+            "move": "3g3f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4048,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "4i5h",
+                "3a3b",
+                "2h3h",
+                "8d8e",
+                "6i7i",
+                "B*4d"
+              ]
+            }
+          },
+          {
+            "move": "2g2f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4044,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8d8e",
+                "2f2e",
+                "B*3c",
+                "2e2d",
+                "2c2d",
+                "4i5h",
+                "8h9i",
+                "5i4i",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "6i7i",
+                "3a3b"
+              ]
+            }
+          },
+          {
+            "move": "1g1f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4076,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "2h5h",
+                "9i8h",
+                "5g5f",
+                "5a5b",
+                "5f5e",
+                "8h8g",
+                "5e5d",
+                "5c5d",
+                "5h5d",
+                "P*5c",
+                "5d5f"
+              ]
+            }
+          },
+          {
+            "move": "9i9h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3731,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "6i7i",
+                "8h9h",
+                "6h7g",
+                "9h8g",
+                "7i8h",
+                "8g8h",
+                "2h8h",
+                "B*4d",
+                "8h6h",
+                "G*8g",
+                "6h6c+",
+                "8g7g",
+                "8i7g",
+                "4d7g+",
+                "5i4h"
+              ]
+            }
+          },
+          {
+            "move": "1i1h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4205,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8d8e",
+                "2h3h",
+                "5a5b",
+                "3g3f",
+                "8h9i",
+                "6i7h",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "P*8h",
+                "9i8h",
+                "7h8h",
+                "8f8h+"
+              ]
+            }
+          },
+          {
+            "move": "8i7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -472,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3a3b",
+                "6i7h",
+                "5a4b",
+                "2g2f",
+                "7c7d",
+                "2f2e",
+                "3b3c",
+                "3i4h",
+                "6f4d"
+              ]
+            }
+          },
+          {
+            "move": "6h7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -346,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f3c",
+                "6i7h",
+                "8d8e",
+                "5i6i",
+                "7c7d",
+                "3g3f",
+                "8a7c",
+                "3i4h",
+                "7a6b",
+                "4h3g"
+              ]
+            }
+          },
+          {
+            "move": "6h6g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -356,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "2h8h",
+                "B*3c",
+                "B*7g",
+                "3a3b",
+                "8h6h",
+                "5a4b",
+                "3g3f",
+                "7a6b"
+              ]
+            }
+          },
+          {
+            "move": "6h7i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -700,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "7i8h",
+                "B*6g",
+                "6i7h",
+                "6g7f+",
+                "2h6h",
+                "7f5d",
+                "B*3f",
+                "7a6b",
+                "3f5d",
+                "5c5d",
+                "1g1f",
+                "5a4b",
+                "3g3f",
+                "6a5b"
+              ]
+            }
+          },
+          {
+            "move": "3i4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4194,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "3a3b",
+                "5g5f",
+                "8h9i",
+                "4h5g",
+                "8d8e",
+                "2h3h",
+                "B*9h",
+                "7g6e",
+                "9i4d",
+                "6e7c+",
+                "8a7c"
+              ]
+            }
+          },
+          {
+            "move": "3i3h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4234,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8d8e",
+                "7g6e",
+                "6a6b",
+                "2h1h",
+                "8h9i",
+                "5i4h",
+                "8e8f",
+                "8g8f",
+                "5a5b",
+                "1g1f",
+                "8b8f"
+              ]
+            }
+          },
+          {
+            "move": "6i7h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -552,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "7h8h",
+                "3a2b",
+                "1g1f",
+                "1c1d",
+                "8h7h",
+                "2b3c",
+                "3i3h",
+                "5a4b",
+                "4g4f",
+                "8d8e",
+                "2g2f"
+              ]
+            }
+          },
+          {
+            "move": "6i5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4368,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8d8e",
+                "5i4h",
+                "8h9i",
+                "2g2f",
+                "3a3b",
+                "2f2e",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "7g6e",
+                "7a6b",
+                "2e2d",
+                "2c2d",
+                "2h2d"
+              ]
+            }
+          },
+          {
+            "move": "6i7i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -502,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "7i8h",
+                "3a2b",
+                "1g1f",
+                "1c1d",
+                "6h6g",
+                "5a4b",
+                "3i3h",
+                "6c6d",
+                "4g4f",
+                "7a6b",
+                "3h4g"
+              ]
+            }
+          },
+          {
+            "move": "4i5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3931,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "6i7h",
+                "5a5b",
+                "5i4i",
+                "8d8e",
+                "6h6g",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "P*8h"
+              ]
+            }
+          },
+          {
+            "move": "4i4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4270,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "5g5f",
+                "5a5b",
+                "5f5e",
+                "8d8e",
+                "4h5g",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "5i4i",
+                "8f8i+"
+              ]
+            }
+          },
+          {
+            "move": "4i3h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4424,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8d8e",
+                "5i4i",
+                "8h9i",
+                "6i7h",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "P*8g",
+                "8f8d",
+                "6h6g"
+              ]
+            }
+          },
+          {
+            "move": "8h6f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 2803,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "8b2b",
+                "B*8c",
+                "2b8b",
+                "8c6a+",
+                "5a6a",
+                "6f1a+",
+                "3a3b",
+                "1a8h",
+                "7a6b",
+                "8h7h",
+                "9c9d",
+                "7h5f",
+                "7c7d",
+                "5f7d",
+                "B*8h",
+                "L*8c"
+              ]
+            }
+          },
+          {
+            "move": "8h7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -490,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f7g+",
+                "6h7g",
+                "5a4b",
+                "B*4e",
+                "7a6b",
+                "4e3d",
+                "4a3b",
+                "2h6h",
+                "4b3c",
+                "3d5f",
+                "6a5b",
+                "5i4h",
+                "1c1d"
+              ]
+            }
+          },
+          {
+            "move": "8h7i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -2267,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f9i+",
+                "8i7g",
+                "8d8e",
+                "6i7h",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "P*8g",
+                "9i8i",
+                "5i6i",
+                "8f8b",
+                "4i5h",
+                "L*6d",
+                "7f7e",
+                "6d6h+",
+                "5h6h",
+                "S*7f"
+              ]
+            }
+          },
+          {
+            "move": "2h5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3906,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "5g5f",
+                "9i8h",
+                "5f5e",
+                "5a4b",
+                "7g6e",
+                "7a6b",
+                "5e5d",
+                "5c5d",
+                "5h5d",
+                "P*5b"
+              ]
+            }
+          },
+          {
+            "move": "2h4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4122,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "6i7h",
+                "8d8e",
+                "4i5h",
+                "9i8i",
+                "7h7i",
+                "8i9h",
+                "5i4i",
+                "9h9g",
+                "4i3h",
+                "9g8g",
+                "7g6e"
+              ]
+            }
+          },
+          {
+            "move": "2h3h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4033,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "4i5h",
+                "8d8e",
+                "5i4i",
+                "5a5b",
+                "4g4f",
+                "L*6d",
+                "6i7h",
+                "6d6h+",
+                "5h6h"
+              ]
+            }
+          },
+          {
+            "move": "2h1h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4241,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "6i7h",
+                "5a5b",
+                "1g1f",
+                "9i8i",
+                "6h6g",
+                "L*6d",
+                "4i5h",
+                "8d8e"
+              ]
+            }
+          },
+          {
+            "move": "5i5h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4248,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "6i7i",
+                "8h9i",
+                "4i5i",
+                "5a5b",
+                "5h4i",
+                "8d8e",
+                "1g1f",
+                "8e8f",
+                "8g8f",
+                "8b8f",
+                "8i7g",
+                "8f7f",
+                "7i7h"
+              ]
+            }
+          },
+          {
+            "move": "5i4h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3943,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "6f8h+",
+                "8i7g",
+                "8h9i",
+                "1g1f",
+                "3a3b",
+                "6i7h",
+                "5a5b",
+                "4g4f",
+                "8d8e",
+                "3i3h",
+                "2a3c"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "candidate_id": "5ecc3699847f6446b58a_8h4d",
+        "position_id": "5ecc3699847f6446b58a",
+        "move": "8h4d",
+        "attacker_side": "sente",
+        "best_eval": 363,
+        "candidate_eval": -2973
+      },
+      "position": {
+        "sfen": "lnsgkg1nl/1r4sb1/ppppp2pp/5pp2/7P1/2P6/PP1PPPP1P/1B5R1/LNSGKGSNL b - 7",
+        "move_history": [
+          "7g7f",
+          "3c3d",
+          "2g2f",
+          "4c4d",
+          "2f2e",
+          "3a3b"
+        ]
+      },
+      "budget": 100000,
+      "evidence": {
+        "responses": [
+          {
+            "move": "9c9d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3903,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b5b",
+                "2b1a",
+                "5a6b",
+                "1a2b",
+                "6b7b",
+                "5i5h",
+                "2a3c",
+                "3i4h",
+                "4a4b",
+                "2e2d",
+                "2c2d"
+              ]
+            }
+          },
+          {
+            "move": "8c8d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4155,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "5i5h",
+                "7a7b",
+                "2b1a",
+                "2a3c",
+                "7i7h",
+                "5a6b",
+                "B*7g",
+                "6b7a",
+                "1a2b",
+                "4b4e",
+                "3i3h",
+                "7a8b"
+              ]
+            }
+          },
+          {
+            "move": "7c7d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4145,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "5i5h",
+                "7d7e",
+                "2b1a",
+                "7e7f",
+                "B*5e",
+                "7a7b",
+                "5e9a+",
+                "2a3c",
+                "1g1f",
+                "6c6d",
+                "9a6d"
+              ]
+            }
+          },
+          {
+            "move": "6c6d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4095,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "4i5h",
+                "5a6b",
+                "2b1a",
+                "4a3a",
+                "1a5e",
+                "6b7b",
+                "5i6h",
+                "7b8b",
+                "5e6d",
+                "6a6b",
+                "6h7h"
+              ]
+            }
+          },
+          {
+            "move": "5c5d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3963,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "2e2d",
+                "2c2d",
+                "5i5h",
+                "5a6b",
+                "2b1a",
+                "6b7b",
+                "2h2d",
+                "7a6b",
+                "2d2h",
+                "2a3c",
+                "P*2d",
+                "P*4f",
+                "4g4f"
+              ]
+            }
+          },
+          {
+            "move": "2c2d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4497,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "2d2e",
+                "P*2d",
+                "8b4b",
+                "2d2c+",
+                "3b2c",
+                "2b2c",
+                "4b4g+",
+                "B*6e",
+                "P*4f",
+                "6e2a+",
+                "5a6b",
+                "2a1a",
+                "4g5g",
+                "S*5h"
+              ]
+            }
+          },
+          {
+            "move": "1c1d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4005,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "2b1a",
+                "2a3c",
+                "5i5h",
+                "9c9d",
+                "3i4h",
+                "5a6b",
+                "1a2b",
+                "6b7b",
+                "4i3i",
+                "9d9e",
+                "7i7h",
+                "7a6b"
+              ]
+            }
+          },
+          {
+            "move": "3d3e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4098,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "5i5h",
+                "5a6b",
+                "2b1a",
+                "4a3a",
+                "2e2d",
+                "2c2d",
+                "2h2d",
+                "6b7b",
+                "2d2f",
+                "P*2b",
+                "3i3h",
+                "5c5d",
+                "7i7h"
+              ]
+            }
+          },
+          {
+            "move": "9a9b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4307,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "5i5h",
+                "5a6b",
+                "2b1a",
+                "4a3a",
+                "7i7h",
+                "6b7b",
+                "2e2d",
+                "2c2d",
+                "2h2d",
+                "P*4f",
+                "4g4f"
+              ]
+            }
+          },
+          {
+            "move": "1a1b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4087,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b4b",
+                "5i5h",
+                "9c9d",
+                "2b1b",
+                "5a6b",
+                "7i7h",
+                "6b7b",
+                "2h2f",
+                "7a6b",
+                "1b2b",
+                "2a3c",
+                "2f1f",
+                "6c6d",
+                "8i7g"
+              ]
+            }
+          },
+          {
+            "move": "2a3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 761,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4i5h",
+                "8b4b",
+                "4d7g",
+                "7c7d",
+                "5i6h",
+                "6a7b",
+                "3i4h",
+                "7d7e",
+                "7f7e",
+                "4b4e",
+                "2e2d",
+                "2c2d",
+                "2h2d",
+                "P*2c"
+              ]
+            }
+          },
+          {
+            "move": "7a7b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4157,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "6c6d",
+                "2e2d",
+                "2c2d",
+                "2b1a",
+                "7b6c",
+                "P*2b",
+                "2a3c",
+                "2b2a+",
+                "8b4b",
+                "2a2b",
+                "4b4g+",
+                "2b3b",
+                "4a3b",
+                "2h2d",
+                "P*2c",
+                "2d2h",
+                "4g5g"
+              ]
+            }
+          },
+          {
+            "move": "7a6b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4014,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "6a5b",
+                "2b1a",
+                "2a3c",
+                "5i5h",
+                "5a6a"
+              ]
+            }
+          },
+          {
+            "move": "3b4c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 538,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d8h",
+                "8b4b",
+                "5i6h",
+                "2b3c",
+                "4i5h",
+                "4a3b",
+                "3i4h",
+                "7c7d",
+                "8h3c+",
+                "2a3c"
+              ]
+            }
+          },
+          {
+            "move": "3b3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 470,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d7g",
+                "6a5b",
+                "5i6h",
+                "4a3b",
+                "3g3f",
+                "5a4a",
+                "4i5h",
+                "7a6b",
+                "7i7h",
+                "7c7d",
+                "3i4h",
+                "8c8d",
+                "4g4f",
+                "6b7c"
+              ]
+            }
+          },
+          {
+            "move": "6a7b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4456,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "7b6b",
+                "2b1a",
+                "9c9d",
+                "5i5h",
+                "4a3a",
+                "8i7g",
+                "2a3c",
+                "7i7h"
+              ]
+            }
+          },
+          {
+            "move": "6a6b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4410,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "6c6d",
+                "2b1a",
+                "6b5b",
+                "5i5h",
+                "5a6a",
+                "B*1b",
+                "8b6b",
+                "1a2b",
+                "3d3e",
+                "1g1f",
+                "9c9d",
+                "2e2d"
+              ]
+            }
+          },
+          {
+            "move": "6a5b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4135,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "2a3c",
+                "2e2d",
+                "2c2d",
+                "2b1a",
+                "8b6b",
+                "2h2d",
+                "P*2c",
+                "2d2f",
+                "6c6d"
+              ]
+            }
+          },
+          {
+            "move": "4a3a",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 635,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "3a2b",
+                "7i8h",
+                "9c9d",
+                "9g9f",
+                "3b4c",
+                "8h7g",
+                "8b4b",
+                "5i6h",
+                "7c7d",
+                "2e2d",
+                "2c2d",
+                "2h2d",
+                "7d7e",
+                "7f7e"
+              ]
+            }
+          },
+          {
+            "move": "4a5b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4446,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "5b4b",
+                "2b1a",
+                "8b5b",
+                "L*4f",
+                "5a6b",
+                "4f4b+",
+                "5b4b",
+                "1a2b",
+                "4b4g+",
+                "2b3b",
+                "4g5g",
+                "P*5h"
+              ]
+            }
+          },
+          {
+            "move": "4a4b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4161,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "8b5b",
+                "2b1a",
+                "5a6b",
+                "2e2d",
+                "2c2d",
+                "5i5h",
+                "2a3c",
+                "2h2d",
+                "P*2c",
+                "2d3d",
+                "5b5a",
+                "1a2b",
+                "6b7b",
+                "3d3f",
+                "5c5d",
+                "3f1f",
+                "5d5e"
+              ]
+            }
+          },
+          {
+            "move": "2b3a",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 2076,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d1a+",
+                "3a4b",
+                "L*4f",
+                "4b3c",
+                "1a3c",
+                "2a3c",
+                "4f4a+",
+                "5a4a",
+                "2e2d",
+                "2c2d",
+                "B*1b",
+                "B*5e",
+                "2h2d",
+                "5e9i+",
+                "2d2b+",
+                "9i8i",
+                "1b3d+",
+                "4a5a",
+                "P*2d"
+              ]
+            }
+          },
+          {
+            "move": "2b3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 530,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d3c+",
+                "3b3c",
+                "5i6h",
+                "9c9d",
+                "9g9f",
+                "4a3b",
+                "7i8h",
+                "7a6b",
+                "8h7g",
+                "6c6d",
+                "3i3h",
+                "7c7d",
+                "4g4f",
+                "6b6c",
+                "3h4g",
+                "8c8d"
+              ]
+            }
+          },
+          {
+            "move": "2b4d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -2935,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2h8h",
+                "B*2g",
+                "8h2h",
+                "2g5d+",
+                "7i8h",
+                "5d7f",
+                "6i7h",
+                "6c6d",
+                "8h7g",
+                "7f5d",
+                "9g9f",
+                "2a3c"
+              ]
+            }
+          },
+          {
+            "move": "8b9b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4194,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "9b4b",
+                "5i5h",
+                "5a6b",
+                "2b1a",
+                "2a3c",
+                "3i4h",
+                "6b7b",
+                "L*4f",
+                "3c4e",
+                "8i7g",
+                "5c5d",
+                "1a2b",
+                "9c9d",
+                "2h2f",
+                "4e5g+",
+                "4h5g"
+              ]
+            }
+          },
+          {
+            "move": "8b7b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3920,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "7b5b",
+                "2b1a",
+                "5a6b",
+                "1a2b",
+                "6b7b",
+                "9g9f",
+                "5c5d",
+                "5i5h"
+              ]
+            }
+          },
+          {
+            "move": "8b6b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4275,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "6b4b",
+                "5i5h",
+                "5a6b",
+                "2b1a",
+                "2a3c",
+                "L*4f",
+                "3c4e",
+                "1a5e",
+                "4e5g+",
+                "5h5g",
+                "P*4e",
+                "4f4e",
+                "4b4e",
+                "5e4e",
+                "L*5d",
+                "4e5d",
+                "5c5d"
+              ]
+            }
+          },
+          {
+            "move": "8b5b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3881,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "5a6b",
+                "2b1a",
+                "6b7b",
+                "5i5h",
+                "7a6b",
+                "7i7h",
+                "6a7a",
+                "1a7g",
+                "5c5d",
+                "2h2f",
+                "5d5e",
+                "3i4h",
+                "5e5f",
+                "5g5f"
+              ]
+            }
+          },
+          {
+            "move": "8b4b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3140,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "4b4g+",
+                "2b1a",
+                "4g4b",
+                "4i5h",
+                "5a6b",
+                "L*4i",
+                "P*4e",
+                "2h2f",
+                "6a5b",
+                "P*4d",
+                "2a3c"
+              ]
+            }
+          },
+          {
+            "move": "5a6b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4253,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "6a5a",
+                "5i5h",
+                "6b6a",
+                "2b1a",
+                "2a3c",
+                "2e2d",
+                "2c2d",
+                "2h2d",
+                "8b5b",
+                "P*2c",
+                "P*2a",
+                "2d2f",
+                "5a4b",
+                "2f1f",
+                "5c5d",
+                "1f1c+"
+              ]
+            }
+          },
+          {
+            "move": "5a5b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4323,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "6a5a",
+                "2b1a",
+                "5b6a",
+                "2e2d",
+                "2c2d",
+                "P*2c",
+                "3b2c",
+                "B*4c",
+                "8b5b",
+                "4c2a+",
+                "5b4b",
+                "5i5h"
+              ]
+            }
+          },
+          {
+            "move": "5a4b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4376,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "4d2b+",
+                "4a3a",
+                "2b1a",
+                "6a5b",
+                "5i5h",
+                "7a6b",
+                "8i7g"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "candidate_id": "a77ad58c704df8bb27bf_7g3c+",
+        "position_id": "a77ad58c704df8bb27bf",
+        "move": "7g3c+",
+        "attacker_side": "sente",
+        "best_eval": 126,
+        "candidate_eval": 57
+      },
+      "position": {
+        "sfen": "ln4knl/1r1sgsg2/2ppppb2/p5p1p/9/P1P4RP/2BPPPP2/2GSGS3/LNK4NL b 2P2p 33",
+        "move_history": [
+          "2g2f",
+          "8c8d",
+          "2f2e",
+          "8d8e",
+          "7g7f",
+          "3c3d",
+          "6i7h",
+          "4a3b",
+          "2e2d",
+          "2c2d",
+          "2h2d",
+          "8e8f",
+          "8g8f",
+          "8b8f",
+          "2d2f",
+          "8f8b",
+          "8h7g",
+          "2b3c",
+          "3i4h",
+          "7a6b",
+          "7i6h",
+          "3a4b",
+          "4i5h",
+          "6a5b",
+          "5i6i",
+          "5a4a",
+          "6i7i",
+          "4a3a",
+          "9g9f",
+          "1c1d",
+          "1g1f",
+          "9c9d"
+        ]
+      },
+      "budget": 100000,
+      "evidence": {
+        "responses": [
+          {
+            "move": "7c7d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4805,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "P*2e",
+                "2f2e",
+                "P*2d",
+                "G*3b",
+                "3c4d",
+                "4a5b",
+                "2d2e",
+                "3b4b",
+                "R*4i",
+                "5h5i",
+                "B*8h",
+                "7h8h",
+                "4i5i+",
+                "4h5i"
+              ]
+            }
+          },
+          {
+            "move": "6c6d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5991,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a4a",
+                "3c3b",
+                "4a3b",
+                "2b1a+",
+                "P*2c",
+                "1a2a",
+                "3b4a",
+                "2f2c+",
+                "P*2b",
+                "G*3b",
+                "4a5a",
+                "2c2b",
+                "B*3c",
+                "3b3c",
+                "8b8i+",
+                "7i8i",
+                "N*9g",
+                "8i8h"
+              ]
+            }
+          },
+          {
+            "move": "5c5d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4780,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "P*2b",
+                "L*8h",
+                "P*8f",
+                "B*1b",
+                "3a4a",
+                "1a2a",
+                "9d9e",
+                "9f9e",
+                "9a9e",
+                "9i9e",
+                "7c7d",
+                "7i6i"
+              ]
+            }
+          },
+          {
+            "move": "4c4d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5195,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "3a4a",
+                "1a2a",
+                "4b3a",
+                "L*8h",
+                "P*8g",
+                "7h8g",
+                "5c5d",
+                "2a1b",
+                "P*2c"
+              ]
+            }
+          },
+          {
+            "move": "9d9e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5635,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a4a",
+                "3c3b",
+                "4a3b",
+                "2b1a+",
+                "P*2c",
+                "1a2a",
+                "3b4a",
+                "L*8h",
+                "P*8f",
+                "2f2c+",
+                "4a5a",
+                "2a3b",
+                "5a6a",
+                "2c2a",
+                "6b5a",
+                "G*4a",
+                "B*3c",
+                "P*8c"
+              ]
+            }
+          },
+          {
+            "move": "3d3e",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": 9,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "G*3d",
+                "3c2b",
+                "2c4a+",
+                "P*2c",
+                "2f2c+"
+              ]
+            }
+          },
+          {
+            "move": "1d1e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4828,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "P*2d",
+                "B*1b",
+                "4b3c",
+                "1a2a",
+                "3a4b",
+                "L*8h"
+              ]
+            }
+          },
+          {
+            "move": "9a9b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5357,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "5b5a",
+                "4a2c",
+                "3c4d",
+                "2f4f",
+                "B*4e",
+                "P*8c",
+                "8b8c",
+                "2c2b",
+                "2a3c",
+                "2b1a",
+                "5c5d"
+              ]
+            }
+          },
+          {
+            "move": "9a9c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5640,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "P*2e",
+                "2f2e",
+                "P*2d",
+                "G*2c",
+                "3c4d",
+                "2c2d",
+                "2a3c",
+                "2d3c",
+                "4d3c",
+                "N*4e",
+                "3c4d",
+                "4a5b",
+                "B*8h",
+                "7h8h"
+              ]
+            }
+          },
+          {
+            "move": "1a1b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 6053,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c1b+",
+                "P*2e",
+                "2f2e",
+                "P*2d",
+                "P*8c",
+                "2d2e",
+                "8c8b+",
+                "R*4i",
+                "5h5i",
+                "4i5i+",
+                "4h5i",
+                "G*8h",
+                "7i8h",
+                "B*5e",
+                "8h9g"
+              ]
+            }
+          },
+          {
+            "move": "1a1c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5755,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "P*2e",
+                "2f2e",
+                "P*2d",
+                "G*2c",
+                "3c4d",
+                "2c2d",
+                "B*8g",
+                "P*8h",
+                "8g7f+",
+                "4a5b"
+              ]
+            }
+          },
+          {
+            "move": "8a9c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5718,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "B*5e",
+                "G*3b",
+                "3c4d",
+                "8i7g",
+                "4d3e",
+                "2f2a+",
+                "P*8g",
+                "N*2g",
+                "3e4e",
+                "2a2e",
+                "4e4d"
+              ]
+            }
+          },
+          {
+            "move": "2a3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 543,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "P*8c",
+                "8b9b",
+                "6h7g",
+                "8a9c",
+                "P*2d",
+                "P*2b",
+                "2f2h",
+                "5c5d",
+                "7i6h",
+                "3a4a",
+                "3g3f"
+              ]
+            }
+          },
+          {
+            "move": "2a1c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5251,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "6b5a",
+                "4a2c",
+                "3c4d",
+                "2f4f",
+                "4d5e",
+                "4f5f",
+                "5e4d",
+                "G*5e",
+                "4d3e",
+                "2c1d"
+              ]
+            }
+          },
+          {
+            "move": "6b7a",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5446,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a4a",
+                "3c3b",
+                "4a3b",
+                "2b1a+",
+                "P*2d",
+                "2f2d",
+                "P*2c",
+                "1a2a",
+                "3b4a",
+                "2d2c+",
+                "4a5a",
+                "G*3b"
+              ]
+            }
+          },
+          {
+            "move": "6b5a",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": 7,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "G*2c",
+                "3b3a",
+                "2c2b",
+                "3a4a",
+                "B*3b"
+              ]
+            }
+          },
+          {
+            "move": "4b5a",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5973,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*4a",
+                "3b3c",
+                "2f2a+",
+                "3c4d",
+                "N*5f",
+                "4d5d",
+                "2a1a",
+                "B*8h",
+                "7h8h"
+              ]
+            }
+          },
+          {
+            "move": "4b3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 352,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "P*8c",
+                "8b9b",
+                "6h7g",
+                "P*2c",
+                "7i6h",
+                "3a2b",
+                "3g3f",
+                "6c6d",
+                "2i3g",
+                "6b6c",
+                "4g4f",
+                "5b4b",
+                "4h4g",
+                "4c4d",
+                "2f2i",
+                "9b6b"
+              ]
+            }
+          },
+          {
+            "move": "5b5a",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4801,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "3a4a",
+                "2f2a+",
+                "3b3a",
+                "2a1b",
+                "P*8f",
+                "1a7g",
+                "8b8e",
+                "P*8h",
+                "8e2e",
+                "N*3c",
+                "4a5b"
+              ]
+            }
+          },
+          {
+            "move": "3b2b",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": 5,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2f2b+",
+                "3a4a",
+                "2b3b",
+                "4a5a",
+                "3b2a"
+              ]
+            }
+          },
+          {
+            "move": "3b3c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 2283,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a3b",
+                "2b1a+",
+                "P*2d",
+                "L*8h",
+                "P*8f",
+                "6h7g",
+                "8a9c",
+                "8h8f",
+                "9c8e",
+                "P*2b",
+                "2a1c",
+                "2b2a+",
+                "B*4d",
+                "2f2h",
+                "3b4a"
+              ]
+            }
+          },
+          {
+            "move": "3b2c",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": 11,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c2c",
+                "8b8i+",
+                "7i8i",
+                "P*8h",
+                "8i9h",
+                "N*3b",
+                "G*2b",
+                "3a4a",
+                "2b3b",
+                "4a5a",
+                "R*4a"
+              ]
+            }
+          },
+          {
+            "move": "8b9b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 6274,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "5b5a",
+                "2f2b+",
+                "3c4d",
+                "4a4b",
+                "5a4b",
+                "2b4b",
+                "2a3c",
+                "4g4f",
+                "B*8h",
+                "7h8h"
+              ]
+            }
+          },
+          {
+            "move": "8b7b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 6385,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "P*2e",
+                "G*2c",
+                "3c4d",
+                "2f4f",
+                "4d5d",
+                "4a5b",
+                "7c7d",
+                "4f6f",
+                "P*8g",
+                "G*6e",
+                "5d4d",
+                "6f4f",
+                "B*4e"
+              ]
+            }
+          },
+          {
+            "move": "8b8c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5718,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "B*5e",
+                "2f2a+",
+                "8c8i+",
+                "7i8i",
+                "5e9i+",
+                "8i9i",
+                "L*9g",
+                "9i8h",
+                "9g9h+",
+                "8h9h"
+              ]
+            }
+          },
+          {
+            "move": "8b8d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5695,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "B*5e",
+                "2f2a+",
+                "5e9i+",
+                "P*8g",
+                "8d8g+",
+                "7h8g",
+                "9i8i",
+                "7i8i"
+              ]
+            }
+          },
+          {
+            "move": "8b8e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4087,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a4a",
+                "3c3b",
+                "4a3b",
+                "2b1a+",
+                "P*2e",
+                "8i7g",
+                "8e4e",
+                "G*2b",
+                "3b4a",
+                "2f5f",
+                "4b3c",
+                "1a2a",
+                "3c2b",
+                "2a2b"
+              ]
+            }
+          },
+          {
+            "move": "8b8f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5383,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "2c4a+",
+                "P*2e",
+                "G*2c",
+                "3c4d",
+                "2f4f",
+                "4d5e",
+                "5g5f"
+              ]
+            }
+          },
+          {
+            "move": "8b8g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 6348,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "7h8g",
+                "P*2e",
+                "2f2e",
+                "P*2d",
+                "G*3b",
+                "3c4d",
+                "2e2d",
+                "5c5d",
+                "2c3d+",
+                "4d5c",
+                "3b4b",
+                "5b4b",
+                "2d2a+",
+                "B*8h",
+                "7i8h"
+              ]
+            }
+          },
+          {
+            "move": "8b8g+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 6501,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "7h8g",
+                "P*2e",
+                "2f2e",
+                "P*2d",
+                "G*3b",
+                "3c4d",
+                "R*4f",
+                "4d5d",
+                "2e8e",
+                "7c7d",
+                "8e8a+",
+                "B*5e",
+                "4f5f",
+                "5d6d",
+                "5f5e"
+              ]
+            }
+          },
+          {
+            "move": "8b8h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 7330,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "7h8h",
+                "4b3a",
+                "G*2d",
+                "3c4d",
+                "2c3d+",
+                "4d5d",
+                "2f5f",
+                "B*5e",
+                "5f5e"
+              ]
+            }
+          },
+          {
+            "move": "8b8h+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5962,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c8h",
+                "P*2b",
+                "R*6a",
+                "6b5a",
+                "B*6f",
+                "4c4d",
+                "6a8a+",
+                "2b2c",
+                "6f4d",
+                "2a3c",
+                "4d6f",
+                "P*4c",
+                "8a9a",
+                "6c6d",
+                "P*2d"
+              ]
+            }
+          },
+          {
+            "move": "8b8i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 2863,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7i8i",
+                "4b3c",
+                "R*6a",
+                "5b5a",
+                "6a8a+",
+                "B*4d",
+                "2f2e",
+                "7c7d",
+                "2e8e",
+                "P*2b",
+                "8a9a"
+              ]
+            }
+          },
+          {
+            "move": "8b8i+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 2697,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7i8i",
+                "4b3c",
+                "R*6a",
+                "5b5a",
+                "6a8a+",
+                "P*2c",
+                "N*4e",
+                "B*4d",
+                "4e3c+",
+                "4d2f",
+                "3c3b",
+                "3a3b"
+              ]
+            }
+          },
+          {
+            "move": "3a4a",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": 5,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "2f2a+",
+                "3b3a",
+                "B*3b",
+                "4a5a",
+                "2a3a"
+              ]
+            }
+          },
+          {
+            "move": "P*2b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 3321,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c6f",
+                "8b8e",
+                "6h7g",
+                "P*8f",
+                "6f7e",
+                "8e8c",
+                "P*8h",
+                "4c4d",
+                "7e8f",
+                "8c8f",
+                "7g8f"
+              ]
+            }
+          },
+          {
+            "move": "P*8c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5741,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "3a4a",
+                "2f2a+",
+                "3b3a",
+                "2a1b",
+                "4a5a",
+                "N*2c",
+                "5a6a",
+                "2c3a+",
+                "4b3a",
+                "P*8g",
+                "6b5a",
+                "1b2a",
+                "3a2b",
+                "1a2b"
+              ]
+            }
+          },
+          {
+            "move": "P*2c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4640,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "4b3c",
+                "L*8h",
+                "P*8f",
+                "B*1b",
+                "3a4a",
+                "1b2a+",
+                "7c7d",
+                "1a1b",
+                "3c2d",
+                "6h7g",
+                "8a7c",
+                "7g8f"
+              ]
+            }
+          },
+          {
+            "move": "P*8d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5593,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "P*2b",
+                "B*1b",
+                "3a4a",
+                "1a2b",
+                "4b3a",
+                "2b2a",
+                "5b5a",
+                "P*8c",
+                "8b8c",
+                "1b3d+"
+              ]
+            }
+          },
+          {
+            "move": "P*2d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4321,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "4b3c",
+                "L*8h",
+                "P*8f",
+                "B*1b",
+                "2a1c",
+                "1f1e",
+                "2d2e",
+                "2f1f",
+                "3a4b",
+                "1e1d",
+                "3c2b",
+                "1a2a"
+              ]
+            }
+          },
+          {
+            "move": "P*8e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5772,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a4a",
+                "3c3b",
+                "4a3b",
+                "2b1a+",
+                "P*2c",
+                "1a2a",
+                "3b4a",
+                "2f2c+",
+                "4a5a",
+                "N*7e",
+                "5a6a",
+                "P*8c",
+                "8b7b",
+                "G*8b",
+                "B*5e"
+              ]
+            }
+          },
+          {
+            "move": "P*2e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 2916,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "2f2e",
+                "P*2c",
+                "P*8c",
+                "8b8c",
+                "B*6a",
+                "8c8b",
+                "6a5b+",
+                "6b5a",
+                "5b6c",
+                "P*8g",
+                "P*8c",
+                "8b8c",
+                "6h7g"
+              ]
+            }
+          },
+          {
+            "move": "P*8f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4072,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c3b",
+                "3a3b",
+                "B*2c",
+                "3b3c",
+                "G*2d",
+                "3c4d",
+                "2d3d",
+                "4d5d",
+                "P*8h",
+                "5b5a",
+                "2c3b+",
+                "2a1c",
+                "2f2a+",
+                "7c7d",
+                "7i6i"
+              ]
+            }
+          },
+          {
+            "move": "P*8g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4662,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "P*2c",
+                "1a7g",
+                "8a9c",
+                "L*8f",
+                "9c8e",
+                "7g8g",
+                "6c6d",
+                "B*1b"
+              ]
+            }
+          },
+          {
+            "move": "P*2g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5355,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "3a4a",
+                "2f2a+",
+                "3b3a",
+                "2a1b",
+                "P*8h",
+                "1a8h",
+                "4a5a",
+                "1b1a",
+                "8b8h+",
+                "7h8h",
+                "B*3c"
+              ]
+            }
+          },
+          {
+            "move": "P*8h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 4303,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*2b",
+                "3a4a",
+                "3c8h",
+                "P*2e",
+                "2f2e",
+                "2a3c",
+                "2e2h",
+                "9d9e",
+                "9f9e",
+                "5b5a",
+                "2b1a+",
+                "4a5b",
+                "2h2a+",
+                "3b3a",
+                "2a1b",
+                "8b8h+",
+                "7i8h"
+              ]
+            }
+          },
+          {
+            "move": "P*2h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 5457,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3c1a",
+                "3a4a",
+                "L*8h",
+                "P*8e",
+                "2f2a+",
+                "3b3a",
+                "2a2h",
+                "4a5a",
+                "1a7g",
+                "6c6d",
+                "B*6f"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "candidate": {
+        "candidate_id": "b1d901d7811d5a04a762_3c7g+",
+        "position_id": "b1d901d7811d5a04a762",
+        "move": "3c7g+",
+        "attacker_side": "gote",
+        "best_eval": -132,
+        "candidate_eval": -120
+      },
+      "position": {
+        "sfen": "ln4knl/1r1sgsg2/2pp1pb2/p3p1p1p/9/P1P1PP1RP/2BP2P2/2GSGS3/LNK4NL w 2P2p 36",
+        "move_history": [
+          "2g2f",
+          "8c8d",
+          "2f2e",
+          "8d8e",
+          "7g7f",
+          "3c3d",
+          "6i7h",
+          "4a3b",
+          "2e2d",
+          "2c2d",
+          "2h2d",
+          "8e8f",
+          "8g8f",
+          "8b8f",
+          "2d2f",
+          "8f8b",
+          "8h7g",
+          "2b3c",
+          "3i4h",
+          "7a6b",
+          "7i6h",
+          "3a4b",
+          "4i5h",
+          "6a5b",
+          "5i6i",
+          "5a4a",
+          "6i7i",
+          "4a3a",
+          "9g9f",
+          "1c1d",
+          "1g1f",
+          "9c9d",
+          "5g5f",
+          "5c5d",
+          "4g4f"
+        ]
+      },
+      "budget": 100000,
+      "evidence": {
+        "responses": [
+          {
+            "move": "9f9e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5164,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8f",
+                "8b8f",
+                "P*8g",
+                "8f9f",
+                "7h8h",
+                "9i8h",
+                "7i8h",
+                "B*9i",
+                "8h7i"
+              ]
+            }
+          },
+          {
+            "move": "7f7e",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": -9,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "B*8g",
+                "7h7g",
+                "G*7f",
+                "7g8h",
+                "8g6i+",
+                "P*8c",
+                "7f8g"
+              ]
+            }
+          },
+          {
+            "move": "5f5e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4787,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8h",
+                "B*9h",
+                "7i6i",
+                "9h8i+",
+                "6h7g",
+                "N*5f",
+                "P*2b",
+                "3b2b",
+                "5e5d"
+              ]
+            }
+          },
+          {
+            "move": "4f4e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5514,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8c",
+                "8b8c",
+                "P*8g",
+                "9i8i",
+                "7h6i",
+                "8c8g+",
+                "6i5i",
+                "L*2b",
+                "2f3f"
+              ]
+            }
+          },
+          {
+            "move": "1f1e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4663,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*9h",
+                "7i6i",
+                "9i8i",
+                "6h7i",
+                "L*2b",
+                "P*2d",
+                "9h8g+",
+                "1e1d",
+                "8g7h",
+                "7i7h",
+                "G*7i",
+                "6i6h",
+                "8i7h"
+              ]
+            }
+          },
+          {
+            "move": "6g6f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5085,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "7i6i",
+                "8b8i+",
+                "7h7i",
+                "8i9h",
+                "6i5i",
+                "9i8i",
+                "P*2c",
+                "8i7i",
+                "6h7i",
+                "B*8f",
+                "B*6h"
+              ]
+            }
+          },
+          {
+            "move": "3g3f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5038,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8d",
+                "8b8d",
+                "P*8g",
+                "G*8h",
+                "7h6i",
+                "8d8g+",
+                "6i5i",
+                "9i8i",
+                "B*1h"
+              ]
+            }
+          },
+          {
+            "move": "9i9g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5108,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "B*8g",
+                "7h7g",
+                "8g6i+",
+                "5h5i",
+                "8b8i+",
+                "5i6i",
+                "8i6i",
+                "B*2b",
+                "3b2b",
+                "2f2b+",
+                "3a2b",
+                "P*2c",
+                "2b3c"
+              ]
+            }
+          },
+          {
+            "move": "9i9h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5117,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "B*8g",
+                "7h7g",
+                "8g9h+",
+                "7g6f",
+                "8b8i+",
+                "6f5g",
+                "P*2b",
+                "1f1e",
+                "9h8h",
+                "1e1d",
+                "8h4d",
+                "2f2e",
+                "2a3c",
+                "2e2d",
+                "3a4a",
+                "1d1c+",
+                "5d5e"
+              ]
+            }
+          },
+          {
+            "move": "1i1g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5391,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*9h",
+                "7i6i",
+                "9i8i",
+                "6h7i",
+                "8b8g+",
+                "7h8g",
+                "9h8g+",
+                "6i5i"
+              ]
+            }
+          },
+          {
+            "move": "1i1h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5526,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "9i8i",
+                "7h6i",
+                "8b8g+",
+                "6i5i",
+                "8i7h",
+                "5i4i",
+                "N*3e",
+                "B*6f",
+                "8g8i",
+                "4h5i"
+              ]
+            }
+          },
+          {
+            "move": "8i9g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4835,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "9i9h",
+                "6h7g",
+                "L*2b",
+                "P*2d",
+                "9h9g",
+                "7g8h",
+                "9g9f"
+              ]
+            }
+          },
+          {
+            "move": "8i7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 45,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "5b5a",
+                "1f1e",
+                "1d1e",
+                "P*2b",
+                "3b2b",
+                "P*2c",
+                "2b1b",
+                "1i1e",
+                "P*1c",
+                "B*6f",
+                "4c4d",
+                "1e1c",
+                "2a1c",
+                "P*1d",
+                "P*2e"
+              ]
+            }
+          },
+          {
+            "move": "2i1g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5038,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*9h",
+                "7i6i",
+                "9i8i",
+                "7h7g",
+                "L*2b",
+                "P*2d",
+                "9h8g+",
+                "7g8g",
+                "8b8g+",
+                "6i5i",
+                "8i7h",
+                "5i4i",
+                "8g8i",
+                "B*5i",
+                "7h9f"
+              ]
+            }
+          },
+          {
+            "move": "6h7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": 144,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "5b5a",
+                "P*8g",
+                "P*2c",
+                "B*6f",
+                "4b3c",
+                "3g3f",
+                "9d9e",
+                "9f9e",
+                "P*9g",
+                "9i9g",
+                "6c6d",
+                "3f3e"
+              ]
+            }
+          },
+          {
+            "move": "6h5g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4685,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*9h",
+                "P*2d",
+                "9i8i",
+                "7i6i",
+                "9h8g+"
+              ]
+            }
+          },
+          {
+            "move": "6h5i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5364,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "9i8i",
+                "7h6h",
+                "8b8g+",
+                "6h5g",
+                "8i7i",
+                "5g4g",
+                "N*3e",
+                "4g3f",
+                "8g8i",
+                "P*2c"
+              ]
+            }
+          },
+          {
+            "move": "4h5g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5456,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "L*2b",
+                "P*2d",
+                "9i8i",
+                "7h6i",
+                "8b8g+",
+                "5h5i"
+              ]
+            }
+          },
+          {
+            "move": "4h4g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5272,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8f",
+                "8b8f",
+                "P*8g",
+                "8f9f",
+                "7h6i",
+                "9f9h+",
+                "6h7i",
+                "9h8i",
+                "6i6h",
+                "8i8g"
+              ]
+            }
+          },
+          {
+            "move": "4h5i",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": -7,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "G*8g",
+                "7h6i",
+                "B*7h",
+                "6i7i",
+                "8g8h"
+              ]
+            }
+          },
+          {
+            "move": "4h3i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5511,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "L*2b",
+                "P*2d",
+                "9i8i",
+                "7h6i",
+                "8b8g+",
+                "6i5i",
+                "8i7h",
+                "5i4i",
+                "7h6h",
+                "5h6h",
+                "8g8i",
+                "B*6i",
+                "S*4g",
+                "B*7g"
+              ]
+            }
+          },
+          {
+            "move": "7h8g",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": -11,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "8b8g+",
+                "2f2a+",
+                "3a2a",
+                "P*2b",
+                "2a2b",
+                "P*2c",
+                "3b2c",
+                "7i6i",
+                "G*7h",
+                "6i5i",
+                "R*6i"
+              ]
+            }
+          },
+          {
+            "move": "7h7g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -2184,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i7h",
+                "8h9i+",
+                "P*8f",
+                "L*2b",
+                "P*2d",
+                "P*8h",
+                "8i9g",
+                "8h8i+",
+                "1f1e",
+                "4b3c",
+                "1e1d",
+                "3c2d",
+                "1d1c+",
+                "2a1c"
+              ]
+            }
+          },
+          {
+            "move": "7h8h",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": -5,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "8b8h+",
+                "7i6i",
+                "8h7h",
+                "6i5i",
+                "7h8i"
+              ]
+            }
+          },
+          {
+            "move": "5h5g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5125,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8h",
+                "B*9h",
+                "7i6i",
+                "L*2b",
+                "2f3f",
+                "9h8i+",
+                "7h7i",
+                "8i7i",
+                "6h7i",
+                "N*6e",
+                "3f3d",
+                "6e5g+",
+                "4h5g"
+              ]
+            }
+          },
+          {
+            "move": "5h4g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5353,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "7i6i",
+                "9i8i",
+                "P*2d",
+                "P*2b",
+                "6h7i",
+                "N*6e"
+              ]
+            }
+          },
+          {
+            "move": "5h5i",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4857,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*9h",
+                "4f4e",
+                "9i8i",
+                "7i6i",
+                "P*2b",
+                "1f1e"
+              ]
+            }
+          },
+          {
+            "move": "2f2a",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3187,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3a2a",
+                "6h7g",
+                "R*4i",
+                "5h5i",
+                "4i2i+",
+                "P*8f",
+                "5b5a",
+                "B*6f",
+                "P*2b",
+                "7i8h",
+                "2a3a",
+                "1i1g"
+              ]
+            }
+          },
+          {
+            "move": "2f2a+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3002,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "3a2a",
+                "6h7g",
+                "R*4i",
+                "5h5i",
+                "4i2i+",
+                "P*8g",
+                "2a3a",
+                "P*2c",
+                "2i1i",
+                "7i8h",
+                "1i2i",
+                "B*6f",
+                "P*2b",
+                "2c2b+",
+                "3b2b"
+              ]
+            }
+          },
+          {
+            "move": "2f2b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -6628,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h2b+",
+                "P*8c",
+                "8b8c",
+                "B*7i",
+                "R*8h",
+                "7h6i",
+                "G*7h",
+                "6i5i",
+                "8h8i+",
+                "P*2d",
+                "7h7i",
+                "5i4i",
+                "7i7h",
+                "5h5i"
+              ]
+            }
+          },
+          {
+            "move": "2f2b+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5785,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g2b",
+                "P*8h",
+                "B*4d",
+                "5f5e",
+                "R*4i",
+                "5h5i",
+                "4i2i+",
+                "P*2d",
+                "4d5e",
+                "8i7g",
+                "N*5f"
+              ]
+            }
+          },
+          {
+            "move": "2f2c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -6117,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "3b2c",
+                "P*2b",
+                "2c2b",
+                "B*7g",
+                "G*8g",
+                "7h6i",
+                "8g7g",
+                "6h7g"
+              ]
+            }
+          },
+          {
+            "move": "2f2c+",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -6010,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "B*8g",
+                "7h7g",
+                "3b2c",
+                "P*8f",
+                "8g6i+",
+                "B*7h",
+                "6i5h",
+                "7g8g",
+                "5h4h",
+                "8g7g",
+                "4h5g",
+                "6h5g"
+              ]
+            }
+          },
+          {
+            "move": "2f2d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5166,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8f",
+                "8b8f",
+                "P*8g",
+                "8f9f",
+                "B*2b",
+                "9i2b",
+                "2d2b+",
+                "3a2b",
+                "B*8h",
+                "2b3a"
+              ]
+            }
+          },
+          {
+            "move": "2f2e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4724,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8d",
+                "8b8d",
+                "P*8e",
+                "P*2d",
+                "2e6e",
+                "8d8c",
+                "6h7g",
+                "B*9h",
+                "8i9g",
+                "9i8i",
+                "7i6h",
+                "8i7h",
+                "6h7h",
+                "G*8g",
+                "7h6h",
+                "8g7g",
+                "6h7g"
+              ]
+            }
+          },
+          {
+            "move": "2f3f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5547,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "B*8g",
+                "7h7g",
+                "8g6i+",
+                "P*8c",
+                "8b8c",
+                "3f3d",
+                "8c8g+",
+                "7g6f",
+                "6i5h",
+                "B*2b",
+                "3a4a"
+              ]
+            }
+          },
+          {
+            "move": "2f2g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5577,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "9i8i",
+                "7h6i",
+                "8b8g+",
+                "6i5i",
+                "8i7h",
+                "5i4i",
+                "N*3e",
+                "2g2f",
+                "7h6h",
+                "B*2b",
+                "3b2b",
+                "2f2b+",
+                "3a2b"
+              ]
+            }
+          },
+          {
+            "move": "2f2h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5278,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "9i8i",
+                "7h6i",
+                "8b8g+",
+                "6i5i",
+                "8i7h",
+                "5i4i",
+                "7h6h",
+                "5h6h",
+                "8g8i",
+                "4i5h",
+                "S*4i",
+                "5h4g"
+              ]
+            }
+          },
+          {
+            "move": "7i6i",
+            "result": {
+              "score": {
+                "score_type": "mate",
+                "score_cp": null,
+                "mate_distance": -5,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "8b8i+",
+                "7h7i",
+                "B*7h",
+                "6i5i",
+                "8i7i"
+              ]
+            }
+          },
+          {
+            "move": "P*2b",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4644,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g2b",
+                "7h8h",
+                "8b8h+",
+                "5h5i",
+                "8h8i",
+                "6i5h",
+                "2b9i",
+                "4f4e",
+                "L*2b",
+                "P*2d",
+                "8i9h",
+                "5h4g",
+                "N*3e",
+                "4g3f"
+              ]
+            }
+          },
+          {
+            "move": "P*8c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3175,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g7h",
+                "7i7h",
+                "8b8c",
+                "6h7i",
+                "B*8g",
+                "7h6h",
+                "8g7f+",
+                "P*8h",
+                "7f8f",
+                "B*7g",
+                "8f7g",
+                "8i7g",
+                "5b5a",
+                "2f2h",
+                "P*2c",
+                "1i1g"
+              ]
+            }
+          },
+          {
+            "move": "P*2c",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4988,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "L*8d",
+                "8i7g",
+                "B*9g",
+                "7i6i",
+                "8d8g+",
+                "7h8g",
+                "8b8g+",
+                "6i5i"
+              ]
+            }
+          },
+          {
+            "move": "P*8d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4706,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "8i7g",
+                "L*2b",
+                "2f3f",
+                "8b8d",
+                "P*8e",
+                "8d6d",
+                "7i6i",
+                "2b2i+",
+                "3f3d",
+                "4b3c",
+                "3d3e",
+                "2i1i",
+                "3g3f",
+                "N*8f",
+                "7h7i",
+                "B*8g",
+                "6i5i"
+              ]
+            }
+          },
+          {
+            "move": "P*2d",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4976,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*9h",
+                "7i6i",
+                "9i8i",
+                "7h7g",
+                "P*2b",
+                "3g3f",
+                "8i8h",
+                "5h5i",
+                "8h7g",
+                "6h7g",
+                "9h8g+",
+                "6i5h"
+              ]
+            }
+          },
+          {
+            "move": "P*8e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4803,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "6h7g",
+                "L*2b",
+                "P*2d",
+                "8b8e",
+                "7g8h",
+                "9i9h",
+                "8i7g",
+                "8e8d",
+                "7i6h",
+                "8d8h+",
+                "7h8h",
+                "9h8h",
+                "R*8e"
+              ]
+            }
+          },
+          {
+            "move": "P*2e",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5658,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8g",
+                "B*4d",
+                "2f2h",
+                "L*8d",
+                "8g8f",
+                "8d8f",
+                "7i6i",
+                "8f8h+",
+                "6h7i",
+                "8h7h",
+                "7i7h",
+                "9i8i",
+                "5h5i"
+              ]
+            }
+          },
+          {
+            "move": "P*8f",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4428,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "6h7g",
+                "B*9h",
+                "7h8h",
+                "9h8i+",
+                "8h8i",
+                "9i7g",
+                "B*8h",
+                "N*6e",
+                "P*2b",
+                "8b8f",
+                "2b2a+",
+                "3a4a",
+                "2a2b",
+                "3b2b",
+                "2f2b+",
+                "7g2b",
+                "8h2b+"
+              ]
+            }
+          },
+          {
+            "move": "P*8g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -4628,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "1f1e",
+                "L*8d",
+                "6h7g",
+                "8d8g+",
+                "P*8h",
+                "8g7h",
+                "7i7h",
+                "P*2b",
+                "1e1d",
+                "B*9h",
+                "1d1c+",
+                "9h8i+",
+                "7h6h",
+                "1a1c",
+                "1i1c+",
+                "2a1c"
+              ]
+            }
+          },
+          {
+            "move": "P*2g",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5438,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g9i",
+                "P*8h",
+                "B*9h",
+                "7i6i",
+                "9i8i",
+                "7h7i",
+                "L*2b",
+                "2f3f",
+                "8i8h",
+                "3f3d",
+                "9h8g+",
+                "6i5i",
+                "8g9f",
+                "7i8h",
+                "8b8h+"
+              ]
+            }
+          },
+          {
+            "move": "P*8h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -3464,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "7g4d",
+                "2f2h",
+                "9d9e",
+                "4f4e",
+                "4d3e",
+                "9f9e",
+                "P*2g",
+                "2h2g",
+                "P*9g",
+                "1f1e"
+              ]
+            }
+          },
+          {
+            "move": "P*2h",
+            "result": {
+              "score": {
+                "score_type": "cp",
+                "score_cp": -5852,
+                "mate_distance": null,
+                "perspective": "sente",
+                "bound": "exact"
+              },
+              "pv": [
+                "B*8h",
+                "7i6i",
+                "7g7h",
+                "6i7h",
+                "8h9i+",
+                "P*8g",
+                "9i8i",
+                "7h6i",
+                "L*2b",
+                "2f2b+",
+                "3b2b",
+                "5h5i",
+                "R*9h",
+                "6i5h",
+                "8b8g+",
+                "5h4i"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "source_sha256": {
+    "reports/human_e2e/candidates.json": "9144076518fea7988c6f4a5903e40c23ab171a80c65eff89c02bedb08000667c",
+    "reports/human_e2e/positions.json": "3a295d018faad3a9d99339f71069e815953b602632021f541de97f6d7997d955",
+    "reports/human_e2e/human_responses.json": "8ba498d1b85d0e1c5c038261ad5c5cf24672548999416005eb610eac0628cc68",
+    "reports/pass_pilot/candidates.json": "a47b98c62f3aa6e0ef832150ed5bf41f73ad89c93102248ce5f0b39adac67b1a",
+    "reports/pass_pilot/positions.json": "dbef663b8b61c69636228288f8d145424b9190baefa30edc5a5ecdefe7e5502c",
+    "reports/reach_pilot/confirm/0a33fbe73571830519e4_2b6f.json": "e4cc3fd97f41180622c38679c1dfe37d23afac3d52e9d4f2c5d0e4b2853bb91c",
+    "reports/reach_pilot/confirm/5ecc3699847f6446b58a_8h4d.json": "13cec9320ae9e3115121bd9c694b804b6bc3559872aa4bbc5bcd715e834e0827",
+    "reports/reach_pilot/confirm/a77ad58c704df8bb27bf_7g3c+.json": "5de899f1b0d0822b7b50fd161221030af801aff36ccb3498224441744cb0610a",
+    "reports/reach_pilot/confirm/b1d901d7811d5a04a762_3c7g+.json": "449e390cf5867d4c2a2ea872f5e2099258ca1c53154abe1eee0c3f18a8d0dfd1"
+  }
+}

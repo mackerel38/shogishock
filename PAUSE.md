@@ -1,4 +1,12 @@
-# Research paused — 2026-09-08
+# Research paused — 2026-09-10
+
+> Latest completed cycle: `reports/tactical_falsification/ASTRA_HANDOFF.json` and `analysis.md`.
+> Cached fixed-case prototype: 3 obvious bishop-loss diagnostics rejected, 2 exchange controls retained.
+> Production automatic rejection: **INCONCLUSIVE**; no independent sacrifice/poisoned-piece safety validation.
+> New engine/policy calls: 0. No scan, refit or independent270 changes.
+> Review full positions/replies in `results.json`; public offline replay uses `prototype.py --fixtures`.
+> Six prototype and eleven existing unit tests passed. Luna presentation/shadow-only instructions in `LUNA_TASK.md`.
+> STOP after checkpoint. Await human review. No production activation or large-search permission.
 
 > Completed independent confirmation: `reports/independent_policy_validation/analysis.md`.
 > 270 real-time games / 250 new known accounts; old account/game overlap 0; 6,501 moves.
