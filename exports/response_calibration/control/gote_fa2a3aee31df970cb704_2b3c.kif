@@ -2,28 +2,29 @@
 手合割：平手
 先手：ShogiShock / fa2a3aee31df970cb704_2b3c
 後手：Research variation
-棋戦：Response calibration review — abstain
+# 応手予測の検証レビュー
 手数----指手---------
    1 ２六歩(27)
    2 ３四歩(33)
    3 ２五歩(26)
    4 ３三角(22)
-* [control; NOT an accepted surprise]
+* 【通常の指し手に対する予測を確認するための指し手】
+* この局面は、補正後の応手予測が通常の序盤局面で不自然になっていないか確認するために使っている。
 * 通常の△3三角を基準局面のcontrolとして指定する。
 * parent_eval=94 candidate_eval=60 (positive=sente)
-* reach=0.11437908496732026 exact_support=35 low_support=False
-* abstain=true; calibration=exploratory_only; needs_human_review=true
+* この局面と同じ局面を学習データで観測した回数：35回。
+* 奇襲手として有望かどうかの判定：保留。理由：同じ局面の実例が少なく、人間の応手確率を十分な精度で推定できないため。
 * true human P_good unvalidated: [0,1]; not a model-coverage interval
 * obvious_reply_neutralizes=False
-* MODEL ONLY: P_good={'50': 0.38629220636108375, '100': 0.5594753242370641, '200': 0.9331633137152175, '300': 0.9731605114839951}
-* MODEL ONLY: E_human=24.21; human_gap=80.79; coverage=1.000000
+* 以下の確率・評価値は研究中のモデルと既存解析による参考値であり、実際の人間がその確率で指すことを確認した値ではない。
+* 以下の確率・評価値は研究中のモデルと既存解析による参考値であり、実際の人間がその確率で指すことを確認した値ではない。
 * parent_engine_best_pv: 2b3c 7g7f 3a4b 8h3c+ 4b3c 5i6h
    5 ７六歩(77)
-* response_sets: none
-* Human Policy old=0.386292 new=0.386292
-* cached 10k engine_eval=105; obvious=False
-* good replies: {'50': True, '100': True, '200': True, '300': True}
-* features: {'move': '7g7f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.386292。補正後のモデル確率：0.386292。
+* 既存の10kノード解析による応手の評価値：105。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': True, '100': True, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '7g7f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
 * [engine PV after candidate; previous 10k]
    6 ４二銀(31)
    7 ３三角成(88)
@@ -43,11 +44,11 @@
   12 ８四歩(83)
 変化：5手
    5 ４八銀(39)
-* response_sets: none
-* Human Policy old=0.182597 new=0.182597
-* cached 10k engine_eval=-27; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '3i4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.182597。補正後のモデル確率：0.182597。
+* 既存の10kノード解析による応手の評価値：-27。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '3i4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ３二銀(31)
@@ -58,11 +59,11 @@
   13 ２二角打
 変化：5手
    5 ７八金(69)
-* response_sets: none
-* Human Policy old=0.129463 new=0.129463
-* cached 10k engine_eval=44; obvious=False
-* good replies: {'50': False, '100': True, '200': True, '300': True}
-* features: {'move': '6i7h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.129463。補正後のモデル確率：0.129463。
+* 既存の10kノード解析による応手の評価値：44。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': True, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '6i7h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ４二銀(31)
@@ -73,11 +74,11 @@
   13 ７七銀(68)
 変化：5手
    5 ３八銀(39)
-* response_sets: none
-* Human Policy old=0.106649 new=0.106649
-* cached 10k engine_eval=-21; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '3i3h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.106649。補正後のモデル確率：0.106649。
+* 既存の10kノード解析による応手の評価値：-21。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '3i3h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ２二銀(31)
@@ -87,11 +88,11 @@
   12 ８五歩(84)
 変化：5手
    5 ５六歩(57)
-* response_sets: none
-* Human Policy old=0.032083 new=0.032083
-* cached 10k engine_eval=-61; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '5g5f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.032083。補正後のモデル確率：0.032083。
+* 既存の10kノード解析による応手の評価値：-61。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '5g5f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ２二銀(31)
@@ -101,22 +102,22 @@
   12 ８五歩(84)
 変化：5手
    5 １六歩(17)
-* response_sets: none
-* Human Policy old=0.031246 new=0.031246
-* cached 10k engine_eval=22; obvious=False
-* good replies: {'50': False, '100': True, '200': True, '300': True}
-* features: {'move': '1g1f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.031246。補正後のモデル確率：0.031246。
+* 既存の10kノード解析による応手の評価値：22。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': True, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '1g1f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ２二銀(31)
    7 ７六歩(77)
    8 ８四歩(83)
    9 ７八金(69)
 変化：5手
    5 ７八銀(79)
-* response_sets: none
-* Human Policy old=0.030980 new=0.030980
-* cached 10k engine_eval=-97; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': True}
-* features: {'move': '7i7h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.030980。補正後のモデル確率：0.030980。
+* 既存の10kノード解析による応手の評価値：-97。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': True}
+* この応手について保存している特徴量： {'move': '7i7h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ４八銀(39)
    8 ８五歩(84)
@@ -124,11 +125,11 @@
   10 ６二銀(71)
 変化：5手
    5 ５八金(49)
-* response_sets: none
-* Human Policy old=0.028459 new=0.028459
-* cached 10k engine_eval=-10; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '4i5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.028459。補正後のモデル確率：0.028459。
+* 既存の10kノード解析による応手の評価値：-10。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '4i5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７八金(69)
    8 ８五歩(84)
@@ -137,22 +138,22 @@
   11 ７七角(88)
 変化：5手
    5 ６八銀(79)
-* response_sets: none
-* Human Policy old=0.007569 new=0.007569
-* cached 10k engine_eval=23; obvious=False
-* good replies: {'50': False, '100': True, '200': True, '300': True}
-* features: {'move': '7i6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.007569。補正後のモデル確率：0.007569。
+* 既存の10kノード解析による応手の評価値：23。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': True, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '7i6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 4, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７八金(69)
    8 ８五歩(84)
    9 ７六歩(77)
 変化：5手
    5 ３六歩(37)
-* response_sets: none
-* Human Policy old=0.006442 new=0.006442
-* cached 10k engine_eval=-78; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '3g3f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.006442。補正後のモデル確率：0.006442。
+* 既存の10kノード解析による応手の評価値：-78。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '3g3f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７八金(69)
    8 ８五歩(84)
@@ -166,11 +167,11 @@
   16 ８六飛(82)
 変化：5手
    5 ６六歩(67)
-* response_sets: none
-* Human Policy old=0.006358 new=0.006358
-* cached 10k engine_eval=-212; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '6g6f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.006358。補正後のモデル確率：0.006358。
+* 既存の10kノード解析による応手の評価値：-212。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '6g6f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ６六角(33)
    7 ６八玉(59)
    8 ３三角(66)
@@ -179,11 +180,11 @@
   11 ９六歩(97)
 変化：5手
    5 ９六歩(97)
-* response_sets: none
-* Human Policy old=0.005717 new=0.005717
-* cached 10k engine_eval=-10; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '9g9f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.005717。補正後のモデル確率：0.005717。
+* 既存の10kノード解析による応手の評価値：-10。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '9g9f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７八金(69)
    8 ８五歩(84)
@@ -199,11 +200,11 @@
   18 ７二銀(71)
 変化：5手
    5 ４八玉(59)
-* response_sets: none
-* Human Policy old=0.005602 new=0.005602
-* cached 10k engine_eval=-151; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': True}
-* features: {'move': '5i4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.005602。補正後のモデル確率：0.005602。
+* 既存の10kノード解析による応手の評価値：-151。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': True}
+* この応手について保存している特徴量： {'move': '5i4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ２二銀(31)
    7 ７六歩(77)
    8 ８四歩(83)
@@ -218,11 +219,11 @@
   17 ６八銀(79)
 変化：5手
    5 ４六歩(47)
-* response_sets: none
-* Human Policy old=0.005410 new=0.005410
-* cached 10k engine_eval=-37; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '4g4f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.005410。補正後のモデル確率：0.005410。
+* 既存の10kノード解析による応手の評価値：-37。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '4g4f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ２二銀(31)
@@ -232,11 +233,11 @@
   12 ８五歩(84)
 変化：5手
    5 ２四歩(25)
-* response_sets: none
-* Human Policy old=0.004936 new=0.004936
-* cached 10k engine_eval=-417; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2e2d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.004936。補正後のモデル確率：0.004936。
+* 既存の10kノード解析による応手の評価値：-417。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2e2d', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ２四歩(23)
    7 ３六歩(37)
    8 ２二飛(82)
@@ -249,11 +250,11 @@
   15 ３八銀(39)
 変化：5手
    5 ８六歩(87)
-* response_sets: none
-* Human Policy old=0.004908 new=0.004908
-* cached 10k engine_eval=-308; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '8g8f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.004908。補正後のモデル確率：0.004908。
+* 既存の10kノード解析による応手の評価値：-308。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '8g8f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 1, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ４二銀(31)
    7 ５八玉(59)
    8 ３二金(41)
@@ -263,11 +264,11 @@
   12 ３三銀(42)
 変化：5手
    5 ６八玉(59)
-* response_sets: none
-* Human Policy old=0.004905 new=0.004905
-* cached 10k engine_eval=37; obvious=False
-* good replies: {'50': False, '100': True, '200': True, '300': True}
-* features: {'move': '5i6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.004905。補正後のモデル確率：0.004905。
+* 既存の10kノード解析による応手の評価値：37。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': True, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '5i6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ３二銀(31)
    7 ７八金(69)
    8 ８四歩(83)
@@ -278,22 +279,22 @@
   13 ８八銀(79)
 変化：5手
    5 ５八玉(59)
-* response_sets: none
-* Human Policy old=0.003093 new=0.003093
-* cached 10k engine_eval=-18; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '5i5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.003093。補正後のモデル確率：0.003093。
+* 既存の10kノード解析による応手の評価値：-18。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '5i5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 8, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ２二銀(31)
    7 ７六歩(77)
    8 ８四歩(83)
    9 ７七角(88)
 変化：5手
    5 ５八金(69)
-* response_sets: none
-* Human Policy old=0.002651 new=0.002651
-* cached 10k engine_eval=-336; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '6i5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.002651。補正後のモデル確率：0.002651。
+* 既存の10kノード解析による応手の評価値：-336。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '6i5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ４二銀(31)
@@ -301,11 +302,11 @@
   10 ７二銀(71)
 変化：5手
    5 ３八金(49)
-* response_sets: none
-* Human Policy old=0.001982 new=0.001982
-* cached 10k engine_eval=-178; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': True}
-* features: {'move': '4i3h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.001982。補正後のモデル確率：0.001982。
+* 既存の10kノード解析による応手の評価値：-178。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': True}
+* この応手について保存している特徴量： {'move': '4i3h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ４二銀(31)
@@ -318,11 +319,11 @@
   15 ７八金(69)
 変化：5手
    5 ６八金(69)
-* response_sets: none
-* Human Policy old=0.001703 new=0.001703
-* cached 10k engine_eval=-71; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '6i6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.001703。補正後のモデル確率：0.001703。
+* 既存の10kノード解析による応手の評価値：-71。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '6i6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ２二銀(31)
    7 ６九玉(59)
    8 ８四歩(83)
@@ -330,11 +331,11 @@
   10 ３二金(41)
 変化：5手
    5 ６八飛(28)
-* response_sets: none
-* Human Policy old=0.001665 new=0.001665
-* cached 10k engine_eval=-322; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2h6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.001665。補正後のモデル確率：0.001665。
+* 既存の10kノード解析による応手の評価値：-322。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2h6h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７八金(69)
    8 ８五歩(84)
@@ -349,11 +350,11 @@
   17 ３八銀(39)
 変化：5手
    5 ７八飛(28)
-* response_sets: none
-* Human Policy old=0.001637 new=0.001637
-* cached 10k engine_eval=-314; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2h7h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.001637。補正後のモデル確率：0.001637。
+* 既存の10kノード解析による応手の評価値：-314。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2h7h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ２八飛(78)
    8 ８五歩(84)
@@ -368,11 +369,11 @@
   17 ６九玉(59)
 変化：5手
    5 ５八飛(28)
-* response_sets: none
-* Human Policy old=0.001581 new=0.001581
-* cached 10k engine_eval=-285; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2h5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.001581。補正後のモデル確率：0.001581。
+* 既存の10kノード解析による応手の評価値：-285。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2h5h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ４二銀(31)
@@ -385,11 +386,11 @@
   15 ８八銀(79)
 変化：5手
    5 ４八金(49)
-* response_sets: none
-* Human Policy old=0.001536 new=0.001536
-* cached 10k engine_eval=-81; obvious=False
-* good replies: {'50': False, '100': False, '200': True, '300': True}
-* features: {'move': '4i4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.001536。補正後のモデル確率：0.001536。
+* 既存の10kノード解析による応手の評価値：-81。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': True, '300': True}
+* この応手について保存している特徴量： {'move': '4i4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 5, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ３二銀(31)
    7 ７八金(69)
    8 ８四歩(83)
@@ -403,11 +404,11 @@
   16 ８六飛(82)
 変化：5手
    5 ３八飛(28)
-* response_sets: none
-* Human Policy old=0.000940 new=0.000940
-* cached 10k engine_eval=-221; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2h3h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000940。補正後のモデル確率：0.000940。
+* 既存の10kノード解析による応手の評価値：-221。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2h3h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ３二銀(31)
@@ -419,11 +420,11 @@
   14 ８六飛(82)
 変化：5手
    5 ２六飛(28)
-* response_sets: none
-* Human Policy old=0.000773 new=0.000773
-* cached 10k engine_eval=-138; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': True}
-* features: {'move': '2h2f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000773。補正後のモデル確率：0.000773。
+* 既存の10kノード解析による応手の評価値：-138。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': True}
+* この応手について保存している特徴量： {'move': '2h2f', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ５八玉(59)
    8 ４二銀(31)
@@ -434,11 +435,11 @@
   13 ８八銀(79)
 変化：5手
    5 ４八飛(28)
-* response_sets: none
-* Human Policy old=0.000773 new=0.000773
-* cached 10k engine_eval=-265; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2h4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000773。補正後のモデル確率：0.000773。
+* 既存の10kノード解析による応手の評価値：-265。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2h4h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ８五歩(84)
@@ -449,11 +450,11 @@
   13 ７八銀(79)
 変化：5手
    5 ２七飛(28)
-* response_sets: none
-* Human Policy old=0.000661 new=0.000661
-* cached 10k engine_eval=-195; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': True}
-* features: {'move': '2h2g', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000661。補正後のモデル確率：0.000661。
+* 既存の10kノード解析による応手の評価値：-195。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': True}
+* この応手について保存している特徴量： {'move': '2h2g', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７八金(69)
    8 ８五歩(84)
@@ -465,11 +466,11 @@
   14 ８六飛(82)
 変化：5手
    5 １八飛(28)
-* response_sets: none
-* Human Policy old=0.000633 new=0.000633
-* cached 10k engine_eval=-328; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '2h1h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000633。補正後のモデル確率：0.000633。
+* 既存の10kノード解析による応手の評価値：-328。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '2h1h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 7, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ３二銀(31)
@@ -479,11 +480,11 @@
   12 ７二銀(71)
 変化：5手
    5 １八香(19)
-* response_sets: none
-* Human Policy old=0.000407 new=0.000407
-* cached 10k engine_eval=-332; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '1i1h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 2, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000407。補正後のモデル確率：0.000407。
+* 既存の10kノード解析による応手の評価値：-332。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '1i1h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 2, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ４二銀(31)
    7 ７六歩(77)
    8 ８四歩(83)
@@ -494,11 +495,11 @@
   13 ８八銀(79)
 変化：5手
    5 ９八香(99)
-* response_sets: none
-* Human Policy old=0.000351 new=0.000351
-* cached 10k engine_eval=-325; obvious=False
-* good replies: {'50': False, '100': False, '200': False, '300': False}
-* features: {'move': '9i9h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 2, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
+* この応手の種類：none
+* 人間の実際の選択率と比較するための、補正前のモデル確率：0.000351。補正後のモデル確率：0.000351。
+* 既存の10kノード解析による応手の評価値：-325。この応手が候補手を明確に咎める応手か：False
+* この応手が十分に良い応手に該当するか： {'50': False, '100': False, '200': False, '300': False}
+* この応手について保存している特徴量： {'move': '9i9h', 'victim_piece_type': None, 'victim_value': 0, 'mover_piece_type': 2, 'material_gain_proxy': 0, 'can_be_recaptured': False, 'candidate_was_just_exposed': None}
    6 ８四歩(83)
    7 ７六歩(77)
    8 ４二銀(31)

@@ -89,3 +89,12 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
   `[engine PV after candidate]`.
 - Review manifest resolves parent metadata from `positions.json` by `position_id`, including
   `parent_sfen`, `move_history`, `ply`, `candidate_move`, and `attacker_side`.
+
+## Human-facing output handoff
+
+- Shared prose layer: `surprise.human_descriptions`.
+- Regeneration command: `.venv/bin/python scripts/render_human_facing.py`.
+- First-read summaries: `reports/response_calibration/REVIEW.md` and
+  `reports/independent_policy_validation/REVIEW.md`.
+- The renderer reads existing JSON/KIF/metrics and performs no engine calls, model fitting,
+  probability recalculation, candidate scan, or research selection.

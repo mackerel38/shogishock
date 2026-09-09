@@ -60,3 +60,14 @@ def test_production_review_resolves_parent_from_positions():
     assert "parent_engine_best_pv:" in kif
     assert "engine_optimal_pv:" not in kif
     assert "[engine PV after candidate]" in kif
+
+
+def test_human_facing_review_has_no_internal_classification_labels():
+    from pathlib import Path
+    html = Path("reports/response_calibration/review.html").read_text(encoding="utf-8")
+    kif = Path("exports/response_calibration/diagnostic_counterexample/gote_5c46af1026197c8aeb70_3a3b.kif").read_text(encoding="utf-8")
+    for text in (html, kif):
+        assert "abstain=true" not in text
+        assert "exact_support=" not in text
+        assert "calibration=exploratory_only" not in text
+        assert "capture_any" not in text

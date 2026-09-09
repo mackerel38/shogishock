@@ -152,3 +152,24 @@ KIF exportは既存の `surprise.kif_export`、review生成は `surprise respons
 これらはAstraの判断対象であり、このcheckpointでは変更していない。
 
 運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
+## 人間向け表示整備 checkpoint — 2026-09-10
+
+今回直したもの: 共通の `surprise.human_descriptions` を追加し、response calibration のKIF・HTML・
+Markdownレビューと独立検証HTMLの表示を、対象（元の局面、調べる指し手、相手の応手、モデル値）を明記する文章へ更新した。
+KIFの親PVと候補後PVを分け、support、fallback、shrinkage、tilt、判定保留の意味も説明するようにした。
+
+内部データを変更していないこと: JSONの既存キー、内部ID、モデル、係数、評価指標、候補選抜、研究数値は変更していない。
+既存metricsとreview JSONを読み取り、表示だけを再生成した。KIFは合法性を保つ既存分岐からコメントを置換した。
+
+REVIEW.mdの場所: `reports/response_calibration/REVIEW.md` と
+`reports/independent_policy_validation/REVIEW.md`。人間が最初に読む資料と詳細analysis・機械可読metricsを分離した。
+
+テスト結果: 54 tests passed。主要な人間向け成果物に内部分類ID、`abstain=true`、`exact_support=`、
+`calibration=exploratory_only`、旧PVラベル、内部feature名が残っていないことを確認した。
+
+人間に確認してほしい成果物: `reports/response_calibration/review.html`、
+`reports/response_calibration/REVIEW.md`、`exports/response_calibration/` の△3二銀・▲7六歩・△3三角KIF、
+`reports/independent_policy_validation/report.html`、`REVIEW.md`。
+
+運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
