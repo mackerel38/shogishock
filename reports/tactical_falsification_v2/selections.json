@@ -1,0 +1,73 @@
+{
+  "recorded_before_new_engine_evaluation": true,
+  "gate_plan_checkpoint": "1d0c529",
+  "source_notes": {
+    "url": "https://www.koichi.jp/shogi/yokofu/45kaku.php",
+    "accessed_date": "2026-09-10",
+    "use": "Published opening variations used as hypotheses, not engine evidence or human reach data. Only move facts retained, no article reproduction.",
+    "caveat": "Source itself considers main 4-five-bishop opening favorable for sente; natural-history quality must be audited, not assumed. Both proposals are correlated within one opening family."
+  },
+  "cases": [
+    {
+      "id": "bishop_block_rook_sacrifice",
+      "case_role": "prospective_control",
+      "expected_class": "should_keep",
+      "candidate_move": "B*7g",
+      "candidate_side": "sente",
+      "history": "7g7f 3c3d 2g2f 8c8d 2f2e 8d8e 6i7h 4a3b 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d3d 2b8h+ 7i8h P*2h 3i2h B*4e 3d2d P*2c",
+      "obvious_looking_replies": ["2c2d", "8f8h+"],
+      "hypothesized_categories": ["valid_sacrifice", "poisoned_capture"],
+      "why_position_is_natural": "Documented sharp opening sequence with direct attacks and defensive answers, no waiting-move scaffold. Proposed bishop interposition attacks the rook and threatens a counter-capture while leaving own rook attacked. Subject to prefix audit.",
+      "length_justification": "23ply: three beyond target20; needed for the thematic interposition after the documented opening attack. Do not extend beyond this to repair quality.",
+      "expected_reason": "B/C hypothesis: a rook capture should not erase counter-capture/promotion compensation.",
+      "human_review_point": "Does rook exposure constitute a sound tactical offer, and is the preceding 4-five-bishop line a clean control?"
+    },
+    {
+      "id": "horse_entry_bad_gold_recapture",
+      "case_role": "prospective_control",
+      "expected_class": "should_keep",
+      "candidate_move": "4e6g+",
+      "candidate_side": "gote",
+      "history": "7g7f 3c3d 2g2f 8c8d 2f2e 8d8e 6i7h 4a3b 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d3d 2b8h+ 7i8h P*2h 3i2h B*4e 3d3e",
+      "obvious_looking_replies": ["7h6g"],
+      "hypothesized_categories": ["bad_obvious_recapture", "poisoned_capture"],
+      "why_position_is_natural": "Published R3e side variation; offered horse on6g draws gold off protection, enabling R8h+ with attack on silver2h. R3e may be inferior, so audit admission separately from gate result.",
+      "length_justification": "22ply: two beyond target20; entire tactical setup is needed, no extra development moves appended.",
+      "expected_reason": "A/C hypothesis: immediate gold capture loses to rook invasion; a bishop drop defense may be necessary.",
+      "human_review_point": "Is the horse really poisoned, and did the immediately preceding R3e already spoil the position?"
+    },
+    {
+      "id": "user_rook_counter_sacrifice",
+      "case_role": "exploratory_hypothesis_not_admitted_control",
+      "expected_class": "should_keep",
+      "candidate_move": "2f2b+",
+      "candidate_side": "sente",
+      "history": "2g2f 8c8d 2f2e 8d8e 7g7f 3c3d 6i7h 4a3b 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d2f 8f8b 8h7g 8b8i+",
+      "obvious_looking_replies": ["3a2b"],
+      "hypothesized_categories": ["valid_sacrifice"],
+      "why_position_is_natural": "NOT established: inherits the user's identified questionable B7g. This is an exploratory seed only; cannot establish production safety without a clean history.",
+      "expected_reason": "Hypothesis only: bishop capture followed by P*8b may compensate a rook sacrifice. Failure retained rather than relabeled a valid control.",
+      "human_review_point": "Does counterplay repair the prior B7g error or merely create a tactical-looking losing line?"
+    },
+    {
+      "id": "user_pawn_drop_followup",
+      "case_role": "exploratory_hypothesis_not_admitted_control",
+      "expected_class": "should_keep",
+      "candidate_move": "P*8b",
+      "candidate_side": "sente",
+      "history": "2g2f 8c8d 2f2e 8d8e 7g7f 3c3d 6i7h 4a3b 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d2f 8f8b 8h7g 8b8i+ 2f2b+ 3a2b",
+      "obvious_looking_replies": ["7a8b"],
+      "hypothesized_categories": ["poisoned_capture"],
+      "why_position_is_natural": "Same unresolved origin as user rook hypothesis; evaluate N*8f without claiming human difficulty.",
+      "expected_reason": "Hypothesis only: taking the pawn may distract silver; compare N*8f and other good defenses.",
+      "human_review_point": "Is N*8f needed, or are there simpler equally good defenses?"
+    }
+  ],
+  "additional_bounded_comparisons": {
+    "natural_repair": "After old16...R8b compare17.P*8g versus17.B7g, plus best explicit alternative at identical10k",
+    "rook_seed": "After18...R8i+ compare R2b+, R2a+, B3c+, P*8b if legal and up to two root MultiPV alternatives",
+    "pawn_drop_seed": "After20...Sx2b compare P*8b, P*2c, B*4e if legal and up to two root MultiPV alternatives",
+    "total_alternative_cap": 12
+  },
+  "reject_regressions": ["5c46af1026197c8aeb70_3a3b", "0a33fbe73571830519e4_2b6f", "5ecc3699847f6446b58a_8h4d"]
+}
