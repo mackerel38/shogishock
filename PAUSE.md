@@ -131,6 +131,18 @@ cache key、公開除外ファイルが checkpoint に入っていないこと�
 
 運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
 
+## Tactical fixed-case KIF package checkpoint — 2026-09-10
+
+Astra source checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`。
+5件の固定例（除外3件、対照2件）を `exports/tactical_falsification_review/` に出力し、
+一覧を `README.md`、人間向け要約を `reports/tactical_falsification/REVIEW.md` に追加した。
+研究データ、判定、数値、分類、INCONCLUSIVEの結論は変更していない。
+
+確認: 5件の履歴と候補手の合法性、△3二銀の10cp比較、対照例の1931cp/2328cp比較、
+内部表示語の漏れ、重複注意書き、判定矛盾を検査した。pytest 59件成功。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
 ## 明白な応手による固定例検証の人間向け報告 checkpoint — 2026-09-10
 
 Astra元checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`。

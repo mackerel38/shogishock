@@ -111,3 +111,18 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
   artifacts only; it performs no research computation.
 - Fixed-example KIFs are regenerated under `exports/response_calibration/`; △3二銀 is explicitly
   shown as a surprise-move exclusion, while low Human Policy support is described separately.
+
+## Tactical falsification fixed-case review handoff
+
+- Astra source checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`.
+- Human-review package: `exports/tactical_falsification_review/README.md` and its `reject/` and
+  `control/` KIF directories. It contains all five Astra fixed cases: three exclusions and two
+  retained exchange controls.
+- Human summary: `reports/tactical_falsification/REVIEW.md`; the production automatic-rejection
+  decision remains `INCONCLUSIVE`.
+- Renderer: `.venv/bin/python scripts/render_tactical_falsification_review.py`. It reads the frozen
+  `results.json`, performs no engine or policy call, and does not change research JSON.
+- KIF comments distinguish the candidate decision from evidence quality. The △3二銀 case records
+  the same-condition 10cp reply gap and explains why the mixed-root 127cp difference is not used.
+- Tests include five-case count, legal history/candidate moves, verdict preservation, banned display
+  labels, and the INCONCLUSIVE conclusion.

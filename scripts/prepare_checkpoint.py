@@ -12,7 +12,7 @@ DOCS=['.gitignore','pyproject.toml','Dockerfile','README.md','HANDOFF.md','PAUSE
       'RESEARCH_V2.md','RESEARCH_V3.md','SHOGIHOME.md','BACKUP.md','CHECKPOINTING.md','PUBLIC_CHECKPOINT.md']
 REPORTS={
  'reports/tactical_falsification':['PLAN.md','analysis.md','ASTRA_HANDOFF.json','LUNA_TASK.md',
-    'prototype.py','test_prototype.py','results.json','fixtures.json'],
+    'REVIEW.md','prototype.py','test_prototype.py','results.json','fixtures.json'],
  'reports/independent_policy_validation':['SAMPLING_PLAN.md','LUNA_TASK.md','frozen_model_fingerprint.json',
     'acquisition_status.json','dataset_fingerprint.json','dataset_summary.json','measurement_seal.json',
     'ASTRA_HANDOFF.json','metrics.json','exploratory_comparison.json','report.html','REVIEW.md','analysis.md','decision.json'],
@@ -54,6 +54,8 @@ def main(target):
         paths += [p.relative_to(ROOT) for p in (ROOT/'reports/response_set_review'/classification).glob('manifest.json')]
         paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_set_review'/classification).glob('*.kif')]
         paths += [p.relative_to(ROOT) for p in (ROOT/'exports/response_set_review'/classification).glob('*.json')]
+    paths.append(Path('exports/tactical_falsification_review/README.md'))
+    paths += [p.relative_to(ROOT) for p in (ROOT/'exports/tactical_falsification_review').glob('*/*.kif')]
     # Old schema-5 explicit reply analyses are engine-generated, not human raw data.
     for kind in ('obvious','confirm'):
         paths += [p.relative_to(ROOT) for p in (ROOT/'reports/reach_pilot'/kind).glob('*.json')]
