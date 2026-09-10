@@ -17,7 +17,7 @@ def test_all_five_frozen_cases_have_human_review_kif():
     assert sum(case["surprise_move_decision"] == "not_falsified" for case in cases) == 2
     mandatory = next(case for case in cases if case["move_being_examined"] == "3a3b")
     assert mandatory["surprise_move_decision"] == "reject"
-    assert "△3二銀" in (OUT / "reject/reject_01_3a3b.kif").read_text(encoding="utf-8")
+    assert "△３二銀" in (OUT / "reject/reject_01_3a3b.kif").read_text(encoding="utf-8")
 
 
 def test_fixed_case_history_and_candidate_are_legal():
@@ -28,6 +28,42 @@ def test_fixed_case_history_and_candidate_are_legal():
             board.push_usi(move)
         assert " ".join(board.sfen().split()[:4]) == " ".join(case["position"].split()[:4])
         assert shogi.Move.from_usi(case["move_being_examined"]) in board.legal_moves
+
+
+def test_usi_to_human_move_uses_actual_turn_and_square():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "tactical_review_renderer", ROOT / "scripts/render_tactical_falsification_review.py"
+    )
+    renderer = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(renderer)
+    japanese_move = renderer.japanese_move
+
+    cases = json.loads(RESULTS.read_text(encoding="utf-8"))["cases"]
+    expected = {
+        "3a3b": "△３二銀(31)",
+        "2b6f": "△６六角(22)",
+        "8h4d": "▲４四角(88)",
+        "7g3c+": "▲３三角成(77)",
+        "3c7g+": "△７七角成(33)",
+    }
+    reply_expected = {"8h2b+": "▲２二角成(88)", "8h6f": "▲６六角(88)",
+                      "2b4d": "△４四角(22)", "3b3c": "△３三金(32)",
+                      "7h7g": "▲７七金(78)"}
+    for case in cases:
+        board = shogi.Board()
+        for move in case["move_history"]:
+            board.push_usi(move)
+        assert japanese_move(board, case["move_being_examined"]) == expected[case["move_being_examined"]]
+        candidate = shogi.Board(board.sfen())
+        candidate.push_usi(case["move_being_examined"])
+        # The first reply in Astra's results is the explicit witness for
+        # diagnostics. Controls are checked against their largest-gap reply.
+        replies = list(case["obvious_replies"])
+        if case["purpose"] == "control":
+            replies.sort(key=lambda item: int(item.get("gap") or 0), reverse=True)
+        assert japanese_move(candidate, replies[0]["move"]) == reply_expected[replies[0]["move"]]
 
 
 def test_human_review_kif_has_no_internal_display_values_or_raw_labels():

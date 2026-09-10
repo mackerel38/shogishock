@@ -21,11 +21,11 @@ OUT = ROOT / "exports/tactical_falsification_review"
 
 
 CASE_LABELS = {
-    "5c46af1026197c8aeb70_3a3b": ("除外例1", "△3二銀", "reject_01_3a3b.kif"),
-    "0a33fbe73571830519e4_2b6f": ("除外例2", "△6二角", "reject_02_2b6f.kif"),
-    "5ecc3699847f6446b58a_8h4d": ("除外例3", "▲4四角", "reject_03_8h4d.kif"),
-    "a77ad58c704df8bb27bf_7g3c+": ("対照例1", "▲3三角成", "control_01_7g3c_plus.kif"),
-    "b1d901d7811d5a04a762_3c7g+": ("対照例2", "△7七角成", "control_02_3c7g_plus.kif"),
+    "5c46af1026197c8aeb70_3a3b": ("除外例1", "reject_01_3a3b.kif"),
+    "0a33fbe73571830519e4_2b6f": ("除外例2", "reject_02_2b6f.kif"),
+    "5ecc3699847f6446b58a_8h4d": ("除外例3", "reject_03_8h4d.kif"),
+    "a77ad58c704df8bb27bf_7g3c+": ("対照例1", "control_01_7g3c_plus.kif"),
+    "b1d901d7811d5a04a762_3c7g+": ("対照例2", "control_02_3c7g_plus.kif"),
 }
 
 
@@ -105,7 +105,7 @@ def case_explanation(case: dict[str, Any], board: shogi.Board, reply: dict[str, 
 
 
 def render_case(case: dict[str, Any], destination: Path) -> None:
-    label, move_label, _ = CASE_LABELS[case["candidate_id"]]
+    label, _ = CASE_LABELS[case["candidate_id"]]
     root = shogi.Board()
     for move in case["move_history"]:
         root.push_usi(move)
@@ -116,6 +116,7 @@ def render_case(case: dict[str, Any], destination: Path) -> None:
         raise ValueError(f"candidate is not legal: {case['candidate_id']}")
     candidate_board = shogi.Board(root.sfen())
     candidate_board.push_usi(candidate_move)
+    move_label = japanese_move(root, candidate_move)
     candidate = VariationNode(move=candidate_move)
     replies = list(case["obvious_replies"])
     # Put the explicitly reviewed witness first.  For controls this is the
@@ -130,7 +131,7 @@ def render_case(case: dict[str, Any], destination: Path) -> None:
         f"この例を確認する目的：{('明白な応手で咎められる候補手を、Human Policyで人間の選択確率を推定する前に除外できるか確認する。' if case['purpose'] == 'diagnostic_counterexample' else '自然そうな取り返しがあるだけでは候補手を除外しないことを確認する。')}",
         f"奇襲手としての判定：{'除外' if case['surprise_move_decision'] == 'reject' else 'この検査では除外しない'}",
         f"判定理由：{('明白で、同じ条件で評価しても十分良い応手があるため。' if case['surprise_move_decision'] == 'reject' else '自然そうな取り返しはあるが、同じ条件で評価した最善級の応手より大きく悪いため。')}",
-        f"今回注目している相手の応手：{japanese_move(root, replies[0]['move'])}",
+        f"今回注目している相手の応手：{japanese_move(candidate_board, replies[0]['move'])}",
         "その応手が人間にとって明白そうと考える理由：駒を取る、または候補手を取り返す自然な手順だから。",
         f"その応手が実際にも良いか：同じ条件で評価した最善級の応手との差を確認する。基準となる評価値は{cp(reference)}。",
         "この事前確認は、明白で実際にも十分良い反証だけをHuman Policyによる確率推定の前に扱うためのもの。",
@@ -164,7 +165,7 @@ def render(results_path: Path = RESULTS, out: Path = OUT) -> None:
     if len(cases) != 5 or {c["candidate_id"] for c in cases} != set(CASE_LABELS):
         raise ValueError("Astra tactical results do not contain the expected five fixed cases")
     for case in cases:
-        _, _, filename = CASE_LABELS[case["candidate_id"]]
+        _, filename = CASE_LABELS[case["candidate_id"]]
         folder = "reject" if case["surprise_move_decision"] == "reject" else "control"
         render_case(case, out / folder / filename)
     write_readme(cases, out)
@@ -182,10 +183,11 @@ def write_readme(cases: list[dict[str, Any]], out: Path) -> None:
         "|---|---|---|---|---|---|---|",
     ]
     for case in cases:
-        label, move_label, filename = CASE_LABELS[case["candidate_id"]]
+        label, filename = CASE_LABELS[case["candidate_id"]]
         board = shogi.Board()
         for move in case["move_history"]:
             board.push_usi(move)
+        move_label = japanese_move(board, case["move_being_examined"])
         replies = list(case["obvious_replies"])
         if case["purpose"] == "control":
             replies.sort(key=lambda item: int(item.get("gap") or 0), reverse=True)
