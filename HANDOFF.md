@@ -126,3 +126,16 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
   the same-condition 10cp reply gap and explains why the mixed-root 127cp difference is not used.
 - Tests include five-case count, legal history/candidate moves, verdict preservation, banned display
   labels, and the INCONCLUSIVE conclusion.
+
+## Tactical falsification v2 human review handoff
+
+- Astra source checkpoint: `d58a9b3bef8e909d67fd452578277860cdfacb11`.
+- Human-review package: `exports/tactical_falsification_v2_review/README.md` and its
+  `controls_provisional/`, `controls_borderline/`, and `diagnostic_hypotheses/` KIF directories.
+- The package covers four v2 cases plus links to the three unchanged prior reject regressions.
+  The former two long-history controls are explicitly withdrawn as production safety evidence.
+- Production automatic rejection remains `INCONCLUSIVE`; no Human Policy probabilities or P_good
+  values are displayed because Astra did not use Human Policy in this cycle.
+- The renderer `scripts/render_tactical_falsification_v2_review.py` uses saved history, SFEN, USI,
+  and PV evidence only. It labels 100k values as selected-pair/subset comparisons, not a full
+  100k legal-response ranking, and performs no new engine or research calls.

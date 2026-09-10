@@ -139,6 +139,18 @@ cache key、公開除外ファイルが checkpoint に入っていないこと�
 
 運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
 
+## Tactical falsification v2 human-review package checkpoint — 2026-09-10
+
+Astra source checkpoint: `d58a9b3bef8e909d67fd452578277860cdfacb11`。
+v2の新4ケースを人間レビュー用KIFへ変換し、旧reject 3例へのリンクを含む一覧を追加した。
+23手目局面の▲７七角打と旧17手目の▲７七角を区別し、100k選択応手比較を全合法手ランキングと
+誤記しない説明を付けた。研究判断、数値、分類、Human Policy、INCONCLUSIVEは変更していない。
+
+確認: 全履歴・候補手・保存済み分岐の合法性、手番表示、内部表示語漏れ、旧control撤回説明を検査。
+pytest 65件成功、既存表示lint成功。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
 ## Tactical fixed-case KIF package checkpoint — 2026-09-10
 
 Astra source checkpoint: `903f13a4c8a093709596e6716c35cce3dc071b5f`。
