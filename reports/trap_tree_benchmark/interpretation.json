@@ -1,0 +1,43 @@
+{
+  "next_step_decision": "INCONCLUSIVE",
+  "decision_target": "Meaningful mechanical trap-tree construction, not production activation",
+  "trap_tree_method_result": "Small graph construction works and two conditional tactical branches survive pair checks; selection reliability and coverage remain unvalidated",
+  "novelty_result": "Prior-exposed benchmark: one exact known-reference prefix reconstructed; rook-sacrifice family also recurs at different timing. Exact novelty of other lines unknown; no novel-discovery claim.",
+  "branches": {
+    "B*7g": {
+      "branch_status": "trap_branch",
+      "compensation": "After R8h+ the bishop recapture allows Bx3d Bx1a+; taking with the gold instead loses the bishop's useful retreat/promotion sequence and permits stronger rook-drop play.100k Bx8h=+215 versus Gx8h=-865.",
+      "confidence": "Conditional tactical contrast supported at10k and100k; human frequency/salience unmeasured",
+      "known_or_unknown_motif": "rediscovered_known_motif at rook-sacrifice-family level; exact earlier bishop-drop timing unknown_novelty",
+      "human_review_point": "Is taking with gold genuinely tempting compared with bishop? Check the complete earlier bishop-drop timing, not the old17.B7g error.",
+      "surprise_move_decision": "retain_benchmark_branch_for_review_not_actual_candidate_promotion"
+    },
+    "3d2d": {
+      "branch_status": "opponent_refutes",
+      "compensation": "Tested B6g+ is answered naturally by Gx6g.100k gives+740 for that capture versus-1601 for immediate R2a+. The existence of a worse attacking move does not make the natural recapture difficult. This refutes the tested continuation, not the entire4-five-bishop opening.",
+      "confidence": "Local first-response refutation only. Later counterplay such as R2a+ after R8h+ is not proven easy; no claim that longer multi-stage traps fail. Full100k ranking was not computed.",
+      "known_or_unknown_motif": "unknown_novelty; no external lookup",
+      "human_review_point": "Verify Gx6g and later R2a+ counterplay. P*2c was not proposed by the frozen two-candidate rule; do not insert that known reference afterward.",
+      "surprise_move_decision": "do_not_adopt_tested_continuation",
+      "gate_caveat": "Frozen10k gate remains not_falsified (reference+274);100k natural defense+740 crosses the provisional defender-advantage boundary. No mixed-budget gate rerun."
+    },
+    "3d3f": {
+      "branch_status": "needs_review",
+      "compensation": "Mechanical selection paid550cp versus tested normal Bx3f child to choose R8h+. Its claimed Gx8h error reversed:10k B*1e=-181,Gx8h=-588;100k B*1e=-470,Gx8h=+360. No supported penalty for the natural recapture. Normal Bx3f Px3f is the already-tested fallback,10k response=-123, not a confirmed trap.",
+      "confidence": "Ranking reversal invalidates the selected trap interpretation; do not tune on these confirmations",
+      "known_or_unknown_motif": "unknown_novelty; no external lookup",
+      "human_review_point": "Compare immediate Gx8h with intermediate B*1e check. Check the normal Bx3f Px3f alternative and do not present the check as a required correct defense.",
+      "surprise_move_decision": "hold_selected_trap_branch",
+      "normal_alternative": "4e3f",
+      "normal_alternative_status": "normal_branch"
+    },
+    "3d3e": {
+      "branch_status": "trap_branch",
+      "compensation": "After B6g+, gold recapture permits rook invasion.100k B*7g=-130 versus Gx6g=-585,455cp contrast. Full10k also has B*9e within98cp, so B*7g is not uniquely necessary.",
+      "confidence": "Known poisoned-horse motif reproduced; branch begins after opponent root deviation348cp and is not clean independent safety evidence",
+      "known_or_unknown_motif": "rediscovered_known_motif; exact reference prefix already in prior repository",
+      "human_review_point": "Is R3e a plausible flight in practice? Compare gold recapture with multiple bishop-drop defenses; do not claim a uniquely difficult move.",
+      "surprise_move_decision": "retain_conditional_benchmark_branch_for_review"
+    }
+  }
+}

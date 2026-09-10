@@ -125,19 +125,25 @@ def assemble(evidence):
         p,h=graph.add(root,[],b['opponent_move'],flags,'natural_reply',b['root_result'],eval_loss=b['root_loss'],naturalness_evidence=b['plausibility'])
         if cp(b['root_result']) is not None and abs(cp(b['root_result']))>1000:flags=flags+['parent_absolute_eval_over1000']
         for c in b['candidates']:
-            pc,hc=graph.add(p,h,c['move'],flags,'candidate',c['result'],eval_loss=c['candidate_initial_cost_cp'],
+            cf=flags+(['rejected_our_candidate_diagnostic_only'] if c['gate']['decision']=='reject' else [])
+            pc,hc=graph.add(p,h,c['move'],cf,'candidate',c['result'],eval_loss=c['candidate_initial_cost_cp'],
                 gate=c['gate'],selected=c['move']==b['our_response'],trap_effect={'mechanical_flag':c['trap_flag'],'gap':c['max_natural_gap']})
             for m in c['displayed_replies']:
                 r=next(r for r in c['responses'] if r['move']==m)
-                pf=flags+(['opponent_error_over300'] if r['gap'] and r['gap']>=300 else [])
+                pf=cf+(['opponent_error_over300'] if r['gap'] and r['gap']>=300 else [])
                 pr,hr=graph.add(pc,hc,m,pf,'best_reply' if r['gap']==0 else 'natural_reply',r['result'],
                     eval_loss=r['gap'],naturalness_evidence=r['salience']|{'signals':r['signals'],'heuristic_only':True})
                 continuation=c.get('continuations',{}).get(m)
                 if continuation:
                     graph.add(pr,hr,continuation['move'],pf,'normal_move' if r['gap']==0 else 'punishment',continuation['result'],
                               trap_effect={'conditional_loss_before_continuation':r['gap']})
+    compact=[]
+    for b in evidence['branches']:
+        compact.append({k:v for k,v in b.items() if k!='candidates'}|{'candidates':[
+            {k:v for k,v in c.items() if k!='responses'} for c in b['candidates']],
+            'full_response_evidence':'evidence.json:branches[opponent_move='+b['opponent_move']+']'})
     return {'root':root_id,'root_history':HISTORY,'attacker_side':'gote','nodes':list(graph.nodes.values()),'edges':list(graph.edges.values()),
-            'branches':evidence['branches'],'source_checkpoint':'d58a9b3bef8e909d67fd452578277860cdfacb11',
+            'branches':compact,'source_checkpoint':'d58a9b3bef8e909d67fd452578277860cdfacb11',
             'production_gate':'INCONCLUSIVE; not enabled','independent_rediscovery':False,'new_external_opening_search':False}
 
 

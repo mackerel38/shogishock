@@ -1,0 +1,589 @@
+{
+  "research_question": "Can a bounded mechanical search construct a meaningful opening trap graph across opponent deviations?",
+  "source_checkpoint": {
+    "research": "d58a9b3bef8e909d67fd452578277860cdfacb11",
+    "display": "94e1b24e99c811e82415f9c1ef0792993dc8b68a",
+    "plan": "b52514e49a056d7a6beeaa0f296e4d850aa26efb",
+    "before_confirmation": "a38a7c5f7cbfe3295601a60a43770d1d75c7839b"
+  },
+  "root_position": {
+    "sfen": "lnsgk1snl/6g2/p1pppp2p/6R2/5b3/1rP6/P2PPPP1P/1SG4S1/LN2KG1NL b B4Pp 21",
+    "history": [
+      "7g7f",
+      "3c3d",
+      "2g2f",
+      "8c8d",
+      "2f2e",
+      "8d8e",
+      "6i7h",
+      "4a3b",
+      "2e2d",
+      "2c2d",
+      "2h2d",
+      "8e8f",
+      "8g8f",
+      "8b8f",
+      "2d3d",
+      "2b8h+",
+      "7i8h",
+      "P*2h",
+      "3i2h",
+      "B*4e"
+    ],
+    "us": "gote",
+    "turn": "sente"
+  },
+  "conclusion": "Graph construction and two conditional tactical contrasts succeeded. One natural defense refutes the tested continuation and one trap ranking reverses at100k. The candidate slate also missed the quiet P*2c reference. Meaningful reliable repertoire construction remains INCONCLUSIVE.",
+  "next_step_decision": "INCONCLUSIVE",
+  "decision_target": "Meaningful mechanical trap-tree construction, not production activation",
+  "trap_tree_method_result": "Small graph construction works and two conditional tactical branches survive pair checks; selection reliability and coverage remain unvalidated",
+  "novelty_result": "Prior-exposed benchmark: one exact known-reference prefix reconstructed; rook-sacrifice family also recurs at different timing. Exact novelty of other lines unknown; no novel-discovery claim.",
+  "confirmed_facts": [
+    "4 opponent branches,8 our candidates, maximum4ply generated without forced reference continuations",
+    "3 newly evaluated candidates rejected by frozen gate;3 saved reject regressions still reject",
+    "Mechanical trap flags were4; research statuses are2 traps,1 tested-continuation refutation,1 needs_review",
+    "B*7g branch wrong gold recapture has1080cp selected100k deficit; R3e horse-capture branch455cp",
+    "R3f alleged gold-recapture error improves by830cp versus the10k-preferred bishop check at100k",
+    "No engine/policy replacement, external opening lookup, model use, mass scan or production activation"
+  ],
+  "unknowns": [
+    "Actual human branch probabilities, salience and difficulty",
+    "Reliability of550cp shallow initial-cost estimate",
+    "Full100k reply rankings",
+    "Broader repertoire coverage and exact-line novelty",
+    "Benefit over a larger engine shortlist or quiet-move proposal baseline",
+    "Whether R2d Gx6g followed by R8h+ poses further difficult decisions beyond the4ply tree; local refutation is not a global practical verdict"
+  ],
+  "important_numbers": {
+    "root_legal_replies": 99,
+    "root_branches": 4,
+    "tested_our_candidates": 8,
+    "full_candidate_reply_evaluations": 694,
+    "gate_rejected_candidates": 3,
+    "new_engine_requests": 714,
+    "cache_hits": 109,
+    "new100k": 6,
+    "confirmation_positions": 8,
+    "nominal_requested_nodes": 8950000,
+    "nodes": 59,
+    "edges": 59,
+    "nodes_with_multiple_histories": 2,
+    "branch_status_counts": {
+      "trap_branch": 2,
+      "opponent_refutes": 1,
+      "needs_review": 1
+    },
+    "root_losses_cp": [
+      0,
+      18,
+      163,
+      348
+    ],
+    "selected_pair_gaps100k": [
+      1080,
+      2341,
+      -830,
+      455
+    ],
+    "regressions_passed": 3,
+    "human_policy_calls": 0
+  },
+  "tree_summary": {
+    "file": "tree.json",
+    "data": "evidence.json",
+    "depth": 4,
+    "normal_option": "R3f branch -> Bx3f Px3f;10k only",
+    "transposition": "Board/turn/hands identity; actual merge count reported, commuting-order unit test separate"
+  },
+  "branches": [
+    {
+      "opponent_move": "B*7g",
+      "why_opponent_move_is_plausible": {
+        "engine_rank": 1,
+        "salience": {
+          "capture": false,
+          "victim_value": 0,
+          "promotion": false,
+          "check": false,
+          "score": 0
+        },
+        "rationale": "top3 engine or best remaining safe rook retreat; human plausibility unmeasured"
+      },
+      "root_loss_cp": 0,
+      "our_response": "8f8h+",
+      "initial_cost": 0,
+      "initial_cost_scope": "best of tested explicit candidate children at10k; bounded, not proven global optimum",
+      "best_defense": [
+        {
+          "move": "7g8h",
+          "gap10k": 0
+        }
+      ],
+      "opponent_natural_replies": [
+        {
+          "move": "7h8h",
+          "gap10k": 941,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1300,
+            "promotion": false,
+            "check": false,
+            "score": 1300,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          }
+        },
+        {
+          "move": "7g8h",
+          "gap10k": 0,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1300,
+            "promotion": false,
+            "check": false,
+            "score": 1300,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          }
+        },
+        {
+          "move": "3d3b+",
+          "gap10k": 2043,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 550,
+            "promotion": true,
+            "check": false,
+            "score": 850,
+            "signals": []
+          }
+        }
+      ],
+      "natural_wrong_responses": [
+        {
+          "move": "7h8h",
+          "gap10k": 941,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1300,
+            "promotion": false,
+            "check": false,
+            "score": 1300,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        },
+        {
+          "move": "3d3b+",
+          "gap10k": 2043,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 550,
+            "promotion": true,
+            "check": false,
+            "score": 850,
+            "signals": []
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        }
+      ],
+      "punishment_if_missed": {
+        "full10k": 941,
+        "selected100k_pair": 1080,
+        "correct10k_reply": "7g8h",
+        "error10k_reply": "7h8h",
+        "warning": "Negative100k gap means the alleged error is better. Not a full100k best-defense reference."
+      },
+      "branch_status": "trap_branch",
+      "mechanical_branch_status": "trap_branch",
+      "known_or_unknown_motif": "rediscovered_known_motif at rook-sacrifice-family level; exact earlier bishop-drop timing unknown_novelty",
+      "human_review_point": "Is taking with gold genuinely tempting compared with bishop? Check the complete earlier bishop-drop timing, not the old17.B7g error.",
+      "compensation": "After R8h+ the bishop recapture allows Bx3d Bx1a+; taking with the gold instead loses the bishop's useful retreat/promotion sequence and permits stronger rook-drop play.100k Bx8h=+215 versus Gx8h=-865.",
+      "surprise_move_decision": "retain_benchmark_branch_for_review_not_actual_candidate_promotion",
+      "human_policy_reliability": "No model used; no calibrated frequencies or repertoire success probability",
+      "normal_alternative": null
+    },
+    {
+      "opponent_move": "3d2d",
+      "why_opponent_move_is_plausible": {
+        "engine_rank": 2,
+        "salience": {
+          "capture": false,
+          "victim_value": 0,
+          "promotion": false,
+          "check": false,
+          "score": 0
+        },
+        "rationale": "top3 engine or best remaining safe rook retreat; human plausibility unmeasured"
+      },
+      "root_loss_cp": 18,
+      "our_response": "4e6g+",
+      "initial_cost": 0,
+      "initial_cost_scope": "best of tested explicit candidate children at10k; bounded, not proven global optimum",
+      "best_defense": [
+        {
+          "move": "7h6g",
+          "gap10k": 0
+        }
+      ],
+      "opponent_natural_replies": [
+        {
+          "move": "7h6g",
+          "gap10k": 0,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1100,
+            "promotion": false,
+            "check": false,
+            "score": 1100,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          }
+        },
+        {
+          "move": "2d2a",
+          "gap10k": 2356,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 320,
+            "promotion": false,
+            "check": false,
+            "score": 320,
+            "signals": [
+              "material_recovery_proxy"
+            ]
+          }
+        },
+        {
+          "move": "2d2a+",
+          "gap10k": 1487,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 320,
+            "promotion": true,
+            "check": false,
+            "score": 620,
+            "signals": [
+              "material_recovery_proxy"
+            ]
+          }
+        }
+      ],
+      "natural_wrong_responses": [
+        {
+          "move": "2d2a",
+          "gap10k": 2356,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 320,
+            "promotion": false,
+            "check": false,
+            "score": 320,
+            "signals": [
+              "material_recovery_proxy"
+            ]
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        },
+        {
+          "move": "2d2a+",
+          "gap10k": 1487,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 320,
+            "promotion": true,
+            "check": false,
+            "score": 620,
+            "signals": [
+              "material_recovery_proxy"
+            ]
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        }
+      ],
+      "punishment_if_missed": {
+        "full10k": 1487,
+        "selected100k_pair": 2341,
+        "correct10k_reply": "7h6g",
+        "error10k_reply": "2d2a+",
+        "warning": "Negative100k gap means the alleged error is better. Not a full100k best-defense reference."
+      },
+      "branch_status": "opponent_refutes",
+      "mechanical_branch_status": "trap_branch",
+      "known_or_unknown_motif": "unknown_novelty; no external lookup",
+      "human_review_point": "Verify Gx6g and later R2a+ counterplay. P*2c was not proposed by the frozen two-candidate rule; do not insert that known reference afterward.",
+      "compensation": "Tested B6g+ is answered naturally by Gx6g.100k gives+740 for that capture versus-1601 for immediate R2a+. The existence of a worse attacking move does not make the natural recapture difficult. This refutes the tested continuation, not the entire4-five-bishop opening.",
+      "surprise_move_decision": "do_not_adopt_tested_continuation",
+      "human_policy_reliability": "No model used; no calibrated frequencies or repertoire success probability",
+      "normal_alternative": null
+    },
+    {
+      "opponent_move": "3d3f",
+      "why_opponent_move_is_plausible": {
+        "engine_rank": 3,
+        "salience": {
+          "capture": false,
+          "victim_value": 0,
+          "promotion": false,
+          "check": false,
+          "score": 0
+        },
+        "rationale": "top3 engine or best remaining safe rook retreat; human plausibility unmeasured"
+      },
+      "root_loss_cp": 163,
+      "our_response": "8f8h+",
+      "initial_cost": 550,
+      "initial_cost_scope": "best of tested explicit candidate children at10k; bounded, not proven global optimum",
+      "best_defense": [
+        {
+          "move": "B*1e",
+          "gap10k": 0
+        }
+      ],
+      "opponent_natural_replies": [
+        {
+          "move": "7h8h",
+          "gap10k": 407,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1300,
+            "promotion": false,
+            "check": false,
+            "score": 1300,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          }
+        },
+        {
+          "move": "3f3b+",
+          "gap10k": 2507,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 550,
+            "promotion": true,
+            "check": false,
+            "score": 850,
+            "signals": []
+          }
+        },
+        {
+          "move": "B*1e",
+          "gap10k": 0,
+          "naturalness_proxy": {
+            "capture": false,
+            "victim_value": 0,
+            "promotion": false,
+            "check": true,
+            "score": 200,
+            "signals": []
+          }
+        }
+      ],
+      "natural_wrong_responses": [
+        {
+          "move": "7h8h",
+          "gap10k": 407,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1300,
+            "promotion": false,
+            "check": false,
+            "score": 1300,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        },
+        {
+          "move": "3f3b+",
+          "gap10k": 2507,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 550,
+            "promotion": true,
+            "check": false,
+            "score": 850,
+            "signals": []
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        }
+      ],
+      "punishment_if_missed": {
+        "full10k": 407,
+        "selected100k_pair": -830,
+        "correct10k_reply": "B*1e",
+        "error10k_reply": "7h8h",
+        "warning": "Negative100k gap means the alleged error is better. Not a full100k best-defense reference."
+      },
+      "branch_status": "needs_review",
+      "mechanical_branch_status": "trap_branch",
+      "known_or_unknown_motif": "unknown_novelty; no external lookup",
+      "human_review_point": "Compare immediate Gx8h with intermediate B*1e check. Check the normal Bx3f Px3f alternative and do not present the check as a required correct defense.",
+      "compensation": "Mechanical selection paid550cp versus tested normal Bx3f child to choose R8h+. Its claimed Gx8h error reversed:10k B*1e=-181,Gx8h=-588;100k B*1e=-470,Gx8h=+360. No supported penalty for the natural recapture. Normal Bx3f Px3f is the already-tested fallback,10k response=-123, not a confirmed trap.",
+      "surprise_move_decision": "hold_selected_trap_branch",
+      "human_policy_reliability": "No model used; no calibrated frequencies or repertoire success probability",
+      "normal_alternative": "4e3f"
+    },
+    {
+      "opponent_move": "3d3e",
+      "why_opponent_move_is_plausible": {
+        "engine_rank": 6,
+        "salience": {
+          "capture": false,
+          "victim_value": 0,
+          "promotion": false,
+          "check": false,
+          "score": 0
+        },
+        "rationale": "top3 engine or best remaining safe rook retreat; human plausibility unmeasured"
+      },
+      "root_loss_cp": 348,
+      "our_response": "4e6g+",
+      "initial_cost": 0,
+      "initial_cost_scope": "best of tested explicit candidate children at10k; bounded, not proven global optimum",
+      "best_defense": [
+        {
+          "move": "B*9e",
+          "gap10k": 98
+        },
+        {
+          "move": "B*7g",
+          "gap10k": 0
+        }
+      ],
+      "opponent_natural_replies": [
+        {
+          "move": "7h6g",
+          "gap10k": 416,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1100,
+            "promotion": false,
+            "check": false,
+            "score": 1100,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          }
+        },
+        {
+          "move": "3e3b+",
+          "gap10k": 656,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 550,
+            "promotion": true,
+            "check": false,
+            "score": 850,
+            "signals": []
+          }
+        }
+      ],
+      "natural_wrong_responses": [
+        {
+          "move": "7h6g",
+          "gap10k": 416,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 1100,
+            "promotion": false,
+            "check": false,
+            "score": 1100,
+            "signals": [
+              "captures_candidate",
+              "recapture",
+              "material_recovery_proxy"
+            ]
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        },
+        {
+          "move": "3e3b+",
+          "gap10k": 656,
+          "naturalness_proxy": {
+            "capture": true,
+            "victim_value": 550,
+            "promotion": true,
+            "check": false,
+            "score": 850,
+            "signals": []
+          },
+          "label_scope": "alleged error at10k; check100k contradiction before display"
+        }
+      ],
+      "punishment_if_missed": {
+        "full10k": 416,
+        "selected100k_pair": 455,
+        "correct10k_reply": "B*7g",
+        "error10k_reply": "7h6g",
+        "warning": "Negative100k gap means the alleged error is better. Not a full100k best-defense reference."
+      },
+      "branch_status": "trap_branch",
+      "mechanical_branch_status": "trap_branch",
+      "known_or_unknown_motif": "rediscovered_known_motif; exact reference prefix already in prior repository",
+      "human_review_point": "Is R3e a plausible flight in practice? Compare gold recapture with multiple bishop-drop defenses; do not claim a uniquely difficult move.",
+      "compensation": "After B6g+, gold recapture permits rook invasion.100k B*7g=-130 versus Gx6g=-585,455cp contrast. Full10k also has B*9e within98cp, so B*7g is not uniquely necessary.",
+      "surprise_move_decision": "retain_conditional_benchmark_branch_for_review",
+      "human_policy_reliability": "No model used; no calibrated frequencies or repertoire success probability",
+      "normal_alternative": null
+    }
+  ],
+  "human_policy_reliability": {
+    "used": false,
+    "prior_independent_validation": "NO",
+    "repertoire_success_probability": null
+  },
+  "human_report": {
+    "lead": "A small tree was built, but4 shallow trap flags did not all survive scrutiny; benchmark verdict INCONCLUSIVE.",
+    "show": "Four-branch tree, gold versus bishop recapture, natural Gx6g refutation, R3f ranking reversal, normal alternative",
+    "avoid": [
+      "Blind rediscovery",
+      "Novel discovery",
+      "Human probabilities",
+      "Unique hard defense",
+      "Production readiness",
+      "All branches are traps"
+    ],
+    "raw_eval_convention": "positive=sente advantage; gote advantage remains negative",
+    "roles": "Graph edge labels are10k mechanical roles; do not hide later contradictory100k evidence"
+  },
+  "human_review_points": [
+    "Is taking with gold genuinely tempting compared with bishop? Check the complete earlier bishop-drop timing, not the old17.B7g error.",
+    "Verify Gx6g and later R2a+ counterplay. P*2c was not proposed by the frozen two-candidate rule; do not insert that known reference afterward.",
+    "Compare immediate Gx8h with intermediate B*1e check. Check the normal Bx3f Px3f alternative and do not present the check as a required correct defense.",
+    "Is R3e a plausible flight in practice? Compare gold recapture with multiple bishop-drop defenses; do not claim a uniquely difficult move."
+  ],
+  "next_research_question": "Only after review: improve quiet candidate coverage and response salience/robustness without changing this frozen benchmark retrospectively.",
+  "luna_tasks": "LUNA_TASK.md: deterministic KIF/tree display only; no Luna agent invoked",
+  "verification": {
+    "tests_passed": 22,
+    "tree_tests": 5,
+    "frozen_gate_tests": 6,
+    "existing_tests": 11,
+    "legal_reply_PVs_checked": 694,
+    "new_KIF_or_GUI_review": false
+  },
+  "production_gate_decision": "INCONCLUSIVE, unchanged",
+  "stop": true
+}

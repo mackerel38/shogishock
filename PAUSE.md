@@ -1,4 +1,12 @@
-# Research paused — 2026-09-10 (tactical falsification v2)
+# Research paused — 2026-09-11 (trap-tree benchmark)
+
+> Latest: `reports/trap_tree_benchmark/ASTRA_HANDOFF.json`, `tree.json`, `analysis.md`.
+> Method INCONCLUSIVE:4 root branches,2 conditional tactical contrasts,1 local first-response refutation,1 ranking reversal/needs_review; normal fallback retained.
+>59 nodes/59 edges;2 shared diagnostic nodes.8 our candidates,3 gate rejects;3 old reject regressions pass.
+>714 new requests (708x10k,6x100k),109 cache hits;8 confirmation positions. No Human Policy/external opening lookup or mass scan.
+>22 tests pass;694 reply PVs checked. Known reference exposure acknowledged; no blind/new discovery claim.
+> KIF/display is Luna's task in `LUNA_TASK.md`; no Luna agent invoked. STOP for human review.
+> Production gate remains INCONCLUSIVE. Do not expand search, retrofit missing P*2c, or tune from these confirmations.
 
 > Latest cycle: `reports/tactical_falsification_v2/ASTRA_HANDOFF.json` and `analysis.md`.
 > Production automatic rejection: INCONCLUSIVE. Original long-history exchange controls are NOT safety evidence.

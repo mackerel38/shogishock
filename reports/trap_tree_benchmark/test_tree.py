@@ -36,5 +36,24 @@ class TreeTests(unittest.TestCase):
             chosen=next(c for c in b['candidates'] if c['move']==b['our_response'])
             if b['branch_status']=='trap_branch':self.assertEqual(chosen['gate']['decision'],'not_falsified')
 
+    def test_full_evidence_and_pv_legality(self):
+        data=json.loads((HERE/'evidence.json').read_text())
+        for b in data['branches']:
+            p=position(HISTORY+[b['opponent_move']])
+            for c in b['candidates']:
+                child=p.apply_move(c['move'])
+                self.assertEqual(gate.classify(c['responses'],'gote',child.legal_moves()),c['gate'])
+                self.assertEqual(len(child.legal_moves()),len(c['responses']))
+                for r in c['responses']:
+                    follow=child.apply_move(r['move'])
+                    for m in r['result']['pv']:follow=follow.apply_move(m)
+
+    def test_reversal_not_presented_as_supported_trap(self):
+        tree=json.loads((HERE/'tree.json').read_text())
+        b=next(b for b in tree['branches'] if b['opponent_move']=='3d3f')
+        self.assertEqual(b['branch_status'],'needs_review')
+        self.assertEqual(b['best_vs_natural_gap_cp']['selected100k_pair'],-830)
+        self.assertEqual(b['normal_alternative_status'],'normal_branch')
+
 
 if __name__=='__main__':unittest.main()
