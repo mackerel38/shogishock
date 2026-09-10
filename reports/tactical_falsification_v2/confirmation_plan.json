@@ -1,0 +1,19 @@
+{
+  "purpose": "Post10k targeted100k cross-check, selected for tactical and history ambiguity. No threshold/model tuning. These are matched child-pair/subset comparisons, NOT new full100k optimal-response references or gate reruns.",
+  "budget": "Exactly12 selected positions maximum,100k each, existing engine/cache",
+  "positions": [
+    {"label":"block_poison_capture", "case_id":"bishop_block_rook_sacrifice", "reply":"2c2d"},
+    {"label":"block_rook_promotion", "case_id":"bishop_block_rook_sacrifice", "reply":"8f8h+"},
+    {"label":"horse_bad_gold_capture", "case_id":"horse_entry_bad_gold_recapture", "reply":"7h6g"},
+    {"label":"horse_bishop_defense", "case_id":"horse_entry_bad_gold_recapture", "reply":"B*7g"},
+    {"label":"history_R3e", "case_id":"horse_entry_bad_gold_recapture", "prefix_length":20, "move":"3d3e"},
+    {"label":"history_R2d", "case_id":"horse_entry_bad_gold_recapture", "prefix_length":20, "move":"3d2d"},
+    {"label":"history_old_B7g", "case_id":"user_rook_counter_sacrifice", "prefix_length":16, "move":"8h7g"},
+    {"label":"history_repair_P8g", "case_id":"user_rook_counter_sacrifice", "prefix_length":16, "move":"P*8g"},
+    {"label":"user_rook_S2b", "case_id":"user_rook_counter_sacrifice", "reply":"3a2b"},
+    {"label":"user_pawn_N8f", "case_id":"user_pawn_drop_followup", "reply":"N*8f"},
+    {"label":"user_pawn_R8b", "case_id":"user_pawn_drop_followup", "reply":"8i8b"},
+    {"label":"user_pawn_S8b", "case_id":"user_pawn_drop_followup", "reply":"7a8b"}
+  ],
+  "selection_rationale": "Verify each proposed control's bad/good reply contrast, the borderline R3e history deviation, the user's P8g repair, and whether N8f is uniquely necessary. Stop at these twelve; do not deepen further if ambiguous."
+}

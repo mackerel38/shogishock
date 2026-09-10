@@ -104,8 +104,15 @@ def main():
         if '--confirm' in sys.argv:
             targets = json.loads((HERE/'confirmation_plan.json').read_text())
             assert len(targets['positions']) <= 12
-            out = [{'label':x['label'], 'sfen':x['sfen'], 'result':run.query(Position.from_sfen(x['sfen']),100000)[0]}
-                   for x in targets['positions']]
+            out=[]
+            for x in targets['positions']:
+                c=next(c for c in selections['cases'] if c['id']==x['case_id'])
+                history=c['history'].split()
+                p=(position(history).apply_move(c['candidate_move']).apply_move(x['reply']) if 'reply' in x
+                   else position(history[:x['prefix_length']]).apply_move(x['move']))
+                out.append({'label':x['label'],'sfen':p.sfen,'result':run.query(p,100000)[0]})
+                write_json(HERE/'confirmation_results.json',out)
+                print(x['label'],out[-1]['result']['score'],flush=True)
             write_json(HERE/'confirmation_results.json',out)
             return
         # Minimal smoke doubles as first natural-history root.
