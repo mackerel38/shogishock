@@ -139,3 +139,17 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
 - The renderer `scripts/render_tactical_falsification_v2_review.py` uses saved history, SFEN, USI,
   and PV evidence only. It labels 100k values as selected-pair/subset comparisons, not a full
   100k legal-response ranking, and performs no new engine or research calls.
+
+## Trap-tree benchmark human review handoff
+
+- Astra source checkpoint: `437a7ca93dcd20e645b6c1a7b63cd8a14e6f1547`.
+- Human-review package: `exports/trap_tree_benchmark_review/README.md` and four branch KIFs.
+  The branches are ▲７七角打, ▲２四飛, ▲３六飛, and ▲３五飛 after the saved △４五角 root.
+- The KIFs use the complete saved root history and saved branch/PV evidence. The ▲３六飛 branch
+  records the 10k/100k ranking reversal and does not call ▲同金 a bad move. The ▲２四飛 status is
+  described as applying only to the tested continuation.
+- △２三歩 is documented as a pre-fixed selection coverage miss and is not added retrospectively.
+  The three prior obvious tactical rejects remain linked; the two withdrawn old controls are not
+  presented as production-safety evidence.
+- Trap-tree construction remains `INCONCLUSIVE`; no Human Policy values, new candidate, or new
+  engine/model call was added.

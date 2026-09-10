@@ -64,6 +64,8 @@ def main(target):
     paths += [p.relative_to(ROOT) for p in (ROOT/'exports/tactical_falsification_review').glob('*/*.kif')]
     paths.append(Path('exports/tactical_falsification_v2_review/README.md'))
     paths += [p.relative_to(ROOT) for p in (ROOT/'exports/tactical_falsification_v2_review').glob('*/*.kif')]
+    paths.append(Path('exports/trap_tree_benchmark_review/README.md'))
+    paths += [p.relative_to(ROOT) for p in (ROOT/'exports/trap_tree_benchmark_review').glob('*/*.kif')]
     # Old schema-5 explicit reply analyses are engine-generated, not human raw data.
     for kind in ('obvious','confirm'):
         paths += [p.relative_to(ROOT) for p in (ROOT/'reports/reach_pilot'/kind).glob('*.json')]

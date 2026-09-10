@@ -147,6 +147,18 @@ cache key、公開除外ファイルが checkpoint に入っていないこと�
 
 運用状態: 小サイクル → テスト・公開物確認 → commit + push → STOP → 明示的続行指示待ち。
 
+## Trap-tree benchmark human-review package checkpoint — 2026-09-11
+
+Astra source checkpoint: `437a7ca93dcd20e645b6c1a7b63cd8a14e6f1547`。
+root △４五角からの4枝を、保存済み全履歴・PVつきKIFとして `exports/trap_tree_benchmark_review/`
+へ出力した。▲３六飛の10k/100k逆転、▲２四飛の継続手だけの局所的失敗、△２三歩の候補選択漏れ、
+旧rejectと撤回済み旧controlをREADMEへ記録した。研究内容とINCONCLUSIVEは変更していない。
+
+確認: KIF合法性、分岐開始手数、手番・移動元・移動先・打・成、保存PV、内部表示漏れ。
+pytest 70件成功、表示lint成功。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
 ## Tactical falsification v2 human-review package checkpoint — 2026-09-10
 
 Astra source checkpoint: `d58a9b3bef8e909d67fd452578277860cdfacb11`。
