@@ -11,6 +11,9 @@ REMOTE='https://github.com/mackerel38/shogishock.git'
 DOCS=['.gitignore','pyproject.toml','Dockerfile','README.md','HANDOFF.md','PAUSE.md','RESEARCH.md',
       'RESEARCH_V2.md','RESEARCH_V3.md','SHOGIHOME.md','BACKUP.md','CHECKPOINTING.md','PUBLIC_CHECKPOINT.md']
 REPORTS={
+ 'reports/tactical_falsification_v2':['PLAN.md','selections.json','experiment.py','test_experiment.py',
+    'results.json','engine_evidence.json','confirmation_plan.json','confirmation_results.json',
+    'interpretations.json','finalize.py','analysis.md','ASTRA_HANDOFF.json','LUNA_TASK.md'],
  'reports/tactical_falsification':['PLAN.md','analysis.md','ASTRA_HANDOFF.json','LUNA_TASK.md',
     'REVIEW.md','prototype.py','test_prototype.py','results.json','fixtures.json'],
  'reports/independent_policy_validation':['SAMPLING_PLAN.md','LUNA_TASK.md','frozen_model_fingerprint.json',

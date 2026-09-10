@@ -1,4 +1,12 @@
-# Research paused — 2026-09-08
+# Research paused — 2026-09-10 (tactical falsification v2)
+
+> Latest cycle: `reports/tactical_falsification_v2/ASTRA_HANDOFF.json` and `analysis.md`.
+> Production automatic rejection: INCONCLUSIVE. Original long-history exchange controls are NOT safety evidence.
+> New23ply rook-sacrifice control survives;22ply horse control survives but precedingR3e loses454cp, so remains borderline.
+> UserR2b+ rejects; P*8b has straightforward adequate pawn captures despite passing narrow gate. N*8f is not unique.
+> Original3 reject regressions pass. Gate/policy/independent270 unchanged.421x10k +12x100k requests, no1M/10M or mass scan.
+>22 tests passed;372 reply PVs legally validated. New KIF/display is Luna's task per `LUNA_TASK.md`, not yet generated.
+> STOP for human review. No production activation or next research. Historical instructions below are superseded.
 
 > Completed independent confirmation: `reports/independent_policy_validation/analysis.md`.
 > 270 real-time games / 250 new known accounts; old account/game overlap 0; 6,501 moves.

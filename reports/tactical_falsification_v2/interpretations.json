@@ -1,0 +1,44 @@
+{
+  "next_step_decision": "INCONCLUSIVE",
+  "decision_target": "Current frozen gate into production candidate rejection",
+  "large_search_authorized": false,
+  "conclusion": "No demonstrated false rejection of an established valid sacrifice. One materially cleaner23ply sacrifice control survives; a22ply poisoned-horse control also survives but its prior R3e loses454cp against R2d at100k, so it is not admitted as clean production-safety evidence. The user's rook sacrifice is refuted, and the pawn follow-up passes the narrow gate despite multiple strong defenses. Coverage/quality remains insufficient for production.",
+  "cases": {
+    "bishop_block_rook_sacrifice": {
+      "control_admission": "provisionally_cleaner_control_pending_human_history_review",
+      "surprise_move_decision": "retain_as_control_for_human_review_not_actual_candidate",
+      "keep_reason_categories": ["A", "B", "C"],
+      "compensation_or_refutation": "23.B*7g leaves rook2d attacked. Immediate Px2d allows Bx8f. Better R8h+ takes silver first; Bx8h Px2d Bx1a+ leaves sente with compensation. The100k pair is +1490 for Px2d versus +357 for R8h+:1133cp difference, not a full100k optimal gap.",
+      "why_position_is_natural": "Documented23ply 4-five-bishop sequence of pawn exchanges, bishop exchange, tempo pawn drop and rook attack/interposition. Unlike old17.B8h7g, this is a bishop DROP. No >300cp played-vs-root-best child loss found among the flagged prefix comparisons. Root20/21 swings remain substantial horizon-noise warnings; this is not exhaustive proof of naturalness.",
+      "quality_limit": "One opening family and shallow selective history audit; no measured reach or independent human naturalness verification.",
+      "human_review_point": "Check the full history, distinction from old17.B7g, why immediate rook capture permits Bx8f, and compensation after R8h+ Bx8h Px2d Bx1a+."
+    },
+    "horse_entry_bad_gold_recapture": {
+      "control_admission": "borderline_not_admitted_as_clean_production_safety_evidence",
+      "surprise_move_decision": "retain_as_borderline_tactical_control_only",
+      "keep_reason_categories": ["A", "B", "C"],
+      "compensation_or_refutation": "22...B6g+ offers the horse. Gx6g permits R8h+ and further rook penetration. B*7g is a better defense.100k Gx6g=-585 versus B*7g=-130 gives455cp deficit for sente. This supports poison, not history quality.",
+      "why_position_is_natural": "Published short side variation, but21.R3e is inferior to R2d by330cp at10k and454cp at100k. This is not the old repeated missed-rook sequence, yet it fails to provide an unambiguously clean starting control under the user's quality requirement.",
+      "quality_limit": "Do not count survival as a second independent high-quality safety success. Expected should_keep was a prospective hypothesis, not ground truth.",
+      "human_review_point": "Is R3e a plausible ordinary inaccuracy or a disqualifying missed tactic? Compare Gx6g with B*7g and inspect the rook invasion."
+    },
+    "user_rook_counter_sacrifice": {
+      "control_admission": "failed_should_keep_hypothesis_not_a_valid_sacrifice_control",
+      "surprise_move_decision": "reject_current_proposal",
+      "keep_reason_categories": [],
+      "compensation_or_refutation": "19.R2b+ Sx2b stays -2484 at10k and -2478 at100k. Recapture is the best explicit10k response and frozen strong witness. No sufficient compensation was demonstrated; rejection is not a proven false negative.",
+      "why_position_is_natural": "Not clean: old17.B7g evaluates -2477 at100k versus -30 for17.P*8g, a2447cp difference. User R8i+ line preserves this prior error rather than repairing it.",
+      "quality_limit": "Original19.R2a+ alternative is illegal because bishop2b blocks the rook. A small engine shortlist finds B7g2b+ less bad than R2b+, not a demonstrated better practical surprise.",
+      "human_review_point": "Compare17.P*8g with17.B7g; after R8i+ compare Bx2b+ and Rx2b+, then see why Sx2b refutes the proposed rook sacrifice."
+    },
+    "user_pawn_drop_followup": {
+      "control_admission": "failed_should_keep_hypothesis_negative_diagnostic",
+      "surprise_move_decision": "reject_current_proposal_by_research_review_not_by_frozen_gate",
+      "keep_reason_categories": [],
+      "compensation_or_refutation": "21.P*8b remains losing against R8i8b, N*8f, and S7a8b. At10k R8b and N8f tie at-2802; S8b=-2697. At100k the selected subset gives R8b=-2756,N8f=-2588,S8b=-2864. No uniquely necessary hidden knight reply. Manual rejection rests on these straightforward good defenses and absent demonstrated compensation, not candidate-root CP alone.",
+      "why_position_is_natural": "Not clean: inherits17.B7g and19.R2b+ errors. Cannot supply valid-sacrifice safety evidence.",
+      "quality_limit": "Frozen gate has0 strong witnesses here: pawn captures are not free-major captures or qualifying recaptures. not_falsified is therefore absence of this narrow trigger, NOT viability. Human choice probabilities were not measured.",
+      "human_review_point": "Compare direct pawn captures with N*8f; inspect N*8f Bx8f Rx8f P8a+ Rx8a. Separate gate non-rejection from rejection of the current research hypothesis."
+    }
+  }
+}

@@ -15,10 +15,10 @@
         "valid_sacrifice",
         "poisoned_capture"
       ],
-      "why_position_is_natural": "Documented sharp opening sequence with direct attacks and defensive answers, no waiting-move scaffold. Proposed bishop interposition attacks the rook and threatens a counter-capture while leaving own rook attacked. Subject to prefix audit.",
+      "why_position_is_natural": "Documented23ply 4-five-bishop sequence of pawn exchanges, bishop exchange, tempo pawn drop and rook attack/interposition. Unlike old17.B8h7g, this is a bishop DROP. No >300cp played-vs-root-best child loss found among the flagged prefix comparisons. Root20/21 swings remain substantial horizon-noise warnings; this is not exhaustive proof of naturalness.",
       "length_justification": "23ply: three beyond target20; needed for the thematic interposition after the documented opening attack. Do not extend beyond this to repair quality.",
       "expected_reason": "B/C hypothesis: a rook capture should not erase counter-capture/promotion compensation.",
-      "human_review_point": "Does rook exposure constitute a sound tactical offer, and is the preceding 4-five-bishop line a clean control?",
+      "human_review_point": "Check the full history, distinction from old17.B7g, why immediate rook capture permits Bx8f, and compensation after R8h+ Bx8h Px2d Bx1a+.",
       "position": "lnsgk1snl/6g2/p1pppp1pp/7R1/5b3/1rP6/P2PPPP1P/1SG4S1/LN2KG1NL b B4P 23",
       "resulting_sfen": "lnsgk1snl/6g2/p1pppp1pp/7R1/5b3/1rP6/P1BPPPP1P/1SG4S1/LN2KG1NL w 4P 24",
       "parent_result": {
@@ -2973,7 +2973,100 @@
             "reported_best_move": "P*8g"
           }
         }
-      ]
+      ],
+      "control_admission": "provisionally_cleaner_control_pending_human_history_review",
+      "surprise_move_decision": "retain_as_control_for_human_review_not_actual_candidate",
+      "keep_reason_categories": [
+        "A",
+        "B",
+        "C"
+      ],
+      "compensation_or_refutation": "23.B*7g leaves rook2d attacked. Immediate Px2d allows Bx8f. Better R8h+ takes silver first; Bx8h Px2d Bx1a+ leaves sente with compensation. The100k pair is +1490 for Px2d versus +357 for R8h+:1133cp difference, not a full100k optimal gap.",
+      "quality_limit": "One opening family and shallow selective history audit; no measured reach or independent human naturalness verification.",
+      "evaluation_after_reply": {
+        "2c2d": 1230,
+        "8f8h": 430,
+        "8f8h+": 473
+      },
+      "same_condition_gap": {
+        "2c2d": 800,
+        "8f8h+": 43
+      },
+      "good_reply_counts_not_probabilities": {
+        "50": 2,
+        "100": 2,
+        "200": 2,
+        "300": 2
+      },
+      "strong_naturalness_proxy_count": 1,
+      "confirmation_100k_selected_subset": [
+        {
+          "label": "block_poison_capture",
+          "sfen": "lnsgk1snl/6g2/p1pppp2p/7p1/5b3/1rP6/P1BPPPP1P/1SG4S1/LN2KG1NL b 4Pr 25",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": 1490,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "7g8f",
+            "pv": [
+              "7g8f",
+              "5a5b",
+              "8f7g",
+              "2a3c",
+              "R*8e",
+              "R*8b",
+              "P*8c"
+            ],
+            "depth": 14,
+            "nodes": 100036,
+            "time_ms": 374,
+            "raw_info": [
+              "info depth 14 seldepth 15 multipv 1 score cp 1490 nodes 100036 nps 267475 hashfull 2 time 374 pv 7g8f 5a5b 8f7g 2a3c R*8e R*8b P*8c"
+            ],
+            "reported_best_move": "7g8f"
+          }
+        },
+        {
+          "label": "block_rook_promotion",
+          "sfen": "lnsgk1snl/6g2/p1pppp1pp/7R1/5b3/2P6/P1BPPPP1P/1+rG4S1/LN2KG1NL b 4Ps 25",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": 357,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "7g8h",
+            "pv": [
+              "7g8h",
+              "2c2d",
+              "8h1a+",
+              "S*8g",
+              "7h8g",
+              "R*7i",
+              "L*6i",
+              "4e6g+",
+              "S*5h",
+              "6g8i",
+              "5i4h"
+            ],
+            "depth": 11,
+            "nodes": 100473,
+            "time_ms": 404,
+            "raw_info": [
+              "info depth 11 seldepth 25 multipv 1 score cp 357 nodes 66351 nps 260200 hashfull 1 time 255 pv 7g8h 2c2d 8h1a+ S*8g 7h8g R*7i L*6i 4e6g+ S*5h 6g8i 5i4h",
+              "info depth 11 seldepth 20 multipv 1 score cp 381 lowerbound nodes 100473 nps 248695 hashfull 2 time 404 pv 7g8h 2c2d"
+            ],
+            "reported_best_move": "7g8h"
+          }
+        }
+      ],
+      "confirmation_scope": "Selected child pairs/subsets, NOT full100k best-reply evaluation; frozen gate remains10k."
     },
     {
       "id": "horse_entry_bad_gold_recapture",
@@ -2989,10 +3082,10 @@
         "bad_obvious_recapture",
         "poisoned_capture"
       ],
-      "why_position_is_natural": "Published R3e side variation; offered horse on6g draws gold off protection, enabling R8h+ with attack on silver2h. R3e may be inferior, so audit admission separately from gate result.",
+      "why_position_is_natural": "Published short side variation, but21.R3e is inferior to R2d by330cp at10k and454cp at100k. This is not the old repeated missed-rook sequence, yet it fails to provide an unambiguously clean starting control under the user's quality requirement.",
       "length_justification": "22ply: two beyond target20; entire tactical setup is needed, no extra development moves appended.",
       "expected_reason": "A/C hypothesis: immediate gold capture loses to rook invasion; a bishop drop defense may be necessary.",
-      "human_review_point": "Is the horse really poisoned, and did the immediately preceding R3e already spoil the position?",
+      "human_review_point": "Is R3e a plausible ordinary inaccuracy or a disqualifying missed tactic? Compare Gx6g with B*7g and inspect the rook invasion.",
       "position": "lnsgk1snl/6g2/p1pppp2p/9/5bR2/1rP6/P2PPPP1P/1SG4S1/LN2KG1NL w B4Pp 22",
       "resulting_sfen": "lnsgk1snl/6g2/p1pppp2p/9/6R2/1rP6/P2+bPPP1P/1SG4S1/LN2KG1NL b B4P2p 23",
       "parent_result": {
@@ -8310,7 +8403,172 @@
             "reported_best_move": "4e6g+"
           }
         }
-      ]
+      ],
+      "control_admission": "borderline_not_admitted_as_clean_production_safety_evidence",
+      "surprise_move_decision": "retain_as_borderline_tactical_control_only",
+      "keep_reason_categories": [
+        "A",
+        "B",
+        "C"
+      ],
+      "compensation_or_refutation": "22...B6g+ offers the horse. Gx6g permits R8h+ and further rook penetration. B*7g is a better defense.100k Gx6g=-585 versus B*7g=-130 gives455cp deficit for sente. This supports poison, not history quality.",
+      "quality_limit": "Do not count survival as a second independent high-quality safety success. Expected should_keep was a prospective hypothesis, not ground truth.",
+      "evaluation_after_reply": {
+        "7h6g": -404,
+        "B*7g": 12
+      },
+      "same_condition_gap": {
+        "7h6g": 416
+      },
+      "good_reply_counts_not_probabilities": {
+        "50": 1,
+        "100": 2,
+        "200": 3,
+        "300": 3
+      },
+      "strong_naturalness_proxy_count": 1,
+      "confirmation_100k_selected_subset": [
+        {
+          "label": "horse_bad_gold_capture",
+          "sfen": "lnsgk1snl/6g2/p1pppp2p/9/6R2/1rP6/P2GPPP1P/1S5S1/LN2KG1NL w 2B4P2p 24",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -585,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "8f8h+",
+            "pv": [
+              "8f8h+",
+              "6g6h",
+              "8h8i",
+              "P*6i",
+              "2a3c",
+              "5i4h",
+              "8i9i"
+            ],
+            "depth": 12,
+            "nodes": 101281,
+            "time_ms": 303,
+            "raw_info": [
+              "info depth 12 seldepth 15 multipv 1 score cp 585 nodes 66905 nps 320119 hashfull 2 time 209 pv 8f8h+ 6g6h 8h8i P*6i 2a3c 5i4h 8i9i",
+              "info depth 12 seldepth 17 multipv 1 score cp 661 lowerbound nodes 101281 nps 334260 hashfull 3 time 303 pv 8f8h+ 6g6h"
+            ],
+            "reported_best_move": "8f8h+"
+          }
+        },
+        {
+          "label": "horse_bishop_defense",
+          "sfen": "lnsgk1snl/6g2/p1pppp2p/9/6R2/1rP6/P1B+bPPP1P/1SG4S1/LN2KG1NL w 4P2p 24",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -130,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "6g7h",
+            "pv": [
+              "6g7h",
+              "7g8f",
+              "7h8h",
+              "8f5c+",
+              "G*4b",
+              "5c6c",
+              "8h9i",
+              "6c8a",
+              "5a4a",
+              "3e8e"
+            ],
+            "depth": 11,
+            "nodes": 100536,
+            "time_ms": 313,
+            "raw_info": [
+              "info depth 11 seldepth 27 multipv 1 score cp 130 nodes 88861 nps 324310 hashfull 2 time 274 pv 6g7h 7g8f 7h8h 8f5c+ G*4b 5c6c 8h9i 6c8a 5a4a 3e8e",
+              "info depth 11 seldepth 13 multipv 1 score cp 126 lowerbound nodes 100536 nps 321201 hashfull 2 time 313 pv 6g7h 7g8f"
+            ],
+            "reported_best_move": "6g7h"
+          }
+        },
+        {
+          "label": "history_R3e",
+          "sfen": "lnsgk1snl/6g2/p1pppp2p/9/5bR2/1rP6/P2PPPP1P/1SG4S1/LN2KG1NL w B4Pp 22",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -103,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "4e6g+",
+            "pv": [
+              "4e6g+",
+              "B*7g",
+              "6g7h",
+              "7g8f",
+              "7h8h",
+              "8f5c+",
+              "G*4b",
+              "3e8e",
+              "8h9i",
+              "5c6c",
+              "S*7b",
+              "6c3f",
+              "9i6f",
+              "P*8b",
+              "P*8d",
+              "8e2e"
+            ],
+            "depth": 12,
+            "nodes": 100235,
+            "time_ms": 446,
+            "raw_info": [
+              "info depth 12 seldepth 24 multipv 1 score cp 103 nodes 100235 nps 224742 hashfull 2 time 446 pv 4e6g+ B*7g 6g7h 7g8f 7h8h 8f5c+ G*4b 3e8e 8h9i 5c6c S*7b 6c3f 9i6f P*8b P*8d 8e2e"
+            ],
+            "reported_best_move": "4e6g+"
+          }
+        },
+        {
+          "label": "history_R2d",
+          "sfen": "lnsgk1snl/6g2/p1pppp2p/7R1/5b3/1rP6/P2PPPP1P/1SG4S1/LN2KG1NL w B4Pp 22",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": 351,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "P*2c",
+            "pv": [
+              "P*2c",
+              "B*7g",
+              "8f8h+",
+              "7g8h",
+              "2c2d",
+              "8h1a+",
+              "S*8g",
+              "7h8g",
+              "R*7i",
+              "5i4h",
+              "4e6g+"
+            ],
+            "depth": 11,
+            "nodes": 100061,
+            "time_ms": 301,
+            "raw_info": [
+              "info depth 11 seldepth 21 multipv 1 score cp -351 nodes 80736 nps 320380 hashfull 1 time 252 pv P*2c B*7g 8f8h+ 7g8h 2c2d 8h1a+ S*8g 7h8g R*7i 5i4h 4e6g+",
+              "info depth 12 seldepth 20 multipv 1 score cp -342 upperbound nodes 100061 nps 332428 hashfull 2 time 301 pv P*2c B*7g"
+            ],
+            "reported_best_move": "P*2c"
+          }
+        }
+      ],
+      "confirmation_scope": "Selected child pairs/subsets, NOT full100k best-reply evaluation; frozen gate remains10k."
     },
     {
       "id": "user_rook_counter_sacrifice",
@@ -8325,9 +8583,9 @@
       "hypothesized_categories": [
         "valid_sacrifice"
       ],
-      "why_position_is_natural": "NOT established: inherits the user's identified questionable B7g. This is an exploratory seed only; cannot establish production safety without a clean history.",
+      "why_position_is_natural": "Not clean: old17.B7g evaluates -2477 at100k versus -30 for17.P*8g, a2447cp difference. User R8i+ line preserves this prior error rather than repairing it.",
       "expected_reason": "Hypothesis only: bishop capture followed by P*8b may compensate a rook sacrifice. Failure retained rather than relabeled a valid control.",
-      "human_review_point": "Does counterplay repair the prior B7g error or merely create a tactical-looking losing line?",
+      "human_review_point": "Compare17.P*8g with17.B7g; after R8i+ compare Bx2b+ and Rx2b+, then see why Sx2b refutes the proposed rook sacrifice.",
       "position": "lnsgk1snl/6gb1/p1pppp2p/6p2/9/2P4R1/P1BPPPP1P/2G6/L+rS1KGSNL b 2Pn2p 19",
       "resulting_sfen": "lnsgk1snl/6g+R1/p1pppp2p/6p2/9/2P6/P1BPPPP1P/2G6/L+rS1KGSNL w B2Pn2p 20",
       "parent_result": {
@@ -12800,7 +13058,129 @@
             "reported_best_move": "2f2b+"
           }
         }
-      ]
+      ],
+      "control_admission": "failed_should_keep_hypothesis_not_a_valid_sacrifice_control",
+      "surprise_move_decision": "reject_current_proposal",
+      "keep_reason_categories": [],
+      "compensation_or_refutation": "19.R2b+ Sx2b stays -2484 at10k and -2478 at100k. Recapture is the best explicit10k response and frozen strong witness. No sufficient compensation was demonstrated; rejection is not a proven false negative.",
+      "quality_limit": "Original19.R2a+ alternative is illegal because bishop2b blocks the rook. A small engine shortlist finds B7g2b+ less bad than R2b+, not a demonstrated better practical surprise.",
+      "evaluation_after_reply": {
+        "3a2b": -2484
+      },
+      "same_condition_gap": {
+        "3a2b": 0
+      },
+      "good_reply_counts_not_probabilities": {
+        "50": 1,
+        "100": 1,
+        "200": 1,
+        "300": 1
+      },
+      "strong_naturalness_proxy_count": 2,
+      "confirmation_100k_selected_subset": [
+        {
+          "label": "history_old_B7g",
+          "sfen": "lnsgk1snl/1r4gb1/p1pppp2p/6p2/9/2P4R1/P1BPPPP1P/2G6/LNS1KGSNL w 2P2p 18",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -2477,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "8b8i+",
+            "pv": [
+              "8b8i+",
+              "7g2b+",
+              "3b2b",
+              "B*6f",
+              "B*3c",
+              "P*8g",
+              "5a5b",
+              "P*2c",
+              "2b3b",
+              "5i6h",
+              "3c6f",
+              "6g6f"
+            ],
+            "depth": 12,
+            "nodes": 100012,
+            "time_ms": 326,
+            "raw_info": [
+              "info depth 12 seldepth 16 multipv 1 score cp 2477 nodes 100012 nps 306785 hashfull 3 time 326 pv 8b8i+ 7g2b+ 3b2b B*6f B*3c P*8g 5a5b P*2c 2b3b 5i6h 3c6f 6g6f"
+            ],
+            "reported_best_move": "8b8i+"
+          }
+        },
+        {
+          "label": "history_repair_P8g",
+          "sfen": "lnsgk1snl/1r4gb1/p1pppp2p/6p2/9/2P4R1/PP1PPPP1P/1BG6/LNS1KGSNL w P2p 18",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -30,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "1c1d",
+            "pv": [
+              "1c1d",
+              "5i5h",
+              "P*2c",
+              "3i4h",
+              "6c6d",
+              "3g3f",
+              "7a7b",
+              "2i3g",
+              "7b6c",
+              "9g9f",
+              "9c9d"
+            ],
+            "depth": 12,
+            "nodes": 101781,
+            "time_ms": 320,
+            "raw_info": [
+              "info depth 12 seldepth 16 multipv 1 score cp 30 nodes 63726 nps 320231 hashfull 2 time 199 pv 1c1d 5i5h P*2c 3i4h 6c6d 3g3f 7a7b 2i3g 7b6c 9g9f 9c9d",
+              "info depth 13 seldepth 22 multipv 1 score cp -40 upperbound nodes 101781 nps 318065 hashfull 3 time 320 pv 1c1d 5i5h"
+            ],
+            "reported_best_move": "1c1d"
+          }
+        },
+        {
+          "label": "user_rook_S2b",
+          "sfen": "lnsgk2nl/6gs1/p1pppp2p/6p2/9/2P6/P1BPPPP1P/2G6/L+rS1KGSNL b B2Prn2p 21",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -2478,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "P*8g",
+            "pv": [
+              "P*8g",
+              "5a5b",
+              "B*8c",
+              "2b3c",
+              "5i6h",
+              "P*8f",
+              "8g8f",
+              "N*6d"
+            ],
+            "depth": 14,
+            "nodes": 100154,
+            "time_ms": 369,
+            "raw_info": [
+              "info depth 14 seldepth 16 multipv 1 score cp -2478 nodes 100154 nps 271420 hashfull 4 time 369 pv P*8g 5a5b B*8c 2b3c 5i6h P*8f 8g8f N*6d"
+            ],
+            "reported_best_move": "P*8g"
+          }
+        }
+      ],
+      "confirmation_scope": "Selected child pairs/subsets, NOT full100k best-reply evaluation; frozen gate remains10k."
     },
     {
       "id": "user_pawn_drop_followup",
@@ -12815,9 +13195,9 @@
       "hypothesized_categories": [
         "poisoned_capture"
       ],
-      "why_position_is_natural": "Same unresolved origin as user rook hypothesis; evaluate N*8f without claiming human difficulty.",
+      "why_position_is_natural": "Not clean: inherits17.B7g and19.R2b+ errors. Cannot supply valid-sacrifice safety evidence.",
       "expected_reason": "Hypothesis only: taking the pawn may distract silver; compare N*8f and other good defenses.",
-      "human_review_point": "Is N*8f needed, or are there simpler equally good defenses?",
+      "human_review_point": "Compare direct pawn captures with N*8f; inspect N*8f Bx8f Rx8f P8a+ Rx8a. Separate gate non-rejection from rejection of the current research hypothesis.",
       "position": "lnsgk2nl/6gs1/p1pppp2p/6p2/9/2P6/P1BPPPP1P/2G6/L+rS1KGSNL b B2Prn2p 21",
       "resulting_sfen": "lnsgk2nl/1P4gs1/p1pppp2p/6p2/9/2P6/P1BPPPP1P/2G6/L+rS1KGSNL w BPrn2p 22",
       "parent_result": {
@@ -19168,7 +19548,133 @@
             "reported_best_move": "5i4h"
           }
         }
-      ]
+      ],
+      "control_admission": "failed_should_keep_hypothesis_negative_diagnostic",
+      "surprise_move_decision": "reject_current_proposal_by_research_review_not_by_frozen_gate",
+      "keep_reason_categories": [],
+      "compensation_or_refutation": "21.P*8b remains losing against R8i8b, N*8f, and S7a8b. At10k R8b and N8f tie at-2802; S8b=-2697. At100k the selected subset gives R8b=-2756,N8f=-2588,S8b=-2864. No uniquely necessary hidden knight reply. Manual rejection rests on these straightforward good defenses and absent demonstrated compensation, not candidate-root CP alone.",
+      "quality_limit": "Frozen gate has0 strong witnesses here: pawn captures are not free-major captures or qualifying recaptures. not_falsified is therefore absence of this narrow trigger, NOT viability. Human choice probabilities were not measured.",
+      "evaluation_after_reply": {
+        "7a8b": -2697,
+        "8i8b": -2802,
+        "N*8f": -2802
+      },
+      "same_condition_gap": {
+        "7a8b": 105
+      },
+      "good_reply_counts_not_probabilities": {
+        "50": 2,
+        "100": 2,
+        "200": 3,
+        "300": 3
+      },
+      "strong_naturalness_proxy_count": 0,
+      "confirmation_100k_selected_subset": [
+        {
+          "label": "user_pawn_N8f",
+          "sfen": "lnsgk2nl/1P4gs1/p1pppp2p/6p2/9/1nP6/P1BPPPP1P/2G6/L+rS1KGSNL b BPr2p 23",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -2588,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "7g8f",
+            "pv": [
+              "7g8f",
+              "8i8f",
+              "8b8a+",
+              "8f8a",
+              "N*5e",
+              "7a7b",
+              "5e4c+",
+              "3b4c",
+              "B*3b",
+              "B*1d",
+              "3b2a+"
+            ],
+            "depth": 11,
+            "nodes": 100073,
+            "time_ms": 394,
+            "raw_info": [
+              "info depth 11 seldepth 22 multipv 1 score cp -2588 nodes 100073 nps 253992 hashfull 3 time 394 pv 7g8f 8i8f 8b8a+ 8f8a N*5e 7a7b 5e4c+ 3b4c B*3b B*1d 3b2a+"
+            ],
+            "reported_best_move": "7g8f"
+          }
+        },
+        {
+          "label": "user_pawn_R8b",
+          "sfen": "lnsgk2nl/1+r4gs1/p1pppp2p/6p2/9/2P6/P1BPPPP1P/2G6/L1S1KGSNL b BPrn3p 23",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -2756,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "5i5h",
+            "pv": [
+              "5i5h",
+              "P*8f",
+              "P*8d",
+              "8b8d",
+              "B*7e",
+              "8f8g+",
+              "7e8d",
+              "8g7g",
+              "7h7g"
+            ],
+            "depth": 13,
+            "nodes": 101641,
+            "time_ms": 347,
+            "raw_info": [
+              "info depth 13 seldepth 19 multipv 1 score cp -2756 nodes 101641 nps 292913 hashfull 3 time 347 pv 5i5h P*8f P*8d 8b8d B*7e 8f8g+ 7e8d 8g7g 7h7g"
+            ],
+            "reported_best_move": "5i5h"
+          }
+        },
+        {
+          "label": "user_pawn_S8b",
+          "sfen": "ln1gk2nl/1s4gs1/p1pppp2p/6p2/9/2P6/P1BPPPP1P/2G6/L+rS1KGSNL b BPrn3p 23",
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -2864,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "5i4h",
+            "pv": [
+              "5i4h",
+              "N*8f",
+              "B*8g",
+              "8f7h+",
+              "7i7h",
+              "8i7i",
+              "P*2c",
+              "2b3c",
+              "N*4e",
+              "R*2d",
+              "4e5c",
+              "2d2i+",
+              "5c6a+",
+              "5a6a"
+            ],
+            "depth": 15,
+            "nodes": 100048,
+            "time_ms": 365,
+            "raw_info": [
+              "info depth 15 seldepth 20 multipv 1 score cp -2864 nodes 100048 nps 274104 hashfull 2 time 365 pv 5i4h N*8f B*8g 8f7h+ 7i7h 8i7i P*2c 2b3c N*4e R*2d 4e5c 2d2i+ 5c6a+ 5a6a"
+            ],
+            "reported_best_move": "5i4h"
+          }
+        }
+      ],
+      "confirmation_scope": "Selected child pairs/subsets, NOT full100k best-reply evaluation; frozen gate remains10k."
     }
   ],
   "prefix_deviation_audits": [
@@ -20341,5 +20847,15 @@
   ],
   "old_exchange_controls_safety_evidence": "withdrawn following human history review",
   "gate_changed": false,
-  "human_policy_calls": 0
+  "human_policy_calls": 0,
+  "next_step_decision": "INCONCLUSIVE",
+  "decision_target": "Current frozen gate into production candidate rejection",
+  "work_totals": {
+    "new_engine_requests": 433,
+    "new_100k_requests": 12,
+    "cache_hits": 0,
+    "nominal_requested_nodes": 5410000,
+    "recorded_search_nodes": 5546808,
+    "candidate_alternatives_compared": 11
+  }
 }

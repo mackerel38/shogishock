@@ -38,6 +38,29 @@ class FrozenSemanticsTests(unittest.TestCase):
         self.assertIn('pawn_contact_capture',r['signals'])
         self.assertFalse(r['strong'])
 
+    def test_saved_new_results_replay_and_pvs_are_legal(self):
+        data=json.loads((HERE/'results.json').read_text())
+        for c in data['cases']:
+            p=Position.from_sfen(c['position']);child=p.apply_move(c['candidate_move'])
+            result=gate.classify(c['responses'],c['candidate_side'],child.legal_moves())
+            self.assertEqual(result,c['final_gate_result'])
+            for r in c['responses']:
+                follow=child.apply_move(r['move'])
+                for m in r['result'].get('pv',[]):
+                    follow=follow.apply_move(m)
+        self.assertEqual(len(data['reject_regressions']),3)
+        self.assertTrue(all(x['result']['decision']=='reject' for x in data['reject_regressions']))
+
+    def test_work_caps_and_separate_decisions(self):
+        data=json.loads((HERE/'results.json').read_text())
+        self.assertLessEqual(data['work_totals']['new_engine_requests'],600)
+        self.assertLessEqual(data['work_totals']['new_100k_requests'],12)
+        self.assertEqual(data['human_policy_calls'],0)
+        c=next(x for x in data['cases'] if x['id']=='user_pawn_drop_followup')
+        self.assertEqual(c['final_gate_result']['decision'],'not_falsified')
+        self.assertTrue(c['surprise_move_decision'].startswith('reject'))
+        self.assertEqual(data['next_step_decision'],'INCONCLUSIVE')
+
 
 if __name__=='__main__':
     unittest.main()
