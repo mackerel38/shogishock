@@ -159,6 +159,14 @@ pytest 70件成功、表示lint成功。
 
 運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
 
+## Trap-tree KIF PV consistency fix checkpoint — 2026-09-11
+
+4本のKIFについて、100k評価コメントと実際に再生される分岐を同じ保存済み100k PVへ統一した。
+合法性だけでなく、source record・日本語PVコメント・KIF着手列の一致を回帰テストで確認した。
+tree.json、ASTRA_HANDOFF.json、評価値、branch status、INCONCLUSIVEは変更していない。
+
+運用状態: 小サイクル → commit + push → STOP → 明示的続行指示待ち。
+
 ## Tactical falsification v2 human-review package checkpoint — 2026-09-10
 
 Astra source checkpoint: `d58a9b3bef8e909d67fd452578277860cdfacb11`。

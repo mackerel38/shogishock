@@ -153,3 +153,12 @@ Known limitations: setup currently assumes Linux tools `clang++`, `make`, `curl`
   presented as production-safety evidence.
 - Trap-tree construction remains `INCONCLUSIVE`; no Human Policy values, new candidate, or new
   engine/model call was added.
+
+## Trap-tree KIF PV consistency fix
+
+- For all four branch KIFs, the displayed 100k evaluation and the following replay now use the
+  same saved 100k confirmation PV. The prior 10k branch continuation is no longer mixed into a
+  100k score annotation.
+- Regression coverage checks source confirmation record → Japanese PV comment → actual KIF move
+  sequence, in addition to legality, side labels, and saved history checks.
+- Astra files `tree.json` and `ASTRA_HANDOFF.json` remain unchanged.

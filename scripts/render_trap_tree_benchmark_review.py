@@ -160,7 +160,13 @@ def render_one(branch: dict[str, Any], root_sfen: str, history: list[str], desti
             score = record["result"]["score"]
             comments.append(f"保存済み100k選択比較の応手後評価：{cp(score['score_cp'])}。")
             comments.append("保存済み100k解析の進行：" + human_pv(after_reply, list(record["result"].get("pv") or [])))
-        pv = [continuation["move"]] + list((continuation.get("result") or {}).get("pv") or [])
+        # A confirmation record is the source of the displayed 100k score.
+        # Replay that record's PV in the KIF as well; the older candidate
+        # continuation is only a 10k PV and must not be mixed with this value.
+        if record:
+            pv = list(record["result"].get("pv") or [])
+        else:
+            pv = [continuation["move"]] + list((continuation.get("result") or {}).get("pv") or [])
         add_branch(candidate_node, candidate_board, [reply] + pv, comments)
     root_node = VariationNode(move=branch_move)
     root_node.comment = branch_intro(branch, root, branch_move, selected["move"], reply_moves)

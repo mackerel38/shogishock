@@ -82,6 +82,45 @@ def test_human_kifs_avoid_internal_status_and_false_shallow_claims():
         assert "Human Policyは今回使用しておらず" in text
 
 
+def test_displayed_100k_pv_is_the_replayed_kif_variation():
+    module = renderer()
+    tree = json.loads(TREE.read_text(encoding="utf-8"))
+    root = shogi.Board()
+    for move in tree["root_history"]:
+        root.push_usi(move)
+    for branch in tree["branches"]:
+        path = OUT / "branches" / module.BRANCH_FILES[branch["opponent_move"]][0]
+        text = path.read_text(encoding="utf-8")
+        branch_board = shogi.Board(root.sfen())
+        branch_board.push_usi(branch["opponent_move"])
+        selected = next(item for item in branch["candidates"] if item["move"] == branch["our_response"])
+        candidate_board = shogi.Board(branch_board.sfen())
+        candidate_board.push_usi(selected["move"])
+        replies = [item["move"] for item in branch["opponent_natural_replies"]]
+        if branch["opponent_move"] == "B*7g": replies = ["7h8h", "7g8h"]
+        elif branch["opponent_move"] == "3d2d": replies = ["7h6g"]
+        elif branch["opponent_move"] == "3d3f": replies = ["7h8h", "B*1e"]
+        elif branch["opponent_move"] == "3d3e": replies = ["7h6g", "B*7g"]
+        for reply in replies:
+            confirmation = module.confirmation_for(branch, reply)
+            assert confirmation is not None
+            after_reply = shogi.Board(candidate_board.sfen())
+            after_reply.push_usi(reply)
+            rendered = module.human_pv(after_reply, list(confirmation["result"].get("pv") or []))
+            assert "保存済み100k解析の進行：" + rendered in text
+            # Every move in the displayed PV must occur in order in the KIF
+            # continuation after the response.  This catches legal but
+            # swapped 10k/100k variations.
+            comment = "保存済み100k解析の進行：" + rendered
+            cursor = text.index(comment) + len(comment)
+            actual_tail = text[cursor:]
+            cursor = 0
+            for token in rendered.split():
+                # KIF move rows carry the move text without a side prefix;
+                # the comment carries ▲/△ so the side is human-readable.
+                cursor = actual_tail.index(token[1:], cursor) + len(token[1:])
+
+
 def test_readme_records_coverage_gap_and_old_reject_links():
     text = (OUT / "README.md").read_text(encoding="utf-8")
     assert "△２三歩" in text and "後付けは行わず" in text
