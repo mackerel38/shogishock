@@ -1,0 +1,117 @@
+{
+  "scope": "Predeclared8 positions maximum; matched100k pairs, not full100k best-defense rankings",
+  "positions": [
+    {
+      "branch": "B*7g",
+      "candidate": "8f8h+",
+      "reply": "7g8h",
+      "role": "best10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/6R2/5b3/2P6/P2PPPP1P/1BG4S1/LN2KG1NL w R4Psp 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": -165,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "B*7g",
+      "candidate": "8f8h+",
+      "reply": "7h8h",
+      "role": "highest_salience_error10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/6R2/5b3/2P6/P1BPPPP1P/1G5S1/LN2KG1NL w R4Psp 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": -1106,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "3d2d",
+      "candidate": "4e6g+",
+      "reply": "7h6g",
+      "role": "best10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/7R1/9/1rP6/P2GPPP1P/1S5S1/LN2KG1NL w 2B4P2p 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": 274,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "3d2d",
+      "candidate": "4e6g+",
+      "reply": "2d2a+",
+      "role": "highest_salience_error10k",
+      "sfen": "lnsgk1s+Rl/6g2/p1pppp2p/9/9/1rP6/P2+bPPP1P/1SG4S1/LN2KG1NL w BN4P2p 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": -1213,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "3d3f",
+      "candidate": "8f8h+",
+      "reply": "B*1e",
+      "role": "best10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/9/5b2B/2P3R2/P2PPPP1P/1+rG4S1/LN2KG1NL w 4Psp 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": -181,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "3d3f",
+      "candidate": "8f8h+",
+      "reply": "7h8h",
+      "role": "highest_salience_error10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/9/5b3/2P3R2/P2PPPP1P/1G5S1/LN2KG1NL w RB4Psp 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": -588,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "3d3e",
+      "candidate": "4e6g+",
+      "reply": "B*7g",
+      "role": "best10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/9/6R2/1rP6/P1B+bPPP1P/1SG4S1/LN2KG1NL w 4P2p 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": 12,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    },
+    {
+      "branch": "3d3e",
+      "candidate": "4e6g+",
+      "reply": "7h6g",
+      "role": "highest_salience_error10k",
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/9/6R2/1rP6/P2GPPP1P/1S5S1/LN2KG1NL w 2B4P2p 24",
+      "value10k": {
+        "score_type": "cp",
+        "score_cp": -404,
+        "mate_distance": null,
+        "perspective": "sente",
+        "bound": "exact"
+      }
+    }
+  ]
+}
