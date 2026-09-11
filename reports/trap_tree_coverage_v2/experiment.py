@@ -202,6 +202,8 @@ def deep(memo):
                 group={'id':gid,'history':item['history'],'sfen':p.sfen,'moves':sorted(selected),
                        'reference_scope':'best of preselected explicitly evaluated children, not proven global optimum','levels':[]}
                 out['groups'].append(group)
+            if group.get('stable'):
+                continue
             for n in LEVELS:
                 if any(x['nodes']==n for x in group['levels']):continue
                 current={m:memo.query(p.apply_move(m),n) for m in group['moves']}

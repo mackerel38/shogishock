@@ -1,0 +1,39 @@
+[
+  {
+    "id": "5c46af1026197c8aeb70_3a3b",
+    "verdict": {
+      "decision": "reject",
+      "reason": "strong_adequate_punishing_reply",
+      "reference_eval": 3691,
+      "witnesses": [
+        "8h2b+",
+        "8h2b"
+      ]
+    },
+    "new_engine_calls": 0
+  },
+  {
+    "id": "0a33fbe73571830519e4_2b6f",
+    "verdict": {
+      "decision": "reject",
+      "reason": "strong_adequate_punishing_reply",
+      "reference_eval": 2803,
+      "witnesses": [
+        "8h6f"
+      ]
+    },
+    "new_engine_calls": 0
+  },
+  {
+    "id": "5ecc3699847f6446b58a_8h4d",
+    "verdict": {
+      "decision": "reject",
+      "reason": "strong_adequate_punishing_reply",
+      "reference_eval": -2935,
+      "witnesses": [
+        "2b4d"
+      ]
+    },
+    "new_engine_calls": 0
+  }
+]
