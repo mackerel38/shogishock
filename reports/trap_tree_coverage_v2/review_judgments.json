@@ -1,0 +1,40 @@
+{
+  "status": "qualitative hypotheses, not frequency estimates or final tactical conclusions",
+  "source": "current human review plus board geometry; no Human Policy inference",
+  "entry_plausibility": {
+    "B*7g": {"class": "needs_human_review", "reason": "Review questions whether humans enter this branch often. Existing conditional GxR/BxR contrast does not estimate entry probability."},
+    "3d2d": {"class": "natural", "reason": "Retreat the exposed rook along its active rank/file; theoretical adequacy requires the separate deep evidence."},
+    "3d3e": {"class": "plausible", "reason": "Short rook retreat, but previous evidence warned of a theoretical cost. Not a frequency statement."},
+    "3d3f": {"class": "plausible", "reason": "Deeper rook retreat. Do not infer the best gote continuation from the old two-candidate slate."}
+  },
+  "reply_judgments": {
+    "7h7i": {
+      "plausibility_class": "rare_but_reasonable",
+      "reason": "Move the attacked, undefended gold backward; this describes intent, not successful escape or adequate defense.",
+      "human_review_point": "Does a human consider saving this gold, and can they see why it fails?",
+      "surprise_move_decision": "not_applicable_opponent_reply"
+    },
+    "7h8g": {
+      "plausibility_class": "plausible",
+      "reason": "Move the attacked gold while attacking the rook on8f and contesting its invasion. Geometry alone does not prove protection.",
+      "human_review_point": "Is this defensive counterattack a realistic thought, or only a geometric proxy?",
+      "surprise_move_decision": "not_applicable_opponent_reply"
+    },
+    "2d2a+": {
+      "plausibility_class": "plausible",
+      "reason": "Take the knight and promote the rook instead of answering the opponent's attack. Legal only in the2d-rook branch of this benchmark.",
+      "human_review_point": "Compare immediate counterattack with recapturing on6g first; timing matters.",
+      "surprise_move_decision": "not_applicable_opponent_reply"
+    },
+    "7h6g": {
+      "plausibility_class": "natural",
+      "reason": "Recapture the horse that just captured the6g pawn. Whether it works depends on the rook branch.",
+      "human_review_point": "Compare the same recapture across rook positions, not as a universal error.",
+      "surprise_move_decision": "not_applicable_opponent_reply"
+    }
+  },
+  "all_other_generated_tags": "unvalidated motivation hypotheses; not automatically labeled natural",
+  "human_policy_reliability": "unchanged and not used; independent recapture/recovery calibration failure unresolved",
+  "success_probability": null,
+  "entry_probability": null
+}
