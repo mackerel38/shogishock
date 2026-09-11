@@ -227,7 +227,7 @@ def mate_checks(memo):
             if item is None:
                 item={'id':key,'history':history,'sfen':position(history).sfen,'levels':[],
                       'human_claim':'gote forced mate approximately within19 after R8h+; unconfirmed',
-                      'proof_type':'ordinary full-legal search; not dedicated tsume solver'}
+                      'proof_type':'ordinary selective adversarial search; not exhaustive AND/OR or dedicated tsume solver'}
                 out['mate_hypotheses'].append(item)
             for n in LEVELS:
                 if any(x['nodes']==n for x in item['levels']):continue

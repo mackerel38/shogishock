@@ -1,0 +1,210 @@
+{
+  "groups": [],
+  "mate_hypotheses": [
+    {
+      "id": "3d3e_before_rook",
+      "history": [
+        "7g7f",
+        "3c3d",
+        "2g2f",
+        "8c8d",
+        "2f2e",
+        "8d8e",
+        "6i7h",
+        "4a3b",
+        "2e2d",
+        "2c2d",
+        "2h2d",
+        "8e8f",
+        "8g8f",
+        "8b8f",
+        "2d3d",
+        "2b8h+",
+        "7i8h",
+        "P*2h",
+        "3i2h",
+        "B*4e",
+        "3d3e",
+        "4e6g+",
+        "7h7i"
+      ],
+      "sfen": "lnsgk1snl/6g2/p1pppp2p/9/6R2/1rP6/P2+bPPP1P/1S5S1/LNG1KG1NL w B4P2p 24",
+      "levels": [
+        {
+          "nodes": 100000,
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -1126,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "6g5g",
+            "pv": [
+              "6g5g",
+              "B*6h",
+              "5g3e",
+              "6h3e",
+              "R*2e",
+              "8h7g",
+              "2e2h+",
+              "7g8f",
+              "2h2i",
+              "P*5b",
+              "5a5b",
+              "P*5d",
+              "5c5d",
+              "B*7e"
+            ],
+            "depth": 13,
+            "nodes": 101940,
+            "time_ms": 403,
+            "raw_info": [
+              "info depth 13 seldepth 22 multipv 1 score cp 1126 nodes 101940 nps 252952 hashfull 1 time 403 pv 6g5g B*6h 5g3e 6h3e R*2e 8h7g 2e2h+ 7g8f 2h2i P*5b 5a5b P*5d 5c5d B*7e"
+            ],
+            "reported_best_move": "6g5g"
+          },
+          "pv_terminal_checkmate": false
+        },
+        {
+          "nodes": 1000000,
+          "result": {
+            "score": {
+              "score_type": "cp",
+              "score_cp": -7433,
+              "mate_distance": null,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "8f8h+",
+            "pv": [
+              "8f8h+",
+              "B*5h",
+              "8h7i",
+              "5i4h",
+              "7i6h",
+              "4h3h",
+              "6g5h",
+              "4i5h",
+              "6h5h",
+              "3h2g",
+              "B*4i",
+              "2g3f",
+              "5h2h",
+              "B*1e",
+              "S*2d",
+              "P*2f",
+              "4i2g+",
+              "3f4f",
+              "S*4e",
+              "3e4e",
+              "2g4e",
+              "4f4e"
+            ],
+            "depth": 16,
+            "nodes": 1000635,
+            "time_ms": 3015,
+            "raw_info": [
+              "info depth 16 seldepth 41 multipv 1 score cp 7433 nodes 1000635 nps 331885 hashfull 25 time 3015 pv 8f8h+ B*5h 8h7i 5i4h 7i6h 4h3h 6g5h 4i5h 6h5h 3h2g B*4i 2g3f 5h2h B*1e S*2d P*2f 4i2g+ 3f4f S*4e 3e4e 2g4e 4f4e"
+            ],
+            "reported_best_move": "8f8h+"
+          },
+          "pv_terminal_checkmate": false
+        },
+        {
+          "nodes": 5000000,
+          "result": {
+            "score": {
+              "score_type": "mate",
+              "score_cp": null,
+              "mate_distance": -21,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "8f8h+",
+            "pv": [
+              "8f8h+",
+              "B*5h",
+              "8h7i",
+              "5i4h",
+              "6g5h",
+              "4i5h",
+              "B*2g",
+              "B*1e",
+              "P*3c",
+              "1e3c+",
+              "2a3c",
+              "2h2g",
+              "G*4i",
+              "4h3h",
+              "4i3i",
+              "3h2h",
+              "3i2i",
+              "2h1h",
+              "2i1i",
+              "1h2h",
+              "7i2i"
+            ],
+            "depth": 34,
+            "nodes": 5001344,
+            "time_ms": 17447,
+            "raw_info": [
+              "info depth 34 seldepth 22 multipv 1 score mate 21 nodes 5001344 nps 286659 hashfull 159 time 17447 pv 8f8h+ B*5h 8h7i 5i4h 6g5h 4i5h B*2g B*1e P*3c 1e3c+ 2a3c 2h2g G*4i 4h3h 4i3i 3h2h 3i2i 2h1h 2i1i 1h2h 7i2i"
+            ],
+            "reported_best_move": "8f8h+"
+          },
+          "pv_terminal_checkmate": true
+        },
+        {
+          "nodes": 20000000,
+          "result": {
+            "score": {
+              "score_type": "mate",
+              "score_cp": null,
+              "mate_distance": -23,
+              "perspective": "sente",
+              "bound": "exact"
+            },
+            "best_move": "8f8h+",
+            "pv": [
+              "8f8h+",
+              "B*5h",
+              "8h7i",
+              "5i4h",
+              "6g5h",
+              "4i5h",
+              "S*4i",
+              "B*1e",
+              "P*3c",
+              "4g4f",
+              "4i5h",
+              "4h5h",
+              "7i7h",
+              "P*6h",
+              "B*6i",
+              "5h4i",
+              "G*4h",
+              "4i4h",
+              "7h6h",
+              "G*5h",
+              "6h5h",
+              "4h3i",
+              "G*3h"
+            ],
+            "depth": 38,
+            "nodes": 20000091,
+            "time_ms": 72075,
+            "raw_info": [
+              "info depth 38 seldepth 24 multipv 1 score mate 23 nodes 20000091 nps 277489 hashfull 556 time 72075 pv 8f8h+ B*5h 8h7i 5i4h 6g5h 4i5h S*4i B*1e P*3c 4g4f 4i5h 4h5h 7i7h P*6h B*6i 5h4i G*4h 4i4h 7h6h G*5h 6h5h 4h3i G*3h"
+            ],
+            "reported_best_move": "8f8h+"
+          },
+          "pv_terminal_checkmate": true
+        }
+      ],
+      "human_claim": "gote forced mate approximately within19 after R8h+; unconfirmed",
+      "proof_type": "ordinary full-legal search; not dedicated tsume solver"
+    }
+  ]
+}
