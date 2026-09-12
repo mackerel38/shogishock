@@ -46,5 +46,25 @@ class CoverageTests(unittest.TestCase):
         e.regressions()
         self.assertEqual([x['verdict']['decision'] for x in e.load('regressions.json')],['reject']*3)
 
+    def test_proof_terminal_and_one_ply(self):
+        ps=importlib.util.spec_from_file_location('mate_proof_test',P.with_name('prove_mate.py'))
+        proof=importlib.util.module_from_spec(ps);ps.loader.exec_module(proof)
+        item=next(x for x in e.load('deep_checks.json')['mate_hypotheses'] if x['id']=='3d3e_before_rook')
+        r=next(x['result'] for x in item['levels'] if x['pv_terminal_checkmate'])
+        b=e.position(item['history']).board
+        for move in r['pv'][:-1]:b.push(e.shogi.Move.from_usi(move))
+        solver=proof.Proof({});root=solver.search(b,1)
+        self.assertIsNotNone(root)
+        self.assertEqual(proof.verify(root,solver.proven),1)
+        b.push(e.shogi.Move.from_usi(r['pv'][-1]))
+        terminal=proof.Proof({});root=terminal.search(b,0)
+        self.assertEqual(proof.verify(root,terminal.proven),0)
+
+    def test_proof_cannot_omit_defender_moves(self):
+        ps=importlib.util.spec_from_file_location('mate_proof_test',P.with_name('prove_mate.py'))
+        proof=importlib.util.module_from_spec(ps);ps.loader.exec_module(proof)
+        node={'sfen':e.Position.startpos().sfen,'remaining':2,'terminal':False,'children':{}}
+        with self.assertRaises(AssertionError):proof.verify('root',{'root':node})
+
 
 if __name__=='__main__':unittest.main()

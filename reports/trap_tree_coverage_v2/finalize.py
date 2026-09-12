@@ -132,7 +132,7 @@ def main():
                        'decision':decision,'short_prefix_policy':'Use saved display_prefix; offer full mate PV optionally, never append unrelated long best-play tails.',
                        'do_not_claim':['new discovery','win probability','formal shortest-mate proof','production approval','all generated moves are natural']}}
     e.save('ASTRA_HANDOFF.json',handoff)
-    e.save('verification.json',{'prototype_tests':7,'engine_position_cache_tests':8,'legal_pvs':pv_count,
+    e.save('verification.json',{'prototype_tests':9,'engine_position_cache_tests':8,'legal_pvs':pv_count,
           'plan_sha256':hashlib.sha256((e.HERE/'PLAN.md').read_bytes()).hexdigest(),
           'gate_sha256':hashlib.sha256((e.ROOT/'reports/tactical_falsification/prototype.py').read_bytes()).hexdigest()})
     print(json.dumps({'decision':decision,'numbers':counts,'mates':[(x['id'],x['mate_distance'],x['distance_stable']) for x in mate_cases]},indent=2))
