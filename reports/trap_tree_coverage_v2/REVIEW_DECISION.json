@@ -1,0 +1,25 @@
+{
+  "type": "user_review_policy_update_after_completed_experiment",
+  "source_result_checkpoint": "732e6791b232e52ca8eaa3b61ce5d239ed6350c4",
+  "authority": "User: independent verification is unnecessary; rely on the engine for this purpose.",
+  "policy": {
+    "ordinary_engine_mate_report_accepted_for_research": true,
+    "independent_all_defense_certificate_required": false,
+    "certificate_cutoff_is_not_a_mate_acceptance_blocker": true,
+    "engine_reported_distance_may_be_displayed": true,
+    "independently_guaranteed_shortest_distance": false,
+    "extra_verification": "Only consider when there is concrete evidence of an engine problem; not routine."
+  },
+  "accepted_cases": [
+    {"id": "3d3e_before_rook", "line": "▲3五飛 △6七角成 ▲7九金 △8八飛成", "status": "engine_detected_mate_accepted", "engine_reported_mate_distance": 19},
+    {"id": "3d2d_before_rook", "line": "▲2四飛 △6七角成 ▲7九金 △8八飛成", "status": "engine_detected_mate_accepted", "engine_reported_mate_distance": 19}
+  ],
+  "distance_origin": "after ▲7九金, including △8八飛成; not19 additional plies after the rook move",
+  "interpretation": "Accept the two branches as engine-detected19-ply mates. Lack of an independent certificate does not make their research use pending.",
+  "separate_issues": ["CP/PV stability of comparisons", "specificity of broad motive generation", "actual human response frequency"],
+  "overall_cycle_decision": "INCONCLUSIVE retained for the separate comparison-stability/generalization questions, not for absence of a mate certificate",
+  "raw_results_changed": false,
+  "frozen_experiment_contract_changed": false,
+  "new_engine_calls": 0,
+  "new_research_or_production_authorized": false
+}

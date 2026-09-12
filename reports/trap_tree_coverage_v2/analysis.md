@@ -4,6 +4,15 @@ Question: generic recovery of quiet candidates and reasoned non-best replies,
 with stable tactical confirmation on the exposed B4e benchmark.
 Plan9634bb8; worker/source checkpoint bda84d13a39d30c3e8c92b2c841a5db798802a47.
 
+## User-review update: accept the engine's mate finding
+
+After checkpoint732e679, the user clarified that independent all-defense proof
+is not a requirement for practical research. Both G7i branches are therefore
+accepted as **engine-detected19-ply mates**, including the R8h+ move. Their proof
+cutoffs do not block acceptance. Do not claim independently guaranteed shortest
+distance. See REVIEW_DECISION.json. This is a documented post-experiment policy
+update, not a retroactive change to frozen inputs, measured scores or thresholds.
+
 ## Execution and integrity
 
 User-run deep and proof stages completed with exit0 in7234.85 seconds
@@ -84,7 +93,9 @@ original labels and correction provenance. No proof search was repeated.
 
 Overall **INCONCLUSIVE** for coverage with reliable tactical confirmation.
 Target recovery is useful positive evidence. Motive specificity, global defense
-coverage, full comparison stability and mate certification remain unresolved.
+coverage and full comparison stability remain unresolved. Independent mate
+certification is no longer a required acceptance condition and is not a reason
+for withholding the two engine-detected mate branches.
 This is not failure because computation took two hours; no next budget expansion,
 unknown seed scan, rule change or production activation is authorized.
 

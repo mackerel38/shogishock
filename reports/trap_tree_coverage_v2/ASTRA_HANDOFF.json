@@ -1,11 +1,20 @@
 {
+  "review_decision_ref": "REVIEW_DECISION.json",
+  "current_mate_acceptance": {
+    "authority": "post-experiment user review; supersedes certificate-based acceptance restrictions in the original interpretation",
+    "accepted_case_ids": ["3d3e_before_rook", "3d2d_before_rook"],
+    "status": "engine_detected_19ply_mate_accepted_for_research",
+    "independent_certificate_required": false,
+    "shortest_distance_independently_guaranteed": false,
+    "raw_mate_detection_and_proof_fields": "historical evidence, preserved; proof cutoff does not block acceptance"
+  },
   "research_question": "Can generic union generation recover quiet candidates and reasoned non-best replies on the exposed B4e benchmark, with stable tactical confirmation?",
   "source_checkpoint": {
     "research": "437a7ca93dcd20e645b6c1a7b63cd8a14e6f1547",
     "display": "d5be34c898967884cf4ea1755b43c360ec01293d",
     "plan": "9634bb81815109cb84a18f05a399096a211cec66"
   },
-  "conclusion": "Target coverage recovered without named inclusions. Broad generated pools are motivation hypotheses, not calibrated human choices. Consult separate stability and mate results; no production approval.",
+  "conclusion": "Target coverage recovered. Following user review, both G7i branches are accepted as engine-detected19-ply mates without requiring independent certificates. Broad motive specificity and comparison stability remain separate limitations; no production approval.",
   "execution_review": {
     "source_checkpoint": "bda84d13a39d30c3e8c92b2c841a5db798802a47",
     "manifest_sha256": "a63c59f26c3a4ab8e9fea948d19811c6eb2d97997ede81300b58a804f7aa4aa9",
@@ -9849,7 +9858,7 @@
       "AfterR3f, B6g+ ranked first in the tested subset at all five budgets;80M -295 versus R8h+ +468. Ranking persistence is not full score/PV stability.",
       "AfterR2d/B6g+, Gx6g gives+1296; immediateR2a+ gives-2174. Do not promote this candidate merely because other replies fail.",
       "AfterR3e/B6g+, best testedB*7g gives+34 versus Gx6g -770 andG8g -1893. These are provisional same-budget subset comparisons.",
-      "G7i in the R2d/R3e branches: ordinary engine mate19, explicitR8h+ child CP, all-defense attempts cutoff. Formal19-ply certification remains unknown."
+      "G7i in the R2d/R3e branches: accept the ordinary engine's mate19 result for research. Independent certification is not required. Raw child CP results and proof cutoffs are retained as evidence, not acceptance blockers. No independently guaranteed shortest-distance claim."
     ],
     "do_not_claim": [
       "new discovery",

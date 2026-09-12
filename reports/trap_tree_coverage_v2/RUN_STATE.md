@@ -1,5 +1,14 @@
 # Coverage v2: confirmation in progress
 
+## Latest user-review policy (supersedes certificate-based acceptance wording)
+
+See REVIEW_DECISION.json and the updated ASTRA_HANDOFF.json. Ordinary engine
+mate reports are accepted for research; independent all-defense proof is not
+required. Both G7i branches are accepted as engine-detected19-ply mates. The
+remaining comparison-stability/specificity limitations are separate. Raw results
+and frozen contracts are unchanged; no extra computation authorized. Do not
+rerun the historical finalize.py over this reviewed handoff. STOP.
+
 ## Completed user-run worker; final interpretation recorded
 
 Both execution stages completed; manifest/input/result hashes verified. Final
