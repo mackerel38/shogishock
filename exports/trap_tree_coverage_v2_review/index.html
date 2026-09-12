@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>trap-tree coverage v2 人間レビュー</title>
+<style>body{font-family:system-ui,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.65;background:#fafafa;color:#222}article{background:white;border:1px solid #ddd;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}.notice{background:#fff4d6;border-left:4px solid #d99b00;padding:1rem}</style>
+<h1>trap-tree coverage v2 人間レビュー</h1>
+<div class="notice"><strong>今回の判定：INCONCLUSIVE</strong><br>候補・応手のcoverageは改善したが、6比較群の全体安定条件と人間的動機のspecificityは未検証。actual candidateへの昇格は0件。</div>
+<p>今回は、以前漏れていたquietな候補と、人間が思いつきやすい理由を持つ応手を保存済み解析から確認する。評価値はすべて先手視点。＋は先手有利、－は後手有利。80Mの値は選択した比較対象または部分集合の比較で、全合法手の完全ランキングではない。Human Policyは使用していない。</p>
+<p>▲7九金の2枝では、通常エンジンがその直後から19手詰みを検出した。19手には△8八飛成を含む。研究上は採用するが、独立証明による最短手数保証ではない。</p>
+<article><h2>▲2四飛後の△2三歩</h2><p>quietな候補の生成漏れが改善したか</p><p>+622cp。今回比較した候補内で5予算すべて上位。評価安定条件は未達。</p><a href="branches/01_R2d_P2c.kif">ShogiHome用KIFを開く</a></article>
+<article><h2>▲3六飛後の△6七角成</h2><p>旧候補との深い比較</p><p>△6七角成-295cp、△8八飛成+468cp。差763cp。確定最善手ではない。</p><a href="branches/02_R3f_B6g.kif">ShogiHome用KIFを開く</a></article>
+<article><h2>▲3五飛 △6七角成後</h2><p>自然な応手と19手詰みの確認</p><p>▲7七角打+34cp、▲同金-770cp、▲8七金-1893cp。比較全体は未安定。</p><a href="branches/03_R3e_B6g_replies.kif">ShogiHome用KIFを開く</a></article>
+<article><h2>▲2四飛 △6七角成後</h2><p>自然な▲同金と他の応手の区別</p><p>▲同金+1296cp、▲8七金-1513cp、▲2一飛成-2174cp。</p><a href="branches/04_R2d_B6g_replies.kif">ShogiHome用KIFを開く</a></article><h2>既存reject</h2><p>明白な悪手3例は引き続きreject。<a href="../tactical_falsification_review/README.md">既存一覧</a>から確認できる。</p>
