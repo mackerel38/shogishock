@@ -25,6 +25,7 @@ class Proof:
         if state in self.proven:return state
         if state in self.failed:return None
         self.visited+=1
+        if self.visited%10000==0:print('proof states',self.visited,flush=True)
         if self.visited>100000:raise Limit()
         moves=list(b.legal_moves)
         if not moves:
@@ -82,12 +83,18 @@ def verify(root,nodes,ancestors=None):
 
 
 def main():
-    raw=(e.HERE/'engine_evidence.json').read_bytes();data=json.loads(raw);hints={}
-    for q in data['requests'].values():
-        b=shogi.Board(q['sfen'])
-        for usi in q['result'].get('pv',[]):
-            hints.setdefault(key(b),set()).add(usi);b.push(shogi.Move.from_usi(usi))
-    output={'hint_source_sha256':hashlib.sha256(raw).hexdigest(),'hint_positions':len(hints),
+    snapshot=e.HERE/'mate_proof_hints.json'
+    if snapshot.exists():
+        frozen=json.loads(snapshot.read_text());hints=frozen['hints'];source_hash=frozen['source_sha256']
+    else:
+        raw=(e.HERE/'engine_evidence.json').read_bytes();data=json.loads(raw);hints={}
+        for q in data['requests'].values():
+            b=shogi.Board(q['sfen'])
+            for usi in q['result'].get('pv',[]):
+                hints.setdefault(key(b),set()).add(usi);b.push(shogi.Move.from_usi(usi))
+        hints={k:sorted(v) for k,v in hints.items()};source_hash=hashlib.sha256(raw).hexdigest()
+        e.save(snapshot.name,{'source_sha256':source_hash,'hints':hints})
+    output={'hint_source_sha256':source_hash,'hint_positions':len(hints),
             'new_engine_calls':0,'root_limit_including_rook_move':19,'cases':[]}
     for rm in ['3d3e','3d2d']:
         history=e.HISTORY+[rm,'4e6g+','7h7i','8f8h+'];p=e.position(history);solver=Proof(hints)

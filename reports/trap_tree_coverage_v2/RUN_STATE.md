@@ -3,6 +3,14 @@
 Research/display bases:437a7ca / d5be34c. Plan frozen and pushed:9634bb8.
 Generator/screening checkpoint:5b9f02b. No next-cycle authorization implied.
 
+Resumed2026-09-12: old temporary clone/processes did not survive interruption.
+Local cache and evidence survived. Four ordinary mate checks completed through
+80M nominal. Both pre-R8h+ searches report mate19; both post-R8h+ searches end
+in CP, not mate. This inconsistency is unresolved, not a no-mate finding.
+Candidate R2d group completed through20M; remaining queries resume from cache.
+The supplementary proof attempt did not finish before interruption; it restarts
+with the SAME frozen `mate_proof_hints.json`, not refreshed hints.
+
 Completed: three parent candidate pools and three B6g+ reply pools, all legal
 children at10k (proposal only); original3 reject regressions;7 prototype tests
 and8 engine/position/cache tests. Candidate unions48/62,50/62,49/58;
@@ -19,6 +27,7 @@ From repository root with existing environment/cache:
 ```bash
 .venv/bin/python reports/trap_tree_coverage_v2/experiment.py mate
 .venv/bin/python reports/trap_tree_coverage_v2/experiment.py deep
+.venv/bin/python reports/trap_tree_coverage_v2/prove_mate.py
 .venv/bin/python -m unittest discover -s reports/trap_tree_coverage_v2 -p 'test_*.py'
 ```
 
@@ -32,6 +41,10 @@ The live workspace has no usable writable Git metadata. Current isolated
 publication clone:/tmp/shogishock-coverage-v2. Copy only this cycle's public
 artifacts; do NOT run a full stale-workspace publisher over Luna changes.
 Never publish SQLite, engine, NNUE, raw human data or credentials.
+
+Resumed publication clone:/tmp/shogishock-coverage-resume. The proof process
+does not write the engine ledger and can run concurrently with `deep`.
+Do not rerun completed `mate` checks unless the stored artifact is missing.
 
 Finish analysis and ASTRA_HANDOFF, specify short tactical branches for Luna,
 commit/push, verify remote SHA, STOP for human review. No Luna agent invoked.

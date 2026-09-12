@@ -13,6 +13,8 @@ def main():
     candidates=e.load('candidate_coverage.json'); replies=e.load('reply_coverage.json')
     deep=e.load('deep_checks.json'); evidence=e.load('engine_evidence.json')
     judgments=e.load('review_judgments.json')
+    old=json.loads((e.ROOT/'reports/trap_tree_benchmark/evidence.json').read_text())
+    old_gate={(b['opponent_move'],c['move']):c['gate']['decision'] for b in old['branches'] for c in b['candidates']}
     assert len(deep['groups'])==6 and len(deep['mate_hypotheses'])==4, 'Incomplete work'
     assert all(g.get('stable') or g['levels'][-1]['nodes']==e.LEVELS[-1] for g in deep['groups'])
     assert all(len(m['levels'])>=3 for m in deep['mate_hypotheses'])
@@ -60,7 +62,8 @@ def main():
                         'absolute_ply':len(item['history'])+1}
                 if kind=='candidate':
                     detail.update(candidate_initial_cost_cp=gap,
-                        surprise_move_decision='benchmark_option_not_production_approved',
+                        prior_gate_decision=old_gate.get((rm,r['move'])),
+                        surprise_move_decision='diagnostic_previously_rejected_not_reinstated' if old_gate.get((rm,r['move']))=='reject' else 'benchmark_option_not_production_approved',
                         entry_plausibility=judgments['entry_plausibility'][rm])
                     case_c.append(detail)
                 else:
@@ -117,6 +120,7 @@ def main():
        'reply_coverage_result':{'target_recovery':'YES','specificity':'unvalidated; broad geometry deliberately overgenerates','old_rule_note':'R2a+ afterR2d was already displayed. Gold moves were omitted, not absent from old all-legal10k data.'},
        'deep_confirmation_result':{'all_groups_stable':all_stable,'groups':[{'id':g['id'],'stable':g['stable'],'last_nodes':g['levels'][-1]['nodes'],'last_transition':g['levels'][-1].get('transition')} for g in deep['groups']]},
        'mate_detection_result':mate_cases,
+       'all_defense_proof_diagnostic':e.load('mate_proof_checks.json') if (e.HERE/'mate_proof_checks.json').exists() else {'status':'pending; do not mark cycle complete'},
        'move_limit_policy_result':{'new_candidate_move_max_ply':22,'new_reply_move_max_ply':23,'proof_exception':'continuations of tactics initiated at22-24 may exceed30','new_post30_candidate_searches':0},
        'confirmed_facts':['All target moves legal in their specified branches and in general-rule union.','Old3 rejected examples remain reject with original stored evidence and unchanged gate.','No HP fitting/inference or independent270 reuse.','No old research tree overwritten.'],
        'unknowns':['Actual entry/reply frequencies, especially B*7g entry.','Human specificity of broad motivation tags.','Generalization beyond this exposed benchmark.','Exact shortest mate length without an exhaustive certificate.','Production obvious-gate safety remains INCONCLUSIVE.'],

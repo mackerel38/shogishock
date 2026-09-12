@@ -1,5 +1,11 @@
 # Research paused — 2026-09-11 (trap-tree benchmark)
 
+> Active resumption2026-09-12: `reports/trap_tree_coverage_v2/RUN_STATE.md`.
+> Coverage screening complete; deeper comparison and all-defense mate diagnostic
+> are NOT complete. Frozen plan9634bb8, prototype/proof checkpoint71673a3.
+> Do not treat partial mate PVs as a verified19-ply proof. Resume this cycle only.
+> No Human Policy tuning, new seed scan, cloud or production activation.
+
 > Latest: `reports/trap_tree_benchmark/ASTRA_HANDOFF.json`, `tree.json`, `analysis.md`.
 > Method INCONCLUSIVE:4 root branches,2 conditional tactical contrasts,1 local first-response refutation,1 ranking reversal/needs_review; normal fallback retained.
 >59 nodes/59 edges;2 shared diagnostic nodes.8 our candidates,3 gate rejects;3 old reject regressions pass.
