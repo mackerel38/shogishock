@@ -1,5 +1,33 @@
 # Coverage v2: confirmation in progress
 
+## Worker implementation handoff (supersedes manual commands below)
+
+The standalone worker is implemented; see `WORKER_README.md`. Its only stages
+are remaining `deep`, then remaining proof cases. Ordinary `mate` is already
+complete: **do not rerun it**. No `finalize.py` or research interpretation runs
+automatically. Start from `/home/mackerel38/shogishock`, not a publication clone.
+
+```bash
+./scripts/shogishock-worker run
+./scripts/shogishock-worker status
+./scripts/shogishock-worker stop
+./scripts/shogishock-worker resume
+```
+
+Existing scientific progress at migration:2/6 deep groups reached their frozen
+endpoint; the third has partial levels/requests. Both proof cases have completed
+INCONCLUSIVE attempts and must not be rerun. Historical proof cutoff SFEN labels
+remain untouched; saved histories identify the roots. The legacy deep process
+and its engine have been stopped, retaining saved cache/evidence (the unfinished
+query may need repeating). No new production long run was started by Astra.
+
+Only mock/short tests and source plumbing were performed for this handoff.
+Scientific interpretation remains pending. Frozen PLAN/PROOF_PROTOCOL and all
+selection/threshold/proof semantics are unchanged. Source/runtime inputs are
+pinned by `worker_contract.json`. GitHub publication stays separate from execution.
+
+The following is historical progress context, **not current launch instructions**.
+
 Research/display bases:437a7ca / d5be34c. Plan frozen and pushed:9634bb8.
 Generator/screening checkpoint:5b9f02b. No next-cycle authorization implied.
 

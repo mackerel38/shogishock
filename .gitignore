@@ -25,3 +25,12 @@ backups/
 *.pem
 .codex/
 .agents/
+# Standalone research execution is local; publish a reviewed manifest explicitly.
+reports/trap_tree_coverage_v2/worker_state.json
+reports/trap_tree_coverage_v2/worker_event.json
+reports/trap_tree_coverage_v2/worker_stop.json
+reports/trap_tree_coverage_v2/worker_manifest.json
+reports/trap_tree_coverage_v2/worker.lock
+reports/trap_tree_coverage_v2/worker.log
+reports/trap_tree_coverage_v2/worker_console.log
+reports/trap_tree_coverage_v2/worker*.tmp

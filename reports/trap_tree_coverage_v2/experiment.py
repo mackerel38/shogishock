@@ -10,6 +10,7 @@ from surprise.engine import Engine
 from surprise.position import Position
 from surprise.obvious import reply_features
 from surprise.research import cp, identity, write_json
+from surprise import worker_control as wc
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -25,7 +26,8 @@ def load(name):
 
 
 def save(name, obj):
-    write_json(HERE / name, obj)
+    # Same scientific JSON, with fsync before acknowledging a completed query.
+    wc.atomic_json(HERE / name, obj)
 
 
 class Memo:
@@ -38,13 +40,18 @@ class Memo:
             'hash_mb': engine.hash_mb, 'plan_sha256': hashlib.sha256((HERE/'PLAN.md').read_bytes()).hexdigest()}
 
     def query(self, p, nodes=10000):
+        wc.control.checkpoint(force=True)
         key = f'{p.sfen}|{nodes}|1'
+        wc.control.emit(current_position=p.sfen, current_budget=nodes)
         if key not in self.data['requests']:
             hit = self.engine.cache.get(self.engine._key(p, 'search', nodes, 1)) is not None
             result = Engine._encode_result(self.engine.search(p, nodes, 1)[0])
             self.data['requests'][key] = {'sfen': p.sfen, 'nodes': nodes,
                                         'cache_hit': hit, 'result': result}
             save('engine_evidence.json', self.data)
+        wc.control.emit(completed_requests=len(self.data['requests']),
+                        cache_hits=sum(bool(q.get('cache_hit')) for q in self.data['requests'].values()))
+        wc.control.checkpoint(force=True)
         return self.data['requests'][key]['result']
 
 
@@ -182,8 +189,8 @@ def transition(old, new, side):
             'ordering_stable_with_100cp_ties':order_ok,'best_old':best_old,'best_new':best_new}
 
 
-def deep(memo):
-    out=load('deep_checks.json') if (HERE/'deep_checks.json').exists() else {'groups':[],'mate_hypotheses':[]}
+def deep_groups():
+    """The original frozen selection, factored for execution preflight only."""
     for kind,items in [('candidate',load('candidate_coverage.json')),('reply',load('reply_coverage.json'))]:
         for item in items:
             p=position(item['history'])
@@ -197,23 +204,56 @@ def deep(memo):
                         selected.add(r['move'])
                 selected.update(set(p.legal_moves()) & {'7h7i','7h8g','2d2a+'})
             gid=kind+'_'+item['history'][20]
-            group=next((g for g in out['groups'] if g['id']==gid),None)
-            if group is None:
-                group={'id':gid,'history':item['history'],'sfen':p.sfen,'moves':sorted(selected),
-                       'reference_scope':'best of preselected explicitly evaluated children, not proven global optimum','levels':[]}
-                out['groups'].append(group)
-            if group.get('stable'):
-                continue
-            for n in LEVELS:
-                if any(x['nodes']==n for x in group['levels']):continue
-                current={m:memo.query(p.apply_move(m),n) for m in group['moves']}
-                row={'nodes':n,'results':current}
-                if group['levels']:row['transition']=transition(group['levels'][-1]['results'],current,p.turn)
-                group['levels'].append(row)
-                group['stable']=len(group['levels'])>=3 and all(x.get('transition',{}).get('stable',False) for x in group['levels'][-2:])
-                save('deep_checks.json',out)
-                print(gid,n,'stable',group['stable'],flush=True)
-                if group['stable']:break
+            yield {'id':gid,'history':item['history'],'sfen':p.sfen,'moves':sorted(selected),
+                   'reference_scope':'best of preselected explicitly evaluated children, not proven global optimum','levels':[]}
+
+
+def deep_progress():
+    expected=list(deep_groups())
+    out=load('deep_checks.json') if (HERE/'deep_checks.json').exists() else {'groups':[]}
+    groups={g['id']:g for g in out['groups']}
+    if len(groups)!=len(out['groups']) or set(groups)-{g['id'] for g in expected}:
+        raise ValueError('incompatible deep group IDs')
+    completed=0
+    for template in expected:
+        group=groups.get(template['id'])
+        if group is None:continue
+        for field in ('history','sfen','moves'):
+            if group[field]!=template[field]:raise ValueError('incompatible deep '+field)
+        budgets=[x['nodes'] for x in group['levels']]
+        if budgets!=LEVELS[:len(budgets)]:raise ValueError('incompatible deep budget prefix')
+        if any(set(x['results'])!=set(group['moves']) for x in group['levels']):
+            raise ValueError('incomplete deep comparison row')
+        # Use existing saved stopping flag; do not change stability semantics.
+        completed+=bool(group.get('stable') or budgets==LEVELS)
+    return {'completed_cases':completed,'total_cases':len(expected),
+            'complete':completed==len(expected)}
+
+
+def deep(memo):
+    out=load('deep_checks.json') if (HERE/'deep_checks.json').exists() else {'groups':[],'mate_hypotheses':[]}
+    deep_progress()  # Reject incompatible resume before doing any query.
+    for template in deep_groups():
+        p=position(template['history']);gid=template['id']
+        wc.control.checkpoint(force=True)
+        wc.control.emit(current_case=gid,**deep_progress())
+        group=next((g for g in out['groups'] if g['id']==gid),None)
+        if group is None:
+            group=template
+            out['groups'].append(group)
+        if group.get('stable'):
+            continue
+        for n in LEVELS:
+            if any(x['nodes']==n for x in group['levels']):continue
+            current={m:memo.query(p.apply_move(m),n) for m in group['moves']}
+            row={'nodes':n,'results':current}
+            if group['levels']:row['transition']=transition(group['levels'][-1]['results'],current,p.turn)
+            group['levels'].append(row)
+            group['stable']=len(group['levels'])>=3 and all(x.get('transition',{}).get('stable',False) for x in group['levels'][-2:])
+            save('deep_checks.json',out)
+            wc.control.emit(**deep_progress())
+            print(gid,n,'stable',group['stable'],flush=True)
+            if group['stable']:break
     save('deep_checks.json',out)
 
 
@@ -258,6 +298,17 @@ if __name__=='__main__':
     args=parser.parse_args()
     if args.stage=='regressions':regressions()
     else:
-        with Engine.from_config() as engine:
-            memo=Memo(engine)
-            {'screen':screen,'deep':deep,'mate':mate_checks}[args.stage](memo)
+        try:
+            with wc.script_session(HERE):
+                if args.stage=='deep' and deep_progress()['complete']:
+                    wc.control.emit(**deep_progress())
+                    print('deep stage already completed; no engine startup',flush=True)
+                else:
+                    with Engine.from_config() as engine:
+                        memo=Memo(engine)
+                        wc.control.emit(completed_requests=len(memo.data['requests']),
+                                        cache_hits=sum(bool(q.get('cache_hit')) for q in memo.data['requests'].values()))
+                        {'screen':screen,'deep':deep,'mate':mate_checks}[args.stage](memo)
+        except wc.StopRequested as ex:
+            print(str(ex),flush=True)
+            raise SystemExit(wc.STOP_EXIT)

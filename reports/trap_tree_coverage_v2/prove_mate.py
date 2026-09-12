@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 import shogi
+from surprise import worker_control as wc
 spec=importlib.util.spec_from_file_location('coverage_experiment',Path(__file__).with_name('experiment.py'))
 e=importlib.util.module_from_spec(spec);spec.loader.exec_module(e)
 
@@ -20,12 +21,15 @@ class Proof:
         self.hints=hints;self.visited=0;self.proven={};self.failed=set();self.stack=set()
 
     def search(self,b,remaining):
+        wc.control.checkpoint()
         k=key(b);state=(k,remaining)
         if k in self.stack:return None
         if state in self.proven:return state
         if state in self.failed:return None
         self.visited+=1
-        if self.visited%10000==0:print('proof states',self.visited,flush=True)
+        if self.visited%10000==0:
+            print('proof states',self.visited,flush=True)
+            wc.control.emit(proof_visited_states=self.visited)
         if self.visited>100000:raise Limit()
         moves=list(b.legal_moves)
         if not moves:
@@ -67,6 +71,7 @@ class Proof:
 
 
 def verify(root,nodes,ancestors=None):
+    wc.control.checkpoint()
     ancestors=set() if ancestors is None else ancestors
     n=nodes[root];b=shogi.Board(n['sfen']);k=key(b)
     assert k not in ancestors,'repeated position in alleged proof'
@@ -80,10 +85,46 @@ def verify(root,nodes,ancestors=None):
     distances=[]
     for move,c in n['children'].items():
         b.push(shogi.Move.from_usi(move))
-        assert key(b)==key(shogi.Board(nodes[c]['sfen']))
-        assert nodes[c]['remaining']==n['remaining']-1
-        distances.append(1+verify(c,nodes,ancestors|{k}));b.pop()
+        try:
+            assert key(b)==key(shogi.Board(nodes[c]['sfen']))
+            assert nodes[c]['remaining']==n['remaining']-1
+            distances.append(1+verify(c,nodes,ancestors|{k}))
+        finally:b.pop()
     return max(distances)
+
+
+def completed_output(source_hash, hint_positions):
+    """Case-boundary resume, including completed INCONCLUSIVE attempts.
+
+    Historical cutoff rows can have a bad SFEN label. History is authoritative;
+    preserve the original row verbatim, never reinterpret or repair it here.
+    """
+    output={'hint_source_sha256':source_hash,'hint_positions':hint_positions,
+            'new_engine_calls':0,'root_limit_including_rook_move':19,'cases':[]}
+    path=e.HERE/'mate_proof_checks.json'
+    if not path.exists():return output
+    saved=e.load(path.name)
+    if any(saved.get(k)!=v for k,v in output.items() if k!='cases'):
+        raise ValueError('incompatible proof metadata / frozen hints')
+    seen=set()
+    for row in saved['cases']:
+        rm=row['root_reply']
+        if rm not in ('3d3e','3d2d') or rm in seen:
+            raise ValueError('incompatible proof case set')
+        if row['history']!=e.HISTORY+[rm,'4e6g+','7h7i','8f8h+']:
+            raise ValueError('incompatible proof case history')
+        if row.get('decision') not in ('INCONCLUSIVE','certified_upper_bound'):
+            raise ValueError('unrecognized partial proof row; do not silently discard it')
+        if (row.get('certified') is not (row['decision']=='certified_upper_bound')
+                or type(row.get('cutoff')) is not bool
+                or type(row.get('visited_states')) is not int
+                or not 0<=row['visited_states']<=100001
+                or 'verification_error' not in row):
+            raise ValueError('malformed completed proof row')
+        if row['certified'] and not (e.HERE/('mate_certificate_'+rm+'.json')).is_file():
+            raise ValueError('completed certificate file missing; no automatic rerun')
+        seen.add(rm)
+    return saved
 
 
 def main():
@@ -91,6 +132,8 @@ def main():
     if snapshot.exists():
         frozen=json.loads(snapshot.read_text());hints=frozen['hints'];source_hash=frozen['source_sha256']
     else:
+        if wc.control.directory is not None:
+            raise ValueError('worker requires existing frozen mate_proof_hints.json')
         raw=(e.HERE/'engine_evidence.json').read_bytes();data=json.loads(raw);hints={}
         for q in data['requests'].values():
             b=shogi.Board(q['sfen'])
@@ -98,9 +141,12 @@ def main():
                 hints.setdefault(key(b),set()).add(usi);b.push(shogi.Move.from_usi(usi))
         hints={k:sorted(v) for k,v in hints.items()};source_hash=hashlib.sha256(raw).hexdigest()
         e.save(snapshot.name,{'source_sha256':source_hash,'hints':hints})
-    output={'hint_source_sha256':source_hash,'hint_positions':len(hints),
-            'new_engine_calls':0,'root_limit_including_rook_move':19,'cases':[]}
+    output=completed_output(source_hash,len(hints))
+    wc.control.emit(completed_cases=len(output['cases']),total_cases=2,current_budget=100000)
     for rm in ['3d3e','3d2d']:
+        if any(row['root_reply']==rm for row in output['cases']):continue
+        wc.control.checkpoint(force=True)
+        wc.control.emit(current_case=rm,proof_visited_states=0)
         history=e.HISTORY+[rm,'4e6g+','7h7i','8f8h+'];p=e.position(history);solver=Proof(hints)
         root_sfen=p.sfen
         cut=False
@@ -119,6 +165,7 @@ def main():
             # Tuple keys serialized as separate IDs, with only reachable certificate nodes.
             reachable={}
             def collect(state):
+                wc.control.checkpoint()
                 ident=hashlib.sha256(str(state).encode()).hexdigest()[:24]
                 if ident in reachable:return ident
                 node=solver.proven[state];reachable[ident]={k:v for k,v in node.items() if k!='children'}
@@ -127,7 +174,13 @@ def main():
             certroot=collect(root)
             e.save('mate_certificate_'+rm+'.json',{'root':certroot,'nodes':reachable})
         output['cases'].append(row);e.save('mate_proof_checks.json',output)
+        wc.control.emit(completed_cases=len(output['cases']))
         print(row,flush=True)
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    try:
+        with wc.script_session(e.HERE):main()
+    except wc.StopRequested as ex:
+        print(str(ex),flush=True)
+        raise SystemExit(wc.STOP_EXIT)

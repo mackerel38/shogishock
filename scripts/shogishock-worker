@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+WORKER_ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec "$WORKER_ROOT/.venv/bin/python" "$WORKER_ROOT/scripts/shogishock_worker.py" "$@"

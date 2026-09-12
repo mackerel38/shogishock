@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "execution_root": "/home/mackerel38/shogishock",
+  "authority_checkpoint": "74edb2b385de7a6b7c655f704695842276be91be",
+  "research_checkpoints": [
+    "9634bb8",
+    "5b9f02b",
+    "6119407",
+    "71673a3",
+    "74edb2b"
+  ],
+  "scope": "Execution plumbing only; frozen research semantics unchanged",
+  "post_30_continuation": "only tactical proof continuation",
+  "input_fingerprints": {
+    "files": {
+      "surprise/research_worker.py": "d508fd8138351ed558f2158fe9d89b6ca789dc5b13b36e3d88e18cd1fba5b5ae",
+      "surprise/worker_control.py": "6bb344c4e44b6ae7014f8cb0b4283996a8fb2ed45d0d38adab95697371660515",
+      "scripts/shogishock_worker.py": "062645022a1ae976cecc896b8fc5daf5594ccbcf43ad0a219546c308f56f95ef",
+      "scripts/shogishock-worker": "44e754321af380dba0980a51dc1c0bb78c47a2962b47d53de9c64690e66c0126",
+      "reports/trap_tree_coverage_v2/experiment.py": "21adfbc31d17fa83bc77810527bcd922eca9eacd1a322b2e75acecebef64a842",
+      "reports/trap_tree_coverage_v2/prove_mate.py": "eb2c9c41cd612823e65b4e98ae683eb932bab5556cae3ad68838923eb3fdcbe6",
+      "reports/trap_tree_coverage_v2/PLAN.md": "a05df851a83316486388dba6254675706be3c830c57c0ad7e4d14503222a5dff",
+      "reports/trap_tree_coverage_v2/PROOF_PROTOCOL.md": "0eff693c88d831e15df2b4dd870be134c4d5535cdd9b0d7b26fd75441ce642da",
+      "reports/trap_tree_coverage_v2/LUNA_WORKER_TASK.md": "cc444ed7a3481f0a8d4646a7c0117ea8312f25ecf958bb79494e9cb01b443033",
+      "reports/trap_tree_coverage_v2/candidate_coverage.json": "278d724db4ec9f1aafe3715d764e0126721bdab9a0b088414fc5a625cd9ecacc",
+      "reports/trap_tree_coverage_v2/reply_coverage.json": "16fb76e053fe68334ed4b10103984482651eabd1931228f322e19f987875d292",
+      "reports/trap_tree_coverage_v2/mate_proof_hints.json": "1fad98916fd29ad876fdff84f72615b8d4ffdfa9aa5606e7283d3dacf2f9e884",
+      "config/default.yaml": "e8ef466c0205138b01b342b6cccf20b4d75a424bd3f5f6e69de2ee199c7355b6",
+      "pyproject.toml": "848e728759805b182428e572184a07c9ae59252b03bcf307bfe4707b20b234d9",
+      "surprise/engine.py": "dec0100bd101cffd52efba97163b21979cc051309fdab436bff86735f3319974",
+      "surprise/position.py": "39c2915559d0ac1b3d7fa92a970fdd85bb1a211e990014123820528bc1b87ef7",
+      "surprise/obvious.py": "290bdc28ed8eb9bcf11160fa84a93fc8961df22d36e6829cdf65cf8ad29c3f26",
+      "surprise/research.py": "80eff82035161cb7f84232ffd6fc16bf4f770aeb9542b24b69e2d61879d93641",
+      "reports/trap_tree_benchmark/explore.py": "b801020d0feebbf30d3be5efb6f2a4c621090f4fc8ebe8e635d80fe00dfc19e6",
+      "reports/tactical_falsification_v2/experiment.py": "c9cf5a0146939c7b462e417fe61b322e5164f78e2e22c00f08e17f403be20a93",
+      "reports/tactical_falsification/prototype.py": "ab484b3318d5833c57ac0e8cbcccf0154239b2a74baf6c3754a4e27d16f78ed3"
+    },
+    "engine": {
+      "path": "/home/mackerel38/shogishock/engines/yaneuraou/yaneuraou",
+      "binary_sha256": "10a220dd34fc4def0a9862d37f0bb0bd2faec219514b630b908c3c6388babeea",
+      "eval_sha256": {
+        "/home/mackerel38/shogishock/assets/eval/nn.bin": "768068f0d534a0603a5d38bcd143de6bbca820d5f1c95a14d40863e5b7892d76"
+      },
+      "threads": 2,
+      "hash_mb": 256,
+      "options": {
+        "USI_OwnBook": false,
+        "PvInterval": 0
+      }
+    },
+    "runtime": {
+      "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+      "python_executable": "/usr/bin/python3.14",
+      "python-shogi": "1.1.1",
+      "PyYAML": "6.0.3"
+    }
+  },
+  "worker_revision": "a766335a1dc7e34c870bb331cb3d527df277d6c3ff2042c9bf7bf5bbc3860205",
+  "stages": [
+    {
+      "name": "deep",
+      "command": [
+        ".venv/bin/python",
+        "reports/trap_tree_coverage_v2/experiment.py",
+        "deep"
+      ]
+    },
+    {
+      "name": "proof",
+      "command": [
+        ".venv/bin/python",
+        "reports/trap_tree_coverage_v2/prove_mate.py"
+      ]
+    }
+  ],
+  "forbidden_stages": [
+    "screen",
+    "mate",
+    "finalize"
+  ],
+  "proof_resume": "completed INCONCLUSIVE counts as completed; interrupted case restarts from frozen hints",
+  "automatic_publication": false,
+  "research_verdict": null,
+  "requires_astra_review": true
+}
