@@ -1,5 +1,22 @@
 # Coverage v2: confirmation in progress
 
+## Completed user-run worker; final interpretation recorded
+
+Both execution stages completed; manifest/input/result hashes verified. Final
+research decision: INCONCLUSIVE, not execution failure.6/6 groups reached80M;
+0/6 pass frozen whole-group stability. Target coverage recovered; certificates
+0/2 (completed cutoff attempts, not refutations of mate).
+
+Read ASTRA_HANDOFF.json, analysis.md, verification.json and the unchanged worker
+manifest. No new engine calls during interpretation. Raw scientific inputs and
+outputs remain byte-identical; proof-label corrections exist only in the derived
+handoff with provenance. Do not rerun the worker or enlarge budgets.
+
+Next: Luna's short KIF/HTML presentation under LUNA_TASK.md, then human review.
+No production activation, mass scan or new research authorized. STOP.
+
+Following sections are historical implementation/progress context.
+
 ## Worker implementation handoff (supersedes manual commands below)
 
 The standalone worker is implemented; see `WORKER_README.md`. Its only stages

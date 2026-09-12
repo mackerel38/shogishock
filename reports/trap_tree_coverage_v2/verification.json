@@ -1,0 +1,7 @@
+{
+  "prototype_tests": 11,
+  "engine_position_cache_tests": 8,
+  "legal_pvs": 889,
+  "plan_sha256": "a05df851a83316486388dba6254675706be3c830c57c0ad7e4d14503222a5dff",
+  "gate_sha256": "ab484b3318d5833c57ac0e8cbcccf0154239b2a74baf6c3754a4e27d16f78ed3"
+}
