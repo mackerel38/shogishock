@@ -43,6 +43,7 @@ def main():
                 for m in result.get('pv',[]):pvpos=pvpos.apply_move(m)
                 detail={'root_reply':rm,'history':item['history'],'sfen':item['sfen'],'move':r['move'],
                         'in_generated_pool':r['in_union'],'old_selected':r['old_selected'],
+                        'in_motive_only_pool_without_new_engine_rank':r['human_motivated'],
                         'engine_rank':order.index(r['move'])+1,'engine_rank_scope':'confirmed subset only',
                         'proposal_engine_rank_all_legal':r['engine_rank'],'deep_eval':v,'score':result['score'],
                         'nominal_nodes':group['levels'][-1]['nodes'],'same_condition_best_tested':best,
@@ -67,6 +68,8 @@ def main():
                         entry_plausibility=judgments['entry_plausibility'][rm])
                     case_c.append(detail)
                 else:
+                    detail['old_upstream_candidate_existed']=(rm,'4e6g+') in old_gate
+                    detail['old_omission_scope']='reply slate' if (rm,'4e6g+') in old_gate else 'upstream candidate absent; not an isolated reply-rule comparison'
                     detail.update(judgments['reply_judgments'].get(r['move'],{
                         'plausibility_class':'unvalidated_motive_hypothesis',
                         'reason':'Generated geometry or engine shortlist is not evidence of real human frequency.',

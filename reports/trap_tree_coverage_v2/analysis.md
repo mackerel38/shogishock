@@ -28,9 +28,14 @@ also change mate distances. This is ordinary-search inconsistency, NOT proof
 of no mate and NOT a verified shortest19-ply mate. Supplementary all-defender
 proof attempts use fixed hints and checkmate-only leaves; failure is inconclusive.
 
-Candidate R2d comparisons through20M: P*2c ranks first in the compared subset
-at each saved level, but CP/PV stability is not yet satisfied. Remaining deep
-groups are pending.10k remains proposal only.
+Candidate R2d comparison completed through80M: P*2c ranks first in the compared
+subset at all5 levels. Its CP values:442,573,414,602,622. At80M the next tested
+candidate S2b is1095; B6g+ is1331, R8h+2300 (all raw sente perspective).
+The best ordering persists, but the frozen whole-group two-transition CP/PV
+criterion FAILS. Even P*2c changed188cp at5M->20M, then20cp at20M->80M.
+Do not rename this a fully stable comparison. Remaining groups are pending.
+10k remains proposal only. An easy adequate recapture may refute B6g+ afterR2d
+despite a severe trap against G7i; that contrast is not candidate approval.
 
 ## Interpretation boundaries
 
