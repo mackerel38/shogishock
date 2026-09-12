@@ -43,7 +43,9 @@ class Proof:
                     b.push(m);checking=b.is_check();b.pop()
                     if hinted or checking:options.append((not hinted,m.usi(),m))
                 for _,_,m in sorted(options):
-                    b.push(m);child=self.search(b,remaining-1);b.pop()
+                    b.push(m)
+                    try:child=self.search(b,remaining-1)
+                    finally:b.pop()
                     if child is not None:
                         self.proven[state]={'sfen':b.sfen(),'remaining':remaining,'terminal':False,'children':{m.usi():child}}
                         return state
@@ -51,7 +53,9 @@ class Proof:
                 ordered=sorted(moves,key=lambda m:(m.usi() not in self.hints.get(k,[]),m.usi()))
                 children={}
                 for m in ordered:
-                    b.push(m);child=self.search(b,remaining-1);b.pop()
+                    b.push(m)
+                    try:child=self.search(b,remaining-1)
+                    finally:b.pop()
                     if child is None:break
                     children[m.usi()]=child
                 if len(children)==len(moves):
@@ -98,6 +102,7 @@ def main():
             'new_engine_calls':0,'root_limit_including_rook_move':19,'cases':[]}
     for rm in ['3d3e','3d2d']:
         history=e.HISTORY+[rm,'4e6g+','7h7i','8f8h+'];p=e.position(history);solver=Proof(hints)
+        root_sfen=p.sfen
         cut=False
         try:root=solver.search(p.board,18)
         except Limit:root=None;cut=True
@@ -105,7 +110,7 @@ def main():
         if root is not None:
             try:distance=verify(root,solver.proven);verified=True
             except AssertionError as ex:verification_error=str(ex)
-        row={'root_reply':rm,'history':history,'sfen':p.sfen,'visited_states':solver.visited,
+        row={'root_reply':rm,'history':history,'sfen':root_sfen,'visited_states':solver.visited,
              'cutoff':cut,'certified':verified,'mate_distance_after_rook':distance,
              'decision':'certified_upper_bound' if verified else 'INCONCLUSIVE',
              'verification_error':verification_error,'proven_substates':len(solver.proven),

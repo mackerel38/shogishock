@@ -28,6 +28,14 @@ also change mate distances. This is ordinary-search inconsistency, NOT proof
 of no mate and NOT a verified shortest19-ply mate. Supplementary all-defender
 proof attempts use fixed hints and checkmate-only leaves; failure is inconclusive.
 
+First proof attempt(R3e) reached the100,000-expansion bound without a complete
+certificate(2,549 proven substates, but no proof of the root). The cutoff check
+increments the visit counter to100,001. This does not refute the human mate claim.
+R2d proof attempt remains pending. A cutoff-output bug left the printed SFEN at
+a search descendant; finalization restores the root from the saved history and
+preserves the erroneous label as provenance. The searched history/outcome do not
+change. A board-restoration regression test was added;11 prototype tests pass.
+
 Candidate R2d comparison completed through80M: P*2c ranks first in the compared
 subset at all5 levels. Its CP values:442,573,414,602,622. At80M the next tested
 candidate S2b is1095; B6g+ is1331, R8h+2300 (all raw sente perspective).

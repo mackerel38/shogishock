@@ -12,12 +12,29 @@ e=importlib.util.module_from_spec(spec);spec.loader.exec_module(e)
 def main():
     candidates=e.load('candidate_coverage.json'); replies=e.load('reply_coverage.json')
     deep=e.load('deep_checks.json'); evidence=e.load('engine_evidence.json')
+    proof=e.load('mate_proof_checks.json')
+    assert len(proof['cases'])==2, 'Proof diagnostic incomplete'
+    # The initially launched proof prototype left the board pushed on Limit.
+    # That changed the printed root label, NOT the searched history or result.
+    # Preserve the erroneous label while restoring the authoritative history.
+    for row in proof['cases']:
+        expected=e.position(row['history']).sfen
+        if row['sfen']!=expected:
+            row['original_erroneous_cutoff_sfen']=row['sfen']
+            row['sfen']=expected
+            row['label_correction']='cutoff board label restored from saved history; outcome unchanged; no rerun'
+    e.save('mate_proof_checks.json',proof)
     judgments=e.load('review_judgments.json')
     old=json.loads((e.ROOT/'reports/trap_tree_benchmark/evidence.json').read_text())
     old_gate={(b['opponent_move'],c['move']):c['gate']['decision'] for b in old['branches'] for c in b['candidates']}
     assert len(deep['groups'])==6 and len(deep['mate_hypotheses'])==4, 'Incomplete work'
     assert all(g.get('stable') or g['levels'][-1]['nodes']==e.LEVELS[-1] for g in deep['groups'])
     assert all(len(m['levels'])>=3 for m in deep['mate_hypotheses'])
+    for m in deep['mate_hypotheses']:
+        if m.get('proof_type')=='ordinary full-legal search; not dedicated tsume solver':
+            m['original_proof_type_label']=m['proof_type']
+            m['proof_type']='ordinary selective adversarial search; not exhaustive AND/OR or dedicated tsume solver'
+    e.save('deep_checks.json',deep)
     pv_count=0
     for q in evidence['requests'].values():
         p=e.Position.from_sfen(q['sfen'])
@@ -123,7 +140,7 @@ def main():
        'reply_coverage_result':{'target_recovery':'YES','specificity':'unvalidated; broad geometry deliberately overgenerates','old_rule_note':'R2a+ afterR2d was already displayed. Gold moves were omitted, not absent from old all-legal10k data.'},
        'deep_confirmation_result':{'all_groups_stable':all_stable,'groups':[{'id':g['id'],'stable':g['stable'],'last_nodes':g['levels'][-1]['nodes'],'last_transition':g['levels'][-1].get('transition')} for g in deep['groups']]},
        'mate_detection_result':mate_cases,
-       'all_defense_proof_diagnostic':e.load('mate_proof_checks.json') if (e.HERE/'mate_proof_checks.json').exists() else {'status':'pending; do not mark cycle complete'},
+       'all_defense_proof_diagnostic':proof,
        'move_limit_policy_result':{'new_candidate_move_max_ply':22,'new_reply_move_max_ply':23,'proof_exception':'continuations of tactics initiated at22-24 may exceed30','new_post30_candidate_searches':0},
        'confirmed_facts':['All target moves legal in their specified branches and in general-rule union.','Old3 rejected examples remain reject with original stored evidence and unchanged gate.','No HP fitting/inference or independent270 reuse.','No old research tree overwritten.'],
        'unknowns':['Actual entry/reply frequencies, especially B*7g entry.','Human specificity of broad motivation tags.','Generalization beyond this exposed benchmark.','Exact shortest mate length without an exhaustive certificate.','Production obvious-gate safety remains INCONCLUSIVE.'],
@@ -135,7 +152,7 @@ def main():
                        'decision':decision,'short_prefix_policy':'Use saved display_prefix; offer full mate PV optionally, never append unrelated long best-play tails.',
                        'do_not_claim':['new discovery','win probability','formal shortest-mate proof','production approval','all generated moves are natural']}}
     e.save('ASTRA_HANDOFF.json',handoff)
-    e.save('verification.json',{'prototype_tests':9,'engine_position_cache_tests':8,'legal_pvs':pv_count,
+    e.save('verification.json',{'prototype_tests':11,'engine_position_cache_tests':8,'legal_pvs':pv_count,
           'plan_sha256':hashlib.sha256((e.HERE/'PLAN.md').read_bytes()).hexdigest(),
           'gate_sha256':hashlib.sha256((e.ROOT/'reports/tactical_falsification/prototype.py').read_bytes()).hexdigest()})
     print(json.dumps({'decision':decision,'numbers':counts,'mates':[(x['id'],x['mate_distance'],x['distance_stable']) for x in mate_cases]},indent=2))

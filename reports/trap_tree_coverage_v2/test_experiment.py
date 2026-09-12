@@ -66,5 +66,21 @@ class CoverageTests(unittest.TestCase):
         node={'sfen':e.Position.startpos().sfen,'remaining':2,'terminal':False,'children':{}}
         with self.assertRaises(AssertionError):proof.verify('root',{'root':node})
 
+    def test_no_new_move31(self):
+        item=next(x for x in e.load('deep_checks.json')['mate_hypotheses'] if x['id']=='3d3e_before_rook')
+        r=next(x['result'] for x in item['levels'] if x['pv_terminal_checkmate'])
+        history=item['history']+r['pv'][:7]
+        self.assertEqual(len(history),30)
+        with self.assertRaises(AssertionError):e.coverage(None,history,[],False)
+
+    def test_proof_cutoff_restores_root_board(self):
+        ps=importlib.util.spec_from_file_location('mate_proof_test',P.with_name('prove_mate.py'))
+        proof=importlib.util.module_from_spec(ps);ps.loader.exec_module(proof)
+        solver=proof.Proof({});solver.visited=99999
+        b=e.Position.startpos().board;before=b.sfen()
+        with self.assertRaises(proof.Limit):solver.search(b,2)
+        self.assertEqual(b.sfen(),before)
+        self.assertFalse(solver.stack)
+
 
 if __name__=='__main__':unittest.main()

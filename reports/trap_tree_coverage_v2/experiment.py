@@ -122,7 +122,7 @@ def rank_value(result, side):
 
 
 def coverage(memo, history, old_selected, is_reply):
-    assert len(history) <= 30
+    assert len(history) < 30, 'the generated move itself must be at most ply30'
     p = position(history)
     parent = position(history[:-1]) if is_reply else None
     legal = p.legal_moves()
